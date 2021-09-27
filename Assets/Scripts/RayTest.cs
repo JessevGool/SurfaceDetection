@@ -24,23 +24,28 @@ public class RayTest : MonoBehaviour
         if (firstScan)
         {
 
-
+            //X axis increment
             for (float x = transform.position.x - 10f; x < transform.position.x + 10f; x+= 0.01f)
             {
+                //Z axis increment
                 for (float z = transform.position.z - 10f; z < transform.position.z + 10f; z+= 0.01f)
                 {
+                    //Set Ray origin
                     rayPos = new Vector3(x, transform.position.y, z);
                     
+
                     if (Physics.Raycast(rayPos, Vector3.down, out hit, 100f,rayLayer))
                     {
                         Debug.Log($"{hit.point}");
                         hits.Add(hit);
+                        //Create sphere to show hit
                         Instantiate(hitIndicator, hit.point,Quaternion.LookRotation(hit.normal));
                     }
                     debugObject.transform.position = new Vector3(x, transform.position.y, z);
 
                 }
             }
+            //was used inside update
             firstScan = !firstScan;
         }
     }
