@@ -33,7 +33,7 @@ public class RayTest : MonoBehaviour
                     
                     if (Physics.Raycast(rayPos, Vector3.down, out hit, 100f,rayLayer))
                     {
-                        Debug.Log($"{hit.transform.position}");
+                        Debug.Log($"{hit.point}");
                         hits.Add(hit);
                         Instantiate(hitIndicator, hit.point,Quaternion.LookRotation(hit.normal));
                     }
