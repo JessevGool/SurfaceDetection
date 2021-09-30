@@ -10,12 +10,15 @@ public class RayTest : MonoBehaviour
     private List<RaycastHit> hits = new List<RaycastHit>();
     private List<RoofLayer> roofLayers = new List<RoofLayer>();
     private Vector3 collision = Vector3.zero;
-    public GameObject debugObject;
-    public GameObject hitIndicator;
+    
     private Vector3 rayPos;
-    public LayerMask rayLayer;
+    
     private bool firstScan = true;
 
+    public bool drawHits = false;
+    public GameObject debugObject;
+    public GameObject hitIndicator;
+    public LayerMask rayLayer;
     public GameObject NWIND;
     public GameObject NEIND;
     public GameObject SWIND;
@@ -42,12 +45,16 @@ public class RayTest : MonoBehaviour
                     rayPos = new Vector3(x, transform.position.y, z);
 
 
-                    if (Physics.Raycast(rayPos, Vector3.down, out hit, 100f, rayLayer))
+                    if (Physics.Raycast(rayPos, Vector3.down, out hit, 10000f, rayLayer))
                     {
                         //Debug.Log($"{hit.point}");
                         hits.Add(hit);
                         //Create sphere to show hit
-                        //Instantiate(hitIndicator, hit.point,Quaternion.LookRotation(hit.normal));
+                        if(drawHits)
+                        {
+                            Instantiate(hitIndicator, hit.point, Quaternion.LookRotation(hit.normal));
+                        }
+                        
                     }
                     debugObject.transform.position = new Vector3(x, transform.position.y, z);
 
@@ -101,10 +108,14 @@ public class RayTest : MonoBehaviour
             Debug.Log($"NE: {_layer._NE}  NW: {_layer._NW}  SE: {_layer._SE}  SW: {_layer._SW}");
 
             //Indicate layers by drawing Spheres
-            Instantiate(NEIND, _layer._NE, Quaternion.LookRotation(_layer._NE));
-            Instantiate(NWIND, _layer._NW, Quaternion.LookRotation(_layer._NW));
-            Instantiate(SEIND, _layer._SE, Quaternion.LookRotation(_layer._SE));
-            Instantiate(SWIND, _layer._SW, Quaternion.LookRotation(_layer._SW));
+            if (!drawHits)
+            {
+                Instantiate(NEIND, _layer._NE, Quaternion.LookRotation(_layer._NE));
+                Instantiate(NWIND, _layer._NW, Quaternion.LookRotation(_layer._NW));
+                Instantiate(SEIND, _layer._SE, Quaternion.LookRotation(_layer._SE));
+                Instantiate(SWIND, _layer._SW, Quaternion.LookRotation(_layer._SW));
+            }
+           
 
         }
     }

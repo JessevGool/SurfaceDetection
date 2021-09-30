@@ -389,12 +389,50 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   m_LocalRotation: {x: -0.010769724, y: -0.9864941, z: 0.16343258, w: -0.0017842214}
-  m_LocalPosition: {x: 0, y: 1.96, z: 1.48}
+  m_LocalPosition: {x: -0, y: 2.318, z: 2.531}
   m_LocalScale: {x: 1, y: 1.7656, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -198.814, y: 0, z: -178.749}
+--- !u!1 &1099710719 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -447174402076232346, guid: 42f520a5f61fb0e4e94ee82aafa64968, type: 3}
+  m_PrefabInstance: {fileID: 2003902483}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1099710723
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1099710719}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -7508742584237898787, guid: 42f520a5f61fb0e4e94ee82aafa64968, type: 3}
+--- !u!1 &1349065865 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4985344043960018771, guid: 42f520a5f61fb0e4e94ee82aafa64968, type: 3}
+  m_PrefabInstance: {fileID: 2003902483}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1349065869
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1349065865}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -5786352474729385974, guid: 42f520a5f61fb0e4e94ee82aafa64968, type: 3}
 --- !u!1 &1645128267
 GameObject:
   m_ObjectHideFlags: 0
@@ -485,8 +523,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1645128267}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 9, y: 5, z: 9}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 5
@@ -561,11 +599,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 411ba208b3925fd4693c7690a083175c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  drawHits: 0
   debugObject: {fileID: 1645128267}
   hitIndicator: {fileID: 2551166094341738711, guid: 2f67ae39b1aecce419b8bd99809e34fd, type: 3}
   rayLayer:
     serializedVersion: 2
     m_Bits: 64
+  NWIND: {fileID: 406846358814357658, guid: 3ba31bba1625d134589283c4bdb7eb2f, type: 3}
+  NEIND: {fileID: 7745350262690384534, guid: 2d4266045081c1145a4a0d988d13d797, type: 3}
+  SWIND: {fileID: 6593485692365431424, guid: aa0d8686fb0886e4a92658b7a59ab79d, type: 3}
+  SEIND: {fileID: 4333185520322367770, guid: e39cbd19c035ac34982050ea45c91afb, type: 3}
 --- !u!64 &1991561841
 MeshCollider:
   m_ObjectHideFlags: 0
