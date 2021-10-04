@@ -312,7 +312,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &705507993
 GameObject:
@@ -694,7 +694,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 411ba208b3925fd4693c7690a083175c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  drawHits: 1
+  drawHits: 0
   drawLayers: 0
   debugObject: {fileID: 1645128267}
   hitIndicator: {fileID: 2551166094341738711, guid: 2f67ae39b1aecce419b8bd99809e34fd, type: 3}
@@ -780,7 +780,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2003902483
 PrefabInstance:

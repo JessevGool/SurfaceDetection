@@ -30,7 +30,6 @@ public class RayTest : MonoBehaviour
     void Start()
     {
         startScan();
-        
         Debug.Log($"AMOUNT OF RAYS: {rays} \n" +
             $"DETECTED HITS: {hits.Count} \n" +
             $"DETECTED LAYERS: {roofLayers.Count}");
@@ -38,15 +37,16 @@ public class RayTest : MonoBehaviour
 
     private void startScan()
     {
+        float boundsX = gameObject.GetComponent<Renderer>().bounds.max.x;
+        float boundsZ = gameObject.GetComponent<Renderer>().bounds.max.z;
         RaycastHit hit;
         if (firstScan)
         {
-
             //X axis increment
-            for (float x = transform.position.x - 10f; x < transform.position.x + 10f; x += 0.01f)
+            for (float x = transform.position.x - boundsX; x < transform.position.x + boundsX; x += 0.01f)
             {
                 //Z axis increment
-                for (float z = transform.position.z - 10f; z < transform.position.z + 10f; z += 0.01f)
+                for (float z = transform.position.z - boundsZ; z < transform.position.z + boundsZ; z += 0.01f)
                 {
                     rays++;
                     //Set Ray origin
@@ -153,8 +153,13 @@ public class RayTest : MonoBehaviour
 
             }
         }
+        int count = 0;
         foreach (var angle in angles)
         {
+            if(count == 3)
+            {
+                count = 0;
+            }
             List<Vector3> angledHits = new List<Vector3>();
             foreach (var hit in roofHits)
             {
@@ -165,8 +170,25 @@ public class RayTest : MonoBehaviour
             }
             foreach (var angledHit in angledHits)
             {
-                
+                var test = GameObject.CreatePrimitive(PrimitiveType.Sphere);
+                test.transform.position = angledHit;
+                test.transform.localScale = new Vector3(0.01f, 0.01f, 0.01f);
+                if(count == 0)
+                {
+                    test.GetComponent<Renderer>().material.color = Color.green;
+                }
+                else if(count == 1)
+                {
+                    test.GetComponent<Renderer>().material.color = Color.red;
+                }
+                else
+                {
+                    test.GetComponent<Renderer>().material.color = Color.blue;
+                }
+
+               
             }
+            count++;
         }
         
     }
