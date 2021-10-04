@@ -9,7 +9,8 @@ public class ObjFromFile : MonoBehaviour
     GameObject loadedObject;
 
     void OnGUI() {
-        objPath = GUI.TextField(new Rect(0, 0, 256, 32), objPath);
+        //objPath = GUI.TextField(new Rect(0, 0, 256, 32), objPath);
+        objPath = MainMenu.objectPath;
 
         GUI.Label(new Rect(0, 0, 256, 32), "Obj Path:");
         if(GUI.Button(new Rect(256, 32, 64, 32), "Load File"))

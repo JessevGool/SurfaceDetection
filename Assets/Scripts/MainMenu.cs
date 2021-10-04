@@ -6,13 +6,19 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
-    public string objectPath = "";
+    public static string objectPath = "";
 
     public void LoadObjectModel()
     {
-
-        Debug.Log("loading scene 1");
-        SceneManager.LoadScene(1);
+        if (objectPath != "")
+        {
+            Debug.Log("loading scene 1");
+            SceneManager.LoadScene(1);
+        }
+        else
+        {
+            Debug.Log("Select a objectmodel first");
+        }
 
     }
 
