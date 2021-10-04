@@ -15,6 +15,7 @@ public class RayTest : MonoBehaviour
     private bool firstScan = true;
     void Start()
     {
+        Debug.Log("starting scan");
         startScan();
     }
 

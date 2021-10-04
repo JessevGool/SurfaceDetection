@@ -11,7 +11,7 @@ public class MainMenu : MonoBehaviour
     public void LoadObjectModel()
     {
 
-
+        Debug.Log("loading scene 1");
         SceneManager.LoadScene(1);
 
     }
