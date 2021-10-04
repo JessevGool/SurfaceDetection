@@ -3,19 +3,21 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using Random = System.Random;
 
 public class RayTest : MonoBehaviour
 {
-    // Start is called before the first frame update
+
     private List<RaycastHit> hits = new List<RaycastHit>();
     private List<RoofLayer> roofLayers = new List<RoofLayer>();
     private Vector3 collision = Vector3.zero;
-    
+    private int rays = 0;
     private Vector3 rayPos;
-    
     private bool firstScan = true;
 
     public bool drawHits = false;
+    public bool drawLayers = false;
+
     public GameObject debugObject;
     public GameObject hitIndicator;
     public LayerMask rayLayer;
@@ -24,9 +26,14 @@ public class RayTest : MonoBehaviour
     public GameObject SWIND;
     public GameObject SEIND;
 
+    // Start is called before the first frame update
     void Start()
     {
         startScan();
+        
+        Debug.Log($"AMOUNT OF RAYS: {rays} \n" +
+            $"DETECTED HITS: {hits.Count} \n" +
+            $"DETECTED LAYERS: {roofLayers.Count}");
     }
 
     private void startScan()
@@ -41,6 +48,7 @@ public class RayTest : MonoBehaviour
                 //Z axis increment
                 for (float z = transform.position.z - 10f; z < transform.position.z + 10f; z += 0.01f)
                 {
+                    rays++;
                     //Set Ray origin
                     rayPos = new Vector3(x, transform.position.y, z);
 
@@ -48,13 +56,15 @@ public class RayTest : MonoBehaviour
                     if (Physics.Raycast(rayPos, Vector3.down, out hit, 10000f, rayLayer))
                     {
                         //Debug.Log($"{hit.point}");
+                        
                         hits.Add(hit);
+                        
                         //Create sphere to show hit
-                        if(drawHits)
+                        if (drawHits)
                         {
                             Instantiate(hitIndicator, hit.point, Quaternion.LookRotation(hit.normal));
                         }
-                        
+
                     }
                     debugObject.transform.position = new Vector3(x, transform.position.y, z);
 
@@ -63,6 +73,7 @@ public class RayTest : MonoBehaviour
             //was used inside update
             firstScan = !firstScan;
             createLayers(hits);
+            detectSlopes(hits);
         }
     }
 
@@ -77,7 +88,7 @@ public class RayTest : MonoBehaviour
             if (!uniqueHeights.Contains(hit.point.y))
             {
                 uniqueHeights.Add(hit.point.y);
-                
+
             }
         }
         foreach (float height in uniqueHeights)
@@ -105,7 +116,7 @@ public class RayTest : MonoBehaviour
         }
         foreach (var _layer in roofLayers)
         {
-            Debug.Log($"NE: {_layer._NE}  NW: {_layer._NW}  SE: {_layer._SE}  SW: {_layer._SW}");
+            //Debug.Log($"NE: {_layer._NE}  NW: {_layer._NW}  SE: {_layer._SE}  SW: {_layer._SW}");
 
             //Indicate layers by drawing Spheres
             if (!drawHits)
@@ -114,10 +125,50 @@ public class RayTest : MonoBehaviour
                 Instantiate(NWIND, _layer._NW, Quaternion.LookRotation(_layer._NW));
                 Instantiate(SEIND, _layer._SE, Quaternion.LookRotation(_layer._SE));
                 Instantiate(SWIND, _layer._SW, Quaternion.LookRotation(_layer._SW));
+                if (drawLayers)
+                {
+                    _layer.visualiseLayer();
+                }
             }
-           
+
 
         }
+    }
+
+    private void detectSlopes(List<RaycastHit> roofHits)
+    {
+        List<float> angles = new List<float>();
+        List<RoofLayer> angledLayers = new List<RoofLayer>();
+        foreach (var hit in roofHits)
+        {
+            var angle = Vector3.Angle(gameObject.transform.forward, hit.normal) - 90;
+            if (angle != 0)
+            {
+                if(!angles.Contains(angle))
+                {
+                    angles.Add(angle);
+                    Debug.Log("ANGLE " + angle);
+                }
+                
+
+            }
+        }
+        foreach (var angle in angles)
+        {
+            List<Vector3> angledHits = new List<Vector3>();
+            foreach (var hit in roofHits)
+            {
+                if(Vector3.Angle(gameObject.transform.forward,hit.normal) - 90 == angle)
+                {
+                    angledHits.Add(hit.point);
+                }
+            }
+            foreach (var angledHit in angledHits)
+            {
+                
+            }
+        }
+        
     }
 
     private void OnDrawGizmos()
