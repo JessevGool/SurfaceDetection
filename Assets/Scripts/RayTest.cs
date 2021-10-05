@@ -19,7 +19,7 @@ public class RayTest : MonoBehaviour
         startScan();
     }
 
-    private void startScan()
+    public void startScan()
     {
         RaycastHit hit;
         if (firstScan)
@@ -37,12 +37,12 @@ public class RayTest : MonoBehaviour
 
                     if (Physics.Raycast(rayPos, Vector3.down, out hit, 100f,rayLayer))
                     {
-                        Debug.Log($"{hit.point}");
+                        //Debug.Log($"{hit.point}");
                         hits.Add(hit);
                         //Create sphere to show hit
                         Instantiate(hitIndicator, hit.point,Quaternion.LookRotation(hit.normal));
                     }
-                    debugObject.transform.position = new Vector3(x, transform.position.y, z);
+                    //debugObject.transform.position = new Vector3(x, transform.position.y, z);
 
                 }
             }

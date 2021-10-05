@@ -24,15 +24,15 @@ public class CameraScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.mouseScrollDelta == Vector2.down)
-            Camera.main.orthographicSize += 5;
-        else if (Input.mouseScrollDelta == Vector2.up)
-            Camera.main.orthographicSize -= 5;
+        //if (Input.mouseScrollDelta == Vector2.down)
+        //    Camera.main.orthographicSize += 5;
+        //else if (Input.mouseScrollDelta == Vector2.up)
+        //    Camera.main.orthographicSize -= 5;
 
-        if (Camera.main.orthographicSize < 5)
-            Camera.main.orthographicSize = 5;
-        else if (Camera.main.orthographicSize > 200)
-            Camera.main.orthographicSize = 200;
+        //if (Camera.main.orthographicSize < 5)
+        //    Camera.main.orthographicSize = 5;
+        //else if (Camera.main.orthographicSize > 200)
+        //    Camera.main.orthographicSize = 200;
 
         // rotate left/right, up/down
         //if (Input.GetMouseButton(1))
@@ -46,13 +46,13 @@ public class CameraScript : MonoBehaviour
         if (Input.GetMouseButton(2))
         {
             //cameraHolder
-            //transform.position += new Vector3(Input.GetAxisRaw("Mouse X") * cameraMoveSpeed, 0, Input.GetAxisRaw("Mouse Y") * cameraMoveSpeed);
+            transform.position += new Vector3(Input.GetAxisRaw("Mouse X") * cameraMoveSpeed, 0, Input.GetAxisRaw("Mouse Y") * cameraMoveSpeed);
 
 
 
-            Vector3 projectVector = Vector3.ProjectOnPlane(Camera.main.transform.forward, Vector3.up);
-            transform.Translate(projectVector * Input.GetAxisRaw("Mouse Y") * -cameraMoveSpeed, Space.World);
-            transform.Translate(Camera.main.transform.right * Input.GetAxisRaw("Mouse X") * -cameraMoveSpeed, Space.World);
+            //Vector3 projectVector = Vector3.ProjectOnPlane(Camera.main.transform.forward, Vector3.up);
+            //transform.Translate(projectVector * Input.GetAxisRaw("Mouse Y") * -cameraMoveSpeed, Space.World);
+            //transform.Translate(Camera.main.transform.right * Input.GetAxisRaw("Mouse X") * -cameraMoveSpeed, Space.World);
         }
 
 

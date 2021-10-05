@@ -6,7 +6,13 @@ public class ObjFromFile : MonoBehaviour
 {
     string objPath = string.Empty;
     string error = string.Empty;
-    GameObject loadedObject;
+    public GameObject loadedObject;
+    public ApplicationMenu applicationMenu;
+
+    private void Start()
+    {
+        
+    }
 
     void OnGUI() {
         //objPath = GUI.TextField(new Rect(0, 0, 256, 32), objPath);
@@ -23,6 +29,10 @@ public class ObjFromFile : MonoBehaviour
                 if(loadedObject != null)            
                     Destroy(loadedObject);
                 loadedObject = new OBJLoader().Load(objPath);
+                loadedObject.AddComponent<MeshCollider>();
+                applicationMenu.InitializeGameObject(loadedObject);
+           //ApplicationMenu.
+                //rayTest.startScan();
                 error = string.Empty;
             }
         }
