@@ -115,7 +115,6 @@ public class RayTest : MonoBehaviour
         }
         foreach (var _layer in roofLayers)
         {
-            //Debug.Log($"NE: {_layer._NE}  NW: {_layer._NW}  SE: {_layer._SE}  SW: {_layer._SW}");
 
             //Indicate layers by drawing Spheres
             if (!drawHits)
@@ -124,6 +123,8 @@ public class RayTest : MonoBehaviour
                 Instantiate(NWIND, _layer._NW, Quaternion.LookRotation(_layer._NW));
                 Instantiate(SEIND, _layer._SE, Quaternion.LookRotation(_layer._SE));
                 Instantiate(SWIND, _layer._SW, Quaternion.LookRotation(_layer._SW));
+
+                //NOT YET IMPLEMENTED
                 if (drawLayers)
                 {
                     _layer.visualiseLayer();
@@ -142,22 +143,22 @@ public class RayTest : MonoBehaviour
         foreach (var hit in roofHits)
         {
             var angle = Vector3.Angle(gameObject.transform.forward, hit.normal) - 90;
-            var angleX = Vector3.Angle(hit.transform.up, hit.normal);//hit.transform.position);
-            angleX = Mathf.Abs(angleX - 90);
-            
-            if (angle != 0)
+            var angleX = Vector3.Angle(hit.transform.up, hit.normal);
+            //angleX = Mathf.Abs(angleX - 90);
+
+            if (angle != 0f)
             {
-                if(!angles.Contains(angle))
+                if (!angles.Contains(angle))
                 {
                     angles.Add(angle);
                 }
             }
 
             //TODO FIX THIS contains right angles but also wrong
-            if(angleX != 0 && angle == 0)
+            if (angleX != 0f && angle == 0f)
             {
                 if (!anglesX.Contains(angleX))
-                {
+                { 
                     anglesX.Add(angleX);
                 }
             }
@@ -213,7 +214,7 @@ public class RayTest : MonoBehaviour
             List<Vector3> angledHits = new List<Vector3>();
             foreach (var hit in roofHits)
             {
-                if (Mathf.Abs(Vector3.Angle(hit.transform.up, hit.transform.position) - 90 ) == angleX)
+                if (Vector3.Angle(hit.transform.up, hit.normal) == angleX)
                 {
                     angledHits.Add(hit.point);
                 }
@@ -227,20 +228,14 @@ public class RayTest : MonoBehaviour
                 if (count2 == 0)
                 {
                     test.GetComponent<Renderer>().material.color = Color.green;
-                    Debug.Log(angledHit);
-                    Debug.Log("green " + angleX);
                 }
                 else if (count2 == 1)
                 {
                     test.GetComponent<Renderer>().material.color = Color.red;
-                    Debug.Log(angledHit);
-                    Debug.Log("red " + angleX);
                 }
                 else
                 {
                     test.GetComponent<Renderer>().material.color = Color.blue;
-                    Debug.Log(angledHit);
-                    Debug.Log("blue " + angleX);
                 }
 
 
