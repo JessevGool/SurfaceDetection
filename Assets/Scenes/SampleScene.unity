@@ -174,7 +174,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 309e5841adef9644ebf8631ebfd61766, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -696,7 +696,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   drawHits: 0
   drawLayers: 0
-  debugObject: {fileID: 1645128267}
   hitIndicator: {fileID: 2551166094341738711, guid: 2f67ae39b1aecce419b8bd99809e34fd, type: 3}
   rayLayer:
     serializedVersion: 2

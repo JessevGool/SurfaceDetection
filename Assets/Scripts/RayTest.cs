@@ -18,7 +18,6 @@ public class RayTest : MonoBehaviour
     public bool drawHits = false;
     public bool drawLayers = false;
 
-    public GameObject debugObject;
     public GameObject hitIndicator;
     public LayerMask rayLayer;
     public GameObject NWIND;
@@ -66,8 +65,6 @@ public class RayTest : MonoBehaviour
                         }
 
                     }
-                    debugObject.transform.position = new Vector3(x, transform.position.y, z);
-
                 }
             }
             //was used inside update
@@ -138,46 +135,58 @@ public class RayTest : MonoBehaviour
     private void detectSlopes(List<RaycastHit> roofHits)
     {
         List<float> angles = new List<float>();
+        List<float> anglesX = new List<float>();
         List<RoofLayer> angledLayers = new List<RoofLayer>();
         foreach (var hit in roofHits)
         {
             var angle = Vector3.Angle(gameObject.transform.forward, hit.normal) - 90;
+            var angleX = Vector3.Angle(hit.transform.up, hit.transform.position);
+            angleX = Mathf.Abs(angleX - 90);
+            
             if (angle != 0)
             {
                 if(!angles.Contains(angle))
                 {
                     angles.Add(angle);
-                    Debug.Log("ANGLE " + angle);
                 }
-                
+            }
 
+            //TODO FIX THIS contains right angles but also wrong
+            if(angleX != 0 && angle == 0)
+            {
+                if (!anglesX.Contains(angleX))
+                {
+                    anglesX.Add(angleX);
+                }
             }
         }
         int count = 0;
         foreach (var angle in angles)
         {
-            if(count == 3)
+            if (count == 3)
             {
                 count = 0;
             }
             List<Vector3> angledHits = new List<Vector3>();
             foreach (var hit in roofHits)
             {
-                if(Vector3.Angle(gameObject.transform.forward,hit.normal) - 90 == angle)
+                if (Vector3.Angle(gameObject.transform.forward, hit.normal) - 90 == angle)
                 {
                     angledHits.Add(hit.point);
                 }
+
             }
             foreach (var angledHit in angledHits)
             {
                 var test = GameObject.CreatePrimitive(PrimitiveType.Sphere);
                 test.transform.position = angledHit;
                 test.transform.localScale = new Vector3(0.01f, 0.01f, 0.01f);
-                if(count == 0)
+
+                if (count == 0)
                 {
                     test.GetComponent<Renderer>().material.color = Color.green;
                 }
-                else if(count == 1)
+                else if (count == 1)
                 {
                     test.GetComponent<Renderer>().material.color = Color.red;
                 }
@@ -186,9 +195,55 @@ public class RayTest : MonoBehaviour
                     test.GetComponent<Renderer>().material.color = Color.blue;
                 }
 
-               
+
             }
             count++;
+        }
+
+        //TODO FIX THiS draws wrong and right angles
+        int count2 = 0;
+        foreach (var angleX in anglesX)
+        {
+            if (count2 == 3)
+            {
+                count2 = 0;
+            }
+            List<Vector3> angledHits = new List<Vector3>();
+            foreach (var hit in roofHits)
+            {
+                if (Mathf.Abs(Vector3.Angle(hit.transform.up, hit.transform.position) - 90 ) == angleX)
+                {
+                    angledHits.Add(hit.point);
+                }
+
+            }
+            foreach (var angledHit in angledHits)
+            {
+                var test = GameObject.CreatePrimitive(PrimitiveType.Sphere);
+                test.transform.position = angledHit;
+                test.transform.localScale = new Vector3(0.01f, 0.01f, 0.01f);
+                if (count2 == 0)
+                {
+                    test.GetComponent<Renderer>().material.color = Color.green;
+                    Debug.Log(angledHit);
+                    Debug.Log("green " + angleX);
+                }
+                else if (count2 == 1)
+                {
+                    test.GetComponent<Renderer>().material.color = Color.red;
+                    Debug.Log(angledHit);
+                    Debug.Log("red " + angleX);
+                }
+                else
+                {
+                    test.GetComponent<Renderer>().material.color = Color.blue;
+                    Debug.Log(angledHit);
+                    Debug.Log("blue " + angleX);
+                }
+
+
+            }
+            count2++;
         }
         
     }
