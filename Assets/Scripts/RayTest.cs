@@ -142,7 +142,7 @@ public class RayTest : MonoBehaviour
         foreach (var hit in roofHits)
         {
             var angle = Vector3.Angle(gameObject.transform.forward, hit.normal) - 90;
-            var angleX = Vector3.Angle(hit.transform.up, hit.transform.position);
+            var angleX = Vector3.Angle(hit.transform.up, hit.normal);//hit.transform.position);
             angleX = Mathf.Abs(angleX - 90);
             
             if (angle != 0)
