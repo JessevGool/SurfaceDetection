@@ -143,7 +143,7 @@ public class RayTest : MonoBehaviour
         foreach (var hit in roofHits)
         {
             var angle = Vector3.Angle(gameObject.transform.forward, hit.normal) - 90;
-            var angleX = Vector3.Angle(hit.transform.up, hit.normal);
+            var angleX = Vector3.Angle(hit.transform.right, hit.normal);
             //angleX = Mathf.Abs(angleX - 90);
 
             if (angle != 0f)
@@ -155,7 +155,7 @@ public class RayTest : MonoBehaviour
             }
 
             //TODO FIX THIS contains right angles but also wrong
-            if (angleX != 0f && angle == 0f)
+            if (angleX != 90f && angle == 0f)
             {
                 if (!anglesX.Contains(angleX))
                 { 
@@ -182,6 +182,7 @@ public class RayTest : MonoBehaviour
             foreach (var angledHit in angledHits)
             {
                 var test = GameObject.CreatePrimitive(PrimitiveType.Sphere);
+                test.name = angle.ToString();
                 test.transform.position = angledHit;
                 test.transform.localScale = new Vector3(0.01f, 0.01f, 0.01f);
 
@@ -214,7 +215,7 @@ public class RayTest : MonoBehaviour
             List<Vector3> angledHits = new List<Vector3>();
             foreach (var hit in roofHits)
             {
-                if (Vector3.Angle(hit.transform.up, hit.normal) == angleX)
+                if (Vector3.Angle(hit.transform.right, hit.normal) == angleX)
                 {
                     angledHits.Add(hit.point);
                 }
@@ -223,6 +224,7 @@ public class RayTest : MonoBehaviour
             foreach (var angledHit in angledHits)
             {
                 var test = GameObject.CreatePrimitive(PrimitiveType.Sphere);
+                test.name = angleX.ToString();
                 test.transform.position = angledHit;
                 test.transform.localScale = new Vector3(0.01f, 0.01f, 0.01f);
                 if (count2 == 0)
