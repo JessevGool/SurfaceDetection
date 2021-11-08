@@ -2,6 +2,9 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using Unity.Collections;
+using Unity.Jobs;
+using System.Threading;
 using UnityEngine;
 using Random = System.Random;
 
@@ -17,6 +20,7 @@ public class RayTest : MonoBehaviour
 
     public bool drawHits = false;
     public bool drawLayers = false;
+    public bool drawCorners = false;
 
     public GameObject hitIndicator;
     public LayerMask rayLayer;
@@ -37,9 +41,10 @@ public class RayTest : MonoBehaviour
 
     public void startScan()
     {
+        var results = new NativeArray<RaycastHit>(10000000, Allocator.TempJob);
+        var commands = new NativeArray<RaycastCommand>(10000000, Allocator.TempJob);
         float boundsX = gameObject.GetComponent<Renderer>().bounds.max.x;
         float boundsZ = gameObject.GetComponent<Renderer>().bounds.max.z;
-        RaycastHit hit;
         if (firstScan)
         {
             //X axis increment
@@ -48,27 +53,24 @@ public class RayTest : MonoBehaviour
                 //Z axis increment
                 for (float z = transform.position.z - boundsZ; z < transform.position.z + boundsZ; z += 0.01f)
                 {
-                    rays++;
+                    
                     //Set Ray origin
                     rayPos = new Vector3(x, transform.position.y, z);
-
-
-                    if (Physics.Raycast(rayPos, Vector3.down, out hit, 10000f, rayLayer))
-                    {
-                        //Debug.Log($"{hit.point}");
-                        hits.Add(hit);
-                        
-                        //Create sphere to show hit
-                        if (drawHits)
-                        {
-                            Instantiate(hitIndicator, hit.point, Quaternion.LookRotation(hit.normal));
-                        }
-
-                    }
-                    //debugObject.transform.position = new Vector3(x, transform.position.y, z);
-
+                    commands[rays] = new RaycastCommand(rayPos, Vector3.down, 1000f, rayLayer);
+                    rays++;
                 }
             }
+            JobHandle handle = RaycastCommand.ScheduleBatch(commands, results, 1, default(JobHandle));
+            handle.Complete();
+            foreach (var _hit in results)
+            {
+                if(_hit.collider != null)
+                {
+                    hits.Add(_hit);
+                }
+            }
+            results.Dispose();
+            commands.Dispose();
             //was used inside update
             firstScan = !firstScan;
             createLayers(hits);
@@ -119,10 +121,14 @@ public class RayTest : MonoBehaviour
             //Indicate layers by drawing Spheres
             if (!drawHits)
             {
-                Instantiate(NEIND, _layer._NE, Quaternion.LookRotation(_layer._NE));
-                Instantiate(NWIND, _layer._NW, Quaternion.LookRotation(_layer._NW));
-                Instantiate(SEIND, _layer._SE, Quaternion.LookRotation(_layer._SE));
-                Instantiate(SWIND, _layer._SW, Quaternion.LookRotation(_layer._SW));
+                if (drawCorners)
+                {
+                    Instantiate(NEIND, _layer._NE, Quaternion.LookRotation(_layer._NE));
+                    Instantiate(NWIND, _layer._NW, Quaternion.LookRotation(_layer._NW));
+                    Instantiate(SEIND, _layer._SE, Quaternion.LookRotation(_layer._SE));
+                    Instantiate(SWIND, _layer._SW, Quaternion.LookRotation(_layer._SW));
+                }
+               
 
                 //NOT YET IMPLEMENTED
                 if (drawLayers)
