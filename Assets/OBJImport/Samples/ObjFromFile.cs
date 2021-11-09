@@ -30,6 +30,29 @@ public class ObjFromFile : MonoBehaviour
                     Destroy(loadedObject);
                 loadedObject = new OBJLoader().Load(objPath);
                 loadedObject.AddComponent<MeshCollider>();
+                loadedObject.layer = LayerMask.NameToLayer("RayCast");
+                foreach (Transform childObject in loadedObject.transform)//transform)
+                {
+                    // First we get the Mesh attached to the child object
+                    Mesh mesh = childObject.gameObject.GetComponent<MeshFilter>().mesh;
+
+                    // If we've found a mesh we can use it to add a collider
+                    if (mesh != null)
+                    {
+                        // Add a new MeshCollider to the child object
+                        MeshCollider meshCollider = childObject.gameObject.AddComponent<MeshCollider>();
+
+                        childObject.gameObject.layer = LayerMask.NameToLayer("RayCast");
+                        // Finaly we set the Mesh in the MeshCollider
+                        meshCollider.sharedMesh = mesh;
+                    }
+                    else
+                    {
+                        Debug.Log("no childs found");
+                    }
+                }
+
+
                 applicationMenu.InitializeGameObject(loadedObject);
            //ApplicationMenu.
                 //rayTest.startScan();

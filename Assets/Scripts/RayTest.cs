@@ -24,19 +24,21 @@ public class RayTest : MonoBehaviour
     public GameObject NEIND;
     public GameObject SWIND;
     public GameObject SEIND;
+    public bool startScanBool = false;
 
     // Start is called before the first frame update
     void Start()
     {
-        Debug.Log("starting scan");
-        startScan();
-        Debug.Log($"AMOUNT OF RAYS: {rays} \n" +
-            $"DETECTED HITS: {hits.Count} \n" +
-            $"DETECTED LAYERS: {roofLayers.Count}");
+        //Debug.Log("starting scan");
+        //startScan();
+        //Debug.Log($"AMOUNT OF RAYS: {rays} \n" +
+        //    $"DETECTED HITS: {hits.Count} \n" +
+        //    $"DETECTED LAYERS: {roofLayers.Count}");
     }
 
     public void startScan()
     {
+        Debug.Log("starting scan");
         float boundsX = gameObject.GetComponent<Renderer>().bounds.max.x;
         float boundsZ = gameObject.GetComponent<Renderer>().bounds.max.z;
         RaycastHit hit;
@@ -255,6 +257,13 @@ public class RayTest : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        if (startScanBool)
+        {
+            startScan();
+            Debug.Log($"AMOUNT OF RAYS: {rays} \n" +
+            $"DETECTED HITS: {hits.Count} \n" +
+            $"DETECTED LAYERS: {roofLayers.Count}");
+            startScanBool = false;
+        }
     }
 }

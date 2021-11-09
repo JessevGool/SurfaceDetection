@@ -7,6 +7,8 @@ public class ApplicationMenu : MonoBehaviour
 {
 
     public GameObject objectModel;
+    
+    private RayTest rayTest;
 
     Vector3 scaleVector;
     float scale = 1.0f;
@@ -15,26 +17,29 @@ public class ApplicationMenu : MonoBehaviour
     void Start()
     {
         scaleVector = new Vector3(scale, scale, scale);
-        //string objectName = Path.GetFileNameWithoutExtension(MainMenu.objectPath);
-        //Debug.Log(objectName);
-        //objectModel = GameObject.Find("/" + objectName);
+        rayTest = FindObjectOfType<RayTest>();
 
     }
 
-    public void InitializeGameObject(GameObject gameObject)//string objectName)
+    public void InitializeGameObject(GameObject gameObject)
     {
-        objectModel = gameObject;//GameObject.Find("/" + objectName);
+        objectModel = gameObject;
         if (objectModel == null)
         {
             Debug.Log("object is null");
+        }
+        else
+        {
+            //objectModel.AddComponent<MeshCollider>();
+            objectModel.transform.Rotate(-90, 0, 0);
         }
     }
 
     public void ScaleButton()
     {
-        scale += 0.5f;
- 
+        //scale += 0.5f;
 
+        rayTest.startScanBool = true;
 
     }
 
