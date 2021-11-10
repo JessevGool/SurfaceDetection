@@ -7,6 +7,7 @@ using Unity.Jobs;
 using System.Threading;
 using UnityEngine;
 using Random = System.Random;
+using UnityEngine.UI;
 
 public class RayTest : MonoBehaviour
 {
@@ -21,41 +22,42 @@ public class RayTest : MonoBehaviour
     public bool drawHits = false;
     public bool drawLayers = false;
     public bool drawCorners = false;
+    public bool startScanBool = false;
 
+    [Range(0.01f,1f)]
+    public float scanResolution = 0.01f;
     public GameObject hitIndicator;
     public LayerMask rayLayer;
     public GameObject NWIND;
     public GameObject NEIND;
     public GameObject SWIND;
     public GameObject SEIND;
-    public bool startScanBool = false;
+    
 
     // Start is called before the first frame update
     void Start()
     {
-        //Debug.Log("starting scan");
-        //startScan();
-        //Debug.Log($"AMOUNT OF RAYS: {rays} \n" +
-        //    $"DETECTED HITS: {hits.Count} \n" +
-        //    $"DETECTED LAYERS: {roofLayers.Count}");
     }
 
     public void startScan()
     {
-        var results = new NativeArray<RaycastHit>(10000000, Allocator.TempJob);
-        var commands = new NativeArray<RaycastCommand>(10000000, Allocator.TempJob);
-        Debug.Log("starting scan");
         float boundsX = gameObject.GetComponent<Renderer>().bounds.max.x;
         float boundsZ = gameObject.GetComponent<Renderer>().bounds.max.z;
+
+        //Offset at the end is not precise, without it buffer is not sufficient
+        float requiredBuffer = ((boundsX / scanResolution) * (boundsZ / scanResolution) * 4f) * 1.01f;
+        var results = new NativeArray<RaycastHit>((int)requiredBuffer, Allocator.TempJob);
+        var commands = new NativeArray<RaycastCommand>((int)requiredBuffer, Allocator.TempJob);
+        Debug.Log("starting scan");
         if (firstScan)
         {
             //X axis increment
-            for (float x = transform.position.x - boundsX; x < transform.position.x + boundsX; x += 0.01f)
+            for (float x = transform.position.x - boundsX; x < transform.position.x + boundsX; x += scanResolution)
             {
                 //Z axis increment
-                for (float z = transform.position.z - boundsZ; z < transform.position.z + boundsZ; z += 0.01f)
+                for (float z = transform.position.z - boundsZ; z < transform.position.z + boundsZ; z += scanResolution)
                 {
-                    
+
                     //Set Ray origin
                     rayPos = new Vector3(x, transform.position.y, z);
                     commands[rays] = new RaycastCommand(rayPos, Vector3.down, 1000f, rayLayer);
@@ -66,7 +68,7 @@ public class RayTest : MonoBehaviour
             handle.Complete();
             foreach (var _hit in results)
             {
-                if(_hit.collider != null)
+                if (_hit.collider != null)
                 {
                     hits.Add(_hit);
                 }

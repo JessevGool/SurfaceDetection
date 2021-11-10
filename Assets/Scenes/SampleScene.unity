@@ -2654,6 +2654,8 @@ MonoBehaviour:
   drawHits: 0
   drawLayers: 0
   drawCorners: 1
+  startScanBool: 0
+  scanResolution: 0.015
   hitIndicator: {fileID: 2551166094341738711, guid: 2f67ae39b1aecce419b8bd99809e34fd, type: 3}
   rayLayer:
     serializedVersion: 2
@@ -2662,7 +2664,6 @@ MonoBehaviour:
   NEIND: {fileID: 7745350262690384534, guid: 2d4266045081c1145a4a0d988d13d797, type: 3}
   SWIND: {fileID: 6593485692365431424, guid: aa0d8686fb0886e4a92658b7a59ab79d, type: 3}
   SEIND: {fileID: 4333185520322367770, guid: e39cbd19c035ac34982050ea45c91afb, type: 3}
-  startScanBool: 0
 --- !u!64 &1991561841
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2734,8 +2735,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1991561839}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 5, z: 0}
-  m_LocalScale: {x: 20, y: 1, z: 20}
+  m_LocalPosition: {x: 0, y: 30, z: 0}
+  m_LocalScale: {x: 5, y: 1, z: 5}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
@@ -2813,19 +2814,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 42f520a5f61fb0e4e94ee82aafa64968, type: 3}
       propertyPath: m_LocalScale.x
-      value: 10
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 42f520a5f61fb0e4e94ee82aafa64968, type: 3}
       propertyPath: m_LocalScale.y
-      value: 10
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 42f520a5f61fb0e4e94ee82aafa64968, type: 3}
       propertyPath: m_LocalScale.z
-      value: 10
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 42f520a5f61fb0e4e94ee82aafa64968, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -107.56
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 42f520a5f61fb0e4e94ee82aafa64968, type: 3}
       propertyPath: m_LocalPosition.y
