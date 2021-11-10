@@ -17,7 +17,6 @@ public class RayTest : MonoBehaviour
     private Vector3 collision = Vector3.zero;
     private int rays = 0;
     private Vector3 rayPos;
-    private bool firstScan = true;
 
     public bool drawHits = false;
     public bool drawLayers = false;
@@ -25,14 +24,17 @@ public class RayTest : MonoBehaviour
     public bool startScanBool = false;
 
     [Range(0.01f,1f)]
-    public float scanResolution = 0.01f;
+    public float scanResolution = 0.05f;
+    [Range(0,100)]
+    public int gridSize = 100;
     public GameObject hitIndicator;
     public LayerMask rayLayer;
     public GameObject NWIND;
     public GameObject NEIND;
     public GameObject SWIND;
     public GameObject SEIND;
-    
+
+    private RaycastHit hit;
 
     // Start is called before the first frame update
     void Start()
@@ -41,45 +43,65 @@ public class RayTest : MonoBehaviour
 
     public void startScan()
     {
-        float boundsX = gameObject.GetComponent<Renderer>().bounds.max.x;
-        float boundsZ = gameObject.GetComponent<Renderer>().bounds.max.z;
+
+        float maxBoundsX = gameObject.GetComponent<Renderer>().bounds.max.x;
+        float maxBoundsZ = gameObject.GetComponent<Renderer>().bounds.max.z;
+        float minBoundsX = gameObject.GetComponent<Renderer>().bounds.min.x;
+        float minBoundsZ = gameObject.GetComponent<Renderer>().bounds.min.z;
+        float _minBoundsX = minBoundsX < 0 ? minBoundsX * -1 : minBoundsX;
+        float _minBoundsZ = minBoundsZ < 0 ? minBoundsZ * -1 : minBoundsZ;
+        float totalX = _minBoundsX + maxBoundsX;
+        float totalZ = _minBoundsZ + maxBoundsZ;
+        float incrementZ = totalZ / gridSize;
+        float incrementX = totalX / gridSize;
 
         //Offset at the end is not precise, without it buffer is not sufficient
-        float requiredBuffer = ((boundsX / scanResolution) * (boundsZ / scanResolution) * 4f) * 1.01f;
-        var results = new NativeArray<RaycastHit>((int)requiredBuffer, Allocator.TempJob);
-        var commands = new NativeArray<RaycastCommand>((int)requiredBuffer, Allocator.TempJob);
+        float requiredBuffer = (((maxBoundsX / scanResolution) * (maxBoundsZ / scanResolution) * 4f)) * 1.01f;
+        
         Debug.Log("starting scan");
-        if (firstScan)
+        for (int i = 0; i < gridSize; i++)
         {
-            //X axis increment
-            for (float x = transform.position.x - boundsX; x < transform.position.x + boundsX; x += scanResolution)
+            for (int y = 0; y < gridSize; y++)
             {
-                //Z axis increment
-                for (float z = transform.position.z - boundsZ; z < transform.position.z + boundsZ; z += scanResolution)
+                //var results = new NativeArray<RaycastHit>((int)10000000, Allocator.TempJob);
+                //var commands = new NativeArray<RaycastCommand>((int)10000000, Allocator.TempJob);
+                float startPosX = minBoundsX + incrementX * i;
+                float startPosZ = minBoundsZ + incrementZ * y;
+                for (float x = startPosX; x < startPosX + incrementX; x += scanResolution)
                 {
+                    for (float z = startPosZ; z < startPosZ + incrementZ; z += scanResolution)
+                    {
+                        //Set Ray origin
+                        //rayPos = new Vector3(x, transform.position.y, z);
+                        //commands[rays] = new RaycastCommand(rayPos, Vector3.down, 1000f, rayLayer);
+                        rayPos = new Vector3(x, transform.position.y, z);
+                        rays++;
+                        if (Physics.Raycast(rayPos, Vector3.down, out hit, 10000f, rayLayer))
+                        {
+                            
+                            hits.Add(hit);
+                        }
+                        
+                    }
 
-                    //Set Ray origin
-                    rayPos = new Vector3(x, transform.position.y, z);
-                    commands[rays] = new RaycastCommand(rayPos, Vector3.down, 1000f, rayLayer);
-                    rays++;
                 }
+                //JobHandle handle = RaycastCommand.ScheduleBatch(commands, results, 1, default(JobHandle));
+                //handle.Complete();
+                //foreach (var _hit in results)
+                //{
+                //    if (_hit.collider != null)
+                //    {
+                //        hits.Add(_hit);
+                //    }
+                //}
+                //results.Dispose();
+                //commands.Dispose();
             }
-            JobHandle handle = RaycastCommand.ScheduleBatch(commands, results, 1, default(JobHandle));
-            handle.Complete();
-            foreach (var _hit in results)
-            {
-                if (_hit.collider != null)
-                {
-                    hits.Add(_hit);
-                }
-            }
-            results.Dispose();
-            commands.Dispose();
-            //was used inside update
-            firstScan = !firstScan;
-            createLayers(hits);
-            detectSlopes(hits);
+            
+
         }
+        createLayers(hits);
+        detectSlopes(hits);
     }
 
     private void createLayers(List<RaycastHit> roofHits)
@@ -271,6 +293,7 @@ public class RayTest : MonoBehaviour
             Debug.Log($"AMOUNT OF RAYS: {rays} \n" +
             $"DETECTED HITS: {hits.Count} \n" +
             $"DETECTED LAYERS: {roofLayers.Count}");
+            hits.Clear();
             startScanBool = false;
         }
     }

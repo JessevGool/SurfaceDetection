@@ -2655,7 +2655,8 @@ MonoBehaviour:
   drawLayers: 0
   drawCorners: 1
   startScanBool: 0
-  scanResolution: 0.015
+  scanResolution: 0.05
+  gridSize: 50
   hitIndicator: {fileID: 2551166094341738711, guid: 2f67ae39b1aecce419b8bd99809e34fd, type: 3}
   rayLayer:
     serializedVersion: 2
