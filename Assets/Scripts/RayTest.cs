@@ -23,9 +23,9 @@ public class RayTest : MonoBehaviour
     public bool drawCorners = false;
     public bool startScanBool = false;
 
-    [Range(0.01f,1f)]
+    [Range(0.01f, 1f)]
     public float scanResolution = 0.05f;
-    [Range(0,100)]
+    [Range(0, 100)]
     public int gridSize = 100;
     public GameObject hitIndicator;
     public LayerMask rayLayer;
@@ -57,7 +57,7 @@ public class RayTest : MonoBehaviour
 
         //Offset at the end is not precise, without it buffer is not sufficient
         float requiredBuffer = (((maxBoundsX / scanResolution) * (maxBoundsZ / scanResolution) * 4f)) * 1.01f;
-        
+
         Debug.Log("starting scan");
         for (int i = 0; i < gridSize; i++)
         {
@@ -78,10 +78,12 @@ public class RayTest : MonoBehaviour
                         rays++;
                         if (Physics.Raycast(rayPos, Vector3.down, out hit, 10000f, rayLayer))
                         {
-                            
+
                             hits.Add(hit);
+                            
+
                         }
-                        
+
                     }
 
                 }
@@ -97,7 +99,7 @@ public class RayTest : MonoBehaviour
                 //results.Dispose();
                 //commands.Dispose();
             }
-            
+
 
         }
         createLayers(hits);
@@ -154,7 +156,7 @@ public class RayTest : MonoBehaviour
                     Instantiate(SEIND, _layer._SE, Quaternion.LookRotation(_layer._SE));
                     Instantiate(SWIND, _layer._SW, Quaternion.LookRotation(_layer._SW));
                 }
-               
+
 
                 //NOT YET IMPLEMENTED
                 if (drawLayers)
@@ -169,6 +171,7 @@ public class RayTest : MonoBehaviour
 
     private void detectSlopes(List<RaycastHit> roofHits)
     {
+        
         List<float> angles = new List<float>();
         List<float> anglesX = new List<float>();
         List<RoofLayer> angledLayers = new List<RoofLayer>();
@@ -190,7 +193,7 @@ public class RayTest : MonoBehaviour
             if (angleX != 90f && angle == 0f)
             {
                 if (!anglesX.Contains(angleX))
-                { 
+                {
                     anglesX.Add(angleX);
                 }
             }
@@ -198,7 +201,7 @@ public class RayTest : MonoBehaviour
         int count = 0;
         foreach (var angle in angles)
         {
-            if (count == 3)
+            if (count == 4)
             {
                 count = 0;
             }
@@ -226,9 +229,13 @@ public class RayTest : MonoBehaviour
                 {
                     test.GetComponent<Renderer>().material.color = Color.red;
                 }
-                else
+                else if (count == 2)
                 {
                     test.GetComponent<Renderer>().material.color = Color.blue;
+                }
+                else if (count == 3)
+                {
+                    test.GetComponent<Renderer>().material.color = Color.yellow;
                 }
 
 
@@ -240,7 +247,7 @@ public class RayTest : MonoBehaviour
         int count2 = 0;
         foreach (var angleX in anglesX)
         {
-            if (count2 == 3)
+            if (count2 == 4)
             {
                 count2 = 0;
             }
@@ -267,16 +274,20 @@ public class RayTest : MonoBehaviour
                 {
                     test.GetComponent<Renderer>().material.color = Color.red;
                 }
-                else
+                else if (count2 == 2)
                 {
                     test.GetComponent<Renderer>().material.color = Color.blue;
+                }
+                else if (count2 == 3)
+                {
+                    test.GetComponent<Renderer>().material.color = Color.yellow;
                 }
 
 
             }
             count2++;
         }
-        
+
     }
 
     private void OnDrawGizmos()
@@ -293,6 +304,10 @@ public class RayTest : MonoBehaviour
             Debug.Log($"AMOUNT OF RAYS: {rays} \n" +
             $"DETECTED HITS: {hits.Count} \n" +
             $"DETECTED LAYERS: {roofLayers.Count}");
+            if (drawHits)
+            {
+                    Instantiate(hitIndicator, hit.point, Quaternion.LookRotation(hit.normal));
+            }
             hits.Clear();
             startScanBool = false;
         }
