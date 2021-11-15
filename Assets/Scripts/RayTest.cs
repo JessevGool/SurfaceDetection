@@ -42,18 +42,18 @@ public class RayTest : MonoBehaviour
 
     public void startScan()
     {
-        var results = new NativeArray<RaycastHit>(10000000, Allocator.TempJob);
-        var commands = new NativeArray<RaycastCommand>(10000000, Allocator.TempJob);
+        var results = new NativeArray<RaycastHit>(100000000, Allocator.TempJob);
+        var commands = new NativeArray<RaycastCommand>(100000000, Allocator.TempJob);
         Debug.Log("starting scan");
         float boundsX = gameObject.GetComponent<Renderer>().bounds.max.x;
         float boundsZ = gameObject.GetComponent<Renderer>().bounds.max.z;
         if (firstScan)
         {
             //X axis increment
-            for (float x = transform.position.x - boundsX; x < transform.position.x + boundsX; x += 0.01f)
+            for (float x = transform.position.x - boundsX; x < transform.position.x + boundsX; x += 0.5f)
             {
                 //Z axis increment
-                for (float z = transform.position.z - boundsZ; z < transform.position.z + boundsZ; z += 0.01f)
+                for (float z = transform.position.z - boundsZ; z < transform.position.z + boundsZ; z += 0.5f)
                 {
                     
                     //Set Ray origin

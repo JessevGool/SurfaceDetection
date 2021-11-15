@@ -13,9 +13,22 @@ public class ApplicationMenu : MonoBehaviour
     Vector3 scaleVector;
     float scale = 1.0f;
 
+
+
+
+
+    //addSolarPanels
+    private List<Vector2> SolarPanelSizes;
+
+    private string newSolarLength;
+    private string newSolarWidth;
+
+    public GameObject addSolarPanel;
+
     // Start is called before the first frame update
     void Start()
     {
+        SolarPanelSizes = new List<Vector2>();
         scaleVector = new Vector3(scale, scale, scale);
         rayTest = FindObjectOfType<RayTest>();
 
@@ -30,12 +43,14 @@ public class ApplicationMenu : MonoBehaviour
         }
         else
         {
-            //objectModel.AddComponent<MeshCollider>();
+            //only tested for 1 pix4d object
             objectModel.transform.Rotate(-90, 0, 0);
         }
     }
 
-    public void ScaleButton()
+    #region Main
+
+    public void StartScanButton()//start scan button
     {
         //scale += 0.5f;
 
@@ -43,7 +58,77 @@ public class ApplicationMenu : MonoBehaviour
 
     }
 
+    public void AddSolarPanelButton()
+    {
+        if (addSolarPanel != null)
+        {
+            addSolarPanel.SetActive(true);
+        }
 
+    }
+
+
+    public void LoadSolarPanelPlacement()
+    {
+
+
+    }
+
+    #endregion Main
+
+
+
+
+
+    #region AddSolarSize
+    public void CancelAddSolarPanelButton()
+    {
+        EndOfSolarPanelUI();
+    }
+
+
+    public void AcceptAddSolarPanelButton()
+    {
+        Vector2 newSolarpanel = new Vector2(1, 1);
+
+        SolarPanelSizes.Add(newSolarpanel);
+
+        
+       
+
+
+        EndOfSolarPanelUI();
+    }
+
+
+
+
+    private void EndOfSolarPanelUI()
+    {
+        //forget input strings
+        newSolarLength = "";
+        newSolarWidth = "";
+
+        //hide panel
+        if (addSolarPanel != null)
+        {
+            addSolarPanel.SetActive(false);
+        }
+    }
+
+
+    //used for updating the current input
+    public void EditLengthInput(string length)
+    {
+        newSolarLength = length;
+        Debug.Log(newSolarLength.ToString());
+    }
+    public void EditWidthInput(string width)
+    {
+        newSolarWidth = width;
+        Debug.Log("width" + newSolarWidth.ToString());
+    }
+    #endregion AddSolarSize
 
     // Update is called once per frame
     void Update()
