@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ApplicationMenu : MonoBehaviour
 {
@@ -20,6 +21,10 @@ public class ApplicationMenu : MonoBehaviour
     //addSolarPanels
     private List<Vector2> SolarPanelSizes;
 
+
+    public InputField SolarLengthInputField;
+    public InputField SolarWidthInputField;
+
     private string newSolarLength;
     private string newSolarWidth;
 
@@ -31,7 +36,7 @@ public class ApplicationMenu : MonoBehaviour
         SolarPanelSizes = new List<Vector2>();
         scaleVector = new Vector3(scale, scale, scale);
         rayTest = FindObjectOfType<RayTest>();
-
+        addSolarPanel.SetActive(false);
     }
 
     public void InitializeGameObject(GameObject gameObject)
@@ -70,7 +75,17 @@ public class ApplicationMenu : MonoBehaviour
 
     public void LoadSolarPanelPlacement()
     {
-
+        int offset = 0;
+        foreach (Vector2 item in SolarPanelSizes)
+        {
+            GameObject panel = GameObject.CreatePrimitive(PrimitiveType.Cube);
+            Debug.Log("item.x: "+item.x.ToString());
+            panel.transform.localScale = new Vector3(item.x, 0.2f, item.y);
+            panel.transform.localPosition = new Vector3(0, offset, 0);
+            
+            offset += 1;
+        }
+        
 
     }
 
@@ -89,11 +104,17 @@ public class ApplicationMenu : MonoBehaviour
 
     public void AcceptAddSolarPanelButton()
     {
-        Vector2 newSolarpanel = new Vector2(1, 1);
+        float tempWidth = 0.0f;
+        float tempLength = 0.0f;
+        float.TryParse(newSolarWidth, out tempWidth);
+        float.TryParse(newSolarLength, out tempLength);
+        Debug.Log("temp length: "+ tempLength);
+        Vector2 newSolarpanel = new Vector2(tempLength, tempWidth);
 
         SolarPanelSizes.Add(newSolarpanel);
 
         
+
        
 
 
@@ -118,27 +139,27 @@ public class ApplicationMenu : MonoBehaviour
 
 
     //used for updating the current input
-    public void EditLengthInput(string length)
+    public void EditLengthInput()//string length)
     {
-        newSolarLength = length;
-        Debug.Log(newSolarLength.ToString());
+        newSolarLength = SolarLengthInputField.text;//length;
+        Debug.Log(newSolarLength);
     }
-    public void EditWidthInput(string width)
+    public void EditWidthInput()//string width)
     {
-        newSolarWidth = width;
-        Debug.Log("width" + newSolarWidth.ToString());
+        newSolarWidth = SolarWidthInputField.text;//width;
+        Debug.Log("width" + newSolarWidth);
     }
     #endregion AddSolarSize
 
     // Update is called once per frame
     void Update()
     {
-        if (objectModel != null)
-        {
+        //if (objectModel != null)
+        //{
            
 
-            objectModel.transform.localScale = scaleVector;
-        }
+        //    objectModel.transform.localScale = scaleVector;
+        //}
 
     }
 }
