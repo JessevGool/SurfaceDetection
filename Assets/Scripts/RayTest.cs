@@ -181,21 +181,72 @@ public class RayTest : MonoBehaviour
             var angleX = Vector3.Angle(hit.transform.right, hit.normal);
             //angleX = Mathf.Abs(angleX - 90);
 
+
+            bool addToAngles = false;
+
             if (angle != 0f)
             {
-                if (!angles.Contains(angle))
+                if (angles.Count > 0)
+                {
+                    foreach (float angleInList in angles)
+                    {
+                        if (angleInList + 0.005f > angle && angleInList - 0.005f < angle)
+                        {
+                            addToAngles = true;
+
+                        }
+                    }
+                }
+                else
+                {
+                    addToAngles = true;
+                    //angles.Add(angle);
+                }
+
+                if (addToAngles)
                 {
                     angles.Add(angle);
                 }
+                addToAngles = false;
+
+
+                //if (!angles.Contains(angle))
+                //{
+                //    angles.Add(angle);
+                //}
             }
 
+            bool addToAnglesX = false;
             //TODO FIX THIS contains right angles but also wrong
             if (angleX != 90f && angle == 0f)
             {
-                if (!anglesX.Contains(angleX))
+                if (anglesX.Count > 0)
+                {
+                    foreach (float angleInListX in anglesX)
+                    {
+                        if (angleInListX + 0.005f > angleX && angleInListX - 0.005f < angleX)
+                        {
+                            addToAnglesX = true;
+                        }
+                    }
+                }
+                else
+                {
+                    addToAnglesX = true;
+                }
+
+                if (addToAnglesX)
                 {
                     anglesX.Add(angleX);
                 }
+
+                addToAnglesX = false;
+
+
+                //if (!anglesX.Contains(angleX))
+                //{
+                //    anglesX.Add(angleX);
+                //}
             }
         }
         int count = 0;
@@ -219,7 +270,7 @@ public class RayTest : MonoBehaviour
                 var test = GameObject.CreatePrimitive(PrimitiveType.Sphere);
                 test.name = angle.ToString();
                 test.transform.position = angledHit;
-                test.transform.localScale = new Vector3(0.01f, 0.01f, 0.01f);
+                test.transform.localScale = new Vector3(0.1f, 0.1f, 0.1f);
 
                 if (count == 0)
                 {
@@ -265,7 +316,7 @@ public class RayTest : MonoBehaviour
                 var test = GameObject.CreatePrimitive(PrimitiveType.Sphere);
                 test.name = angleX.ToString();
                 test.transform.position = angledHit;
-                test.transform.localScale = new Vector3(0.01f, 0.01f, 0.01f);
+                test.transform.localScale = new Vector3(0.1f, 0.1f, 0.1f);
                 if (count2 == 0)
                 {
                     test.GetComponent<Renderer>().material.color = Color.green;
