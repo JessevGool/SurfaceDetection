@@ -175,48 +175,30 @@ public class RayTest : MonoBehaviour
         List<float> angles = new List<float>();
         List<float> anglesX = new List<float>();
         List<RoofLayer> angledLayers = new List<RoofLayer>();
+        List<float> _tempAngles = new List<float>();
+        List<float> _tempAnglesX = new List<float>();
         foreach (var hit in roofHits)
         {
             var angle = Vector3.Angle(gameObject.transform.forward, hit.normal) - 90;
             var angleX = Vector3.Angle(hit.transform.right, hit.normal);
-            //angleX = Mathf.Abs(angleX - 90);
-
-
-            bool addToAngles = false;
-
             if (angle != 0f)
             {
                 if (angles.Count > 0)
                 {
                     foreach (float angleInList in angles)
                     {
-                        if (angleInList + 0.005f > angle && angleInList - 0.005f < angle)
+                        if (angle > angleInList + 0.005f && angle  < angleInList - 0.005f)
                         {
-                            addToAngles = true;
+                            _tempAngles.Add(angle);
 
                         }
                     }
                 }
                 else
                 {
-                    addToAngles = true;
-                    //angles.Add(angle);
-                }
-
-                if (addToAngles)
-                {
                     angles.Add(angle);
                 }
-                addToAngles = false;
-
-
-                //if (!angles.Contains(angle))
-                //{
-                //    angles.Add(angle);
-                //}
             }
-
-            bool addToAnglesX = false;
             //TODO FIX THIS contains right angles but also wrong
             if (angleX != 90f && angle == 0f)
             {
@@ -224,31 +206,23 @@ public class RayTest : MonoBehaviour
                 {
                     foreach (float angleInListX in anglesX)
                     {
-                        if (angleInListX + 0.005f > angleX && angleInListX - 0.005f < angleX)
+                        if (angleX > angleInListX + 0.005f && angleX  < angleInListX - 0.005f)
                         {
-                            addToAnglesX = true;
+                            _tempAnglesX.Add(angleX);
                         }
                     }
                 }
                 else
                 {
-                    addToAnglesX = true;
-                }
-
-                if (addToAnglesX)
-                {
                     anglesX.Add(angleX);
                 }
-
-                addToAnglesX = false;
-
-
-                //if (!anglesX.Contains(angleX))
-                //{
-                //    anglesX.Add(angleX);
-                //}
             }
         }
+        foreach (var angle in _tempAngles)
+        {
+            angles.Add(angle);
+        }
+        _tempAngles = null;
         int count = 0;
         foreach (var angle in angles)
         {
@@ -257,9 +231,12 @@ public class RayTest : MonoBehaviour
                 count = 0;
             }
             List<Vector3> angledHits = new List<Vector3>();
+            float angleOffsetUp = angle + 0.005f;
+            float angleOffsetDown = angle - 0.005f;
             foreach (var hit in roofHits)
             {
-                if (Vector3.Angle(gameObject.transform.forward, hit.normal) - 90 == angle)
+                
+                if (Vector3.Angle(gameObject.transform.forward, hit.normal) - 90 <= angleOffsetUp + 0.005f && Vector3.Angle(gameObject.transform.forward, hit.normal) - 90 >= angleOffsetDown)
                 {
                     angledHits.Add(hit.point);
                 }
@@ -295,6 +272,11 @@ public class RayTest : MonoBehaviour
         }
 
         //TODO FIX THiS draws wrong and right angles
+        foreach (var angle in _tempAnglesX)
+        {
+            anglesX.Add(angle);
+        }
+        _tempAnglesX = null;
         int count2 = 0;
         foreach (var angleX in anglesX)
         {
@@ -303,9 +285,11 @@ public class RayTest : MonoBehaviour
                 count2 = 0;
             }
             List<Vector3> angledHits = new List<Vector3>();
+            float angleOffsetUp = angleX + 0.005f;
+            float angleOffsetDown = angleX - 0.005f;
             foreach (var hit in roofHits)
             {
-                if (Vector3.Angle(hit.transform.right, hit.normal) == angleX)
+                if (Vector3.Angle(hit.transform.right, hit.normal) <= angleOffsetUp && Vector3.Angle(hit.transform.right, hit.normal) >= angleOffsetDown)
                 {
                     angledHits.Add(hit.point);
                 }
