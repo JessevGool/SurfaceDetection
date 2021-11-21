@@ -199,6 +199,7 @@ public class RayTest : MonoBehaviour
                     angles.Add(angle);
                 }
             }
+            
             //TODO FIX THIS contains right angles but also wrong
             if (angleX != 90f && angle == 0f)
             {
@@ -224,6 +225,7 @@ public class RayTest : MonoBehaviour
         }
         _tempAngles = null;
         int count = 0;
+        angles = angles.Distinct().ToList();
         foreach (var angle in angles)
         {
             if (count == 4)
@@ -278,6 +280,7 @@ public class RayTest : MonoBehaviour
         }
         _tempAnglesX = null;
         int count2 = 0;
+        anglesX = anglesX.Distinct().ToList();
         foreach (var angleX in anglesX)
         {
             if (count2 == 4)
