@@ -12,16 +12,21 @@ using UnityEngine.UI;
 public class RayTest : MonoBehaviour
 {
 
-    private List<RaycastHit> hits = new List<RaycastHit>();
-    private List<RoofLayer> roofLayers = new List<RoofLayer>();
-    private Vector3 collision = Vector3.zero;
-    private int rays = 0;
-    private Vector3 rayPos;
+    private List<RaycastHit> _hits = new List<RaycastHit>();
+    private List<RoofLayer> _roofLayers = new List<RoofLayer>();
+    private Vector3 _collision = Vector3.zero;
+    private int _rays = 0;
+    private Vector3 _rayPos;
+    private Thread _t1;
+    private Thread _t2;
+    private bool _t1Finished = false;
+    private bool _t2Finished = false;
 
     public bool drawHits = false;
     public bool drawLayers = false;
     public bool drawCorners = false;
     public bool startScanBool = false;
+    public bool threading = false;
 
     [Range(0.01f, 1f)]
     public float scanResolution = 0.05f;
@@ -34,7 +39,7 @@ public class RayTest : MonoBehaviour
     public GameObject SWIND;
     public GameObject SEIND;
 
-    private RaycastHit hit;
+    private RaycastHit _hit;
 
     // Start is called before the first frame update
     void Start()
@@ -74,13 +79,13 @@ public class RayTest : MonoBehaviour
                         //Set Ray origin
                         //rayPos = new Vector3(x, transform.position.y, z);
                         //commands[rays] = new RaycastCommand(rayPos, Vector3.down, 1000f, rayLayer);
-                        rayPos = new Vector3(x, transform.position.y, z);
-                        rays++;
-                        if (Physics.Raycast(rayPos, Vector3.down, out hit, 10000f, rayLayer))
+                        _rayPos = new Vector3(x, transform.position.y, z);
+                        _rays++;
+                        if (Physics.Raycast(_rayPos, Vector3.down, out _hit, 10000f, rayLayer))
                         {
 
-                            hits.Add(hit);
-                            
+                            _hits.Add(_hit);
+
 
                         }
 
@@ -102,17 +107,29 @@ public class RayTest : MonoBehaviour
 
 
         }
-        createLayers(hits);
-        detectSlopes(hits);
+
+        if (threading)
+        {
+            _t1 = new Thread(createLayers);
+            _t2 = new Thread(detectSlopes);
+            _t1.Start();
+            _t2.Start();
+        }
+        else
+        {
+            createLayers();
+            detectSlopes();
+        }
+      
     }
 
-    private void createLayers(List<RaycastHit> roofHits)
+    private void createLayers()
     {
         Vector3 NE = Vector3.zero, NW = Vector3.zero, SE = Vector3.zero, SW = Vector3.zero;
         List<float> uniqueHeights = new List<float>();
         List<float> zCoords = new List<float>();
         List<float> xCoords = new List<float>();
-        foreach (var hit in roofHits)
+        foreach (var hit in _hits)
         {
             if (!uniqueHeights.Contains(hit.point.y))
             {
@@ -122,7 +139,7 @@ public class RayTest : MonoBehaviour
         }
         foreach (float height in uniqueHeights)
         {
-            foreach (var hit in roofHits)
+            foreach (var hit in _hits)
             {
                 if (hit.point.y == height)
                 {
@@ -141,9 +158,10 @@ public class RayTest : MonoBehaviour
             zCoords.Clear();
             xCoords.Clear();
             RoofLayer layer = new RoofLayer(NE, NW, SE, SW);
-            roofLayers.Add(layer);
+            _roofLayers.Add(layer);
+
         }
-        foreach (var _layer in roofLayers)
+        foreach (var _layer in _roofLayers)
         {
 
             //Indicate layers by drawing Spheres
@@ -167,27 +185,29 @@ public class RayTest : MonoBehaviour
 
 
         }
+        _t1Finished = true;
     }
 
-    private void detectSlopes(List<RaycastHit> roofHits)
+    private void detectSlopes()
     {
-        
+
         List<float> angles = new List<float>();
         List<float> anglesX = new List<float>();
         List<RoofLayer> angledLayers = new List<RoofLayer>();
         List<float> _tempAngles = new List<float>();
         List<float> _tempAnglesX = new List<float>();
-        foreach (var hit in roofHits)
+        foreach (var hit in _hits)
         {
             var angle = Vector3.Angle(gameObject.transform.forward, hit.normal) - 90;
             var angleX = Vector3.Angle(hit.transform.right, hit.normal);
+            Debug.Log($"{angle} {angleX}");
             if (angle != 0f)
             {
                 if (angles.Count > 0)
                 {
                     foreach (float angleInList in angles)
                     {
-                        if (angle > angleInList + 0.005f && angle  < angleInList - 0.005f)
+                        if (angle > angleInList + 0.005f || angle < angleInList - 0.005f)
                         {
                             _tempAngles.Add(angle);
 
@@ -199,7 +219,7 @@ public class RayTest : MonoBehaviour
                     angles.Add(angle);
                 }
             }
-            
+
             //TODO FIX THIS contains right angles but also wrong
             if (angleX != 90f && angle == 0f)
             {
@@ -207,7 +227,7 @@ public class RayTest : MonoBehaviour
                 {
                     foreach (float angleInListX in anglesX)
                     {
-                        if (angleX > angleInListX + 0.005f && angleX  < angleInListX - 0.005f)
+                        if (angleX > angleInListX + 0.005f || angleX < angleInListX - 0.005f)
                         {
                             _tempAnglesX.Add(angleX);
                         }
@@ -235,10 +255,10 @@ public class RayTest : MonoBehaviour
             List<Vector3> angledHits = new List<Vector3>();
             float angleOffsetUp = angle + 0.005f;
             float angleOffsetDown = angle - 0.005f;
-            foreach (var hit in roofHits)
+            foreach (var hit in _hits)
             {
-                
-                if (Vector3.Angle(gameObject.transform.forward, hit.normal) - 90 <= angleOffsetUp + 0.005f && Vector3.Angle(gameObject.transform.forward, hit.normal) - 90 >= angleOffsetDown)
+
+                if (Vector3.Angle(gameObject.transform.forward, hit.normal) - 90 <= angleOffsetUp && Vector3.Angle(gameObject.transform.forward, hit.normal) - 90 >= angleOffsetDown)
                 {
                     angledHits.Add(hit.point);
                 }
@@ -290,7 +310,7 @@ public class RayTest : MonoBehaviour
             List<Vector3> angledHits = new List<Vector3>();
             float angleOffsetUp = angleX + 0.005f;
             float angleOffsetDown = angleX - 0.005f;
-            foreach (var hit in roofHits)
+            foreach (var hit in _hits)
             {
                 if (Vector3.Angle(hit.transform.right, hit.normal) <= angleOffsetUp && Vector3.Angle(hit.transform.right, hit.normal) >= angleOffsetDown)
                 {
@@ -325,13 +345,13 @@ public class RayTest : MonoBehaviour
             }
             count2++;
         }
-
+        _t2Finished = true;
     }
 
     private void OnDrawGizmos()
     {
         Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(collision, 0.2f);
+        Gizmos.DrawWireSphere(_collision, 0.2f);
     }
     // Update is called once per frame
     void Update()
@@ -339,14 +359,19 @@ public class RayTest : MonoBehaviour
         if (startScanBool)
         {
             startScan();
-            Debug.Log($"AMOUNT OF RAYS: {rays} \n" +
-            $"DETECTED HITS: {hits.Count} \n" +
-            $"DETECTED LAYERS: {roofLayers.Count}");
-            if (drawHits)
+            if (_t1Finished && _t2Finished)
             {
-                    Instantiate(hitIndicator, hit.point, Quaternion.LookRotation(hit.normal));
+                Debug.Log($"AMOUNT OF RAYS: {_rays} \n" +
+                            $"DETECTED HITS: {_hits.Count} \n" +
+                            $"DETECTED LAYERS: {_roofLayers.Count}");
+                if (drawHits)
+                {
+                    Instantiate(hitIndicator, _hit.point, Quaternion.LookRotation(_hit.normal));
+                }
+                _hits.Clear();
             }
-            hits.Clear();
+
+
             startScanBool = false;
         }
     }
