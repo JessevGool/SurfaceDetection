@@ -9,6 +9,7 @@ public class CameraScript : MonoBehaviour
 
     private float cameraRotateSpeed = 2.0f;
     private float cameraMoveSpeed = 0.25f;
+    private float scrollSpeed = 10.0f;
 
     private float yaw = 0.0f;
     private float pitch = -200.0f;
@@ -74,6 +75,11 @@ public class CameraScript : MonoBehaviour
         {
             mouseButtonDown = false;
         }
+
+
+
+        //scroll
+        Camera.main.fieldOfView -= Input.GetAxis("Mouse ScrollWheel") * scrollSpeed;
     }
 }
 
