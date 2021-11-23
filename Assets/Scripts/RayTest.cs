@@ -24,6 +24,7 @@ public class RayTest : MonoBehaviour
 
     public bool drawHits = false;
     public bool drawLayers = false;
+    public bool drawAngledLayers = false;
     public bool drawCorners = false;
     public bool startScanBool = false;
     public bool threading = false;
@@ -180,8 +181,6 @@ public class RayTest : MonoBehaviour
         List<float> angles = new List<float>();
         List<float> anglesX = new List<float>();
         List<RoofLayer> angledLayers = new List<RoofLayer>();
-        List<float> _tempAngles = new List<float>();
-        List<float> _tempAnglesX = new List<float>();
         bool addtoAngles = false;
         bool addtoAnglesX = false;
         foreach (var hit in _hits)
@@ -189,7 +188,7 @@ public class RayTest : MonoBehaviour
             var angle = Vector3.Angle(gameObject.transform.forward, hit.normal) - 90;
             angle = Mathf.Round(angle * 100f) / 100f;
             var angleX = Vector3.Angle(hit.transform.right, hit.normal);
-            angleX = Mathf.Round(angle * 100f) / 100f;
+            angleX = Mathf.Round(angleX * 100f) / 100f;
             if (angle != 0f)
             {
                 if (angles.Count > 0)
@@ -199,12 +198,10 @@ public class RayTest : MonoBehaviour
                         if (angle > angleInList + 0.005f)
                         {
                             addtoAngles = true;
-                            // _tempAngles.Add(angle);
                         }
                         else if (angle < angleInList - 0.005f)
                         {
                             addtoAngles = true;
-                            //_tempAngles.Add(angle);
                         }
                         else
                         {
@@ -215,7 +212,6 @@ public class RayTest : MonoBehaviour
                 else
                 {
                     addtoAngles = true;
-                    //angles.Add(angle);
                 }
                 if (addtoAngles)
                 {
@@ -227,8 +223,6 @@ public class RayTest : MonoBehaviour
                 }
                 addtoAngles = false;
             }
-
-            //TODO FIX THIS contains right angles but also wrong
             if (angleX != 90f && angle == 0f)
             {
                 if (anglesX.Count > 0)
@@ -238,12 +232,10 @@ public class RayTest : MonoBehaviour
                         if (angleX > angleInListX + 0.005f)
                         {
                             addtoAnglesX = true;
-                            //  _tempAnglesX.Add(angleX);
                         }
                         else if (angleX < angleInListX - 0.005f)
                         {
                             addtoAnglesX = true;
-                            // _tempAnglesX.Add(angleX);
                         }
                         else
                         {
@@ -254,7 +246,6 @@ public class RayTest : MonoBehaviour
                 else
                 {
                     addtoAnglesX = true;
-                    //anglesX.Add(angleX);
                 }
                 if(addtoAnglesX)
                 {
@@ -263,14 +254,10 @@ public class RayTest : MonoBehaviour
                         anglesX.Add(angleX);
                     }
                    
-                }    
+                }
+                addtoAnglesX = false;
             }
         }
-        foreach (var angle in _tempAngles)
-        {
-            angles.Add(angle);
-        }
-        _tempAngles = null;
         int count = 0;
         angles = angles.Distinct().ToList();
         foreach (var angle in angles)
@@ -295,7 +282,7 @@ public class RayTest : MonoBehaviour
             foreach (var angledHit in angledHits)
             {
                 var test = GameObject.CreatePrimitive(PrimitiveType.Sphere);
-                test.name = angle.ToString();
+                test.name = angle.ToString() + " z";
                 test.transform.position = angledHit;
                 test.transform.localScale = new Vector3(0.1f, 0.1f, 0.1f);
                 
@@ -320,13 +307,6 @@ public class RayTest : MonoBehaviour
             }
             count++;
         }
-
-        //TODO FIX THiS draws wrong and right angles
-        foreach (var angle in _tempAnglesX)
-        {
-            anglesX.Add(angle);
-        }
-        _tempAnglesX = null;
         int count2 = 0;
         anglesX = anglesX.Distinct().ToList();
         foreach (var angleX in anglesX)
@@ -340,16 +320,21 @@ public class RayTest : MonoBehaviour
             float angleOffsetDown = angleX - 0.005f;
             foreach (var hit in _hits)
             {
-                if (Vector3.Angle(hit.transform.right, hit.normal) <= angleOffsetUp && Vector3.Angle(hit.transform.right, hit.normal) >= angleOffsetDown)
+                float test = Vector3.Angle(hit.transform.right, hit.normal);
+                if(test != 90f)
                 {
-                    angledHits.Add(hit.point);
+                    if (Vector3.Angle(hit.transform.right, hit.normal) <= angleOffsetUp && Vector3.Angle(hit.transform.right, hit.normal) >= angleOffsetDown)
+                    {
+                        angledHits.Add(hit.point);
+                    }
                 }
+                
 
             }
             foreach (var angledHit in angledHits)
             {
                 var test = GameObject.CreatePrimitive(PrimitiveType.Sphere);
-                test.name = angleX.ToString();
+                test.name = angleX.ToString() + " x";
                 test.transform.position = angledHit;
                 test.transform.localScale = new Vector3(0.1f, 0.1f, 0.1f);
                 if (count2 == 0)
