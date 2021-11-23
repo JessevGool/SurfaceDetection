@@ -114,6 +114,10 @@ public class RayTest : MonoBehaviour
     {
         Vector3 NE = Vector3.zero, NW = Vector3.zero, SE = Vector3.zero, SW = Vector3.zero;
         List<float> uniqueHeights = new List<float>();
+
+
+        Transform parentObj = new GameObject().transform;
+
         List<float> zCoords = new List<float>();
         List<float> xCoords = new List<float>();
         foreach (var hit in _hits)
@@ -121,20 +125,37 @@ public class RayTest : MonoBehaviour
             if (!uniqueHeights.Contains(hit.point.y))
             {
                 uniqueHeights.Add(hit.point.y);
-
+                
             }
         }
         foreach (float height in uniqueHeights)
         {
+            List<RaycastHit> _hitsInLayer = new List<RaycastHit>();
             foreach (var hit in _hits)
             {
                 if (hit.point.y == height)
                 {
                     zCoords.Add(hit.point.z);
                     xCoords.Add(hit.point.x);
+                    _hitsInLayer.Add(hit);
                 }
 
             }
+
+            
+            foreach (var hit in _hitsInLayer)
+            {
+                
+
+                var test = GameObject.CreatePrimitive(PrimitiveType.Sphere);
+                test.transform.position = hit.point;
+                test.transform.localScale = new Vector3(0.1f, 0.1f, 0.1f);
+                test.transform.SetParent(parentObj, false);
+                //go through each line and check if there are no gaps, gaps means there is an obstacle
+            }
+
+            parentObj = new GameObject().transform;
+
             //Set corner coords
             NE = new Vector3(xCoords.Min(), height, zCoords.Min());
             NW = new Vector3(xCoords.Max(), height, zCoords.Min());
@@ -166,6 +187,7 @@ public class RayTest : MonoBehaviour
                 //NOT YET IMPLEMENTED
                 if (drawLayers)
                 {
+                    //Instantiate(hitIndicator, hit.point, Quaternion.LookRotation(hit.normal));
                     _layer.visualiseLayer();
                 }
             }
