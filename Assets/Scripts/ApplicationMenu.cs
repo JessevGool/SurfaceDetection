@@ -49,7 +49,12 @@ public class ApplicationMenu : MonoBehaviour
         else
         {
             //only tested for 1 pix4d object
-            objectModel.transform.Rotate(-90, 0, 0);
+            //objectModel.transform.Rotate(-90, 0, 0);
+
+
+            //used for example asset
+            objectModel.transform.localScale = new Vector3(0.0008625805f, 0.0008625805f, 0.0008625805f);
+            objectModel.transform.position = new Vector3(0,0,-20);
         }
     }
 
