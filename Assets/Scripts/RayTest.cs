@@ -291,13 +291,14 @@ public class RayTest : MonoBehaviour
                 }
 
             }
+            
             foreach (var angledHit in angledHits)
             {
                 var test = GameObject.CreatePrimitive(PrimitiveType.Sphere);
                 test.name = angle.ToString();
                 test.transform.position = angledHit;
                 test.transform.localScale = new Vector3(0.1f, 0.1f, 0.1f);
-
+                
                 if (count == 0)
                 {
                     test.GetComponent<Renderer>().material.color = Color.green;
@@ -393,7 +394,10 @@ public class RayTest : MonoBehaviour
                             $"DETECTED LAYERS: {_roofLayers.Count}");
                 if (drawHits)
                 {
-                    Instantiate(hitIndicator, _hit.point, Quaternion.LookRotation(_hit.normal));
+                    foreach (var hit in _hits)
+                    {
+                        Instantiate(hitIndicator, hit.point, Quaternion.LookRotation(hit.normal));
+                    }
                 }
                 _hits.Clear();
             }
