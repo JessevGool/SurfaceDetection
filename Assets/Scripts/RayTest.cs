@@ -76,9 +76,6 @@ public class RayTest : MonoBehaviour
                 {
                     for (float z = startPosZ; z < startPosZ + incrementZ; z += scanResolution)
                     {
-                        //Set Ray origin
-                        //rayPos = new Vector3(x, transform.position.y, z);
-                        //commands[rays] = new RaycastCommand(rayPos, Vector3.down, 1000f, rayLayer);
                         _rayPos = new Vector3(x, transform.position.y, z);
                         _rays++;
                         if (Physics.Raycast(_rayPos, Vector3.down, out _hit, 10000f, rayLayer))
@@ -92,17 +89,6 @@ public class RayTest : MonoBehaviour
                     }
 
                 }
-                //JobHandle handle = RaycastCommand.ScheduleBatch(commands, results, 1, default(JobHandle));
-                //handle.Complete();
-                //foreach (var _hit in results)
-                //{
-                //    if (_hit.collider != null)
-                //    {
-                //        hits.Add(_hit);
-                //    }
-                //}
-                //results.Dispose();
-                //commands.Dispose();
             }
 
 
@@ -120,7 +106,7 @@ public class RayTest : MonoBehaviour
             createLayers();
             detectSlopes();
         }
-      
+
     }
 
     private void createLayers()
@@ -196,28 +182,50 @@ public class RayTest : MonoBehaviour
         List<RoofLayer> angledLayers = new List<RoofLayer>();
         List<float> _tempAngles = new List<float>();
         List<float> _tempAnglesX = new List<float>();
+        bool addtoAngles = false;
+        bool addtoAnglesX = false;
         foreach (var hit in _hits)
         {
             var angle = Vector3.Angle(gameObject.transform.forward, hit.normal) - 90;
+            angle = Mathf.Round(angle * 100f) / 100f;
             var angleX = Vector3.Angle(hit.transform.right, hit.normal);
-            Debug.Log($"{angle} {angleX}");
+            angleX = Mathf.Round(angle * 100f) / 100f;
             if (angle != 0f)
             {
                 if (angles.Count > 0)
                 {
                     foreach (float angleInList in angles)
                     {
-                        if (angle > angleInList + 0.005f || angle < angleInList - 0.005f)
+                        if (angle > angleInList + 0.005f)
                         {
-                            _tempAngles.Add(angle);
-
+                            addtoAngles = true;
+                            // _tempAngles.Add(angle);
+                        }
+                        else if (angle < angleInList - 0.005f)
+                        {
+                            addtoAngles = true;
+                            //_tempAngles.Add(angle);
+                        }
+                        else
+                        {
+                            addtoAngles = false;
                         }
                     }
                 }
                 else
                 {
-                    angles.Add(angle);
+                    addtoAngles = true;
+                    //angles.Add(angle);
                 }
+                if (addtoAngles)
+                {
+                    if(!angles.Contains(angle))
+                    {
+                        angles.Add(angle);
+                    }
+                    
+                }
+                addtoAngles = false;
             }
 
             //TODO FIX THIS contains right angles but also wrong
@@ -227,16 +235,35 @@ public class RayTest : MonoBehaviour
                 {
                     foreach (float angleInListX in anglesX)
                     {
-                        if (angleX > angleInListX + 0.005f || angleX < angleInListX - 0.005f)
+                        if (angleX > angleInListX + 0.005f)
                         {
-                            _tempAnglesX.Add(angleX);
+                            addtoAnglesX = true;
+                            //  _tempAnglesX.Add(angleX);
+                        }
+                        else if (angleX < angleInListX - 0.005f)
+                        {
+                            addtoAnglesX = true;
+                            // _tempAnglesX.Add(angleX);
+                        }
+                        else
+                        {
+                            addtoAnglesX = false;
                         }
                     }
                 }
                 else
                 {
-                    anglesX.Add(angleX);
+                    addtoAnglesX = true;
+                    //anglesX.Add(angleX);
                 }
+                if(addtoAnglesX)
+                {
+                    if(!anglesX.Contains(angleX))
+                    {
+                        anglesX.Add(angleX);
+                    }
+                   
+                }    
             }
         }
         foreach (var angle in _tempAngles)
