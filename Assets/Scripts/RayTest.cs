@@ -32,7 +32,7 @@ public class RayTest : MonoBehaviour
     [Range(0.01f, 1f)]
     public float scanResolution = 0.05f;
     [Range(0, 100)]
-    public int gridSize = 100;
+    public float gridSize = 100;
     public GameObject hitIndicator;
     public LayerMask rayLayer;
     public GameObject NWIND;
@@ -49,7 +49,6 @@ public class RayTest : MonoBehaviour
 
     public void startScan()
     {
-
         float maxBoundsX = gameObject.GetComponent<Renderer>().bounds.max.x;
         float maxBoundsZ = gameObject.GetComponent<Renderer>().bounds.max.z;
         float minBoundsX = gameObject.GetComponent<Renderer>().bounds.min.x;
@@ -81,18 +80,11 @@ public class RayTest : MonoBehaviour
                         _rays++;
                         if (Physics.Raycast(_rayPos, Vector3.down, out _hit, 10000f, rayLayer))
                         {
-
                             _hits.Add(_hit);
-
-
                         }
-
                     }
-
                 }
             }
-
-
         }
 
         if (threading)
@@ -237,11 +229,11 @@ public class RayTest : MonoBehaviour
                 }
                 if (addtoAngles)
                 {
-                    if(!angles.Contains(angle))
+                    if (!angles.Contains(angle))
                     {
                         angles.Add(angle);
                     }
-                    
+
                 }
                 addtoAngles = false;
             }
@@ -269,13 +261,13 @@ public class RayTest : MonoBehaviour
                 {
                     addtoAnglesX = true;
                 }
-                if(addtoAnglesX)
+                if (addtoAnglesX)
                 {
-                    if(!anglesX.Contains(angleX))
+                    if (!anglesX.Contains(angleX))
                     {
                         anglesX.Add(angleX);
                     }
-                   
+
                 }
                 addtoAnglesX = false;
             }
@@ -300,14 +292,14 @@ public class RayTest : MonoBehaviour
                 }
 
             }
-            
+
             foreach (var angledHit in angledHits)
             {
                 var test = GameObject.CreatePrimitive(PrimitiveType.Sphere);
                 test.name = angle.ToString() + " z";
                 test.transform.position = angledHit;
                 test.transform.localScale = new Vector3(0.1f, 0.1f, 0.1f);
-                
+
                 if (count == 0)
                 {
                     test.GetComponent<Renderer>().material.color = Color.green;
@@ -343,14 +335,14 @@ public class RayTest : MonoBehaviour
             foreach (var hit in _hits)
             {
                 float test = Vector3.Angle(hit.transform.right, hit.normal);
-                if(test != 90f)
+                if (test != 90f)
                 {
                     if (Vector3.Angle(hit.transform.right, hit.normal) <= angleOffsetUp && Vector3.Angle(hit.transform.right, hit.normal) >= angleOffsetDown)
                     {
                         angledHits.Add(hit.point);
                     }
                 }
-                
+
 
             }
             foreach (var angledHit in angledHits)

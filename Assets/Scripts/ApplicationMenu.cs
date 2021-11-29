@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.IO;
@@ -8,7 +9,9 @@ public class ApplicationMenu : MonoBehaviour
 {
 
     public GameObject objectModel;
-    
+    public GameObject mainMenu;
+    public GameObject settingsMenu;
+
     private RayTest rayTest;
 
     Vector3 scaleVector;
@@ -29,15 +32,19 @@ public class ApplicationMenu : MonoBehaviour
     private string newSolarWidth;
 
     public GameObject addSolarPanel;
-
+    private bool viewSettings = false;
     // Start is called before the first frame update
     void Start()
     {
+        
         SolarPanelSizes = new List<Vector2>();
         scaleVector = new Vector3(scale, scale, scale);
         rayTest = FindObjectOfType<RayTest>();
         addSolarPanel.SetActive(false);
+        initiateMenuStates();
     }
+
+   
 
     public void InitializeGameObject(GameObject gameObject)
     {
@@ -66,6 +73,27 @@ public class ApplicationMenu : MonoBehaviour
 
         rayTest.startScanBool = true;
 
+    }
+    private void initiateMenuStates()
+    {
+        for (int i = 0; i < settingsMenu.transform.childCount; i++)
+        {
+            var child = settingsMenu.transform.GetChild(i).gameObject;
+            if (child != null)
+            {
+                child.SetActive(false);
+            }
+
+        }
+        for (int i = 0; i < mainMenu.transform.childCount; i++)
+        {
+            var child = mainMenu.transform.GetChild(i).gameObject;
+            if (child != null)
+            {
+                child.SetActive(true);
+            }
+
+        }
     }
 
     public void AddSolarPanelButton()
