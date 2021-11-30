@@ -44,6 +44,15 @@ Game\+Object \mbox{\hyperlink{class_ray_test_abfec699a1845cfe89f9e781f6037f520}{
 \end{DoxyCompactItemize}
 
 
+\doxysubsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Jesse van Gool \& Maurice Brouwers 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+
+
 \doxysubsection{Member Function Documentation}
 \mbox{\Hypertarget{class_ray_test_a346eabd91992d3329255aaf3464952d8}\label{class_ray_test_a346eabd91992d3329255aaf3464952d8}} 
 \index{RayTest@{RayTest}!startScan@{startScan}}
@@ -102,7 +111,7 @@ sets the amount of grids on one of the axis min = 1 max = 100 default = 80 \mbox
 \doxysubsubsection{\texorpdfstring{hitIndicator}{hitIndicator}}
 {\footnotesize\ttfamily Game\+Object Ray\+Test.\+hit\+Indicator}
 
-\mbox{\Hypertarget{class_ray_test_aa788b824c1d631e2bd446c0353611aa4}\label{class_ray_test_aa788b824c1d631e2bd446c0353611aa4}} 
+hit\+Indicator Game\+Object used to set the object that will be drawn if draw\+Hits is true \mbox{\Hypertarget{class_ray_test_aa788b824c1d631e2bd446c0353611aa4}\label{class_ray_test_aa788b824c1d631e2bd446c0353611aa4}} 
 \index{RayTest@{RayTest}!NEIND@{NEIND}}
 \index{NEIND@{NEIND}!RayTest@{RayTest}}
 \doxysubsubsection{\texorpdfstring{NEIND}{NEIND}}
@@ -139,7 +148,7 @@ variable which sets the distance between the rays min = 0.\+01f max = 1f default
 {\footnotesize\ttfamily bool Ray\+Test.\+start\+Scan\+Bool = false}
 
 boolean variable used by another script to start the scan in the update method \begin{DoxySeeAlso}{See also}
-\#\+Update() 
+Ray\+Test\+::\+Update() 
 \end{DoxySeeAlso}
 \mbox{\Hypertarget{class_ray_test_ad40d1ea780d4bc63283e5d5d587a75d7}\label{class_ray_test_ad40d1ea780d4bc63283e5d5d587a75d7}} 
 \index{RayTest@{RayTest}!SWIND@{SWIND}}
@@ -153,6 +162,8 @@ boolean variable used by another script to start the scan in the update method \
 \doxysubsubsection{\texorpdfstring{threading}{threading}}
 {\footnotesize\ttfamily bool Ray\+Test.\+threading = false}
 
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000005}{Deprecated}}]Used for threading, can\textquotesingle{}t be used because of Unity threaading limitations \end{DoxyRefDesc}
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}

@@ -9,7 +9,8 @@ var indexSectionsWithContent =
   6: "r",
   7: "bst",
   8: "bcdjmnopt",
-  9: "ap"
+  9: "ap",
+  10: "d"
 };
 
 var indexSectionNames =
@@ -23,7 +24,8 @@ var indexSectionNames =
   6: "typedefs",
   7: "enums",
   8: "enumvalues",
-  9: "properties"
+  9: "properties",
+  10: "pages"
 };
 
 var indexSectionLabels =
@@ -37,6 +39,7 @@ var indexSectionLabels =
   6: "Typedefs",
   7: "Enumerations",
   8: "Enumerator",
-  9: "Properties"
+  9: "Properties",
+  10: "Pages"
 };
 

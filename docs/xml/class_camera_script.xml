@@ -16,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/CameraScript.cs" line="7" column="18" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/CameraScript.cs" bodystart="7" bodyend="-1"/>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/CameraScript.cs" line="10" column="18" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/CameraScript.cs" bodystart="10" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_camera_script_1aed24513073fa9bc58de1cacc28422199" prot="public" static="no" mutable="no">
         <type>float</type>
@@ -30,7 +30,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/CameraScript.cs" line="8" column="18" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/CameraScript.cs" bodystart="8" bodyend="-1"/>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/CameraScript.cs" line="11" column="18" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/CameraScript.cs" bodystart="11" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-attrib">
@@ -46,7 +46,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/CameraScript.cs" line="10" column="19" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/CameraScript.cs" bodystart="10" bodyend="-1"/>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/CameraScript.cs" line="13" column="19" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/CameraScript.cs" bodystart="13" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_camera_script_1a11e43ca1ed13d2e9021709599e0a9e88" prot="private" static="no" mutable="no">
         <type>float</type>
@@ -60,7 +60,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/CameraScript.cs" line="11" column="19" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/CameraScript.cs" bodystart="11" bodyend="-1"/>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/CameraScript.cs" line="14" column="19" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/CameraScript.cs" bodystart="14" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_camera_script_1adc4843808c4451e0bb4208088d93cf0f" prot="private" static="no" mutable="no">
         <type>float</type>
@@ -74,7 +74,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/CameraScript.cs" line="12" column="19" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/CameraScript.cs" bodystart="12" bodyend="-1"/>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/CameraScript.cs" line="15" column="19" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/CameraScript.cs" bodystart="15" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_camera_script_1a309b1bcbdda1b067a9dad18fce8ed8e4" prot="private" static="no" mutable="no">
         <type>float</type>
@@ -88,7 +88,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/CameraScript.cs" line="14" column="19" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/CameraScript.cs" bodystart="14" bodyend="-1"/>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/CameraScript.cs" line="17" column="19" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/CameraScript.cs" bodystart="17" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_camera_script_1a89560eabd35ee6f809ae1aad62c5e7dd" prot="private" static="no" mutable="no">
         <type>float</type>
@@ -102,7 +102,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/CameraScript.cs" line="15" column="19" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/CameraScript.cs" bodystart="15" bodyend="-1"/>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/CameraScript.cs" line="18" column="19" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/CameraScript.cs" bodystart="18" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_camera_script_1ac0b54d8036b93b9ac9f43c7f7d2bb920" prot="private" static="no" mutable="no">
         <type>bool</type>
@@ -116,7 +116,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/CameraScript.cs" line="17" column="18" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/CameraScript.cs" bodystart="17" bodyend="-1"/>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/CameraScript.cs" line="20" column="18" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/CameraScript.cs" bodystart="20" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-func">
@@ -131,7 +131,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/CameraScript.cs" line="20" column="10" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/CameraScript.cs" bodystart="20" bodyend="22"/>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/CameraScript.cs" line="23" column="10" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/CameraScript.cs" bodystart="23" bodyend="25"/>
       </memberdef>
       <memberdef kind="function" id="class_camera_script_1a292a7b3c52fd201f42e5b0f25c7b4d2d" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -144,12 +144,17 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/CameraScript.cs" line="25" column="10" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/CameraScript.cs" bodystart="25" bodyend="61"/>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/CameraScript.cs" line="28" column="10" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/CameraScript.cs" bodystart="28" bodyend="64"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
+<para><simplesect kind="author"><para>Jesse van Gool &amp; Maurice Brouwers </para>
+</simplesect>
+<simplesect kind="version"><para>1.0 </para>
+</simplesect>
+</para>
     </detaileddescription>
     <inheritancegraph>
       <node id="1">
@@ -173,7 +178,7 @@
         <label>MonoBehaviour</label>
       </node>
     </collaborationgraph>
-    <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/CameraScript.cs" line="5" column="7" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/CameraScript.cs" bodystart="6" bodyend="62"/>
+    <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/CameraScript.cs" line="8" column="7" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/CameraScript.cs" bodystart="9" bodyend="65"/>
     <listofallmembers>
       <member refid="class_camera_script_1a11e43ca1ed13d2e9021709599e0a9e88" prot="private" virt="non-virtual"><scope>CameraScript</scope><name>cameraMoveSpeed</name></member>
       <member refid="class_camera_script_1a3a3120a4a7a1e87cca30071873d0bcb0" prot="private" virt="non-virtual"><scope>CameraScript</scope><name>cameraRotateSpeed</name></member>

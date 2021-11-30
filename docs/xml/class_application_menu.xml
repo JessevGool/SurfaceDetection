@@ -15,7 +15,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" line="11" column="23" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" bodystart="11" bodyend="-1"/>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" line="15" column="23" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" bodystart="15" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_application_menu_1af466236025af2dc875c6c4f6d90e376d" prot="public" static="no" mutable="no">
         <type>GameObject</type>
@@ -25,10 +25,11 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
+<para>parent object used for the main menu </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" line="12" column="23" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" bodystart="12" bodyend="-1"/>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" line="19" column="23" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" bodystart="19" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_application_menu_1a47b67bf9647c207ebec3fb994481a131" prot="public" static="no" mutable="no">
         <type>GameObject</type>
@@ -38,10 +39,11 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
+<para>parent object used for the settings menu </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" line="13" column="23" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" bodystart="13" bodyend="-1"/>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" line="23" column="23" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" bodystart="23" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_application_menu_1aae661ec1e88777acc697ccd9012d4d3e" prot="public" static="no" mutable="no">
         <type>InputField</type>
@@ -54,7 +56,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" line="28" column="23" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" bodystart="28" bodyend="-1"/>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" line="40" column="23" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" bodystart="40" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_application_menu_1a74156c8015e2f58db16e456b7ba6a808" prot="public" static="no" mutable="no">
         <type>InputField</type>
@@ -67,7 +69,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" line="29" column="23" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" bodystart="29" bodyend="-1"/>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" line="41" column="23" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" bodystart="41" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_application_menu_1a6361d5751c0fdc854d71bdf9a1b7e7f7" prot="public" static="no" mutable="no">
         <type>GameObject</type>
@@ -80,7 +82,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" line="34" column="23" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" bodystart="34" bodyend="-1"/>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" line="46" column="23" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" bodystart="46" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-attrib">
@@ -92,10 +94,11 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
+<para>Instance of the <ref refid="class_ray_test" kindref="compound">RayTest</ref> class used to switch a parameter on button click </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" line="15" column="21" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" bodystart="15" bodyend="-1"/>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" line="27" column="21" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" bodystart="27" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_application_menu_1a7ead50df41326d13968909481a789fc5" prot="private" static="no" mutable="no">
         <type>Vector3</type>
@@ -108,7 +111,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" line="17" column="13" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" bodystart="17" bodyend="-1"/>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" line="29" column="13" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" bodystart="29" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_application_menu_1ae506402020bd07ec1b9dc39d0d5814e0" prot="private" static="no" mutable="no">
         <type>float</type>
@@ -122,7 +125,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" line="18" column="11" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" bodystart="18" bodyend="-1"/>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" line="30" column="11" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" bodystart="30" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_application_menu_1a55c7eb529a1f9f6087f4918ab4426c6f" prot="private" static="no" mutable="no">
         <type>List&lt; Vector2 &gt;</type>
@@ -135,7 +138,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" line="25" column="18" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" bodystart="25" bodyend="-1"/>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" line="37" column="18" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" bodystart="37" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_application_menu_1a7362b4e7813e62cdfe490ef211ca85c3" prot="private" static="no" mutable="no">
         <type>string</type>
@@ -148,7 +151,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" line="31" column="20" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" bodystart="31" bodyend="-1"/>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" line="43" column="20" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" bodystart="43" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_application_menu_1a403c2a278e41eda50758dd9e66e9e333" prot="private" static="no" mutable="no">
         <type>string</type>
@@ -161,7 +164,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" line="32" column="20" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" bodystart="32" bodyend="-1"/>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" line="44" column="20" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" bodystart="44" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_application_menu_1aff45cd83670b34acc3c75c9b9726735e" prot="private" static="no" mutable="no">
         <type>bool</type>
@@ -175,7 +178,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" line="35" column="18" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" bodystart="35" bodyend="-1"/>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" line="47" column="18" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" bodystart="47" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-func">
@@ -190,7 +193,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" line="37" column="10" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" bodystart="37" bodyend="45"/>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" line="49" column="10" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" bodystart="49" bodyend="57"/>
       </memberdef>
       <memberdef kind="function" id="class_application_menu_1a148bff968a10051e040e115a986d7a12" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -200,10 +203,11 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
+<para>Method responsible for initiating the menu in the default config </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" line="77" column="18" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" bodystart="77" bodyend="97"/>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" line="98" column="18" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" bodystart="98" bodyend="118"/>
       </memberdef>
       <memberdef kind="function" id="class_application_menu_1a881f4b9ebfd0a0263fcef16c9403057f" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -216,7 +220,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" line="160" column="18" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" bodystart="160" bodyend="171"/>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" line="181" column="18" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" bodystart="181" bodyend="192"/>
       </memberdef>
       <memberdef kind="function" id="class_application_menu_1a582777910578ad300a35ad7eccfee748" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -229,7 +233,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" line="188" column="10" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" bodystart="188" bodyend="197"/>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" line="209" column="10" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" bodystart="209" bodyend="218"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -245,10 +249,20 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
+<para>Method used to initialize a gameObject based on the parameter <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>gameObject</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" line="49" column="17" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" bodystart="49" bodyend="66"/>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" line="64" column="17" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" bodystart="64" bodyend="81"/>
       </memberdef>
       <memberdef kind="function" id="class_application_menu_1ae67b5e866d767e1b06914821dd3af1a9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -258,10 +272,13 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
+<para>Button method responsible for switching the startScanBool in the rayTest class. <simplesect kind="see"><para><ref refid="class_ray_test" kindref="compound">RayTest</ref> </para>
+</simplesect>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" line="70" column="17" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" bodystart="70" bodyend="76"/>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" line="88" column="17" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" bodystart="88" bodyend="94"/>
       </memberdef>
       <memberdef kind="function" id="class_application_menu_1a3a72937dfab340348b2731bc069cc6fb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -274,7 +291,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" line="99" column="17" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" bodystart="99" bodyend="106"/>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" line="120" column="17" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" bodystart="120" bodyend="127"/>
       </memberdef>
       <memberdef kind="function" id="class_application_menu_1a2281c723cd099888076b9cbca2cc3baa" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -287,7 +304,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" line="109" column="17" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" bodystart="109" bodyend="123"/>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" line="130" column="17" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" bodystart="130" bodyend="144"/>
       </memberdef>
       <memberdef kind="function" id="class_application_menu_1a8a6bf03741617e77e1d6c85683a7b3eb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -300,7 +317,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" line="132" column="17" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" bodystart="132" bodyend="135"/>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" line="153" column="17" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" bodystart="153" bodyend="156"/>
       </memberdef>
       <memberdef kind="function" id="class_application_menu_1a1bc3c574b9209a3b9d7351b2cc29ade6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -313,7 +330,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" line="138" column="17" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" bodystart="138" bodyend="155"/>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" line="159" column="17" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" bodystart="159" bodyend="176"/>
       </memberdef>
       <memberdef kind="function" id="class_application_menu_1a982eb6e77ae09f789f58e4401fffa541" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -326,7 +343,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" line="175" column="17" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" bodystart="175" bodyend="179"/>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" line="196" column="17" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" bodystart="196" bodyend="200"/>
       </memberdef>
       <memberdef kind="function" id="class_application_menu_1a630458b366405c26353119d8a7965bcb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -339,12 +356,17 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" line="180" column="17" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" bodystart="180" bodyend="184"/>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" line="201" column="17" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" bodystart="201" bodyend="205"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
+<para><simplesect kind="author"><para>Jesse van Gool &amp; Maurice Brouwers </para>
+</simplesect>
+<simplesect kind="version"><para>1.0 </para>
+</simplesect>
+</para>
     </detaileddescription>
     <inheritancegraph>
       <node id="1">
@@ -368,7 +390,7 @@
         <label>MonoBehaviour</label>
       </node>
     </collaborationgraph>
-    <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" line="8" column="7" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" bodystart="9" bodyend="198"/>
+    <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" line="12" column="7" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" bodystart="13" bodyend="219"/>
     <listofallmembers>
       <member refid="class_application_menu_1a1bc3c574b9209a3b9d7351b2cc29ade6" prot="public" virt="non-virtual"><scope>ApplicationMenu</scope><name>AcceptAddSolarPanelButton</name></member>
       <member refid="class_application_menu_1a6361d5751c0fdc854d71bdf9a1b7e7f7" prot="public" virt="non-virtual"><scope>ApplicationMenu</scope><name>addSolarPanel</name></member>

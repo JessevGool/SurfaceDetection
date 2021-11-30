@@ -9,6 +9,10 @@ using UnityEngine;
 using Random = System.Random;
 using UnityEngine.UI;
 
+/**
+ * @author Jesse van Gool & Maurice Brouwers
+ * @version 1.0
+ */
 public class RayTest : MonoBehaviour
 {
     /**
@@ -26,9 +30,23 @@ public class RayTest : MonoBehaviour
      * Variable containing the position of the next ray origin position
      */
     private Vector3 _rayPos;
+    /**
+     * @deprecated Used for threading, can't be used because of Unity threading limitations
+     */
     private Thread _t1;
+    /**
+  * @deprecated Used for threading, can't be used because of Unity threading limitations
+  */
     private Thread _t2;
+    /**
+  * @deprecated Used for threading, can't be used because of Unity threading limitations
+  * Is still used to switch a bool after finding layers
+  */
     private bool _t1Finished = false;
+    /**
+  * @deprecated Used for threading, can't be used because of Unity threading limitations
+  * Is still used to switch a bool after finding layers
+  */
     private bool _t2Finished = false;
 
     /**
@@ -55,9 +73,12 @@ public class RayTest : MonoBehaviour
     public bool drawCorners = false;
     /**
      * boolean variable used by another script to start the scan in the update method
-     * @see #Update()
+     * @see RayTest#Update()
      */
     public bool startScanBool = false;
+    /**
+  * @deprecated Used for threading, can't be used because of Unity threaading limitations
+  */
     public bool threading = false;
 
 
@@ -77,6 +98,9 @@ public class RayTest : MonoBehaviour
      */
     [Range(1, 100)]
     public float gridSize = 80;
+    /**
+     * hitIndicator GameObject used to set the object that will be drawn if drawHits is true
+     */
     public GameObject hitIndicator;
     public LayerMask rayLayer;
     public GameObject NWIND;

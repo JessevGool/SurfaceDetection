@@ -407,6 +407,8 @@
   </compound>
   <compound refid="_slider_value_to_text_8cs" kind="file"><name>SliderValueToText.cs</name>
   </compound>
+  <compound refid="deprecated" kind="page"><name>deprecated</name>
+  </compound>
   <compound refid="dir_e471cf9031a3cb5a5bea8eb518550e10" kind="dir"><name>H:/Code/Unity/SurfaceDetection/Assets</name>
   </compound>
   <compound refid="dir_23fdee2f6995db16c755697cdf620cf4" kind="dir"><name>H:/Code</name>
