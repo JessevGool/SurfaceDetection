@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
+  <compounddef id="dir_e471cf9031a3cb5a5bea8eb518550e10" kind="dir">
+    <compoundname>H:/Code/Unity/SurfaceDetection/Assets</compoundname>
+    <innerdir refid="dir_e478da333691f8fa1f43f16a2d7ee12a">H:/Code/Unity/SurfaceDetection/Assets/OBJImport</innerdir>
+    <innerdir refid="dir_19810f73140a6b31b74d30c6a5ed84f4">H:/Code/Unity/SurfaceDetection/Assets/Scripts</innerdir>
+    <innerfile refid="button_handler_8cs">buttonHandler.cs</innerfile>
+    <innerfile refid="_slider_value_to_text_8cs">SliderValueToText.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="H:/Code/Unity/SurfaceDetection/Assets/"/>
+  </compounddef>
+</doxygen>

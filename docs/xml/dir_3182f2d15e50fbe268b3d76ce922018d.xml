@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
+  <compounddef id="dir_3182f2d15e50fbe268b3d76ce922018d" kind="dir">
+    <compoundname>H:/Code/Unity/SurfaceDetection/Assets/OBJImport/Samples</compoundname>
+    <innerfile refid="_obj_from_file_8cs">ObjFromFile.cs</innerfile>
+    <innerfile refid="_obj_from_stream_8cs">ObjFromStream.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/Samples/"/>
+  </compounddef>
+</doxygen>

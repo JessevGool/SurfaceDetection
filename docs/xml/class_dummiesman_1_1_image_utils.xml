@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
+  <compounddef id="class_dummiesman_1_1_image_utils" kind="class" language="C#" prot="public">
+    <compoundname>Dummiesman::ImageUtils</compoundname>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_dummiesman_1_1_image_utils_1ab90aef7ac2ab3fbd783e240de74040b7" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Texture2D</type>
+        <definition>static Texture2D Dummiesman.ImageUtils.ConvertToNormalMap</definition>
+        <argsstring>(Texture2D tex)</argsstring>
+        <name>ConvertToNormalMap</name>
+        <param>
+          <type>Texture2D</type>
+          <declname>tex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/TextureLoader/ImageUtils.cs" line="9" column="33" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/TextureLoader/ImageUtils.cs" bodystart="9" bodyend="31"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/TextureLoader/ImageUtils.cs" line="7" column="19" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/TextureLoader/ImageUtils.cs" bodystart="8" bodyend="33"/>
+    <listofallmembers>
+      <member refid="class_dummiesman_1_1_image_utils_1ab90aef7ac2ab3fbd783e240de74040b7" prot="public" virt="non-virtual"><scope>Dummiesman::ImageUtils</scope><name>ConvertToNormalMap</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

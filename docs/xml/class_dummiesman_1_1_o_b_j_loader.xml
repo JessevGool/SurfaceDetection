@@ -1,0 +1,290 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
+  <compounddef id="class_dummiesman_1_1_o_b_j_loader" kind="class" language="C#" prot="public">
+    <compoundname>Dummiesman::OBJLoader</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_dummiesman_1_1_o_b_j_loader_1ac3359ce8c0dc1a9333336741d098200e" prot="public" static="no" mutable="no">
+        <type><ref refid="namespace_dummiesman_1a61c2576ddaaa8bc5a94dd4e53c48f917" kindref="member">SplitMode</ref></type>
+        <definition>SplitMode Dummiesman.OBJLoader.SplitMode</definition>
+        <argsstring></argsstring>
+        <name>SplitMode</name>
+        <initializer>= <ref refid="namespace_dummiesman_1a61c2576ddaaa8bc5a94dd4e53c48f917a497031794414a552435f90151ac3b54b" kindref="member">SplitMode.Object</ref></initializer>
+        <briefdescription>
+<para>Determines how objects will be created </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/OBJLoader.cs" line="38" column="26" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/OBJLoader.cs" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="package-attrib">
+      <memberdef kind="variable" id="class_dummiesman_1_1_o_b_j_loader_1afa27a0248ef3927d2e5e08ac7e021cf1" prot="package" static="no" mutable="no">
+        <type>List&lt; Vector3 &gt;</type>
+        <definition>List&lt;Vector3&gt; Dummiesman.OBJLoader.Vertices</definition>
+        <argsstring></argsstring>
+        <name>Vertices</name>
+        <initializer>= new List&lt;Vector3&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/OBJLoader.cs" line="41" column="23" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/OBJLoader.cs" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_dummiesman_1_1_o_b_j_loader_1aae6e81a7001dae009e7d8c31e1cebd88" prot="package" static="no" mutable="no">
+        <type>List&lt; Vector3 &gt;</type>
+        <definition>List&lt;Vector3&gt; Dummiesman.OBJLoader.Normals</definition>
+        <argsstring></argsstring>
+        <name>Normals</name>
+        <initializer>= new List&lt;Vector3&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/OBJLoader.cs" line="42" column="23" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/OBJLoader.cs" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_dummiesman_1_1_o_b_j_loader_1abf44163768554ba7c21ab3cf555adc87" prot="package" static="no" mutable="no">
+        <type>List&lt; Vector2 &gt;</type>
+        <definition>List&lt;Vector2&gt; Dummiesman.OBJLoader.UVs</definition>
+        <argsstring></argsstring>
+        <name>UVs</name>
+        <initializer>= new List&lt;Vector2&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/OBJLoader.cs" line="43" column="23" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/OBJLoader.cs" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_dummiesman_1_1_o_b_j_loader_1a44323899d54006009f38371ee5cff529" prot="package" static="no" mutable="no">
+        <type>Dictionary&lt; string, Material &gt;</type>
+        <definition>Dictionary&lt;string, Material&gt; Dummiesman.OBJLoader.Materials</definition>
+        <argsstring></argsstring>
+        <name>Materials</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/OBJLoader.cs" line="46" column="29" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/OBJLoader.cs" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_dummiesman_1_1_o_b_j_loader_1a5050cb2c5507b7e3d6103e5e4dbed78c" prot="private" static="no" mutable="no">
+        <type>FileInfo</type>
+        <definition>FileInfo Dummiesman.OBJLoader._objInfo</definition>
+        <argsstring></argsstring>
+        <name>_objInfo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/OBJLoader.cs" line="49" column="26" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/OBJLoader.cs" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_dummiesman_1_1_o_b_j_loader_1a6ac00c0bdebcab2c01096df9e503c6fb" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Dummiesman.OBJLoader.LoadMaterialLibrary</definition>
+        <argsstring>(string mtlLibPath)</argsstring>
+        <name>LoadMaterialLibrary</name>
+        <param>
+          <type>string</type>
+          <declname>mtlLibPath</declname>
+        </param>
+        <briefdescription>
+<para>Helper function to load mtllib statements </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>mtlLibPath</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/OBJLoader.cs" line="77" column="22" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/OBJLoader.cs" bodystart="77" bodyend="93"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_dummiesman_1_1_o_b_j_loader_1a94b237348e6d5a1b73be7cc0669f9b7f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>GameObject</type>
+        <definition>GameObject Dummiesman.OBJLoader.Load</definition>
+        <argsstring>(Stream input)</argsstring>
+        <name>Load</name>
+        <param>
+          <type>Stream</type>
+          <declname>input</declname>
+        </param>
+        <briefdescription>
+<para>Load an OBJ file from a stream. No materials will be loaded, and will instead be supplemented by a blank white material. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>input</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Input OBJ stream</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Returns a GameObject represeting the OBJ file, with each imported object as a child.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/OBJLoader.cs" line="100" column="27" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/OBJLoader.cs" bodystart="100" bodyend="279"/>
+      </memberdef>
+      <memberdef kind="function" id="class_dummiesman_1_1_o_b_j_loader_1af243d1d0ff7de7712a48d0cdb3cda444" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>GameObject</type>
+        <definition>GameObject Dummiesman.OBJLoader.Load</definition>
+        <argsstring>(Stream input, Stream mtlInput)</argsstring>
+        <name>Load</name>
+        <param>
+          <type>Stream</type>
+          <declname>input</declname>
+        </param>
+        <param>
+          <type>Stream</type>
+          <declname>mtlInput</declname>
+        </param>
+        <briefdescription>
+<para>Load an OBJ and MTL file from a stream. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>input</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Input OBJ stream</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+/// <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>mtlInput</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Input MTL stream</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Returns a GameObject represeting the OBJ file, with each imported object as a child.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/OBJLoader.cs" line="287" column="27" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/OBJLoader.cs" bodystart="287" bodyend="293"/>
+      </memberdef>
+      <memberdef kind="function" id="class_dummiesman_1_1_o_b_j_loader_1ab1746d7c5bd93642bd1b580e5abfe79f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>GameObject</type>
+        <definition>GameObject Dummiesman.OBJLoader.Load</definition>
+        <argsstring>(string path, string mtlPath)</argsstring>
+        <name>Load</name>
+        <param>
+          <type>string</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>mtlPath</declname>
+        </param>
+        <briefdescription>
+<para>Load an OBJ and MTL file from a file path. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Input OBJ path</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+/// <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>mtlPath</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Input MTL path</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Returns a GameObject represeting the OBJ file, with each imported object as a child.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/OBJLoader.cs" line="301" column="27" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/OBJLoader.cs" bodystart="301" bodyend="321"/>
+      </memberdef>
+      <memberdef kind="function" id="class_dummiesman_1_1_o_b_j_loader_1ad5e07fb04a72f87ccd40ac621c3468fc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>GameObject</type>
+        <definition>GameObject Dummiesman.OBJLoader.Load</definition>
+        <argsstring>(string path)</argsstring>
+        <name>Load</name>
+        <param>
+          <type>string</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+<para>Load an OBJ file from a file path. This function will also attempt to load the MTL defined in the OBJ file. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Input OBJ path</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Returns a GameObject represeting the OBJ file, with each imported object as a child.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/OBJLoader.cs" line="328" column="27" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/OBJLoader.cs" bodystart="328" bodyend="331"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/OBJLoader.cs" line="32" column="11" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/OBJLoader.cs" bodystart="33" bodyend="332"/>
+    <listofallmembers>
+      <member refid="class_dummiesman_1_1_o_b_j_loader_1a5050cb2c5507b7e3d6103e5e4dbed78c" prot="private" virt="non-virtual"><scope>Dummiesman::OBJLoader</scope><name>_objInfo</name></member>
+      <member refid="class_dummiesman_1_1_o_b_j_loader_1a94b237348e6d5a1b73be7cc0669f9b7f" prot="public" virt="non-virtual"><scope>Dummiesman::OBJLoader</scope><name>Load</name></member>
+      <member refid="class_dummiesman_1_1_o_b_j_loader_1af243d1d0ff7de7712a48d0cdb3cda444" prot="public" virt="non-virtual"><scope>Dummiesman::OBJLoader</scope><name>Load</name></member>
+      <member refid="class_dummiesman_1_1_o_b_j_loader_1ab1746d7c5bd93642bd1b580e5abfe79f" prot="public" virt="non-virtual"><scope>Dummiesman::OBJLoader</scope><name>Load</name></member>
+      <member refid="class_dummiesman_1_1_o_b_j_loader_1ad5e07fb04a72f87ccd40ac621c3468fc" prot="public" virt="non-virtual"><scope>Dummiesman::OBJLoader</scope><name>Load</name></member>
+      <member refid="class_dummiesman_1_1_o_b_j_loader_1a6ac00c0bdebcab2c01096df9e503c6fb" prot="private" virt="non-virtual"><scope>Dummiesman::OBJLoader</scope><name>LoadMaterialLibrary</name></member>
+      <member refid="class_dummiesman_1_1_o_b_j_loader_1a44323899d54006009f38371ee5cff529" prot="package" virt="non-virtual"><scope>Dummiesman::OBJLoader</scope><name>Materials</name></member>
+      <member refid="class_dummiesman_1_1_o_b_j_loader_1aae6e81a7001dae009e7d8c31e1cebd88" prot="package" virt="non-virtual"><scope>Dummiesman::OBJLoader</scope><name>Normals</name></member>
+      <member refid="class_dummiesman_1_1_o_b_j_loader_1ac3359ce8c0dc1a9333336741d098200e" prot="public" virt="non-virtual"><scope>Dummiesman::OBJLoader</scope><name>SplitMode</name></member>
+      <member refid="class_dummiesman_1_1_o_b_j_loader_1abf44163768554ba7c21ab3cf555adc87" prot="package" virt="non-virtual"><scope>Dummiesman::OBJLoader</scope><name>UVs</name></member>
+      <member refid="class_dummiesman_1_1_o_b_j_loader_1afa27a0248ef3927d2e5e08ac7e021cf1" prot="package" virt="non-virtual"><scope>Dummiesman::OBJLoader</scope><name>Vertices</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

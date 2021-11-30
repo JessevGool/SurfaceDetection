@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
+  <compounddef id="struct_b83_1_1_image_1_1_b_m_p_1_1_b_m_p_file_header" kind="struct" language="C#" prot="public">
+    <compoundname>B83::Image::BMP::BMPFileHeader</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_b83_1_1_image_1_1_b_m_p_1_1_b_m_p_file_header_1af374d1eb6da1e99817a490f4600b4611" prot="public" static="no" mutable="no">
+        <type>ushort</type>
+        <definition>ushort B83.Image.BMP.BMPFileHeader.magic</definition>
+        <argsstring></argsstring>
+        <name>magic</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/TextureLoader/BMPLoader.cs" line="74" column="23" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/TextureLoader/BMPLoader.cs" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_b83_1_1_image_1_1_b_m_p_1_1_b_m_p_file_header_1ac75785e841c5bf932b48053288877cbe" prot="public" static="no" mutable="no">
+        <type>uint</type>
+        <definition>uint B83.Image.BMP.BMPFileHeader.filesize</definition>
+        <argsstring></argsstring>
+        <name>filesize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/TextureLoader/BMPLoader.cs" line="75" column="21" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/TextureLoader/BMPLoader.cs" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_b83_1_1_image_1_1_b_m_p_1_1_b_m_p_file_header_1a33054284fd28720df463f9583866fedd" prot="public" static="no" mutable="no">
+        <type>uint</type>
+        <definition>uint B83.Image.BMP.BMPFileHeader.reserved</definition>
+        <argsstring></argsstring>
+        <name>reserved</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/TextureLoader/BMPLoader.cs" line="76" column="21" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/TextureLoader/BMPLoader.cs" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_b83_1_1_image_1_1_b_m_p_1_1_b_m_p_file_header_1a684df693d3fa017cd7717f599ff36736" prot="public" static="no" mutable="no">
+        <type>uint</type>
+        <definition>uint B83.Image.BMP.BMPFileHeader.offset</definition>
+        <argsstring></argsstring>
+        <name>offset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/TextureLoader/BMPLoader.cs" line="77" column="21" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/TextureLoader/BMPLoader.cs" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/TextureLoader/BMPLoader.cs" line="72" column="11" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/TextureLoader/BMPLoader.cs" bodystart="73" bodyend="78"/>
+    <listofallmembers>
+      <member refid="struct_b83_1_1_image_1_1_b_m_p_1_1_b_m_p_file_header_1ac75785e841c5bf932b48053288877cbe" prot="public" virt="non-virtual"><scope>B83::Image::BMP::BMPFileHeader</scope><name>filesize</name></member>
+      <member refid="struct_b83_1_1_image_1_1_b_m_p_1_1_b_m_p_file_header_1af374d1eb6da1e99817a490f4600b4611" prot="public" virt="non-virtual"><scope>B83::Image::BMP::BMPFileHeader</scope><name>magic</name></member>
+      <member refid="struct_b83_1_1_image_1_1_b_m_p_1_1_b_m_p_file_header_1a684df693d3fa017cd7717f599ff36736" prot="public" virt="non-virtual"><scope>B83::Image::BMP::BMPFileHeader</scope><name>offset</name></member>
+      <member refid="struct_b83_1_1_image_1_1_b_m_p_1_1_b_m_p_file_header_1a33054284fd28720df463f9583866fedd" prot="public" virt="non-virtual"><scope>B83::Image::BMP::BMPFileHeader</scope><name>reserved</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

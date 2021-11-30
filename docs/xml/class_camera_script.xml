@@ -1,0 +1,190 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
+  <compounddef id="class_camera_script" kind="class" language="C#" prot="public">
+    <compoundname>CameraScript</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_camera_script_1a6aa48c331de1865f340065884ffa9ade" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float CameraScript.speedH</definition>
+        <argsstring></argsstring>
+        <name>speedH</name>
+        <initializer>= 2.0f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/CameraScript.cs" line="7" column="18" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/CameraScript.cs" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_camera_script_1aed24513073fa9bc58de1cacc28422199" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float CameraScript.speedV</definition>
+        <argsstring></argsstring>
+        <name>speedV</name>
+        <initializer>= 2.0f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/CameraScript.cs" line="8" column="18" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/CameraScript.cs" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_camera_script_1a3a3120a4a7a1e87cca30071873d0bcb0" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float CameraScript.cameraRotateSpeed</definition>
+        <argsstring></argsstring>
+        <name>cameraRotateSpeed</name>
+        <initializer>= 2.0f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/CameraScript.cs" line="10" column="19" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/CameraScript.cs" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_camera_script_1a11e43ca1ed13d2e9021709599e0a9e88" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float CameraScript.cameraMoveSpeed</definition>
+        <argsstring></argsstring>
+        <name>cameraMoveSpeed</name>
+        <initializer>= 0.5f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/CameraScript.cs" line="11" column="19" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/CameraScript.cs" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_camera_script_1adc4843808c4451e0bb4208088d93cf0f" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float CameraScript.scrollSpeed</definition>
+        <argsstring></argsstring>
+        <name>scrollSpeed</name>
+        <initializer>= 10.0f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/CameraScript.cs" line="12" column="19" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/CameraScript.cs" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_camera_script_1a309b1bcbdda1b067a9dad18fce8ed8e4" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float CameraScript.yaw</definition>
+        <argsstring></argsstring>
+        <name>yaw</name>
+        <initializer>= 0.0f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/CameraScript.cs" line="14" column="19" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/CameraScript.cs" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_camera_script_1a89560eabd35ee6f809ae1aad62c5e7dd" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float CameraScript.pitch</definition>
+        <argsstring></argsstring>
+        <name>pitch</name>
+        <initializer>= -200.0f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/CameraScript.cs" line="15" column="19" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/CameraScript.cs" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_camera_script_1ac0b54d8036b93b9ac9f43c7f7d2bb920" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool CameraScript.mouseButtonDown</definition>
+        <argsstring></argsstring>
+        <name>mouseButtonDown</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/CameraScript.cs" line="17" column="18" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/CameraScript.cs" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_camera_script_1a73f305dadb9b5b88d6efcc80a9073710" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void CameraScript.Start</definition>
+        <argsstring>()</argsstring>
+        <name>Start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/CameraScript.cs" line="20" column="10" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/CameraScript.cs" bodystart="20" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="function" id="class_camera_script_1a292a7b3c52fd201f42e5b0f25c7b4d2d" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void CameraScript.Update</definition>
+        <argsstring>()</argsstring>
+        <name>Update</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/CameraScript.cs" line="25" column="10" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/CameraScript.cs" bodystart="25" bodyend="61"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>CameraScript</label>
+        <link refid="class_camera_script"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>CameraScript</label>
+        <link refid="class_camera_script"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+    </collaborationgraph>
+    <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/CameraScript.cs" line="5" column="7" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/CameraScript.cs" bodystart="6" bodyend="62"/>
+    <listofallmembers>
+      <member refid="class_camera_script_1a11e43ca1ed13d2e9021709599e0a9e88" prot="private" virt="non-virtual"><scope>CameraScript</scope><name>cameraMoveSpeed</name></member>
+      <member refid="class_camera_script_1a3a3120a4a7a1e87cca30071873d0bcb0" prot="private" virt="non-virtual"><scope>CameraScript</scope><name>cameraRotateSpeed</name></member>
+      <member refid="class_camera_script_1ac0b54d8036b93b9ac9f43c7f7d2bb920" prot="private" virt="non-virtual"><scope>CameraScript</scope><name>mouseButtonDown</name></member>
+      <member refid="class_camera_script_1a89560eabd35ee6f809ae1aad62c5e7dd" prot="private" virt="non-virtual"><scope>CameraScript</scope><name>pitch</name></member>
+      <member refid="class_camera_script_1adc4843808c4451e0bb4208088d93cf0f" prot="private" virt="non-virtual"><scope>CameraScript</scope><name>scrollSpeed</name></member>
+      <member refid="class_camera_script_1a6aa48c331de1865f340065884ffa9ade" prot="public" virt="non-virtual"><scope>CameraScript</scope><name>speedH</name></member>
+      <member refid="class_camera_script_1aed24513073fa9bc58de1cacc28422199" prot="public" virt="non-virtual"><scope>CameraScript</scope><name>speedV</name></member>
+      <member refid="class_camera_script_1a73f305dadb9b5b88d6efcc80a9073710" prot="private" virt="non-virtual"><scope>CameraScript</scope><name>Start</name></member>
+      <member refid="class_camera_script_1a292a7b3c52fd201f42e5b0f25c7b4d2d" prot="private" virt="non-virtual"><scope>CameraScript</scope><name>Update</name></member>
+      <member refid="class_camera_script_1a309b1bcbdda1b067a9dad18fce8ed8e4" prot="private" virt="non-virtual"><scope>CameraScript</scope><name>yaw</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

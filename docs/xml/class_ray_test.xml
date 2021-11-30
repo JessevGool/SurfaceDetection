@@ -1,0 +1,507 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
+  <compounddef id="class_ray_test" kind="class" language="C#" prot="public">
+    <compoundname>RayTest</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_ray_test_1a24fd8f41226daad3c625374e8d0ad811" prot="private" static="no" mutable="no">
+        <type>List&lt; RaycastHit &gt;</type>
+        <definition>List&lt;RaycastHit&gt; RayTest._hits</definition>
+        <argsstring></argsstring>
+        <name>_hits</name>
+        <initializer>= new List&lt;RaycastHit&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>List which stores all the hits detected by the raycast </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" line="17" column="18" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_ray_test_1ab85bebdd836409e9134886a84ca79fc4" prot="private" static="no" mutable="no">
+        <type>List&lt; <ref refid="class_roof_layer" kindref="compound">RoofLayer</ref> &gt;</type>
+        <definition>List&lt;RoofLayer&gt; RayTest._roofLayers</definition>
+        <argsstring></argsstring>
+        <name>_roofLayers</name>
+        <initializer>= new List&lt;<ref refid="class_roof_layer" kindref="compound">RoofLayer</ref>&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>List which stores the found layers </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" line="22" column="18" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_ray_test_1ae8583388edc91a27703089fc228445f9" prot="private" static="no" mutable="no">
+        <type>Vector3</type>
+        <definition>Vector3 RayTest._collision</definition>
+        <argsstring></argsstring>
+        <name>_collision</name>
+        <initializer>= Vector3.zero</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" line="23" column="21" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_ray_test_1a7a23d68907dd2b2bb999eb56ff6671e8" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int RayTest._rays</definition>
+        <argsstring></argsstring>
+        <name>_rays</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" line="24" column="17" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_ray_test_1a85a8c99c02da63004bd8037ab2fd5647" prot="private" static="no" mutable="no">
+        <type>Vector3</type>
+        <definition>Vector3 RayTest._rayPos</definition>
+        <argsstring></argsstring>
+        <name>_rayPos</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Variable containing the position of the next ray origin position </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" line="28" column="21" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_ray_test_1ad28bd35745c6733d3ddf653a317689b2" prot="private" static="no" mutable="no">
+        <type>Thread</type>
+        <definition>Thread RayTest._t1</definition>
+        <argsstring></argsstring>
+        <name>_t1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" line="29" column="20" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_ray_test_1a976c1b9bdb2cbe2cee0469222f5372f6" prot="private" static="no" mutable="no">
+        <type>Thread</type>
+        <definition>Thread RayTest._t2</definition>
+        <argsstring></argsstring>
+        <name>_t2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" line="30" column="20" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_ray_test_1a9804deacbcad84786aad180f9b87a9b7" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool RayTest._t1Finished</definition>
+        <argsstring></argsstring>
+        <name>_t1Finished</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" line="31" column="18" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_ray_test_1a464809a15b8df580eb2a3b877f332dc8" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool RayTest._t2Finished</definition>
+        <argsstring></argsstring>
+        <name>_t2Finished</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" line="32" column="18" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_ray_test_1a63de1d8d2a840a35f937649ba8cc25a1" prot="private" static="no" mutable="no">
+        <type>RaycastHit</type>
+        <definition>RaycastHit RayTest._hit</definition>
+        <argsstring></argsstring>
+        <name>_hit</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" line="87" column="24" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_ray_test_1a09cf356e93cbe40f8376e3f1dbb1078e" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool RayTest.drawHits</definition>
+        <argsstring></argsstring>
+        <name>drawHits</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>boolean variable which dictates if found hits will be drawn using the hitIndicator object <simplesect kind="see"><para><ref refid="class_ray_test_1a089587bcefc1964813711ac20a40a46d" kindref="member">hitIndicator</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" line="38" column="17" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_ray_test_1a5944252aca3d63901e062b5619b6ebbe" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool RayTest.drawLayers</definition>
+        <argsstring></argsstring>
+        <name>drawLayers</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>boolean variable which dictates if layers should be drawn </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" line="42" column="17" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_ray_test_1a841bdac9035bae0d349ea304e03aeecd" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool RayTest.drawAngledLayers</definition>
+        <argsstring></argsstring>
+        <name>drawAngledLayers</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>boolean variable which dictates if angledLayers should be drawn </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" line="46" column="17" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_ray_test_1a91439d12b70c90f2a4c1b2525937c73a" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool RayTest.drawCorners</definition>
+        <argsstring></argsstring>
+        <name>drawCorners</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>boolean variable which dictates if only the corners of layers should be drawn Use the gameobjects named with cardinal directions. <simplesect kind="see"><para><ref refid="class_ray_test_1a9419dbcbc914005c6c18c30e0e33d6cd" kindref="member">NWIND</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="class_ray_test_1aa788b824c1d631e2bd446c0353611aa4" kindref="member">NEIND</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="class_ray_test_1ad40d1ea780d4bc63283e5d5d587a75d7" kindref="member">SWIND</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="class_ray_test_1abfec699a1845cfe89f9e781f6037f520" kindref="member">SEIND</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" line="55" column="17" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_ray_test_1a346f77e691066d936989d3c293156dec" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool RayTest.startScanBool</definition>
+        <argsstring></argsstring>
+        <name>startScanBool</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>boolean variable used by another script to start the scan in the update method <simplesect kind="see"><para>#Update() </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" line="60" column="17" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_ray_test_1a71d750d63365afb87d041519908708d8" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool RayTest.threading</definition>
+        <argsstring></argsstring>
+        <name>threading</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" line="61" column="17" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_ray_test_1a1536d8e7c2847146d00e2d5885fcc0a5" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float RayTest.scanResolution</definition>
+        <argsstring></argsstring>
+        <name>scanResolution</name>
+        <initializer>= 0.05f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>variable which sets the distance between the rays min = 0.01f max = 1f default = 0.05f </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" line="71" column="18" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_ray_test_1a098b2dc8abbde46e39fe98e49f42e8f3" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float RayTest.gridSize</definition>
+        <argsstring></argsstring>
+        <name>gridSize</name>
+        <initializer>= 80</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>sets the amount of grids on one of the axis min = 1 max = 100 default = 80 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" line="79" column="18" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_ray_test_1a089587bcefc1964813711ac20a40a46d" prot="public" static="no" mutable="no">
+        <type>GameObject</type>
+        <definition>GameObject RayTest.hitIndicator</definition>
+        <argsstring></argsstring>
+        <name>hitIndicator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" line="80" column="23" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_ray_test_1adff5e7f9540f9883844fa77916f572a3" prot="public" static="no" mutable="no">
+        <type>LayerMask</type>
+        <definition>LayerMask RayTest.rayLayer</definition>
+        <argsstring></argsstring>
+        <name>rayLayer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" line="81" column="22" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_ray_test_1a9419dbcbc914005c6c18c30e0e33d6cd" prot="public" static="no" mutable="no">
+        <type>GameObject</type>
+        <definition>GameObject RayTest.NWIND</definition>
+        <argsstring></argsstring>
+        <name>NWIND</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" line="82" column="23" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_ray_test_1aa788b824c1d631e2bd446c0353611aa4" prot="public" static="no" mutable="no">
+        <type>GameObject</type>
+        <definition>GameObject RayTest.NEIND</definition>
+        <argsstring></argsstring>
+        <name>NEIND</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" line="83" column="23" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_ray_test_1ad40d1ea780d4bc63283e5d5d587a75d7" prot="public" static="no" mutable="no">
+        <type>GameObject</type>
+        <definition>GameObject RayTest.SWIND</definition>
+        <argsstring></argsstring>
+        <name>SWIND</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" line="84" column="23" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_ray_test_1abfec699a1845cfe89f9e781f6037f520" prot="public" static="no" mutable="no">
+        <type>GameObject</type>
+        <definition>GameObject RayTest.SEIND</definition>
+        <argsstring></argsstring>
+        <name>SEIND</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" line="85" column="23" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_ray_test_1ad35d07b8b3422832fed5a3df005710be" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void RayTest.Start</definition>
+        <argsstring>()</argsstring>
+        <name>Start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" line="90" column="10" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" bodystart="90" bodyend="92"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ray_test_1abbfe61b2ee04fbb6a4d0c4f98bac705f" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void RayTest.createLayers</definition>
+        <argsstring>()</argsstring>
+        <name>createLayers</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This method creates the layers based on the hits inside of the _hits list The method only finds flat layers, another method is used for angled layers <simplesect kind="see"><para>_hits </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" line="158" column="18" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" bodystart="158" bodyend="243"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ray_test_1a6996f173c7803cc0c35f69b01072a941" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void RayTest.detectSlopes</definition>
+        <argsstring>()</argsstring>
+        <name>detectSlopes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This method detects the angled layers using the _hits list <simplesect kind="see"><para>_hits </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" line="248" column="18" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" bodystart="248" bodyend="432"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ray_test_1ab5e9662425ab5c69ec8094318c4681e6" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void RayTest.OnDrawGizmos</definition>
+        <argsstring>()</argsstring>
+        <name>OnDrawGizmos</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" line="434" column="18" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" bodystart="434" bodyend="438"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ray_test_1a46cceb5483afd437a523424f6cddb2cc" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void RayTest.Update</definition>
+        <argsstring>()</argsstring>
+        <name>Update</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" line="443" column="10" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" bodystart="443" bodyend="466"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_ray_test_1a346eabd91992d3329255aaf3464952d8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void RayTest.startScan</definition>
+        <argsstring>()</argsstring>
+        <name>startScan</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This method initializes the scan. The scan size is based on the size of the parent gameobject. The scan is subdivided into a grid based on the gridSize variable. The resolution of the scan is based on the scanResolution variable. Both of the variables named above can be set in the settings panel in the GUI. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" line="99" column="17" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" bodystart="99" bodyend="152"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="1">
+        <label>RayTest</label>
+        <link refid="class_ray_test"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="1">
+        <label>RayTest</label>
+        <link refid="class_ray_test"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" line="12" column="7" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" bodystart="13" bodyend="467"/>
+    <listofallmembers>
+      <member refid="class_ray_test_1ae8583388edc91a27703089fc228445f9" prot="private" virt="non-virtual"><scope>RayTest</scope><name>_collision</name></member>
+      <member refid="class_ray_test_1a63de1d8d2a840a35f937649ba8cc25a1" prot="private" virt="non-virtual"><scope>RayTest</scope><name>_hit</name></member>
+      <member refid="class_ray_test_1a24fd8f41226daad3c625374e8d0ad811" prot="private" virt="non-virtual"><scope>RayTest</scope><name>_hits</name></member>
+      <member refid="class_ray_test_1a85a8c99c02da63004bd8037ab2fd5647" prot="private" virt="non-virtual"><scope>RayTest</scope><name>_rayPos</name></member>
+      <member refid="class_ray_test_1a7a23d68907dd2b2bb999eb56ff6671e8" prot="private" virt="non-virtual"><scope>RayTest</scope><name>_rays</name></member>
+      <member refid="class_ray_test_1ab85bebdd836409e9134886a84ca79fc4" prot="private" virt="non-virtual"><scope>RayTest</scope><name>_roofLayers</name></member>
+      <member refid="class_ray_test_1ad28bd35745c6733d3ddf653a317689b2" prot="private" virt="non-virtual"><scope>RayTest</scope><name>_t1</name></member>
+      <member refid="class_ray_test_1a9804deacbcad84786aad180f9b87a9b7" prot="private" virt="non-virtual"><scope>RayTest</scope><name>_t1Finished</name></member>
+      <member refid="class_ray_test_1a976c1b9bdb2cbe2cee0469222f5372f6" prot="private" virt="non-virtual"><scope>RayTest</scope><name>_t2</name></member>
+      <member refid="class_ray_test_1a464809a15b8df580eb2a3b877f332dc8" prot="private" virt="non-virtual"><scope>RayTest</scope><name>_t2Finished</name></member>
+      <member refid="class_ray_test_1abbfe61b2ee04fbb6a4d0c4f98bac705f" prot="private" virt="non-virtual"><scope>RayTest</scope><name>createLayers</name></member>
+      <member refid="class_ray_test_1a6996f173c7803cc0c35f69b01072a941" prot="private" virt="non-virtual"><scope>RayTest</scope><name>detectSlopes</name></member>
+      <member refid="class_ray_test_1a841bdac9035bae0d349ea304e03aeecd" prot="public" virt="non-virtual"><scope>RayTest</scope><name>drawAngledLayers</name></member>
+      <member refid="class_ray_test_1a91439d12b70c90f2a4c1b2525937c73a" prot="public" virt="non-virtual"><scope>RayTest</scope><name>drawCorners</name></member>
+      <member refid="class_ray_test_1a09cf356e93cbe40f8376e3f1dbb1078e" prot="public" virt="non-virtual"><scope>RayTest</scope><name>drawHits</name></member>
+      <member refid="class_ray_test_1a5944252aca3d63901e062b5619b6ebbe" prot="public" virt="non-virtual"><scope>RayTest</scope><name>drawLayers</name></member>
+      <member refid="class_ray_test_1a098b2dc8abbde46e39fe98e49f42e8f3" prot="public" virt="non-virtual"><scope>RayTest</scope><name>gridSize</name></member>
+      <member refid="class_ray_test_1a089587bcefc1964813711ac20a40a46d" prot="public" virt="non-virtual"><scope>RayTest</scope><name>hitIndicator</name></member>
+      <member refid="class_ray_test_1aa788b824c1d631e2bd446c0353611aa4" prot="public" virt="non-virtual"><scope>RayTest</scope><name>NEIND</name></member>
+      <member refid="class_ray_test_1a9419dbcbc914005c6c18c30e0e33d6cd" prot="public" virt="non-virtual"><scope>RayTest</scope><name>NWIND</name></member>
+      <member refid="class_ray_test_1ab5e9662425ab5c69ec8094318c4681e6" prot="private" virt="non-virtual"><scope>RayTest</scope><name>OnDrawGizmos</name></member>
+      <member refid="class_ray_test_1adff5e7f9540f9883844fa77916f572a3" prot="public" virt="non-virtual"><scope>RayTest</scope><name>rayLayer</name></member>
+      <member refid="class_ray_test_1a1536d8e7c2847146d00e2d5885fcc0a5" prot="public" virt="non-virtual"><scope>RayTest</scope><name>scanResolution</name></member>
+      <member refid="class_ray_test_1abfec699a1845cfe89f9e781f6037f520" prot="public" virt="non-virtual"><scope>RayTest</scope><name>SEIND</name></member>
+      <member refid="class_ray_test_1ad35d07b8b3422832fed5a3df005710be" prot="private" virt="non-virtual"><scope>RayTest</scope><name>Start</name></member>
+      <member refid="class_ray_test_1a346eabd91992d3329255aaf3464952d8" prot="public" virt="non-virtual"><scope>RayTest</scope><name>startScan</name></member>
+      <member refid="class_ray_test_1a346f77e691066d936989d3c293156dec" prot="public" virt="non-virtual"><scope>RayTest</scope><name>startScanBool</name></member>
+      <member refid="class_ray_test_1ad40d1ea780d4bc63283e5d5d587a75d7" prot="public" virt="non-virtual"><scope>RayTest</scope><name>SWIND</name></member>
+      <member refid="class_ray_test_1a71d750d63365afb87d041519908708d8" prot="public" virt="non-virtual"><scope>RayTest</scope><name>threading</name></member>
+      <member refid="class_ray_test_1a46cceb5483afd437a523424f6cddb2cc" prot="private" virt="non-virtual"><scope>RayTest</scope><name>Update</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

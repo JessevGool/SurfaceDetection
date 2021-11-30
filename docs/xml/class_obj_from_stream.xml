@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
+  <compounddef id="class_obj_from_stream" kind="class" language="C#" prot="public">
+    <compoundname>ObjFromStream</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_obj_from_stream_1af0bc64cb6e1f07f1a036dec89cd4b250" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ObjFromStream.Start</definition>
+        <argsstring>()</argsstring>
+        <name>Start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/Samples/ObjFromStream.cs" line="7" column="6" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/Samples/ObjFromStream.cs" bodystart="7" bodyend="16"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="1">
+        <label>ObjFromStream</label>
+        <link refid="class_obj_from_stream"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="1">
+        <label>ObjFromStream</label>
+        <link refid="class_obj_from_stream"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/Samples/ObjFromStream.cs" line="6" column="7" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/Samples/ObjFromStream.cs" bodystart="6" bodyend="17"/>
+    <listofallmembers>
+      <member refid="class_obj_from_stream_1af0bc64cb6e1f07f1a036dec89cd4b250" prot="private" virt="non-virtual"><scope>ObjFromStream</scope><name>Start</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

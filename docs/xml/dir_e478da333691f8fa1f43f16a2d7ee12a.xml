@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
+  <compounddef id="dir_e478da333691f8fa1f43f16a2d7ee12a" kind="dir">
+    <compoundname>H:/Code/Unity/SurfaceDetection/Assets/OBJImport</compoundname>
+    <innerdir refid="dir_3182f2d15e50fbe268b3d76ce922018d">H:/Code/Unity/SurfaceDetection/Assets/OBJImport/Samples</innerdir>
+    <innerdir refid="dir_a5dd679a6ab0213767df04ad6f6617d8">H:/Code/Unity/SurfaceDetection/Assets/OBJImport/TextureLoader</innerdir>
+    <innerfile refid="_char_word_reader_8cs">CharWordReader.cs</innerfile>
+    <innerfile refid="_m_t_l_loader_8cs">MTLLoader.cs</innerfile>
+    <innerfile refid="_o_b_j_loader_8cs">OBJLoader.cs</innerfile>
+    <innerfile refid="_o_b_j_loader_helper_8cs">OBJLoaderHelper.cs</innerfile>
+    <innerfile refid="_o_b_j_object_builder_8cs">OBJObjectBuilder.cs</innerfile>
+    <innerfile refid="_string_extensions_8cs">StringExtensions.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/"/>
+  </compounddef>
+</doxygen>

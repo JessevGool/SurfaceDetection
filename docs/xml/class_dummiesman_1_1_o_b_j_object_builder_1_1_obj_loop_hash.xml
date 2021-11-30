@@ -1,0 +1,92 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
+  <compounddef id="class_dummiesman_1_1_o_b_j_object_builder_1_1_obj_loop_hash" kind="class" language="C#" prot="private">
+    <compoundname>Dummiesman::OBJObjectBuilder::ObjLoopHash</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_dummiesman_1_1_o_b_j_object_builder_1_1_obj_loop_hash_1ac90b8821d22e82589c23e476617bb956" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Dummiesman.OBJObjectBuilder.ObjLoopHash.vertexIndex</definition>
+        <argsstring></argsstring>
+        <name>vertexIndex</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/OBJObjectBuilder.cs" line="45" column="12" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/OBJObjectBuilder.cs" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_dummiesman_1_1_o_b_j_object_builder_1_1_obj_loop_hash_1a1cb0d513b155b45f4e9fc52b659143de" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Dummiesman.OBJObjectBuilder.ObjLoopHash.normalIndex</definition>
+        <argsstring></argsstring>
+        <name>normalIndex</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/OBJObjectBuilder.cs" line="46" column="12" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/OBJObjectBuilder.cs" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_dummiesman_1_1_o_b_j_object_builder_1_1_obj_loop_hash_1a64ce27ab1bcb8bb26de45b47e677d2e3" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Dummiesman.OBJObjectBuilder.ObjLoopHash.uvIndex</definition>
+        <argsstring></argsstring>
+        <name>uvIndex</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/OBJObjectBuilder.cs" line="47" column="12" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/OBJObjectBuilder.cs" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_dummiesman_1_1_o_b_j_object_builder_1_1_obj_loop_hash_1a7869b899e1fa8e10a5a35a514fde283a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override bool</type>
+        <definition>override bool Dummiesman.OBJObjectBuilder.ObjLoopHash.Equals</definition>
+        <argsstring>(object obj)</argsstring>
+        <name>Equals</name>
+        <param>
+          <type>object</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/OBJObjectBuilder.cs" line="49" column="22" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/OBJObjectBuilder.cs" bodystart="49" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="class_dummiesman_1_1_o_b_j_object_builder_1_1_obj_loop_hash_1ad32659da52ec854672c7197f2276a4e2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override int</type>
+        <definition>override int Dummiesman.OBJObjectBuilder.ObjLoopHash.GetHashCode</definition>
+        <argsstring>()</argsstring>
+        <name>GetHashCode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/OBJObjectBuilder.cs" line="57" column="21" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/OBJObjectBuilder.cs" bodystart="57" bodyend="63"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Loop hasher helper class </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/OBJObjectBuilder.cs" line="44" column="8" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/OBJObjectBuilder.cs" bodystart="44" bodyend="64"/>
+    <listofallmembers>
+      <member refid="class_dummiesman_1_1_o_b_j_object_builder_1_1_obj_loop_hash_1a7869b899e1fa8e10a5a35a514fde283a" prot="public" virt="non-virtual"><scope>Dummiesman::OBJObjectBuilder::ObjLoopHash</scope><name>Equals</name></member>
+      <member refid="class_dummiesman_1_1_o_b_j_object_builder_1_1_obj_loop_hash_1ad32659da52ec854672c7197f2276a4e2" prot="public" virt="non-virtual"><scope>Dummiesman::OBJObjectBuilder::ObjLoopHash</scope><name>GetHashCode</name></member>
+      <member refid="class_dummiesman_1_1_o_b_j_object_builder_1_1_obj_loop_hash_1a1cb0d513b155b45f4e9fc52b659143de" prot="public" virt="non-virtual"><scope>Dummiesman::OBJObjectBuilder::ObjLoopHash</scope><name>normalIndex</name></member>
+      <member refid="class_dummiesman_1_1_o_b_j_object_builder_1_1_obj_loop_hash_1a64ce27ab1bcb8bb26de45b47e677d2e3" prot="public" virt="non-virtual"><scope>Dummiesman::OBJObjectBuilder::ObjLoopHash</scope><name>uvIndex</name></member>
+      <member refid="class_dummiesman_1_1_o_b_j_object_builder_1_1_obj_loop_hash_1ac90b8821d22e82589c23e476617bb956" prot="public" virt="non-virtual"><scope>Dummiesman::OBJObjectBuilder::ObjLoopHash</scope><name>vertexIndex</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

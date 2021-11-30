@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
+  <compounddef id="class_dummiesman_1_1_image_loader_helper" kind="class" language="C#" prot="public">
+    <compoundname>Dummiesman::ImageLoaderHelper</compoundname>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_dummiesman_1_1_image_loader_helper_1ac29c360f7d35590a0bd80f4a857ff49a" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Texture2D</type>
+        <definition>static Texture2D Dummiesman.ImageLoaderHelper.VerifyFormat</definition>
+        <argsstring>(Texture2D tex)</argsstring>
+        <name>VerifyFormat</name>
+        <param>
+          <type>Texture2D</type>
+          <declname>tex</declname>
+        </param>
+        <briefdescription>
+<para>Verifies that a 32bpp texture is actuall 32bpp </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The verified texture</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/TextureLoader/ImageLoaderHelper.cs" line="15" column="33" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/TextureLoader/ImageLoaderHelper.cs" bodystart="15" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="class_dummiesman_1_1_image_loader_helper_1a244f02c13e0ffd34e8f39ffddbc1604e" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Dummiesman.ImageLoaderHelper.FillPixelArray</definition>
+        <argsstring>(Color32[] fillArray, byte[] pixelData, int bytesPerPixel, bool bgra=false)</argsstring>
+        <name>FillPixelArray</name>
+        <param>
+          <type>Color32[]</type>
+          <declname>fillArray</declname>
+        </param>
+        <param>
+          <type>byte[]</type>
+          <declname>pixelData</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>bytesPerPixel</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>bgra</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>A cluster for creating arrays of Unity Color </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fillArray</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pixelData</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bytesPerPixel</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bgra</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/TextureLoader/ImageLoaderHelper.cs" line="54" column="28" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/TextureLoader/ImageLoaderHelper.cs" bodystart="54" bodyend="104"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/TextureLoader/ImageLoaderHelper.cs" line="9" column="11" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/TextureLoader/ImageLoaderHelper.cs" bodystart="10" bodyend="105"/>
+    <listofallmembers>
+      <member refid="class_dummiesman_1_1_image_loader_helper_1a244f02c13e0ffd34e8f39ffddbc1604e" prot="public" virt="non-virtual"><scope>Dummiesman::ImageLoaderHelper</scope><name>FillPixelArray</name></member>
+      <member refid="class_dummiesman_1_1_image_loader_helper_1ac29c360f7d35590a0bd80f4a857ff49a" prot="public" virt="non-virtual"><scope>Dummiesman::ImageLoaderHelper</scope><name>VerifyFormat</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

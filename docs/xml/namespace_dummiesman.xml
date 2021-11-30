@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
+  <compounddef id="namespace_dummiesman" kind="namespace" language="C#">
+    <compoundname>Dummiesman</compoundname>
+    <innerclass refid="class_dummiesman_1_1_binary_extensions" prot="public">Dummiesman::BinaryExtensions</innerclass>
+    <innerclass refid="class_dummiesman_1_1_char_word_reader" prot="public">Dummiesman::CharWordReader</innerclass>
+    <innerclass refid="class_dummiesman_1_1_d_d_s_loader" prot="public">Dummiesman::DDSLoader</innerclass>
+    <innerclass refid="class_dummiesman_1_1_image_loader" prot="public">Dummiesman::ImageLoader</innerclass>
+    <innerclass refid="class_dummiesman_1_1_image_loader_helper" prot="public">Dummiesman::ImageLoaderHelper</innerclass>
+    <innerclass refid="class_dummiesman_1_1_image_utils" prot="public">Dummiesman::ImageUtils</innerclass>
+    <innerclass refid="class_dummiesman_1_1_o_b_j_loader" prot="public">Dummiesman::OBJLoader</innerclass>
+    <innerclass refid="class_dummiesman_1_1_o_b_j_loader_helper" prot="public">Dummiesman::OBJLoaderHelper</innerclass>
+    <innerclass refid="class_dummiesman_1_1_o_b_j_object_builder" prot="public">Dummiesman::OBJObjectBuilder</innerclass>
+    <innerclass refid="class_dummiesman_1_1_string_extensions" prot="public">Dummiesman::StringExtensions</innerclass>
+    <innerclass refid="class_dummiesman_1_1_t_g_a_loader" prot="public">Dummiesman::TGALoader</innerclass>
+    <innernamespace refid="namespace_dummiesman_1_1_extensions">Dummiesman::Extensions</innernamespace>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="namespace_dummiesman_1a61c2576ddaaa8bc5a94dd4e53c48f917" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>SplitMode</name>
+        <enumvalue id="namespace_dummiesman_1a61c2576ddaaa8bc5a94dd4e53c48f917a6adf97f83acf6453d4a6a4b1070f3754" prot="public">
+          <name>None</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_dummiesman_1a61c2576ddaaa8bc5a94dd4e53c48f917a497031794414a552435f90151ac3b54b" prot="public">
+          <name>Object</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_dummiesman_1a61c2576ddaaa8bc5a94dd4e53c48f917ad92a8333dd3ccb895cc65f7455b71206" prot="public">
+          <name>Material</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/OBJLoader.cs" line="26" column="11" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/OBJLoader.cs" bodystart="26" bodyend="30"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/CharWordReader.cs" line="7" column="1"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,87 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
+  <compounddef id="class_dummiesman_1_1_binary_extensions" kind="class" language="C#" prot="public">
+    <compoundname>Dummiesman::BinaryExtensions</compoundname>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_dummiesman_1_1_binary_extensions_1ad07c935ab224ac55305c253115a68afd" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Color32</type>
+        <definition>static Color32 Dummiesman.BinaryExtensions.ReadColor32RGBR</definition>
+        <argsstring>(this BinaryReader r)</argsstring>
+        <name>ReadColor32RGBR</name>
+        <param>
+          <type>this BinaryReader</type>
+          <declname>r</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/TextureLoader/BinaryExtensions.cs" line="10" column="31" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/TextureLoader/BinaryExtensions.cs" bodystart="10" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_dummiesman_1_1_binary_extensions_1a6deda79d993364baffb65dfd11f53904" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Color32</type>
+        <definition>static Color32 Dummiesman.BinaryExtensions.ReadColor32RGBA</definition>
+        <argsstring>(this BinaryReader r)</argsstring>
+        <name>ReadColor32RGBA</name>
+        <param>
+          <type>this BinaryReader</type>
+          <declname>r</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/TextureLoader/BinaryExtensions.cs" line="16" column="31" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/TextureLoader/BinaryExtensions.cs" bodystart="16" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="function" id="class_dummiesman_1_1_binary_extensions_1a9f43ab37092227ae879837c9b3ab922c" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Color32</type>
+        <definition>static Color32 Dummiesman.BinaryExtensions.ReadColor32RGB</definition>
+        <argsstring>(this BinaryReader r)</argsstring>
+        <name>ReadColor32RGB</name>
+        <param>
+          <type>this BinaryReader</type>
+          <declname>r</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/TextureLoader/BinaryExtensions.cs" line="22" column="31" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/TextureLoader/BinaryExtensions.cs" bodystart="22" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="class_dummiesman_1_1_binary_extensions_1ab843c13c2cc1b426b061edf0ceaed2b7" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Color32</type>
+        <definition>static Color32 Dummiesman.BinaryExtensions.ReadColor32BGR</definition>
+        <argsstring>(this BinaryReader r)</argsstring>
+        <name>ReadColor32BGR</name>
+        <param>
+          <type>this BinaryReader</type>
+          <declname>r</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/TextureLoader/BinaryExtensions.cs" line="28" column="31" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/TextureLoader/BinaryExtensions.cs" bodystart="28" bodyend="32"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/TextureLoader/BinaryExtensions.cs" line="8" column="19" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/TextureLoader/BinaryExtensions.cs" bodystart="9" bodyend="33"/>
+    <listofallmembers>
+      <member refid="class_dummiesman_1_1_binary_extensions_1ab843c13c2cc1b426b061edf0ceaed2b7" prot="public" virt="non-virtual"><scope>Dummiesman::BinaryExtensions</scope><name>ReadColor32BGR</name></member>
+      <member refid="class_dummiesman_1_1_binary_extensions_1a9f43ab37092227ae879837c9b3ab922c" prot="public" virt="non-virtual"><scope>Dummiesman::BinaryExtensions</scope><name>ReadColor32RGB</name></member>
+      <member refid="class_dummiesman_1_1_binary_extensions_1a6deda79d993364baffb65dfd11f53904" prot="public" virt="non-virtual"><scope>Dummiesman::BinaryExtensions</scope><name>ReadColor32RGBA</name></member>
+      <member refid="class_dummiesman_1_1_binary_extensions_1ad07c935ab224ac55305c253115a68afd" prot="public" virt="non-virtual"><scope>Dummiesman::BinaryExtensions</scope><name>ReadColor32RGBR</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

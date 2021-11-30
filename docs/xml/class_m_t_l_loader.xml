@@ -1,0 +1,264 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
+  <compounddef id="class_m_t_l_loader" kind="class" language="C#" prot="public">
+    <compoundname>MTLLoader</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_m_t_l_loader_1acaf4e3c184c87c81dbd3de4d4c82abd0" prot="public" static="no" mutable="no">
+        <type>List&lt; string &gt;</type>
+        <definition>List&lt;string&gt; MTLLoader.SearchPaths</definition>
+        <argsstring></argsstring>
+        <name>SearchPaths</name>
+        <initializer>= new List&lt;string&gt;() { &quot;%FileName%_Textures&quot;, string.Empty}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/MTLLoader.cs" line="21" column="17" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/MTLLoader.cs" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_m_t_l_loader_1a5235b044c44ffbd9ac80e9b6587f9141" prot="private" static="no" mutable="no">
+        <type>FileInfo</type>
+        <definition>FileInfo MTLLoader._objFileInfo</definition>
+        <argsstring></argsstring>
+        <name>_objFileInfo</name>
+        <initializer>= null</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/MTLLoader.cs" line="23" column="22" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/MTLLoader.cs" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_m_t_l_loader_1ab8aa006bd6e6add8141222582c00aea0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>Texture2D</type>
+        <definition>virtual Texture2D MTLLoader.TextureLoadFunction</definition>
+        <argsstring>(string path, bool isNormalMap)</argsstring>
+        <name>TextureLoadFunction</name>
+        <param>
+          <type>string</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>isNormalMap</declname>
+        </param>
+        <briefdescription>
+<para>The texture loading function. Overridable for stream loading purposes. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The path supplied by the OBJ file, converted to OS path seperation</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>isNormalMap</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether the loader is requesting we convert this into a normal map</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Texture2D if found, or NULL if missing</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/MTLLoader.cs" line="31" column="30" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/MTLLoader.cs" bodystart="31" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="class_m_t_l_loader_1a259b805cda6d5a31fb9855126824b250" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Dictionary&lt; string, Material &gt;</type>
+        <definition>Dictionary&lt; string, Material &gt; MTLLoader.Load</definition>
+        <argsstring>(Stream input)</argsstring>
+        <name>Load</name>
+        <param>
+          <type>Stream</type>
+          <declname>input</declname>
+        </param>
+        <briefdescription>
+<para>Loads a *.mtl file </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>input</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The input stream from the MTL file</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Dictionary containing loaded materials</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/MTLLoader.cs" line="135" column="23" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/MTLLoader.cs" bodystart="135" bodyend="289"/>
+      </memberdef>
+      <memberdef kind="function" id="class_m_t_l_loader_1a23f6c5d33a22fb19c47a46dbdd7915c2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Dictionary&lt; string, Material &gt;</type>
+        <definition>Dictionary&lt; string, Material &gt; MTLLoader.Load</definition>
+        <argsstring>(string path)</argsstring>
+        <name>Load</name>
+        <param>
+          <type>string</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+<para>Loads a *.mtl file </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The path to the MTL file</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Dictionary containing loaded materials</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/MTLLoader.cs" line="296" column="19" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/MTLLoader.cs" bodystart="296" bodyend="306"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_m_t_l_loader_1a8ad51630714478d3c8f4a9f98acdca34" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Texture2D</type>
+        <definition>Texture2D MTLLoader.TryLoadTexture</definition>
+        <argsstring>(string texturePath, bool normalMap=false)</argsstring>
+        <name>TryLoadTexture</name>
+        <param>
+          <type>string</type>
+          <declname>texturePath</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>normalMap</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/MTLLoader.cs" line="57" column="23" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/MTLLoader.cs" bodystart="57" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="class_m_t_l_loader_1ad42253bb0bc05f2d65550184aa2e355e" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int MTLLoader.GetArgValueCount</definition>
+        <argsstring>(string arg)</argsstring>
+        <name>GetArgValueCount</name>
+        <param>
+          <type>string</type>
+          <declname>arg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/MTLLoader.cs" line="66" column="17" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/MTLLoader.cs" bodystart="66" bodyend="85"/>
+      </memberdef>
+      <memberdef kind="function" id="class_m_t_l_loader_1a193f2d43aa311391bdfbd0a4eab4cd6c" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int MTLLoader.GetTexNameIndex</definition>
+        <argsstring>(string[] components)</argsstring>
+        <name>GetTexNameIndex</name>
+        <param>
+          <type>string[]</type>
+          <declname>components</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/MTLLoader.cs" line="87" column="17" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/MTLLoader.cs" bodystart="87" bodyend="99"/>
+      </memberdef>
+      <memberdef kind="function" id="class_m_t_l_loader_1a9fcc3fccdfb96d9c77967c886842d932" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float MTLLoader.GetArgValue</definition>
+        <argsstring>(string[] components, string arg, float fallback=1f)</argsstring>
+        <name>GetArgValue</name>
+        <param>
+          <type>string[]</type>
+          <declname>components</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>arg</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>fallback</declname>
+          <defval>1f</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/MTLLoader.cs" line="101" column="19" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/MTLLoader.cs" bodystart="101" bodyend="113"/>
+      </memberdef>
+      <memberdef kind="function" id="class_m_t_l_loader_1ad5a567951c2aad561750e36fdb9852bc" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>string</type>
+        <definition>string MTLLoader.GetTexPathFromMapStatement</definition>
+        <argsstring>(string processedLine, string[] splitLine)</argsstring>
+        <name>GetTexPathFromMapStatement</name>
+        <param>
+          <type>string</type>
+          <declname>processedLine</declname>
+        </param>
+        <param>
+          <type>string[]</type>
+          <declname>splitLine</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/MTLLoader.cs" line="115" column="20" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/MTLLoader.cs" bodystart="115" bodyend="128"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/MTLLoader.cs" line="20" column="7" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/MTLLoader.cs" bodystart="20" bodyend="307"/>
+    <listofallmembers>
+      <member refid="class_m_t_l_loader_1a5235b044c44ffbd9ac80e9b6587f9141" prot="private" virt="non-virtual"><scope>MTLLoader</scope><name>_objFileInfo</name></member>
+      <member refid="class_m_t_l_loader_1a9fcc3fccdfb96d9c77967c886842d932" prot="private" virt="non-virtual"><scope>MTLLoader</scope><name>GetArgValue</name></member>
+      <member refid="class_m_t_l_loader_1ad42253bb0bc05f2d65550184aa2e355e" prot="private" virt="non-virtual"><scope>MTLLoader</scope><name>GetArgValueCount</name></member>
+      <member refid="class_m_t_l_loader_1a193f2d43aa311391bdfbd0a4eab4cd6c" prot="private" virt="non-virtual"><scope>MTLLoader</scope><name>GetTexNameIndex</name></member>
+      <member refid="class_m_t_l_loader_1ad5a567951c2aad561750e36fdb9852bc" prot="private" virt="non-virtual"><scope>MTLLoader</scope><name>GetTexPathFromMapStatement</name></member>
+      <member refid="class_m_t_l_loader_1a259b805cda6d5a31fb9855126824b250" prot="public" virt="non-virtual"><scope>MTLLoader</scope><name>Load</name></member>
+      <member refid="class_m_t_l_loader_1a23f6c5d33a22fb19c47a46dbdd7915c2" prot="public" virt="non-virtual"><scope>MTLLoader</scope><name>Load</name></member>
+      <member refid="class_m_t_l_loader_1acaf4e3c184c87c81dbd3de4d4c82abd0" prot="public" virt="non-virtual"><scope>MTLLoader</scope><name>SearchPaths</name></member>
+      <member refid="class_m_t_l_loader_1ab8aa006bd6e6add8141222582c00aea0" prot="public" virt="virtual"><scope>MTLLoader</scope><name>TextureLoadFunction</name></member>
+      <member refid="class_m_t_l_loader_1a8ad51630714478d3c8f4a9f98acdca34" prot="private" virt="non-virtual"><scope>MTLLoader</scope><name>TryLoadTexture</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

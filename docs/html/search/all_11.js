@@ -1,0 +1,22 @@
+var searchData=
+[
+  ['random_0',['Random',['../_ray_test_8cs.html#a24953b19d956caa76c403684c71b4e5b',1,'RayTest.cs']]],
+  ['rawimagesize_1',['rawImageSize',['../struct_b83_1_1_image_1_1_b_m_p_1_1_bitmap_info_header.html#a21a7ed5dcb1b30f1840d58d03b8709ba',1,'B83::Image::BMP::BitmapInfoHeader']]],
+  ['raylayer_2',['rayLayer',['../class_ray_test.html#adff5e7f9540f9883844fa77916f572a3',1,'RayTest']]],
+  ['raytest_3',['RayTest',['../class_ray_test.html',1,'']]],
+  ['raytest_2ecs_4',['RayTest.cs',['../_ray_test_8cs.html',1,'']]],
+  ['readbit_5',['ReadBit',['../class_b83_1_1_image_1_1_b_m_p_1_1_bit_stream_reader.html#ad5ce901116715d0e2f35234f554a316f',1,'B83::Image::BMP::BitStreamReader']]],
+  ['readbits_6',['ReadBits',['../class_b83_1_1_image_1_1_b_m_p_1_1_bit_stream_reader.html#a0dbb1a076272fc32a2b0e2de5aabd180',1,'B83::Image::BMP::BitStreamReader']]],
+  ['readfloat_7',['ReadFloat',['../class_dummiesman_1_1_char_word_reader.html#a9d2fc16773cfab6acd9468bb422dc7bd',1,'Dummiesman::CharWordReader']]],
+  ['readint_8',['ReadInt',['../class_dummiesman_1_1_char_word_reader.html#a95714eb413637ccfee300965d30a46ec',1,'Dummiesman::CharWordReader']]],
+  ['readpalette_9',['ReadPalette',['../class_b83_1_1_image_1_1_b_m_p_1_1_b_m_p_loader.html#a688eaa25f6d5a1e03a357a7f5a32a8e9',1,'B83::Image::BMP::BMPLoader']]],
+  ['readpalettealpha_10',['ReadPaletteAlpha',['../class_b83_1_1_image_1_1_b_m_p_1_1_b_m_p_loader.html#a71eb4da27fd78ba05acc1904839718a7',1,'B83::Image::BMP::BMPLoader']]],
+  ['readuntilnewline_11',['ReadUntilNewLine',['../class_dummiesman_1_1_char_word_reader.html#ae6b7dfd08493eb8fbbd97282dcfd2aa5',1,'Dummiesman::CharWordReader']]],
+  ['readuntilwhitespace_12',['ReadUntilWhiteSpace',['../class_dummiesman_1_1_char_word_reader.html#a42063df6067425c8f67895e596844e6c',1,'Dummiesman::CharWordReader']]],
+  ['readvector_13',['ReadVector',['../class_dummiesman_1_1_char_word_reader.html#a06706e7c0c4a03c020959c587bed7d31',1,'Dummiesman::CharWordReader']]],
+  ['reserved_14',['reserved',['../struct_b83_1_1_image_1_1_b_m_p_1_1_b_m_p_file_header.html#a33054284fd28720df463f9583866fedd',1,'B83::Image::BMP::BMPFileHeader']]],
+  ['resolution_15',['resolution',['../class_slider_value_to_text.html#a7838a8124830e2e41dcd75bcfaaa7914',1,'SliderValueToText']]],
+  ['rmask_16',['rMask',['../class_b83_1_1_image_1_1_b_m_p_1_1_b_m_p_image.html#af94fdedc58c111ad58d22d82c43864fd',1,'B83::Image::BMP::BMPImage']]],
+  ['rooflayer_17',['RoofLayer',['../class_roof_layer.html',1,'RoofLayer'],['../class_roof_layer.html#acf811f50b0c26ddf2c2508bfc30af73a',1,'RoofLayer.RoofLayer()']]],
+  ['rooflayer_2ecs_18',['RoofLayer.cs',['../_roof_layer_8cs.html',1,'']]]
+];

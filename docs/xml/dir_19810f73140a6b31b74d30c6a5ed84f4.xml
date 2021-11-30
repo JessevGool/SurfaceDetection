@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
+  <compounddef id="dir_19810f73140a6b31b74d30c6a5ed84f4" kind="dir">
+    <compoundname>H:/Code/Unity/SurfaceDetection/Assets/Scripts</compoundname>
+    <innerfile refid="_application_menu_8cs">ApplicationMenu.cs</innerfile>
+    <innerfile refid="_camera_script_8cs">CameraScript.cs</innerfile>
+    <innerfile refid="_main_menu_8cs">MainMenu.cs</innerfile>
+    <innerfile refid="_ray_test_8cs">RayTest.cs</innerfile>
+    <innerfile refid="_roof_layer_8cs">RoofLayer.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/"/>
+  </compounddef>
+</doxygen>
