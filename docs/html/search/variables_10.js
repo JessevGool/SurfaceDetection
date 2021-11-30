@@ -3,7 +3,7 @@ var searchData=
   ['scanresolution_0',['scanResolution',['../class_ray_test.html#a1536d8e7c2847146d00e2d5885fcc0a5',1,'RayTest']]],
   ['searchpaths_1',['SearchPaths',['../class_m_t_l_loader.html#acaf4e3c184c87c81dbd3de4d4c82abd0',1,'MTLLoader']]],
   ['seind_2',['SEIND',['../class_ray_test.html#abfec699a1845cfe89f9e781f6037f520',1,'RayTest']]],
-  ['settingsmenu_3',['settingsMenu',['../classbutton_handler.html#adac7a669ebe908bc93918fc0e8fe63d6',1,'buttonHandler.settingsMenu()'],['../class_application_menu.html#a47b67bf9647c207ebec3fb994481a131',1,'ApplicationMenu.settingsMenu()']]],
+  ['settingsmenu_3',['settingsMenu',['../class_button_handler.html#ae9a21a2755e42756c32e6ecf61f4dc9f',1,'ButtonHandler.settingsMenu()'],['../class_application_menu.html#a47b67bf9647c207ebec3fb994481a131',1,'ApplicationMenu.settingsMenu()']]],
   ['size_4',['size',['../struct_b83_1_1_image_1_1_b_m_p_1_1_bitmap_info_header.html#ab70f78d56a6c146e8025315bd4259a6c',1,'B83::Image::BMP::BitmapInfoHeader']]],
   ['sliderui_5',['sliderUI',['../class_slider_value_to_text.html#a9ae7274884f2df48ffcdb85ffc33317e',1,'SliderValueToText']]],
   ['solarlengthinputfield_6',['SolarLengthInputField',['../class_application_menu.html#aae661ec1e88777acc697ccd9012d4d3e',1,'ApplicationMenu']]],

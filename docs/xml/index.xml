@@ -15,7 +15,7 @@
     <member refid="class_application_menu_1a403c2a278e41eda50758dd9e66e9e333" kind="variable"><name>newSolarWidth</name></member>
     <member refid="class_application_menu_1aff45cd83670b34acc3c75c9b9726735e" kind="variable"><name>viewSettings</name></member>
     <member refid="class_application_menu_1a7dd10866cb9e80d5f81e92e13a75acac" kind="function"><name>Start</name></member>
-    <member refid="class_application_menu_1a148bff968a10051e040e115a986d7a12" kind="function"><name>initiateMenuStates</name></member>
+    <member refid="class_application_menu_1a194cd80be35429b21fe027d85f9340e5" kind="function"><name>InitiateMenuStates</name></member>
     <member refid="class_application_menu_1a881f4b9ebfd0a0263fcef16c9403057f" kind="function"><name>EndOfSolarPanelUI</name></member>
     <member refid="class_application_menu_1a582777910578ad300a35ad7eccfee748" kind="function"><name>Update</name></member>
     <member refid="class_application_menu_1ab576671a8ee66c8de5ae45cc778f56cc" kind="function"><name>InitializeGameObject</name></member>
@@ -95,11 +95,11 @@
     <member refid="class_b83_1_1_image_1_1_b_m_p_1_1_b_m_p_loader_1a25789c0b2ba7a0ff2680fc5ca59abffc" kind="function"><name>ReadInfoHeader</name></member>
     <member refid="class_b83_1_1_image_1_1_b_m_p_1_1_b_m_p_loader_1a688eaa25f6d5a1e03a357a7f5a32a8e9" kind="function"><name>ReadPalette</name></member>
   </compound>
-  <compound refid="classbutton_handler" kind="class"><name>buttonHandler</name>
-    <member refid="classbutton_handler_1a414d33f3c69cc98026b4bce65510bdb7" kind="variable"><name>viewSettings</name></member>
-    <member refid="classbutton_handler_1a7070b5647a49ed64cbbac0c1cf640e9e" kind="variable"><name>mainMenu</name></member>
-    <member refid="classbutton_handler_1adac7a669ebe908bc93918fc0e8fe63d6" kind="variable"><name>settingsMenu</name></member>
-    <member refid="classbutton_handler_1ad600af0dc55da877c5b5a34055b45e0e" kind="function"><name>toggleSettings</name></member>
+  <compound refid="class_button_handler" kind="class"><name>ButtonHandler</name>
+    <member refid="class_button_handler_1a50a8055d52ab7eb3d22d6c41388e7153" kind="variable"><name>viewSettings</name></member>
+    <member refid="class_button_handler_1a5e32f59c6d71cbfcbffcc3ad32ce10e2" kind="variable"><name>mainMenu</name></member>
+    <member refid="class_button_handler_1ae9a21a2755e42756c32e6ecf61f4dc9f" kind="variable"><name>settingsMenu</name></member>
+    <member refid="class_button_handler_1ab8b86342f366fbc35b2268b9765840e7" kind="function"><name>ToggleSettings</name></member>
   </compound>
   <compound refid="class_camera_script" kind="class"><name>CameraScript</name>
     <member refid="class_camera_script_1a6aa48c331de1865f340065884ffa9ade" kind="variable"><name>speedH</name></member>
@@ -266,11 +266,14 @@
     <member refid="class_ray_test_1ad40d1ea780d4bc63283e5d5d587a75d7" kind="variable"><name>SWIND</name></member>
     <member refid="class_ray_test_1abfec699a1845cfe89f9e781f6037f520" kind="variable"><name>SEIND</name></member>
     <member refid="class_ray_test_1ad35d07b8b3422832fed5a3df005710be" kind="function"><name>Start</name></member>
-    <member refid="class_ray_test_1abbfe61b2ee04fbb6a4d0c4f98bac705f" kind="function"><name>createLayers</name></member>
-    <member refid="class_ray_test_1a6996f173c7803cc0c35f69b01072a941" kind="function"><name>detectSlopes</name></member>
+    <member refid="class_ray_test_1a016d8eafab1fb060804755d3f191830c" kind="function"><name>CreateLayers</name></member>
+    <member refid="class_ray_test_1a2810fe8028706e9f1521651dc94bd241" kind="function"><name>DetectSlopes</name></member>
+    <member refid="class_ray_test_1a4dafcb543428597f07f1321308dad4d3" kind="function"><name>MakeLayerPlane</name></member>
     <member refid="class_ray_test_1ab5e9662425ab5c69ec8094318c4681e6" kind="function"><name>OnDrawGizmos</name></member>
     <member refid="class_ray_test_1a46cceb5483afd437a523424f6cddb2cc" kind="function"><name>Update</name></member>
-    <member refid="class_ray_test_1a346eabd91992d3329255aaf3464952d8" kind="function"><name>startScan</name></member>
+    <member refid="class_ray_test_1acbd3e1bf479b9d8acd686e779f5c37f4" kind="function"><name>SwitchDrawHits</name></member>
+    <member refid="class_ray_test_1aabae65a124d1f7919ec2c49cd7387693" kind="function"><name>SwitchDrawLayers</name></member>
+    <member refid="class_ray_test_1a5e5101321bc7716c0740dea3900ca14d" kind="function"><name>StartScan</name></member>
   </compound>
   <compound refid="class_roof_layer" kind="class"><name>RoofLayer</name>
     <member refid="class_roof_layer_1a2928528f6e8161abccf386316469a333" kind="variable"><name>_NE</name></member>
@@ -360,7 +363,7 @@
   </compound>
   <compound refid="namespace_unity_engine_1_1_u_i" kind="namespace"><name>UnityEngine::UI</name>
   </compound>
-  <compound refid="button_handler_8cs" kind="file"><name>buttonHandler.cs</name>
+  <compound refid="_button_handler_8cs" kind="file"><name>ButtonHandler.cs</name>
   </compound>
   <compound refid="_char_word_reader_8cs" kind="file"><name>CharWordReader.cs</name>
   </compound>

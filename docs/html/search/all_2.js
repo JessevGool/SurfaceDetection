@@ -22,7 +22,7 @@ var searchData=
   ['bmploader_19',['BMPLoader',['../class_b83_1_1_image_1_1_b_m_p_1_1_b_m_p_loader.html',1,'B83::Image::BMP']]],
   ['bmploader_2ecs_20',['BMPLoader.cs',['../_b_m_p_loader_8cs.html',1,'']]],
   ['build_21',['Build',['../class_dummiesman_1_1_o_b_j_object_builder.html#a24d688aa5c78befd415c6b5a16b75336',1,'Dummiesman::OBJObjectBuilder']]],
-  ['buttonhandler_22',['buttonHandler',['../classbutton_handler.html',1,'']]],
-  ['buttonhandler_2ecs_23',['buttonHandler.cs',['../button_handler_8cs.html',1,'']]],
+  ['buttonhandler_22',['ButtonHandler',['../class_button_handler.html',1,'']]],
+  ['buttonhandler_2ecs_23',['ButtonHandler.cs',['../_button_handler_8cs.html',1,'']]],
   ['image_24',['Image',['../namespace_b83_1_1_image.html',1,'B83']]]
 ];
