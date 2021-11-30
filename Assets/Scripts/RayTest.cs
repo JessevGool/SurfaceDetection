@@ -120,6 +120,15 @@ public class RayTest : MonoBehaviour
      * The resolution of the scan is based on the scanResolution variable.
      * Both of the variables named above can be set in the settings panel in the GUI.
      */
+
+    public void SwitchDrawHits()
+    {
+        drawHits = !drawHits;
+    }
+    public void SwitchDrawLayers()
+    {
+        drawLayers = !drawLayers;
+    }
     public void StartScan()
     {
         float maxBoundsX = gameObject.GetComponent<Renderer>().bounds.max.x;
@@ -405,23 +414,26 @@ public class RayTest : MonoBehaviour
                 test.name = angle.ToString() + " z";
                 test.transform.position = angledHit;
                 test.transform.localScale = new Vector3(0.1f, 0.1f, 0.1f);
-
-                if (count == 0)
+                if(drawAngledLayers)
                 {
-                    test.GetComponent<Renderer>().material.color = Color.green;
+                    if (count == 0)
+                    {
+                        test.GetComponent<Renderer>().material.color = Color.green;
+                    }
+                    else if (count == 1)
+                    {
+                        test.GetComponent<Renderer>().material.color = Color.red;
+                    }
+                    else if (count == 2)
+                    {
+                        test.GetComponent<Renderer>().material.color = Color.blue;
+                    }
+                    else if (count == 3)
+                    {
+                        test.GetComponent<Renderer>().material.color = Color.yellow;
+                    }
                 }
-                else if (count == 1)
-                {
-                    test.GetComponent<Renderer>().material.color = Color.red;
-                }
-                else if (count == 2)
-                {
-                    test.GetComponent<Renderer>().material.color = Color.blue;
-                }
-                else if (count == 3)
-                {
-                    test.GetComponent<Renderer>().material.color = Color.yellow;
-                }
+              
 
 
             }
@@ -460,22 +472,26 @@ public class RayTest : MonoBehaviour
                 test.name = angleX.ToString() + " x";
                 test.transform.position = angledHit;
                 test.transform.localScale = new Vector3(0.1f, 0.1f, 0.1f);
-                if (count2 == 0)
+                if (drawAngledLayers)
                 {
-                    test.GetComponent<Renderer>().material.color = Color.green;
+                    if (count2 == 0)
+                    {
+                        test.GetComponent<Renderer>().material.color = Color.green;
+                    }
+                    else if (count2 == 1)
+                    {
+                        test.GetComponent<Renderer>().material.color = Color.red;
+                    }
+                    else if (count2 == 2)
+                    {
+                        test.GetComponent<Renderer>().material.color = Color.blue;
+                    }
+                    else if (count2 == 3)
+                    {
+                        test.GetComponent<Renderer>().material.color = Color.yellow;
+                    }
                 }
-                else if (count2 == 1)
-                {
-                    test.GetComponent<Renderer>().material.color = Color.red;
-                }
-                else if (count2 == 2)
-                {
-                    test.GetComponent<Renderer>().material.color = Color.blue;
-                }
-                else if (count2 == 3)
-                {
-                    test.GetComponent<Renderer>().material.color = Color.yellow;
-                }
+               
 
 
             }
