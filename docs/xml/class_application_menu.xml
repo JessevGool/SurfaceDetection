@@ -1,0 +1,422 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
+  <compounddef id="class_application_menu" kind="class" language="C#" prot="public">
+    <compoundname>ApplicationMenu</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_application_menu_1a51e5951a3e5ba6aece82fdb992171efd" prot="public" static="no" mutable="no">
+        <type>GameObject</type>
+        <definition>GameObject ApplicationMenu.objectModel</definition>
+        <argsstring></argsstring>
+        <name>objectModel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" line="15" column="23" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_application_menu_1af466236025af2dc875c6c4f6d90e376d" prot="public" static="no" mutable="no">
+        <type>GameObject</type>
+        <definition>GameObject ApplicationMenu.mainMenu</definition>
+        <argsstring></argsstring>
+        <name>mainMenu</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>parent object used for the main menu </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" line="19" column="23" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_application_menu_1a47b67bf9647c207ebec3fb994481a131" prot="public" static="no" mutable="no">
+        <type>GameObject</type>
+        <definition>GameObject ApplicationMenu.settingsMenu</definition>
+        <argsstring></argsstring>
+        <name>settingsMenu</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>parent object used for the settings menu </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" line="23" column="23" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_application_menu_1aae661ec1e88777acc697ccd9012d4d3e" prot="public" static="no" mutable="no">
+        <type>InputField</type>
+        <definition>InputField ApplicationMenu.SolarLengthInputField</definition>
+        <argsstring></argsstring>
+        <name>SolarLengthInputField</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" line="40" column="23" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_application_menu_1a74156c8015e2f58db16e456b7ba6a808" prot="public" static="no" mutable="no">
+        <type>InputField</type>
+        <definition>InputField ApplicationMenu.SolarWidthInputField</definition>
+        <argsstring></argsstring>
+        <name>SolarWidthInputField</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" line="41" column="23" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_application_menu_1a6361d5751c0fdc854d71bdf9a1b7e7f7" prot="public" static="no" mutable="no">
+        <type>GameObject</type>
+        <definition>GameObject ApplicationMenu.addSolarPanel</definition>
+        <argsstring></argsstring>
+        <name>addSolarPanel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" line="46" column="23" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_application_menu_1aa0697f4a1cdd263cbba0cad10fb324fa" prot="private" static="no" mutable="no">
+        <type><ref refid="class_ray_test" kindref="compound">RayTest</ref></type>
+        <definition>RayTest ApplicationMenu.rayTest</definition>
+        <argsstring></argsstring>
+        <name>rayTest</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Instance of the <ref refid="class_ray_test" kindref="compound">RayTest</ref> class used to switch a parameter on button click </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" line="27" column="21" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_application_menu_1a7ead50df41326d13968909481a789fc5" prot="private" static="no" mutable="no">
+        <type>Vector3</type>
+        <definition>Vector3 ApplicationMenu.scaleVector</definition>
+        <argsstring></argsstring>
+        <name>scaleVector</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" line="29" column="13" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_application_menu_1ae506402020bd07ec1b9dc39d0d5814e0" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float ApplicationMenu.scale</definition>
+        <argsstring></argsstring>
+        <name>scale</name>
+        <initializer>= 1.0f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" line="30" column="11" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_application_menu_1a55c7eb529a1f9f6087f4918ab4426c6f" prot="private" static="no" mutable="no">
+        <type>List&lt; Vector2 &gt;</type>
+        <definition>List&lt;Vector2&gt; ApplicationMenu.SolarPanelSizes</definition>
+        <argsstring></argsstring>
+        <name>SolarPanelSizes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" line="37" column="18" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_application_menu_1a7362b4e7813e62cdfe490ef211ca85c3" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string ApplicationMenu.newSolarLength</definition>
+        <argsstring></argsstring>
+        <name>newSolarLength</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" line="43" column="20" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_application_menu_1a403c2a278e41eda50758dd9e66e9e333" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string ApplicationMenu.newSolarWidth</definition>
+        <argsstring></argsstring>
+        <name>newSolarWidth</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" line="44" column="20" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_application_menu_1aff45cd83670b34acc3c75c9b9726735e" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool ApplicationMenu.viewSettings</definition>
+        <argsstring></argsstring>
+        <name>viewSettings</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" line="47" column="18" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_application_menu_1a7dd10866cb9e80d5f81e92e13a75acac" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ApplicationMenu.Start</definition>
+        <argsstring>()</argsstring>
+        <name>Start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" line="49" column="10" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" bodystart="49" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="function" id="class_application_menu_1a148bff968a10051e040e115a986d7a12" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ApplicationMenu.initiateMenuStates</definition>
+        <argsstring>()</argsstring>
+        <name>initiateMenuStates</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Method responsible for initiating the menu in the default config </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" line="98" column="18" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" bodystart="98" bodyend="118"/>
+      </memberdef>
+      <memberdef kind="function" id="class_application_menu_1a881f4b9ebfd0a0263fcef16c9403057f" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ApplicationMenu.EndOfSolarPanelUI</definition>
+        <argsstring>()</argsstring>
+        <name>EndOfSolarPanelUI</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" line="181" column="18" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" bodystart="181" bodyend="192"/>
+      </memberdef>
+      <memberdef kind="function" id="class_application_menu_1a582777910578ad300a35ad7eccfee748" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ApplicationMenu.Update</definition>
+        <argsstring>()</argsstring>
+        <name>Update</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" line="209" column="10" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" bodystart="209" bodyend="218"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_application_menu_1ab576671a8ee66c8de5ae45cc778f56cc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ApplicationMenu.InitializeGameObject</definition>
+        <argsstring>(GameObject gameObject)</argsstring>
+        <name>InitializeGameObject</name>
+        <param>
+          <type>GameObject</type>
+          <declname>gameObject</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Method used to initialize a gameObject based on the parameter <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>gameObject</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" line="64" column="17" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" bodystart="64" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="function" id="class_application_menu_1ae67b5e866d767e1b06914821dd3af1a9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ApplicationMenu.StartScanButton</definition>
+        <argsstring>()</argsstring>
+        <name>StartScanButton</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Button method responsible for switching the startScanBool in the rayTest class. <simplesect kind="see"><para><ref refid="class_ray_test" kindref="compound">RayTest</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" line="88" column="17" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" bodystart="88" bodyend="94"/>
+      </memberdef>
+      <memberdef kind="function" id="class_application_menu_1a3a72937dfab340348b2731bc069cc6fb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ApplicationMenu.AddSolarPanelButton</definition>
+        <argsstring>()</argsstring>
+        <name>AddSolarPanelButton</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" line="120" column="17" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" bodystart="120" bodyend="127"/>
+      </memberdef>
+      <memberdef kind="function" id="class_application_menu_1a2281c723cd099888076b9cbca2cc3baa" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ApplicationMenu.LoadSolarPanelPlacement</definition>
+        <argsstring>()</argsstring>
+        <name>LoadSolarPanelPlacement</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" line="130" column="17" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" bodystart="130" bodyend="144"/>
+      </memberdef>
+      <memberdef kind="function" id="class_application_menu_1a8a6bf03741617e77e1d6c85683a7b3eb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ApplicationMenu.CancelAddSolarPanelButton</definition>
+        <argsstring>()</argsstring>
+        <name>CancelAddSolarPanelButton</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" line="153" column="17" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" bodystart="153" bodyend="156"/>
+      </memberdef>
+      <memberdef kind="function" id="class_application_menu_1a1bc3c574b9209a3b9d7351b2cc29ade6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ApplicationMenu.AcceptAddSolarPanelButton</definition>
+        <argsstring>()</argsstring>
+        <name>AcceptAddSolarPanelButton</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" line="159" column="17" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" bodystart="159" bodyend="176"/>
+      </memberdef>
+      <memberdef kind="function" id="class_application_menu_1a982eb6e77ae09f789f58e4401fffa541" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ApplicationMenu.EditLengthInput</definition>
+        <argsstring>()</argsstring>
+        <name>EditLengthInput</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" line="196" column="17" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" bodystart="196" bodyend="200"/>
+      </memberdef>
+      <memberdef kind="function" id="class_application_menu_1a630458b366405c26353119d8a7965bcb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ApplicationMenu.EditWidthInput</definition>
+        <argsstring>()</argsstring>
+        <name>EditWidthInput</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" line="201" column="17" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" bodystart="201" bodyend="205"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>Jesse van Gool &amp; Maurice Brouwers </para>
+</simplesect>
+<simplesect kind="version"><para>1.0 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>ApplicationMenu</label>
+        <link refid="class_application_menu"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>ApplicationMenu</label>
+        <link refid="class_application_menu"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+    </collaborationgraph>
+    <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" line="12" column="7" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" bodystart="13" bodyend="219"/>
+    <listofallmembers>
+      <member refid="class_application_menu_1a1bc3c574b9209a3b9d7351b2cc29ade6" prot="public" virt="non-virtual"><scope>ApplicationMenu</scope><name>AcceptAddSolarPanelButton</name></member>
+      <member refid="class_application_menu_1a6361d5751c0fdc854d71bdf9a1b7e7f7" prot="public" virt="non-virtual"><scope>ApplicationMenu</scope><name>addSolarPanel</name></member>
+      <member refid="class_application_menu_1a3a72937dfab340348b2731bc069cc6fb" prot="public" virt="non-virtual"><scope>ApplicationMenu</scope><name>AddSolarPanelButton</name></member>
+      <member refid="class_application_menu_1a8a6bf03741617e77e1d6c85683a7b3eb" prot="public" virt="non-virtual"><scope>ApplicationMenu</scope><name>CancelAddSolarPanelButton</name></member>
+      <member refid="class_application_menu_1a982eb6e77ae09f789f58e4401fffa541" prot="public" virt="non-virtual"><scope>ApplicationMenu</scope><name>EditLengthInput</name></member>
+      <member refid="class_application_menu_1a630458b366405c26353119d8a7965bcb" prot="public" virt="non-virtual"><scope>ApplicationMenu</scope><name>EditWidthInput</name></member>
+      <member refid="class_application_menu_1a881f4b9ebfd0a0263fcef16c9403057f" prot="private" virt="non-virtual"><scope>ApplicationMenu</scope><name>EndOfSolarPanelUI</name></member>
+      <member refid="class_application_menu_1ab576671a8ee66c8de5ae45cc778f56cc" prot="public" virt="non-virtual"><scope>ApplicationMenu</scope><name>InitializeGameObject</name></member>
+      <member refid="class_application_menu_1a148bff968a10051e040e115a986d7a12" prot="private" virt="non-virtual"><scope>ApplicationMenu</scope><name>initiateMenuStates</name></member>
+      <member refid="class_application_menu_1a2281c723cd099888076b9cbca2cc3baa" prot="public" virt="non-virtual"><scope>ApplicationMenu</scope><name>LoadSolarPanelPlacement</name></member>
+      <member refid="class_application_menu_1af466236025af2dc875c6c4f6d90e376d" prot="public" virt="non-virtual"><scope>ApplicationMenu</scope><name>mainMenu</name></member>
+      <member refid="class_application_menu_1a7362b4e7813e62cdfe490ef211ca85c3" prot="private" virt="non-virtual"><scope>ApplicationMenu</scope><name>newSolarLength</name></member>
+      <member refid="class_application_menu_1a403c2a278e41eda50758dd9e66e9e333" prot="private" virt="non-virtual"><scope>ApplicationMenu</scope><name>newSolarWidth</name></member>
+      <member refid="class_application_menu_1a51e5951a3e5ba6aece82fdb992171efd" prot="public" virt="non-virtual"><scope>ApplicationMenu</scope><name>objectModel</name></member>
+      <member refid="class_application_menu_1aa0697f4a1cdd263cbba0cad10fb324fa" prot="private" virt="non-virtual"><scope>ApplicationMenu</scope><name>rayTest</name></member>
+      <member refid="class_application_menu_1ae506402020bd07ec1b9dc39d0d5814e0" prot="private" virt="non-virtual"><scope>ApplicationMenu</scope><name>scale</name></member>
+      <member refid="class_application_menu_1a7ead50df41326d13968909481a789fc5" prot="private" virt="non-virtual"><scope>ApplicationMenu</scope><name>scaleVector</name></member>
+      <member refid="class_application_menu_1a47b67bf9647c207ebec3fb994481a131" prot="public" virt="non-virtual"><scope>ApplicationMenu</scope><name>settingsMenu</name></member>
+      <member refid="class_application_menu_1aae661ec1e88777acc697ccd9012d4d3e" prot="public" virt="non-virtual"><scope>ApplicationMenu</scope><name>SolarLengthInputField</name></member>
+      <member refid="class_application_menu_1a55c7eb529a1f9f6087f4918ab4426c6f" prot="private" virt="non-virtual"><scope>ApplicationMenu</scope><name>SolarPanelSizes</name></member>
+      <member refid="class_application_menu_1a74156c8015e2f58db16e456b7ba6a808" prot="public" virt="non-virtual"><scope>ApplicationMenu</scope><name>SolarWidthInputField</name></member>
+      <member refid="class_application_menu_1a7dd10866cb9e80d5f81e92e13a75acac" prot="private" virt="non-virtual"><scope>ApplicationMenu</scope><name>Start</name></member>
+      <member refid="class_application_menu_1ae67b5e866d767e1b06914821dd3af1a9" prot="public" virt="non-virtual"><scope>ApplicationMenu</scope><name>StartScanButton</name></member>
+      <member refid="class_application_menu_1a582777910578ad300a35ad7eccfee748" prot="private" virt="non-virtual"><scope>ApplicationMenu</scope><name>Update</name></member>
+      <member refid="class_application_menu_1aff45cd83670b34acc3c75c9b9726735e" prot="private" virt="non-virtual"><scope>ApplicationMenu</scope><name>viewSettings</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

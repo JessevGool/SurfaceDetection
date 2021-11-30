@@ -9,30 +9,98 @@ using UnityEngine;
 using Random = System.Random;
 using UnityEngine.UI;
 
+/**
+ * @author Jesse van Gool & Maurice Brouwers
+ * @version 1.0
+ */
 public class RayTest : MonoBehaviour
 {
-
+    /**
+     * List which stores all the hits detected by the raycast
+     */
     private List<RaycastHit> _hits = new List<RaycastHit>();
+
+    /**
+     * List which stores the found layers
+     */
     private List<RoofLayer> _roofLayers = new List<RoofLayer>();
     private Vector3 _collision = Vector3.zero;
     private int _rays = 0;
+    /**
+     * Variable containing the position of the next ray origin position
+     */
     private Vector3 _rayPos;
+    /**
+     * @deprecated Used for threading, can't be used because of Unity threading limitations
+     */
     private Thread _t1;
+    /**
+  * @deprecated Used for threading, can't be used because of Unity threading limitations
+  */
     private Thread _t2;
+    /**
+  * @deprecated Used for threading, can't be used because of Unity threading limitations
+  * Is still used to switch a bool after finding layers
+  */
     private bool _t1Finished = false;
+    /**
+  * @deprecated Used for threading, can't be used because of Unity threading limitations
+  * Is still used to switch a bool after finding layers
+  */
     private bool _t2Finished = false;
 
+    /**
+     * boolean variable which dictates if found hits will be drawn using the hitIndicator object
+     * @see hitIndicator
+     */
     public bool drawHits = false;
+    /**
+     * boolean variable which dictates if layers should be drawn
+     */
     public bool drawLayers = false;
+    /**
+     * boolean variable which dictates if angledLayers should be drawn
+     */
     public bool drawAngledLayers = false;
+    /**
+     * boolean variable which dictates if only the corners of layers should be drawn
+     * Use the gameobjects named with cardinal directions.
+     * @see NWIND
+     * @see NEIND
+     * @see SWIND
+     * @see SEIND
+     */
     public bool drawCorners = false;
+    /**
+     * boolean variable used by another script to start the scan in the update method
+     * @see RayTest#Update()
+     */
     public bool startScanBool = false;
+    /**
+  * @deprecated Used for threading, can't be used because of Unity threaading limitations
+  */
     public bool threading = false;
 
+
+    /**
+     * variable which sets the distance between the rays
+     * min = 0.01f
+     * max = 1f
+     * default = 0.05f
+     */
     [Range(0.01f, 1f)]
     public float scanResolution = 0.05f;
-    [Range(0, 100)]
-    public float gridSize = 100;
+    /**
+     * sets the amount of grids on one of the axis
+     * min = 1
+     * max = 100
+     * default = 80
+     */
+    [Range(1, 100)]
+    public float gridSize = 80;
+    /**
+     * hitIndicator GameObject used to set the object that will be drawn if drawHits is true
+     */
     public GameObject hitIndicator;
     public LayerMask rayLayer;
     public GameObject NWIND;
@@ -46,7 +114,12 @@ public class RayTest : MonoBehaviour
     void Start()
     {
     }
-
+    /**
+     * This method initializes the scan. The scan size is based on the size of the parent gameobject.
+     * The scan is subdivided into a grid based on the gridSize variable.
+     * The resolution of the scan is based on the scanResolution variable.
+     * Both of the variables named above can be set in the settings panel in the GUI.
+     */
     public void startScan()
     {
         float maxBoundsX = gameObject.GetComponent<Renderer>().bounds.max.x;
@@ -101,7 +174,11 @@ public class RayTest : MonoBehaviour
         }
 
     }
-
+    /**
+     * This method creates the layers based on the hits inside of the _hits list
+     * The method only finds flat layers, another method is used for angled layers
+     * @see _hits
+     */
     private void createLayers()
     {
         Vector3 NE = Vector3.zero, NW = Vector3.zero, SE = Vector3.zero, SW = Vector3.zero;
@@ -212,7 +289,10 @@ public class RayTest : MonoBehaviour
         }
         _t1Finished = true;
     }
-
+    /**
+     * This method detects the angled layers using the _hits list
+     * @see _hits
+     */
     private void detectSlopes()
     {
 
@@ -479,7 +559,10 @@ public class RayTest : MonoBehaviour
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(_collision, 0.2f);
     }
-    // Update is called once per frame
+    /*
+     * Update method called once per frame. Method is used to check if the user has pressed the start scan button switching startScanBool to true
+     * @see startScanBool
+     */
     void Update()
     {
         if (startScanBool)

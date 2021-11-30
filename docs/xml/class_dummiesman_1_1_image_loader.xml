@@ -1,0 +1,180 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
+  <compounddef id="class_dummiesman_1_1_image_loader" kind="class" language="C#" prot="public">
+    <compoundname>Dummiesman::ImageLoader</compoundname>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="class_dummiesman_1_1_image_loader_1a121f588f830ab7a4161b675176e25549" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>TextureFormat</name>
+        <enumvalue id="class_dummiesman_1_1_image_loader_1a121f588f830ab7a4161b675176e25549a9b20752f14503be0510115d06d64bbdc" prot="public">
+          <name>DDS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_dummiesman_1_1_image_loader_1a121f588f830ab7a4161b675176e25549a64efd9bcf7b83f22fe9796967255e103" prot="public">
+          <name>TGA</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_dummiesman_1_1_image_loader_1a121f588f830ab7a4161b675176e25549aa5d5ca1447586e23dc011f8c0cc0a6db" prot="public">
+          <name>BMP</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_dummiesman_1_1_image_loader_1a121f588f830ab7a4161b675176e25549a55505ba281b015ec31f03ccb151b2a34" prot="public">
+          <name>PNG</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_dummiesman_1_1_image_loader_1a121f588f830ab7a4161b675176e25549a92769fe7c40229f4301d6125e0a9e928" prot="public">
+          <name>JPG</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_dummiesman_1_1_image_loader_1a121f588f830ab7a4161b675176e25549a05a99c93b04bf5038a02a117d1ff860f" prot="public">
+          <name>CRN</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/TextureLoader/ImageLoader.cs" line="34" column="15" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/TextureLoader/ImageLoader.cs" bodystart="35" bodyend="42"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_dummiesman_1_1_image_loader_1aa7f478948280bd688f48e60dae836ab0" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Dummiesman.ImageLoader.SetNormalMap</definition>
+        <argsstring>(ref Texture2D tex)</argsstring>
+        <name>SetNormalMap</name>
+        <param>
+          <type>ref Texture2D</type>
+          <declname>tex</declname>
+        </param>
+        <briefdescription>
+<para>Converts a DirectX normal map to Unitys expected format </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tex</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Texture to convert</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/TextureLoader/ImageLoader.cs" line="20" column="28" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/TextureLoader/ImageLoader.cs" bodystart="20" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="class_dummiesman_1_1_image_loader_1ad483d685766bf4d7e2b691476fd8253f" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Texture2D</type>
+        <definition>static Texture2D Dummiesman.ImageLoader.LoadTexture</definition>
+        <argsstring>(Stream stream, TextureFormat format)</argsstring>
+        <name>LoadTexture</name>
+        <param>
+          <type>Stream</type>
+          <declname>stream</declname>
+        </param>
+        <param>
+          <type><ref refid="class_dummiesman_1_1_image_loader_1a121f588f830ab7a4161b675176e25549" kindref="member">TextureFormat</ref></type>
+          <declname>format</declname>
+        </param>
+        <briefdescription>
+<para>Loads a texture from a stream </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>stream</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The stream</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>format</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The format <bold>NOT UNITYENGINE.TEXTUREFORMAT</bold></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/TextureLoader/ImageLoader.cs" line="51" column="33" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/TextureLoader/ImageLoader.cs" bodystart="51" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="function" id="class_dummiesman_1_1_image_loader_1a20b5a035e33c98b5854a7e911fd517fa" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Texture2D</type>
+        <definition>static Texture2D Dummiesman.ImageLoader.LoadTexture</definition>
+        <argsstring>(string fn)</argsstring>
+        <name>LoadTexture</name>
+        <param>
+          <type>string</type>
+          <declname>fn</declname>
+        </param>
+        <briefdescription>
+<para>Loads a texture from a file </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fn</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>normalMap</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/TextureLoader/ImageLoader.cs" line="87" column="33" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/TextureLoader/ImageLoader.cs" bodystart="87" bodyend="155"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/TextureLoader/ImageLoader.cs" line="14" column="11" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/TextureLoader/ImageLoader.cs" bodystart="15" bodyend="157"/>
+    <listofallmembers>
+      <member refid="class_dummiesman_1_1_image_loader_1ad483d685766bf4d7e2b691476fd8253f" prot="public" virt="non-virtual"><scope>Dummiesman::ImageLoader</scope><name>LoadTexture</name></member>
+      <member refid="class_dummiesman_1_1_image_loader_1a20b5a035e33c98b5854a7e911fd517fa" prot="public" virt="non-virtual"><scope>Dummiesman::ImageLoader</scope><name>LoadTexture</name></member>
+      <member refid="class_dummiesman_1_1_image_loader_1aa7f478948280bd688f48e60dae836ab0" prot="public" virt="non-virtual"><scope>Dummiesman::ImageLoader</scope><name>SetNormalMap</name></member>
+      <member refid="class_dummiesman_1_1_image_loader_1a121f588f830ab7a4161b675176e25549" prot="public" virt="non-virtual"><scope>Dummiesman::ImageLoader</scope><name>TextureFormat</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

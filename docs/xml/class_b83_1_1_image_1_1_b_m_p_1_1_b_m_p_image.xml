@@ -1,0 +1,167 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
+  <compounddef id="class_b83_1_1_image_1_1_b_m_p_1_1_b_m_p_image" kind="class" language="C#" prot="public">
+    <compoundname>B83::Image::BMP::BMPImage</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_b83_1_1_image_1_1_b_m_p_1_1_b_m_p_image_1ab2cec84349a3b7e8f4e69b3108599285" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_b83_1_1_image_1_1_b_m_p_1_1_b_m_p_file_header" kindref="compound">BMPFileHeader</ref></type>
+        <definition>BMPFileHeader B83.Image.BMP.BMPImage.header</definition>
+        <argsstring></argsstring>
+        <name>header</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/TextureLoader/BMPLoader.cs" line="100" column="30" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/TextureLoader/BMPLoader.cs" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_b83_1_1_image_1_1_b_m_p_1_1_b_m_p_image_1ad3c99d7fd20faa1de71ce3d3db53a6d9" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_b83_1_1_image_1_1_b_m_p_1_1_bitmap_info_header" kindref="compound">BitmapInfoHeader</ref></type>
+        <definition>BitmapInfoHeader B83.Image.BMP.BMPImage.info</definition>
+        <argsstring></argsstring>
+        <name>info</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/TextureLoader/BMPLoader.cs" line="101" column="33" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/TextureLoader/BMPLoader.cs" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_b83_1_1_image_1_1_b_m_p_1_1_b_m_p_image_1af94fdedc58c111ad58d22d82c43864fd" prot="public" static="no" mutable="no">
+        <type>uint</type>
+        <definition>uint B83.Image.BMP.BMPImage.rMask</definition>
+        <argsstring></argsstring>
+        <name>rMask</name>
+        <initializer>= 0x00FF0000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/TextureLoader/BMPLoader.cs" line="102" column="21" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/TextureLoader/BMPLoader.cs" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_b83_1_1_image_1_1_b_m_p_1_1_b_m_p_image_1ac2e5d31a339e13767c62cde529ad1f60" prot="public" static="no" mutable="no">
+        <type>uint</type>
+        <definition>uint B83.Image.BMP.BMPImage.gMask</definition>
+        <argsstring></argsstring>
+        <name>gMask</name>
+        <initializer>= 0x0000FF00</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/TextureLoader/BMPLoader.cs" line="103" column="21" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/TextureLoader/BMPLoader.cs" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_b83_1_1_image_1_1_b_m_p_1_1_b_m_p_image_1aa1f2fa4f75d9526ea09801732abdf039" prot="public" static="no" mutable="no">
+        <type>uint</type>
+        <definition>uint B83.Image.BMP.BMPImage.bMask</definition>
+        <argsstring></argsstring>
+        <name>bMask</name>
+        <initializer>= 0x000000FF</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/TextureLoader/BMPLoader.cs" line="104" column="21" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/TextureLoader/BMPLoader.cs" bodystart="104" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_b83_1_1_image_1_1_b_m_p_1_1_b_m_p_image_1a0d62c31982d699f0848cbd2f12620410" prot="public" static="no" mutable="no">
+        <type>uint</type>
+        <definition>uint B83.Image.BMP.BMPImage.aMask</definition>
+        <argsstring></argsstring>
+        <name>aMask</name>
+        <initializer>= 0x00000000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/TextureLoader/BMPLoader.cs" line="105" column="21" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/TextureLoader/BMPLoader.cs" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_b83_1_1_image_1_1_b_m_p_1_1_b_m_p_image_1aa1a52a5b2764901f516914809b9fc251" prot="public" static="no" mutable="no">
+        <type>List&lt; Color32 &gt;</type>
+        <definition>List&lt;Color32&gt; B83.Image.BMP.BMPImage.palette</definition>
+        <argsstring></argsstring>
+        <name>palette</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/TextureLoader/BMPLoader.cs" line="106" column="21" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/TextureLoader/BMPLoader.cs" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_b83_1_1_image_1_1_b_m_p_1_1_b_m_p_image_1a01400fada6baddcb5606942fdce93d75" prot="public" static="no" mutable="no">
+        <type>Color32[]</type>
+        <definition>Color32 [] B83.Image.BMP.BMPImage.imageData</definition>
+        <argsstring></argsstring>
+        <name>imageData</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/TextureLoader/BMPLoader.cs" line="107" column="24" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/TextureLoader/BMPLoader.cs" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_b83_1_1_image_1_1_b_m_p_1_1_b_m_p_image_1a06812e60561ebe2109e172541162a168" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Texture2D</type>
+        <definition>Texture2D B83.Image.BMP.BMPImage.ToTexture2D</definition>
+        <argsstring>()</argsstring>
+        <name>ToTexture2D</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/TextureLoader/BMPLoader.cs" line="108" column="26" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/TextureLoader/BMPLoader.cs" bodystart="108" bodyend="114"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>B83.Image.BMP.BMPImage</label>
+        <link refid="class_b83_1_1_image_1_1_b_m_p_1_1_b_m_p_image"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>header</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>info</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>B83.Image.BMP.BMPFileHeader</label>
+        <link refid="struct_b83_1_1_image_1_1_b_m_p_1_1_b_m_p_file_header"/>
+      </node>
+      <node id="3">
+        <label>B83.Image.BMP.BitmapInfoHeader</label>
+        <link refid="struct_b83_1_1_image_1_1_b_m_p_1_1_bitmap_info_header"/>
+      </node>
+    </collaborationgraph>
+    <location file="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/TextureLoader/BMPLoader.cs" line="98" column="11" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/TextureLoader/BMPLoader.cs" bodystart="99" bodyend="115"/>
+    <listofallmembers>
+      <member refid="class_b83_1_1_image_1_1_b_m_p_1_1_b_m_p_image_1a0d62c31982d699f0848cbd2f12620410" prot="public" virt="non-virtual"><scope>B83::Image::BMP::BMPImage</scope><name>aMask</name></member>
+      <member refid="class_b83_1_1_image_1_1_b_m_p_1_1_b_m_p_image_1aa1f2fa4f75d9526ea09801732abdf039" prot="public" virt="non-virtual"><scope>B83::Image::BMP::BMPImage</scope><name>bMask</name></member>
+      <member refid="class_b83_1_1_image_1_1_b_m_p_1_1_b_m_p_image_1ac2e5d31a339e13767c62cde529ad1f60" prot="public" virt="non-virtual"><scope>B83::Image::BMP::BMPImage</scope><name>gMask</name></member>
+      <member refid="class_b83_1_1_image_1_1_b_m_p_1_1_b_m_p_image_1ab2cec84349a3b7e8f4e69b3108599285" prot="public" virt="non-virtual"><scope>B83::Image::BMP::BMPImage</scope><name>header</name></member>
+      <member refid="class_b83_1_1_image_1_1_b_m_p_1_1_b_m_p_image_1a01400fada6baddcb5606942fdce93d75" prot="public" virt="non-virtual"><scope>B83::Image::BMP::BMPImage</scope><name>imageData</name></member>
+      <member refid="class_b83_1_1_image_1_1_b_m_p_1_1_b_m_p_image_1ad3c99d7fd20faa1de71ce3d3db53a6d9" prot="public" virt="non-virtual"><scope>B83::Image::BMP::BMPImage</scope><name>info</name></member>
+      <member refid="class_b83_1_1_image_1_1_b_m_p_1_1_b_m_p_image_1aa1a52a5b2764901f516914809b9fc251" prot="public" virt="non-virtual"><scope>B83::Image::BMP::BMPImage</scope><name>palette</name></member>
+      <member refid="class_b83_1_1_image_1_1_b_m_p_1_1_b_m_p_image_1af94fdedc58c111ad58d22d82c43864fd" prot="public" virt="non-virtual"><scope>B83::Image::BMP::BMPImage</scope><name>rMask</name></member>
+      <member refid="class_b83_1_1_image_1_1_b_m_p_1_1_b_m_p_image_1a06812e60561ebe2109e172541162a168" prot="public" virt="non-virtual"><scope>B83::Image::BMP::BMPImage</scope><name>ToTexture2D</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

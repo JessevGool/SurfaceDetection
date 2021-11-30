@@ -1,0 +1,137 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
+  <compounddef id="class_obj_from_file" kind="class" language="C#" prot="public">
+    <compoundname>ObjFromFile</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_obj_from_file_1ad9952190d90282c18d16de4cfbb1657e" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string ObjFromFile.objPath</definition>
+        <argsstring></argsstring>
+        <name>objPath</name>
+        <initializer>= string.Empty</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/Samples/ObjFromFile.cs" line="7" column="12" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/Samples/ObjFromFile.cs" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_obj_from_file_1ae41718557be4b7b37869ff9aeb7974da" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string ObjFromFile.error</definition>
+        <argsstring></argsstring>
+        <name>error</name>
+        <initializer>= string.Empty</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/Samples/ObjFromFile.cs" line="8" column="12" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/Samples/ObjFromFile.cs" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_obj_from_file_1a5469806efb846fe9cdba93366f99a8fd" prot="public" static="no" mutable="no">
+        <type>GameObject</type>
+        <definition>GameObject ObjFromFile.loadedObject</definition>
+        <argsstring></argsstring>
+        <name>loadedObject</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/Samples/ObjFromFile.cs" line="9" column="23" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/Samples/ObjFromFile.cs" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_obj_from_file_1ac958c79679122e8a7211d28a14e5f389" prot="public" static="no" mutable="no">
+        <type><ref refid="class_application_menu" kindref="compound">ApplicationMenu</ref></type>
+        <definition>ApplicationMenu ObjFromFile.applicationMenu</definition>
+        <argsstring></argsstring>
+        <name>applicationMenu</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/Samples/ObjFromFile.cs" line="10" column="28" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/Samples/ObjFromFile.cs" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_obj_from_file_1a4c236379ae63619703dfba0415416249" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ObjFromFile.Start</definition>
+        <argsstring>()</argsstring>
+        <name>Start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/Samples/ObjFromFile.cs" line="12" column="18" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/Samples/ObjFromFile.cs" bodystart="12" bodyend="15"/>
+      </memberdef>
+      <memberdef kind="function" id="class_obj_from_file_1ae4ec5d70bf0b06862e4a1dc5252d1ff7" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ObjFromFile.OnGUI</definition>
+        <argsstring>()</argsstring>
+        <name>OnGUI</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/Samples/ObjFromFile.cs" line="17" column="10" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/Samples/ObjFromFile.cs" bodystart="17" bodyend="69"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="1">
+        <label>ObjFromFile</label>
+        <link refid="class_obj_from_file"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>ApplicationMenu</label>
+        <link refid="class_application_menu"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="1">
+        <label>ObjFromFile</label>
+        <link refid="class_obj_from_file"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>applicationMenu</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/Samples/ObjFromFile.cs" line="5" column="7" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/Samples/ObjFromFile.cs" bodystart="6" bodyend="70"/>
+    <listofallmembers>
+      <member refid="class_obj_from_file_1ac958c79679122e8a7211d28a14e5f389" prot="public" virt="non-virtual"><scope>ObjFromFile</scope><name>applicationMenu</name></member>
+      <member refid="class_obj_from_file_1ae41718557be4b7b37869ff9aeb7974da" prot="private" virt="non-virtual"><scope>ObjFromFile</scope><name>error</name></member>
+      <member refid="class_obj_from_file_1a5469806efb846fe9cdba93366f99a8fd" prot="public" virt="non-virtual"><scope>ObjFromFile</scope><name>loadedObject</name></member>
+      <member refid="class_obj_from_file_1ad9952190d90282c18d16de4cfbb1657e" prot="private" virt="non-virtual"><scope>ObjFromFile</scope><name>objPath</name></member>
+      <member refid="class_obj_from_file_1ae4ec5d70bf0b06862e4a1dc5252d1ff7" prot="private" virt="non-virtual"><scope>ObjFromFile</scope><name>OnGUI</name></member>
+      <member refid="class_obj_from_file_1a4c236379ae63619703dfba0415416249" prot="private" virt="non-virtual"><scope>ObjFromFile</scope><name>Start</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

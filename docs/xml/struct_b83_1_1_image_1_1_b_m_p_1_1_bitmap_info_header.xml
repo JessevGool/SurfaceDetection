@@ -1,0 +1,199 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
+  <compounddef id="struct_b83_1_1_image_1_1_b_m_p_1_1_bitmap_info_header" kind="struct" language="C#" prot="public">
+    <compoundname>B83::Image::BMP::BitmapInfoHeader</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_b83_1_1_image_1_1_b_m_p_1_1_bitmap_info_header_1ab70f78d56a6c146e8025315bd4259a6c" prot="public" static="no" mutable="no">
+        <type>uint</type>
+        <definition>uint B83.Image.BMP.BitmapInfoHeader.size</definition>
+        <argsstring></argsstring>
+        <name>size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/TextureLoader/BMPLoader.cs" line="81" column="21" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/TextureLoader/BMPLoader.cs" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_b83_1_1_image_1_1_b_m_p_1_1_bitmap_info_header_1ae97b2bbaaafa6f9cd3dfac76ab93db34" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int B83.Image.BMP.BitmapInfoHeader.width</definition>
+        <argsstring></argsstring>
+        <name>width</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/TextureLoader/BMPLoader.cs" line="82" column="20" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/TextureLoader/BMPLoader.cs" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_b83_1_1_image_1_1_b_m_p_1_1_bitmap_info_header_1a6adddf5458f2f86a0c19504e492c2a20" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int B83.Image.BMP.BitmapInfoHeader.height</definition>
+        <argsstring></argsstring>
+        <name>height</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/TextureLoader/BMPLoader.cs" line="83" column="20" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/TextureLoader/BMPLoader.cs" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_b83_1_1_image_1_1_b_m_p_1_1_bitmap_info_header_1a5702d6fb2d25b11950b9017d91319bb9" prot="public" static="no" mutable="no">
+        <type>ushort</type>
+        <definition>ushort B83.Image.BMP.BitmapInfoHeader.nColorPlanes</definition>
+        <argsstring></argsstring>
+        <name>nColorPlanes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/TextureLoader/BMPLoader.cs" line="84" column="23" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/TextureLoader/BMPLoader.cs" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_b83_1_1_image_1_1_b_m_p_1_1_bitmap_info_header_1a76ab3bc1e0d37a0b7c906f67f858909e" prot="public" static="no" mutable="no">
+        <type>ushort</type>
+        <definition>ushort B83.Image.BMP.BitmapInfoHeader.nBitsPerPixel</definition>
+        <argsstring></argsstring>
+        <name>nBitsPerPixel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/TextureLoader/BMPLoader.cs" line="85" column="23" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/TextureLoader/BMPLoader.cs" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_b83_1_1_image_1_1_b_m_p_1_1_bitmap_info_header_1afca5bad504ee8851ba3dd478e5081778" prot="public" static="no" mutable="no">
+        <type><ref refid="namespace_b83_1_1_image_1_1_b_m_p_1a04addd92a5ab8a5cdbb2dc0d399bc282" kindref="member">BMPComressionMode</ref></type>
+        <definition>BMPComressionMode B83.Image.BMP.BitmapInfoHeader.compressionMethod</definition>
+        <argsstring></argsstring>
+        <name>compressionMethod</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/TextureLoader/BMPLoader.cs" line="86" column="34" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/TextureLoader/BMPLoader.cs" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_b83_1_1_image_1_1_b_m_p_1_1_bitmap_info_header_1a21a7ed5dcb1b30f1840d58d03b8709ba" prot="public" static="no" mutable="no">
+        <type>uint</type>
+        <definition>uint B83.Image.BMP.BitmapInfoHeader.rawImageSize</definition>
+        <argsstring></argsstring>
+        <name>rawImageSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/TextureLoader/BMPLoader.cs" line="87" column="21" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/TextureLoader/BMPLoader.cs" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_b83_1_1_image_1_1_b_m_p_1_1_bitmap_info_header_1a6cdfd5b4329aa2b83b08d6c6d0a926d2" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int B83.Image.BMP.BitmapInfoHeader.xPPM</definition>
+        <argsstring></argsstring>
+        <name>xPPM</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/TextureLoader/BMPLoader.cs" line="88" column="20" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/TextureLoader/BMPLoader.cs" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_b83_1_1_image_1_1_b_m_p_1_1_bitmap_info_header_1a38113b095111d88025d7c2c3485cb296" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int B83.Image.BMP.BitmapInfoHeader.yPPM</definition>
+        <argsstring></argsstring>
+        <name>yPPM</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/TextureLoader/BMPLoader.cs" line="89" column="20" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/TextureLoader/BMPLoader.cs" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_b83_1_1_image_1_1_b_m_p_1_1_bitmap_info_header_1aeb8e1e774a5cefbc1da2ad0698497737" prot="public" static="no" mutable="no">
+        <type>uint</type>
+        <definition>uint B83.Image.BMP.BitmapInfoHeader.nPaletteColors</definition>
+        <argsstring></argsstring>
+        <name>nPaletteColors</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/TextureLoader/BMPLoader.cs" line="90" column="21" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/TextureLoader/BMPLoader.cs" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_b83_1_1_image_1_1_b_m_p_1_1_bitmap_info_header_1a27892b397670cd886067cfe1ab5bdae1" prot="public" static="no" mutable="no">
+        <type>uint</type>
+        <definition>uint B83.Image.BMP.BitmapInfoHeader.nImportantColors</definition>
+        <argsstring></argsstring>
+        <name>nImportantColors</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/TextureLoader/BMPLoader.cs" line="91" column="21" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/TextureLoader/BMPLoader.cs" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="struct_b83_1_1_image_1_1_b_m_p_1_1_bitmap_info_header_1adc9e20a42e417023fe219a53b7bd13e1" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>int</type>
+        <definition>int B83.Image.BMP.BitmapInfoHeader.absWidth</definition>
+        <argsstring></argsstring>
+        <name>absWidth</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/TextureLoader/BMPLoader.cs" line="93" column="20" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/TextureLoader/BMPLoader.cs" bodystart="93" bodyend="93"/>
+      </memberdef>
+      <memberdef kind="property" id="struct_b83_1_1_image_1_1_b_m_p_1_1_bitmap_info_header_1af32dadf9b2da564189eb9185efbd1300" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>int</type>
+        <definition>int B83.Image.BMP.BitmapInfoHeader.absHeight</definition>
+        <argsstring></argsstring>
+        <name>absHeight</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/TextureLoader/BMPLoader.cs" line="94" column="20" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/TextureLoader/BMPLoader.cs" bodystart="94" bodyend="94"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/TextureLoader/BMPLoader.cs" line="79" column="11" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/TextureLoader/BMPLoader.cs" bodystart="80" bodyend="96"/>
+    <listofallmembers>
+      <member refid="struct_b83_1_1_image_1_1_b_m_p_1_1_bitmap_info_header_1af32dadf9b2da564189eb9185efbd1300" prot="public" virt="non-virtual"><scope>B83::Image::BMP::BitmapInfoHeader</scope><name>absHeight</name></member>
+      <member refid="struct_b83_1_1_image_1_1_b_m_p_1_1_bitmap_info_header_1adc9e20a42e417023fe219a53b7bd13e1" prot="public" virt="non-virtual"><scope>B83::Image::BMP::BitmapInfoHeader</scope><name>absWidth</name></member>
+      <member refid="struct_b83_1_1_image_1_1_b_m_p_1_1_bitmap_info_header_1afca5bad504ee8851ba3dd478e5081778" prot="public" virt="non-virtual"><scope>B83::Image::BMP::BitmapInfoHeader</scope><name>compressionMethod</name></member>
+      <member refid="struct_b83_1_1_image_1_1_b_m_p_1_1_bitmap_info_header_1a6adddf5458f2f86a0c19504e492c2a20" prot="public" virt="non-virtual"><scope>B83::Image::BMP::BitmapInfoHeader</scope><name>height</name></member>
+      <member refid="struct_b83_1_1_image_1_1_b_m_p_1_1_bitmap_info_header_1a76ab3bc1e0d37a0b7c906f67f858909e" prot="public" virt="non-virtual"><scope>B83::Image::BMP::BitmapInfoHeader</scope><name>nBitsPerPixel</name></member>
+      <member refid="struct_b83_1_1_image_1_1_b_m_p_1_1_bitmap_info_header_1a5702d6fb2d25b11950b9017d91319bb9" prot="public" virt="non-virtual"><scope>B83::Image::BMP::BitmapInfoHeader</scope><name>nColorPlanes</name></member>
+      <member refid="struct_b83_1_1_image_1_1_b_m_p_1_1_bitmap_info_header_1a27892b397670cd886067cfe1ab5bdae1" prot="public" virt="non-virtual"><scope>B83::Image::BMP::BitmapInfoHeader</scope><name>nImportantColors</name></member>
+      <member refid="struct_b83_1_1_image_1_1_b_m_p_1_1_bitmap_info_header_1aeb8e1e774a5cefbc1da2ad0698497737" prot="public" virt="non-virtual"><scope>B83::Image::BMP::BitmapInfoHeader</scope><name>nPaletteColors</name></member>
+      <member refid="struct_b83_1_1_image_1_1_b_m_p_1_1_bitmap_info_header_1a21a7ed5dcb1b30f1840d58d03b8709ba" prot="public" virt="non-virtual"><scope>B83::Image::BMP::BitmapInfoHeader</scope><name>rawImageSize</name></member>
+      <member refid="struct_b83_1_1_image_1_1_b_m_p_1_1_bitmap_info_header_1ab70f78d56a6c146e8025315bd4259a6c" prot="public" virt="non-virtual"><scope>B83::Image::BMP::BitmapInfoHeader</scope><name>size</name></member>
+      <member refid="struct_b83_1_1_image_1_1_b_m_p_1_1_bitmap_info_header_1ae97b2bbaaafa6f9cd3dfac76ab93db34" prot="public" virt="non-virtual"><scope>B83::Image::BMP::BitmapInfoHeader</scope><name>width</name></member>
+      <member refid="struct_b83_1_1_image_1_1_b_m_p_1_1_bitmap_info_header_1a6cdfd5b4329aa2b83b08d6c6d0a926d2" prot="public" virt="non-virtual"><scope>B83::Image::BMP::BitmapInfoHeader</scope><name>xPPM</name></member>
+      <member refid="struct_b83_1_1_image_1_1_b_m_p_1_1_bitmap_info_header_1a38113b095111d88025d7c2c3485cb296" prot="public" virt="non-virtual"><scope>B83::Image::BMP::BitmapInfoHeader</scope><name>yPPM</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

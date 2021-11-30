@@ -1,0 +1,266 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
+  <compounddef id="class_dummiesman_1_1_o_b_j_object_builder" kind="class" language="C#" prot="public">
+    <compoundname>Dummiesman::OBJObjectBuilder</compoundname>
+    <innerclass refid="class_dummiesman_1_1_o_b_j_object_builder_1_1_obj_loop_hash" prot="private">Dummiesman::OBJObjectBuilder::ObjLoopHash</innerclass>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_dummiesman_1_1_o_b_j_object_builder_1a557b34def1fc5edfb2ee44a5443fe82e" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="yes" protectedsettable="no">
+        <type>int</type>
+        <definition>int Dummiesman.OBJObjectBuilder.PushedFaceCount</definition>
+        <argsstring></argsstring>
+        <name>PushedFaceCount</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/OBJObjectBuilder.cs" line="22" column="12" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/OBJObjectBuilder.cs" bodystart="22" bodyend="22"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_dummiesman_1_1_o_b_j_object_builder_1a5d90513d8fbae61699c4281fd73c0c57" prot="private" static="no" mutable="no">
+        <type><ref refid="class_dummiesman_1_1_o_b_j_loader" kindref="compound">OBJLoader</ref></type>
+        <definition>OBJLoader Dummiesman.OBJObjectBuilder._loader</definition>
+        <argsstring></argsstring>
+        <name>_loader</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/OBJObjectBuilder.cs" line="25" column="19" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/OBJObjectBuilder.cs" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_dummiesman_1_1_o_b_j_object_builder_1aadf1dff645dbc0f5ccec7e3495afc8a0" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string Dummiesman.OBJObjectBuilder._name</definition>
+        <argsstring></argsstring>
+        <name>_name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/OBJObjectBuilder.cs" line="26" column="16" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/OBJObjectBuilder.cs" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_dummiesman_1_1_o_b_j_object_builder_1a7829015410e28faa13c6f7788699feb9" prot="private" static="no" mutable="no">
+        <type>Dictionary&lt; ObjLoopHash, int &gt;</type>
+        <definition>Dictionary&lt;ObjLoopHash, int&gt; Dummiesman.OBJObjectBuilder._globalIndexRemap</definition>
+        <argsstring></argsstring>
+        <name>_globalIndexRemap</name>
+        <initializer>= new Dictionary&lt;ObjLoopHash, int&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/OBJObjectBuilder.cs" line="28" column="20" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/OBJObjectBuilder.cs" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_dummiesman_1_1_o_b_j_object_builder_1a3241b6bcf1a8d1923d4fb4d90d0d287e" prot="private" static="no" mutable="no">
+        <type>Dictionary&lt; string, List&lt; int &gt; &gt;</type>
+        <definition>Dictionary&lt;string, List&lt;int&gt; &gt; Dummiesman.OBJObjectBuilder._materialIndices</definition>
+        <argsstring></argsstring>
+        <name>_materialIndices</name>
+        <initializer>= new Dictionary&lt;string, List&lt;int&gt;&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/OBJObjectBuilder.cs" line="29" column="20" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/OBJObjectBuilder.cs" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_dummiesman_1_1_o_b_j_object_builder_1ac620bed9468b484a422f2bd106a7e763" prot="private" static="no" mutable="no">
+        <type>List&lt; int &gt;</type>
+        <definition>List&lt;int&gt; Dummiesman.OBJObjectBuilder._currentIndexList</definition>
+        <argsstring></argsstring>
+        <name>_currentIndexList</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/OBJObjectBuilder.cs" line="30" column="14" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/OBJObjectBuilder.cs" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_dummiesman_1_1_o_b_j_object_builder_1a3ad033d5cf399609835719dd53a150a6" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string Dummiesman.OBJObjectBuilder._lastMaterial</definition>
+        <argsstring></argsstring>
+        <name>_lastMaterial</name>
+        <initializer>= null</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/OBJObjectBuilder.cs" line="31" column="16" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/OBJObjectBuilder.cs" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_dummiesman_1_1_o_b_j_object_builder_1a7fe2ae3a774706275ffd353492e57e88" prot="private" static="no" mutable="no">
+        <type>List&lt; Vector3 &gt;</type>
+        <definition>List&lt;Vector3&gt; Dummiesman.OBJObjectBuilder._vertices</definition>
+        <argsstring></argsstring>
+        <name>_vertices</name>
+        <initializer>= new List&lt;Vector3&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/OBJObjectBuilder.cs" line="34" column="14" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/OBJObjectBuilder.cs" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_dummiesman_1_1_o_b_j_object_builder_1a4e43408a009f306275eafb4a046fc525" prot="private" static="no" mutable="no">
+        <type>List&lt; Vector3 &gt;</type>
+        <definition>List&lt;Vector3&gt; Dummiesman.OBJObjectBuilder._normals</definition>
+        <argsstring></argsstring>
+        <name>_normals</name>
+        <initializer>= new List&lt;Vector3&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/OBJObjectBuilder.cs" line="35" column="14" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/OBJObjectBuilder.cs" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_dummiesman_1_1_o_b_j_object_builder_1ab8fa59037fe0c7cba8c117a2169b586a" prot="private" static="no" mutable="no">
+        <type>List&lt; Vector2 &gt;</type>
+        <definition>List&lt;Vector2&gt; Dummiesman.OBJObjectBuilder._uvs</definition>
+        <argsstring></argsstring>
+        <name>_uvs</name>
+        <initializer>= new List&lt;Vector2&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/OBJObjectBuilder.cs" line="36" column="14" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/OBJObjectBuilder.cs" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_dummiesman_1_1_o_b_j_object_builder_1a56fa3575316477fdeb3fbb5d04f466e3" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Dummiesman.OBJObjectBuilder.recalculateNormals</definition>
+        <argsstring></argsstring>
+        <name>recalculateNormals</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/OBJObjectBuilder.cs" line="39" column="14" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/OBJObjectBuilder.cs" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_dummiesman_1_1_o_b_j_object_builder_1a24d688aa5c78befd415c6b5a16b75336" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>GameObject</type>
+        <definition>GameObject Dummiesman.OBJObjectBuilder.Build</definition>
+        <argsstring>()</argsstring>
+        <name>Build</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/OBJObjectBuilder.cs" line="66" column="19" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/OBJObjectBuilder.cs" bodystart="66" bodyend="124"/>
+      </memberdef>
+      <memberdef kind="function" id="class_dummiesman_1_1_o_b_j_object_builder_1a0f0baa044f667aba7068cf95e708cc17" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Dummiesman.OBJObjectBuilder.SetMaterial</definition>
+        <argsstring>(string name)</argsstring>
+        <name>SetMaterial</name>
+        <param>
+          <type>string</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/OBJObjectBuilder.cs" line="126" column="17" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/OBJObjectBuilder.cs" bodystart="126" bodyend="132"/>
+      </memberdef>
+      <memberdef kind="function" id="class_dummiesman_1_1_o_b_j_object_builder_1a44531788d2264a1dc773511a1fd1bf34" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Dummiesman.OBJObjectBuilder.PushFace</definition>
+        <argsstring>(string material, List&lt; int &gt; vertexIndices, List&lt; int &gt; normalIndices, List&lt; int &gt; uvIndices)</argsstring>
+        <name>PushFace</name>
+        <param>
+          <type>string</type>
+          <declname>material</declname>
+        </param>
+        <param>
+          <type>List&lt; int &gt;</type>
+          <declname>vertexIndices</declname>
+        </param>
+        <param>
+          <type>List&lt; int &gt;</type>
+          <declname>normalIndices</declname>
+        </param>
+        <param>
+          <type>List&lt; int &gt;</type>
+          <declname>uvIndices</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/OBJObjectBuilder.cs" line="135" column="13" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/OBJObjectBuilder.cs" bodystart="135" bodyend="193"/>
+      </memberdef>
+      <memberdef kind="function" id="class_dummiesman_1_1_o_b_j_object_builder_1aec8ef6123c111595b95c173f848b7aca" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Dummiesman.OBJObjectBuilder.OBJObjectBuilder</definition>
+        <argsstring>(string name, OBJLoader loader)</argsstring>
+        <name>OBJObjectBuilder</name>
+        <param>
+          <type>string</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type><ref refid="class_dummiesman_1_1_o_b_j_loader" kindref="compound">OBJLoader</ref></type>
+          <declname>loader</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/OBJObjectBuilder.cs" line="195" column="8" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/OBJObjectBuilder.cs" bodystart="195" bodyend="198"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/OBJObjectBuilder.cs" line="20" column="7" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/OBJObjectBuilder.cs" bodystart="20" bodyend="199"/>
+    <listofallmembers>
+      <member refid="class_dummiesman_1_1_o_b_j_object_builder_1ac620bed9468b484a422f2bd106a7e763" prot="private" virt="non-virtual"><scope>Dummiesman::OBJObjectBuilder</scope><name>_currentIndexList</name></member>
+      <member refid="class_dummiesman_1_1_o_b_j_object_builder_1a7829015410e28faa13c6f7788699feb9" prot="private" virt="non-virtual"><scope>Dummiesman::OBJObjectBuilder</scope><name>_globalIndexRemap</name></member>
+      <member refid="class_dummiesman_1_1_o_b_j_object_builder_1a3ad033d5cf399609835719dd53a150a6" prot="private" virt="non-virtual"><scope>Dummiesman::OBJObjectBuilder</scope><name>_lastMaterial</name></member>
+      <member refid="class_dummiesman_1_1_o_b_j_object_builder_1a5d90513d8fbae61699c4281fd73c0c57" prot="private" virt="non-virtual"><scope>Dummiesman::OBJObjectBuilder</scope><name>_loader</name></member>
+      <member refid="class_dummiesman_1_1_o_b_j_object_builder_1a3241b6bcf1a8d1923d4fb4d90d0d287e" prot="private" virt="non-virtual"><scope>Dummiesman::OBJObjectBuilder</scope><name>_materialIndices</name></member>
+      <member refid="class_dummiesman_1_1_o_b_j_object_builder_1aadf1dff645dbc0f5ccec7e3495afc8a0" prot="private" virt="non-virtual"><scope>Dummiesman::OBJObjectBuilder</scope><name>_name</name></member>
+      <member refid="class_dummiesman_1_1_o_b_j_object_builder_1a4e43408a009f306275eafb4a046fc525" prot="private" virt="non-virtual"><scope>Dummiesman::OBJObjectBuilder</scope><name>_normals</name></member>
+      <member refid="class_dummiesman_1_1_o_b_j_object_builder_1ab8fa59037fe0c7cba8c117a2169b586a" prot="private" virt="non-virtual"><scope>Dummiesman::OBJObjectBuilder</scope><name>_uvs</name></member>
+      <member refid="class_dummiesman_1_1_o_b_j_object_builder_1a7fe2ae3a774706275ffd353492e57e88" prot="private" virt="non-virtual"><scope>Dummiesman::OBJObjectBuilder</scope><name>_vertices</name></member>
+      <member refid="class_dummiesman_1_1_o_b_j_object_builder_1a24d688aa5c78befd415c6b5a16b75336" prot="public" virt="non-virtual"><scope>Dummiesman::OBJObjectBuilder</scope><name>Build</name></member>
+      <member refid="class_dummiesman_1_1_o_b_j_object_builder_1aec8ef6123c111595b95c173f848b7aca" prot="public" virt="non-virtual"><scope>Dummiesman::OBJObjectBuilder</scope><name>OBJObjectBuilder</name></member>
+      <member refid="class_dummiesman_1_1_o_b_j_object_builder_1a557b34def1fc5edfb2ee44a5443fe82e" prot="public" virt="non-virtual"><scope>Dummiesman::OBJObjectBuilder</scope><name>PushedFaceCount</name></member>
+      <member refid="class_dummiesman_1_1_o_b_j_object_builder_1a44531788d2264a1dc773511a1fd1bf34" prot="public" virt="non-virtual"><scope>Dummiesman::OBJObjectBuilder</scope><name>PushFace</name></member>
+      <member refid="class_dummiesman_1_1_o_b_j_object_builder_1a56fa3575316477fdeb3fbb5d04f466e3" prot="private" virt="non-virtual"><scope>Dummiesman::OBJObjectBuilder</scope><name>recalculateNormals</name></member>
+      <member refid="class_dummiesman_1_1_o_b_j_object_builder_1a0f0baa044f667aba7068cf95e708cc17" prot="public" virt="non-virtual"><scope>Dummiesman::OBJObjectBuilder</scope><name>SetMaterial</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

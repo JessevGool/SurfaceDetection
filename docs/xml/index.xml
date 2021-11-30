@@ -1,0 +1,428 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.9.2" xml:lang="en-US">
+  <compound refid="class_application_menu" kind="class"><name>ApplicationMenu</name>
+    <member refid="class_application_menu_1a51e5951a3e5ba6aece82fdb992171efd" kind="variable"><name>objectModel</name></member>
+    <member refid="class_application_menu_1af466236025af2dc875c6c4f6d90e376d" kind="variable"><name>mainMenu</name></member>
+    <member refid="class_application_menu_1a47b67bf9647c207ebec3fb994481a131" kind="variable"><name>settingsMenu</name></member>
+    <member refid="class_application_menu_1aae661ec1e88777acc697ccd9012d4d3e" kind="variable"><name>SolarLengthInputField</name></member>
+    <member refid="class_application_menu_1a74156c8015e2f58db16e456b7ba6a808" kind="variable"><name>SolarWidthInputField</name></member>
+    <member refid="class_application_menu_1a6361d5751c0fdc854d71bdf9a1b7e7f7" kind="variable"><name>addSolarPanel</name></member>
+    <member refid="class_application_menu_1aa0697f4a1cdd263cbba0cad10fb324fa" kind="variable"><name>rayTest</name></member>
+    <member refid="class_application_menu_1a7ead50df41326d13968909481a789fc5" kind="variable"><name>scaleVector</name></member>
+    <member refid="class_application_menu_1ae506402020bd07ec1b9dc39d0d5814e0" kind="variable"><name>scale</name></member>
+    <member refid="class_application_menu_1a55c7eb529a1f9f6087f4918ab4426c6f" kind="variable"><name>SolarPanelSizes</name></member>
+    <member refid="class_application_menu_1a7362b4e7813e62cdfe490ef211ca85c3" kind="variable"><name>newSolarLength</name></member>
+    <member refid="class_application_menu_1a403c2a278e41eda50758dd9e66e9e333" kind="variable"><name>newSolarWidth</name></member>
+    <member refid="class_application_menu_1aff45cd83670b34acc3c75c9b9726735e" kind="variable"><name>viewSettings</name></member>
+    <member refid="class_application_menu_1a7dd10866cb9e80d5f81e92e13a75acac" kind="function"><name>Start</name></member>
+    <member refid="class_application_menu_1a148bff968a10051e040e115a986d7a12" kind="function"><name>initiateMenuStates</name></member>
+    <member refid="class_application_menu_1a881f4b9ebfd0a0263fcef16c9403057f" kind="function"><name>EndOfSolarPanelUI</name></member>
+    <member refid="class_application_menu_1a582777910578ad300a35ad7eccfee748" kind="function"><name>Update</name></member>
+    <member refid="class_application_menu_1ab576671a8ee66c8de5ae45cc778f56cc" kind="function"><name>InitializeGameObject</name></member>
+    <member refid="class_application_menu_1ae67b5e866d767e1b06914821dd3af1a9" kind="function"><name>StartScanButton</name></member>
+    <member refid="class_application_menu_1a3a72937dfab340348b2731bc069cc6fb" kind="function"><name>AddSolarPanelButton</name></member>
+    <member refid="class_application_menu_1a2281c723cd099888076b9cbca2cc3baa" kind="function"><name>LoadSolarPanelPlacement</name></member>
+    <member refid="class_application_menu_1a8a6bf03741617e77e1d6c85683a7b3eb" kind="function"><name>CancelAddSolarPanelButton</name></member>
+    <member refid="class_application_menu_1a1bc3c574b9209a3b9d7351b2cc29ade6" kind="function"><name>AcceptAddSolarPanelButton</name></member>
+    <member refid="class_application_menu_1a982eb6e77ae09f789f58e4401fffa541" kind="function"><name>EditLengthInput</name></member>
+    <member refid="class_application_menu_1a630458b366405c26353119d8a7965bcb" kind="function"><name>EditWidthInput</name></member>
+  </compound>
+  <compound refid="class_dummiesman_1_1_binary_extensions" kind="class"><name>Dummiesman::BinaryExtensions</name>
+    <member refid="class_dummiesman_1_1_binary_extensions_1ad07c935ab224ac55305c253115a68afd" kind="function"><name>ReadColor32RGBR</name></member>
+    <member refid="class_dummiesman_1_1_binary_extensions_1a6deda79d993364baffb65dfd11f53904" kind="function"><name>ReadColor32RGBA</name></member>
+    <member refid="class_dummiesman_1_1_binary_extensions_1a9f43ab37092227ae879837c9b3ab922c" kind="function"><name>ReadColor32RGB</name></member>
+    <member refid="class_dummiesman_1_1_binary_extensions_1ab843c13c2cc1b426b061edf0ceaed2b7" kind="function"><name>ReadColor32BGR</name></member>
+  </compound>
+  <compound refid="struct_b83_1_1_image_1_1_b_m_p_1_1_bitmap_info_header" kind="struct"><name>B83::Image::BMP::BitmapInfoHeader</name>
+    <member refid="struct_b83_1_1_image_1_1_b_m_p_1_1_bitmap_info_header_1ab70f78d56a6c146e8025315bd4259a6c" kind="variable"><name>size</name></member>
+    <member refid="struct_b83_1_1_image_1_1_b_m_p_1_1_bitmap_info_header_1ae97b2bbaaafa6f9cd3dfac76ab93db34" kind="variable"><name>width</name></member>
+    <member refid="struct_b83_1_1_image_1_1_b_m_p_1_1_bitmap_info_header_1a6adddf5458f2f86a0c19504e492c2a20" kind="variable"><name>height</name></member>
+    <member refid="struct_b83_1_1_image_1_1_b_m_p_1_1_bitmap_info_header_1a5702d6fb2d25b11950b9017d91319bb9" kind="variable"><name>nColorPlanes</name></member>
+    <member refid="struct_b83_1_1_image_1_1_b_m_p_1_1_bitmap_info_header_1a76ab3bc1e0d37a0b7c906f67f858909e" kind="variable"><name>nBitsPerPixel</name></member>
+    <member refid="struct_b83_1_1_image_1_1_b_m_p_1_1_bitmap_info_header_1afca5bad504ee8851ba3dd478e5081778" kind="variable"><name>compressionMethod</name></member>
+    <member refid="struct_b83_1_1_image_1_1_b_m_p_1_1_bitmap_info_header_1a21a7ed5dcb1b30f1840d58d03b8709ba" kind="variable"><name>rawImageSize</name></member>
+    <member refid="struct_b83_1_1_image_1_1_b_m_p_1_1_bitmap_info_header_1a6cdfd5b4329aa2b83b08d6c6d0a926d2" kind="variable"><name>xPPM</name></member>
+    <member refid="struct_b83_1_1_image_1_1_b_m_p_1_1_bitmap_info_header_1a38113b095111d88025d7c2c3485cb296" kind="variable"><name>yPPM</name></member>
+    <member refid="struct_b83_1_1_image_1_1_b_m_p_1_1_bitmap_info_header_1aeb8e1e774a5cefbc1da2ad0698497737" kind="variable"><name>nPaletteColors</name></member>
+    <member refid="struct_b83_1_1_image_1_1_b_m_p_1_1_bitmap_info_header_1a27892b397670cd886067cfe1ab5bdae1" kind="variable"><name>nImportantColors</name></member>
+    <member refid="struct_b83_1_1_image_1_1_b_m_p_1_1_bitmap_info_header_1adc9e20a42e417023fe219a53b7bd13e1" kind="property"><name>absWidth</name></member>
+    <member refid="struct_b83_1_1_image_1_1_b_m_p_1_1_bitmap_info_header_1af32dadf9b2da564189eb9185efbd1300" kind="property"><name>absHeight</name></member>
+  </compound>
+  <compound refid="class_b83_1_1_image_1_1_b_m_p_1_1_bit_stream_reader" kind="class"><name>B83::Image::BMP::BitStreamReader</name>
+    <member refid="class_b83_1_1_image_1_1_b_m_p_1_1_bit_stream_reader_1a7cc3d2bff916a9de35b16e4a5de95cc7" kind="variable"><name>m_Reader</name></member>
+    <member refid="class_b83_1_1_image_1_1_b_m_p_1_1_bit_stream_reader_1a68fa058a6be1ee44cfdb2b6aefe319df" kind="variable"><name>m_Data</name></member>
+    <member refid="class_b83_1_1_image_1_1_b_m_p_1_1_bit_stream_reader_1abd87a0e0f1bf3d253dcb65c09dec2129" kind="variable"><name>m_Bits</name></member>
+    <member refid="class_b83_1_1_image_1_1_b_m_p_1_1_bit_stream_reader_1a59fadf4c560b34340a429642ad36a09a" kind="function"><name>BitStreamReader</name></member>
+    <member refid="class_b83_1_1_image_1_1_b_m_p_1_1_bit_stream_reader_1a0da14ebda0449604b01f6dc4a48c99c7" kind="function"><name>BitStreamReader</name></member>
+    <member refid="class_b83_1_1_image_1_1_b_m_p_1_1_bit_stream_reader_1ad5ce901116715d0e2f35234f554a316f" kind="function"><name>ReadBit</name></member>
+    <member refid="class_b83_1_1_image_1_1_b_m_p_1_1_bit_stream_reader_1a0dbb1a076272fc32a2b0e2de5aabd180" kind="function"><name>ReadBits</name></member>
+    <member refid="class_b83_1_1_image_1_1_b_m_p_1_1_bit_stream_reader_1a436c996a130b8fa6abe4193ab3b688a2" kind="function"><name>Flush</name></member>
+  </compound>
+  <compound refid="struct_b83_1_1_image_1_1_b_m_p_1_1_b_m_p_file_header" kind="struct"><name>B83::Image::BMP::BMPFileHeader</name>
+    <member refid="struct_b83_1_1_image_1_1_b_m_p_1_1_b_m_p_file_header_1af374d1eb6da1e99817a490f4600b4611" kind="variable"><name>magic</name></member>
+    <member refid="struct_b83_1_1_image_1_1_b_m_p_1_1_b_m_p_file_header_1ac75785e841c5bf932b48053288877cbe" kind="variable"><name>filesize</name></member>
+    <member refid="struct_b83_1_1_image_1_1_b_m_p_1_1_b_m_p_file_header_1a33054284fd28720df463f9583866fedd" kind="variable"><name>reserved</name></member>
+    <member refid="struct_b83_1_1_image_1_1_b_m_p_1_1_b_m_p_file_header_1a684df693d3fa017cd7717f599ff36736" kind="variable"><name>offset</name></member>
+  </compound>
+  <compound refid="class_b83_1_1_image_1_1_b_m_p_1_1_b_m_p_image" kind="class"><name>B83::Image::BMP::BMPImage</name>
+    <member refid="class_b83_1_1_image_1_1_b_m_p_1_1_b_m_p_image_1ab2cec84349a3b7e8f4e69b3108599285" kind="variable"><name>header</name></member>
+    <member refid="class_b83_1_1_image_1_1_b_m_p_1_1_b_m_p_image_1ad3c99d7fd20faa1de71ce3d3db53a6d9" kind="variable"><name>info</name></member>
+    <member refid="class_b83_1_1_image_1_1_b_m_p_1_1_b_m_p_image_1af94fdedc58c111ad58d22d82c43864fd" kind="variable"><name>rMask</name></member>
+    <member refid="class_b83_1_1_image_1_1_b_m_p_1_1_b_m_p_image_1ac2e5d31a339e13767c62cde529ad1f60" kind="variable"><name>gMask</name></member>
+    <member refid="class_b83_1_1_image_1_1_b_m_p_1_1_b_m_p_image_1aa1f2fa4f75d9526ea09801732abdf039" kind="variable"><name>bMask</name></member>
+    <member refid="class_b83_1_1_image_1_1_b_m_p_1_1_b_m_p_image_1a0d62c31982d699f0848cbd2f12620410" kind="variable"><name>aMask</name></member>
+    <member refid="class_b83_1_1_image_1_1_b_m_p_1_1_b_m_p_image_1aa1a52a5b2764901f516914809b9fc251" kind="variable"><name>palette</name></member>
+    <member refid="class_b83_1_1_image_1_1_b_m_p_1_1_b_m_p_image_1a01400fada6baddcb5606942fdce93d75" kind="variable"><name>imageData</name></member>
+    <member refid="class_b83_1_1_image_1_1_b_m_p_1_1_b_m_p_image_1a06812e60561ebe2109e172541162a168" kind="function"><name>ToTexture2D</name></member>
+  </compound>
+  <compound refid="class_b83_1_1_image_1_1_b_m_p_1_1_b_m_p_loader" kind="class"><name>B83::Image::BMP::BMPLoader</name>
+    <member refid="class_b83_1_1_image_1_1_b_m_p_1_1_b_m_p_loader_1ac3439fba7642d2673fec763cb2d5fc29" kind="variable"><name>MAGIC</name></member>
+    <member refid="class_b83_1_1_image_1_1_b_m_p_1_1_b_m_p_loader_1a71eb4da27fd78ba05acc1904839718a7" kind="variable"><name>ReadPaletteAlpha</name></member>
+    <member refid="class_b83_1_1_image_1_1_b_m_p_1_1_b_m_p_loader_1a6fd243aa09833bc40157514892efedf8" kind="variable"><name>ForceAlphaReadWhenPossible</name></member>
+    <member refid="class_b83_1_1_image_1_1_b_m_p_1_1_b_m_p_loader_1a958b071392d316561f821d8de8341e16" kind="function"><name>LoadBMP</name></member>
+    <member refid="class_b83_1_1_image_1_1_b_m_p_1_1_b_m_p_loader_1a9c4952796b03dc610f8e1e2d2f9b119c" kind="function"><name>LoadBMP</name></member>
+    <member refid="class_b83_1_1_image_1_1_b_m_p_1_1_b_m_p_loader_1ab51164b6b1b7562e5c5c3b7bae3c34ef" kind="function"><name>LoadBMP</name></member>
+    <member refid="class_b83_1_1_image_1_1_b_m_p_1_1_b_m_p_loader_1aa1267c25997c3f6e6db8c8bb14763763" kind="function"><name>LoadBMP</name></member>
+    <member refid="class_b83_1_1_image_1_1_b_m_p_1_1_b_m_p_loader_1a0e4d4b4f7a3988f713d73cb0950156d9" kind="function"><name>Read32BitImage</name></member>
+    <member refid="class_b83_1_1_image_1_1_b_m_p_1_1_b_m_p_loader_1af4ea73c482e425eebc39ead9bb2ae184" kind="function"><name>Read24BitImage</name></member>
+    <member refid="class_b83_1_1_image_1_1_b_m_p_1_1_b_m_p_loader_1a7ad73545e895f86703566cc22325a6ac" kind="function"><name>Read16BitImage</name></member>
+    <member refid="class_b83_1_1_image_1_1_b_m_p_1_1_b_m_p_loader_1ab25753fc11272c9ffccc7c516952f34b" kind="function"><name>ReadIndexedImage</name></member>
+    <member refid="class_b83_1_1_image_1_1_b_m_p_1_1_b_m_p_loader_1a81e2e9b3fef0a6c95f05d973550f5efd" kind="function"><name>ReadIndexedImageRLE4</name></member>
+    <member refid="class_b83_1_1_image_1_1_b_m_p_1_1_b_m_p_loader_1a044755ddd4c5ba1511ed48245081e716" kind="function"><name>ReadIndexedImageRLE8</name></member>
+    <member refid="class_b83_1_1_image_1_1_b_m_p_1_1_b_m_p_loader_1a5028c752c70a15e5f275a8cc23df8e11" kind="function"><name>GetShiftCount</name></member>
+    <member refid="class_b83_1_1_image_1_1_b_m_p_1_1_b_m_p_loader_1a01451e3f421a8386e0e24fce33af5084" kind="function"><name>GetMask</name></member>
+    <member refid="class_b83_1_1_image_1_1_b_m_p_1_1_b_m_p_loader_1ab85df73b1c4e5c0d536e5786b939ef18" kind="function"><name>ReadFileHeader</name></member>
+    <member refid="class_b83_1_1_image_1_1_b_m_p_1_1_b_m_p_loader_1a25789c0b2ba7a0ff2680fc5ca59abffc" kind="function"><name>ReadInfoHeader</name></member>
+    <member refid="class_b83_1_1_image_1_1_b_m_p_1_1_b_m_p_loader_1a688eaa25f6d5a1e03a357a7f5a32a8e9" kind="function"><name>ReadPalette</name></member>
+  </compound>
+  <compound refid="classbutton_handler" kind="class"><name>buttonHandler</name>
+    <member refid="classbutton_handler_1a414d33f3c69cc98026b4bce65510bdb7" kind="variable"><name>viewSettings</name></member>
+    <member refid="classbutton_handler_1a7070b5647a49ed64cbbac0c1cf640e9e" kind="variable"><name>mainMenu</name></member>
+    <member refid="classbutton_handler_1adac7a669ebe908bc93918fc0e8fe63d6" kind="variable"><name>settingsMenu</name></member>
+    <member refid="classbutton_handler_1ad600af0dc55da877c5b5a34055b45e0e" kind="function"><name>toggleSettings</name></member>
+  </compound>
+  <compound refid="class_camera_script" kind="class"><name>CameraScript</name>
+    <member refid="class_camera_script_1a6aa48c331de1865f340065884ffa9ade" kind="variable"><name>speedH</name></member>
+    <member refid="class_camera_script_1aed24513073fa9bc58de1cacc28422199" kind="variable"><name>speedV</name></member>
+    <member refid="class_camera_script_1a3a3120a4a7a1e87cca30071873d0bcb0" kind="variable"><name>cameraRotateSpeed</name></member>
+    <member refid="class_camera_script_1a11e43ca1ed13d2e9021709599e0a9e88" kind="variable"><name>cameraMoveSpeed</name></member>
+    <member refid="class_camera_script_1adc4843808c4451e0bb4208088d93cf0f" kind="variable"><name>scrollSpeed</name></member>
+    <member refid="class_camera_script_1a309b1bcbdda1b067a9dad18fce8ed8e4" kind="variable"><name>yaw</name></member>
+    <member refid="class_camera_script_1a89560eabd35ee6f809ae1aad62c5e7dd" kind="variable"><name>pitch</name></member>
+    <member refid="class_camera_script_1ac0b54d8036b93b9ac9f43c7f7d2bb920" kind="variable"><name>mouseButtonDown</name></member>
+    <member refid="class_camera_script_1a73f305dadb9b5b88d6efcc80a9073710" kind="function"><name>Start</name></member>
+    <member refid="class_camera_script_1a292a7b3c52fd201f42e5b0f25c7b4d2d" kind="function"><name>Update</name></member>
+  </compound>
+  <compound refid="class_dummiesman_1_1_char_word_reader" kind="class"><name>Dummiesman::CharWordReader</name>
+    <member refid="class_dummiesman_1_1_char_word_reader_1a8aae8484c2921223e8376a0624b3b999" kind="variable"><name>word</name></member>
+    <member refid="class_dummiesman_1_1_char_word_reader_1a09b060469693e13bb07e705a24110b42" kind="variable"><name>wordSize</name></member>
+    <member refid="class_dummiesman_1_1_char_word_reader_1ad9fc7a85be2048a78b193cd4e55729fb" kind="variable"><name>endReached</name></member>
+    <member refid="class_dummiesman_1_1_char_word_reader_1a6459e68af5224f2ba3707afadff114b2" kind="variable"><name>currentChar</name></member>
+    <member refid="class_dummiesman_1_1_char_word_reader_1a9898a8a0987b4684feea423a59b3bf5d" kind="variable"><name>reader</name></member>
+    <member refid="class_dummiesman_1_1_char_word_reader_1ab81b171bde08dbbc0b4308ce6b0f8c8d" kind="variable"><name>bufferSize</name></member>
+    <member refid="class_dummiesman_1_1_char_word_reader_1a15fe831f122d2093226596f4b47e146f" kind="variable"><name>buffer</name></member>
+    <member refid="class_dummiesman_1_1_char_word_reader_1ac5800dcf9660980458a75144c1b5466c" kind="variable"><name>currentPosition</name></member>
+    <member refid="class_dummiesman_1_1_char_word_reader_1afbbb4935af24aead5e1cf76126c13194" kind="variable"><name>maxPosition</name></member>
+    <member refid="class_dummiesman_1_1_char_word_reader_1a600849d5ba12e13e6aff0d354432b001" kind="function"><name>CharWordReader</name></member>
+    <member refid="class_dummiesman_1_1_char_word_reader_1a5673e21d2bcedf955ffb447e6f4fc8ff" kind="function"><name>SkipWhitespaces</name></member>
+    <member refid="class_dummiesman_1_1_char_word_reader_1a45b9a9ee2310b6fa6f3264eca989ac1e" kind="function"><name>SkipWhitespaces</name></member>
+    <member refid="class_dummiesman_1_1_char_word_reader_1a66ad77953c3122d5741ed150c97b423c" kind="function"><name>SkipUntilNewLine</name></member>
+    <member refid="class_dummiesman_1_1_char_word_reader_1a42063df6067425c8f67895e596844e6c" kind="function"><name>ReadUntilWhiteSpace</name></member>
+    <member refid="class_dummiesman_1_1_char_word_reader_1ae6b7dfd08493eb8fbbd97282dcfd2aa5" kind="function"><name>ReadUntilNewLine</name></member>
+    <member refid="class_dummiesman_1_1_char_word_reader_1a413fedc5a8fccc76374b2c723b83966c" kind="function"><name>Is</name></member>
+    <member refid="class_dummiesman_1_1_char_word_reader_1a8b5b622228256a9620a5d3ddc0de7626" kind="function"><name>GetString</name></member>
+    <member refid="class_dummiesman_1_1_char_word_reader_1a06706e7c0c4a03c020959c587bed7d31" kind="function"><name>ReadVector</name></member>
+    <member refid="class_dummiesman_1_1_char_word_reader_1a95714eb413637ccfee300965d30a46ec" kind="function"><name>ReadInt</name></member>
+    <member refid="class_dummiesman_1_1_char_word_reader_1a9d2fc16773cfab6acd9468bb422dc7bd" kind="function"><name>ReadFloat</name></member>
+    <member refid="class_dummiesman_1_1_char_word_reader_1ae8c9527d06ca75cba6c872f31d7620b6" kind="function"><name>MoveNext</name></member>
+    <member refid="class_dummiesman_1_1_char_word_reader_1aca72bd23b870381b164c77d194474134" kind="function"><name>ReadFloatEnd</name></member>
+    <member refid="class_dummiesman_1_1_char_word_reader_1a65abe92f69d3f28dd602b8c5aad8a84f" kind="function"><name>SkipNewLineSymbols</name></member>
+  </compound>
+  <compound refid="class_dummiesman_1_1_extensions_1_1_color_extensions" kind="class"><name>Dummiesman::Extensions::ColorExtensions</name>
+    <member refid="class_dummiesman_1_1_extensions_1_1_color_extensions_1ad5d21f4ac5f98c7b69cbc6f17a4f22aa" kind="function"><name>FlipRB</name></member>
+    <member refid="class_dummiesman_1_1_extensions_1_1_color_extensions_1af63377ae947de00a924d22de17f7b585" kind="function"><name>FlipRB</name></member>
+  </compound>
+  <compound refid="class_dummiesman_1_1_d_d_s_loader" kind="class"><name>Dummiesman::DDSLoader</name>
+    <member refid="class_dummiesman_1_1_d_d_s_loader_1a0db102e71f2eea9c33913f9edca1c984" kind="function"><name>Load</name></member>
+    <member refid="class_dummiesman_1_1_d_d_s_loader_1ae1100bd971c3897c01dcbc5e3bcf50af" kind="function"><name>Load</name></member>
+    <member refid="class_dummiesman_1_1_d_d_s_loader_1a0bdf5cd1f457a613d38034f8831bb83a" kind="function"><name>Load</name></member>
+  </compound>
+  <compound refid="class_dummiesman_1_1_image_loader" kind="class"><name>Dummiesman::ImageLoader</name>
+    <member refid="class_dummiesman_1_1_image_loader_1a121f588f830ab7a4161b675176e25549" kind="enum"><name>TextureFormat</name></member>
+    <member refid="class_dummiesman_1_1_image_loader_1a121f588f830ab7a4161b675176e25549a9b20752f14503be0510115d06d64bbdc" kind="enumvalue"><name>DDS</name></member>
+    <member refid="class_dummiesman_1_1_image_loader_1a121f588f830ab7a4161b675176e25549a64efd9bcf7b83f22fe9796967255e103" kind="enumvalue"><name>TGA</name></member>
+    <member refid="class_dummiesman_1_1_image_loader_1a121f588f830ab7a4161b675176e25549aa5d5ca1447586e23dc011f8c0cc0a6db" kind="enumvalue"><name>BMP</name></member>
+    <member refid="class_dummiesman_1_1_image_loader_1a121f588f830ab7a4161b675176e25549a55505ba281b015ec31f03ccb151b2a34" kind="enumvalue"><name>PNG</name></member>
+    <member refid="class_dummiesman_1_1_image_loader_1a121f588f830ab7a4161b675176e25549a92769fe7c40229f4301d6125e0a9e928" kind="enumvalue"><name>JPG</name></member>
+    <member refid="class_dummiesman_1_1_image_loader_1a121f588f830ab7a4161b675176e25549a05a99c93b04bf5038a02a117d1ff860f" kind="enumvalue"><name>CRN</name></member>
+    <member refid="class_dummiesman_1_1_image_loader_1aa7f478948280bd688f48e60dae836ab0" kind="function"><name>SetNormalMap</name></member>
+    <member refid="class_dummiesman_1_1_image_loader_1ad483d685766bf4d7e2b691476fd8253f" kind="function"><name>LoadTexture</name></member>
+    <member refid="class_dummiesman_1_1_image_loader_1a20b5a035e33c98b5854a7e911fd517fa" kind="function"><name>LoadTexture</name></member>
+  </compound>
+  <compound refid="class_dummiesman_1_1_image_loader_helper" kind="class"><name>Dummiesman::ImageLoaderHelper</name>
+    <member refid="class_dummiesman_1_1_image_loader_helper_1ac29c360f7d35590a0bd80f4a857ff49a" kind="function"><name>VerifyFormat</name></member>
+    <member refid="class_dummiesman_1_1_image_loader_helper_1a244f02c13e0ffd34e8f39ffddbc1604e" kind="function"><name>FillPixelArray</name></member>
+  </compound>
+  <compound refid="class_dummiesman_1_1_image_utils" kind="class"><name>Dummiesman::ImageUtils</name>
+    <member refid="class_dummiesman_1_1_image_utils_1ab90aef7ac2ab3fbd783e240de74040b7" kind="function"><name>ConvertToNormalMap</name></member>
+  </compound>
+  <compound refid="class_main_menu" kind="class"><name>MainMenu</name>
+    <member refid="class_main_menu_1aa50e3882ce9f78928f941f6a2359bcf0" kind="variable"><name>objectPath</name></member>
+    <member refid="class_main_menu_1adcba4304043de67f03994342dc74a271" kind="function"><name>LoadObjectModel</name></member>
+    <member refid="class_main_menu_1a986a8695801993fe5881c99ec4e98c6a" kind="function"><name>SelectObjModelFromFile</name></member>
+    <member refid="class_main_menu_1a2782e8b67e76437569b63ade908d7cd6" kind="function"><name>QuitApplication</name></member>
+  </compound>
+  <compound refid="class_m_t_l_loader" kind="class"><name>MTLLoader</name>
+    <member refid="class_m_t_l_loader_1acaf4e3c184c87c81dbd3de4d4c82abd0" kind="variable"><name>SearchPaths</name></member>
+    <member refid="class_m_t_l_loader_1a5235b044c44ffbd9ac80e9b6587f9141" kind="variable"><name>_objFileInfo</name></member>
+    <member refid="class_m_t_l_loader_1ab8aa006bd6e6add8141222582c00aea0" kind="function"><name>TextureLoadFunction</name></member>
+    <member refid="class_m_t_l_loader_1a259b805cda6d5a31fb9855126824b250" kind="function"><name>Load</name></member>
+    <member refid="class_m_t_l_loader_1a23f6c5d33a22fb19c47a46dbdd7915c2" kind="function"><name>Load</name></member>
+    <member refid="class_m_t_l_loader_1a8ad51630714478d3c8f4a9f98acdca34" kind="function"><name>TryLoadTexture</name></member>
+    <member refid="class_m_t_l_loader_1ad42253bb0bc05f2d65550184aa2e355e" kind="function"><name>GetArgValueCount</name></member>
+    <member refid="class_m_t_l_loader_1a193f2d43aa311391bdfbd0a4eab4cd6c" kind="function"><name>GetTexNameIndex</name></member>
+    <member refid="class_m_t_l_loader_1a9fcc3fccdfb96d9c77967c886842d932" kind="function"><name>GetArgValue</name></member>
+    <member refid="class_m_t_l_loader_1ad5a567951c2aad561750e36fdb9852bc" kind="function"><name>GetTexPathFromMapStatement</name></member>
+  </compound>
+  <compound refid="class_obj_from_file" kind="class"><name>ObjFromFile</name>
+    <member refid="class_obj_from_file_1ad9952190d90282c18d16de4cfbb1657e" kind="variable"><name>objPath</name></member>
+    <member refid="class_obj_from_file_1ae41718557be4b7b37869ff9aeb7974da" kind="variable"><name>error</name></member>
+    <member refid="class_obj_from_file_1a5469806efb846fe9cdba93366f99a8fd" kind="variable"><name>loadedObject</name></member>
+    <member refid="class_obj_from_file_1ac958c79679122e8a7211d28a14e5f389" kind="variable"><name>applicationMenu</name></member>
+    <member refid="class_obj_from_file_1a4c236379ae63619703dfba0415416249" kind="function"><name>Start</name></member>
+    <member refid="class_obj_from_file_1ae4ec5d70bf0b06862e4a1dc5252d1ff7" kind="function"><name>OnGUI</name></member>
+  </compound>
+  <compound refid="class_obj_from_stream" kind="class"><name>ObjFromStream</name>
+    <member refid="class_obj_from_stream_1af0bc64cb6e1f07f1a036dec89cd4b250" kind="function"><name>Start</name></member>
+  </compound>
+  <compound refid="class_dummiesman_1_1_o_b_j_loader" kind="class"><name>Dummiesman::OBJLoader</name>
+    <member refid="class_dummiesman_1_1_o_b_j_loader_1ac3359ce8c0dc1a9333336741d098200e" kind="variable"><name>SplitMode</name></member>
+    <member refid="class_dummiesman_1_1_o_b_j_loader_1afa27a0248ef3927d2e5e08ac7e021cf1" kind="variable"><name>Vertices</name></member>
+    <member refid="class_dummiesman_1_1_o_b_j_loader_1aae6e81a7001dae009e7d8c31e1cebd88" kind="variable"><name>Normals</name></member>
+    <member refid="class_dummiesman_1_1_o_b_j_loader_1abf44163768554ba7c21ab3cf555adc87" kind="variable"><name>UVs</name></member>
+    <member refid="class_dummiesman_1_1_o_b_j_loader_1a44323899d54006009f38371ee5cff529" kind="variable"><name>Materials</name></member>
+    <member refid="class_dummiesman_1_1_o_b_j_loader_1a5050cb2c5507b7e3d6103e5e4dbed78c" kind="variable"><name>_objInfo</name></member>
+    <member refid="class_dummiesman_1_1_o_b_j_loader_1a6ac00c0bdebcab2c01096df9e503c6fb" kind="function"><name>LoadMaterialLibrary</name></member>
+    <member refid="class_dummiesman_1_1_o_b_j_loader_1a94b237348e6d5a1b73be7cc0669f9b7f" kind="function"><name>Load</name></member>
+    <member refid="class_dummiesman_1_1_o_b_j_loader_1af243d1d0ff7de7712a48d0cdb3cda444" kind="function"><name>Load</name></member>
+    <member refid="class_dummiesman_1_1_o_b_j_loader_1ab1746d7c5bd93642bd1b580e5abfe79f" kind="function"><name>Load</name></member>
+    <member refid="class_dummiesman_1_1_o_b_j_loader_1ad5e07fb04a72f87ccd40ac621c3468fc" kind="function"><name>Load</name></member>
+  </compound>
+  <compound refid="class_dummiesman_1_1_o_b_j_loader_helper" kind="class"><name>Dummiesman::OBJLoaderHelper</name>
+    <member refid="class_dummiesman_1_1_o_b_j_loader_helper_1ac5a6891a7985c99693ca6f6c7370f5da" kind="function"><name>EnableMaterialTransparency</name></member>
+    <member refid="class_dummiesman_1_1_o_b_j_loader_helper_1a68d8b4d4fc56961aa75cd98dda86395b" kind="function"><name>FastFloatParse</name></member>
+    <member refid="class_dummiesman_1_1_o_b_j_loader_helper_1a35201b3fabd37bd046909b1b4b693a53" kind="function"><name>FastIntParse</name></member>
+    <member refid="class_dummiesman_1_1_o_b_j_loader_helper_1a1f0d27746e07f35267be06a4e09ca9a8" kind="function"><name>CreateNullMaterial</name></member>
+    <member refid="class_dummiesman_1_1_o_b_j_loader_helper_1a7717e79b2d85efea2a4a7a9ca3b6a892" kind="function"><name>VectorFromStrArray</name></member>
+    <member refid="class_dummiesman_1_1_o_b_j_loader_helper_1a9ae36db3258e9ce71eb2c856b7f21954" kind="function"><name>ColorFromStrArray</name></member>
+  </compound>
+  <compound refid="class_dummiesman_1_1_o_b_j_object_builder_1_1_obj_loop_hash" kind="class"><name>Dummiesman::OBJObjectBuilder::ObjLoopHash</name>
+    <member refid="class_dummiesman_1_1_o_b_j_object_builder_1_1_obj_loop_hash_1ac90b8821d22e82589c23e476617bb956" kind="variable"><name>vertexIndex</name></member>
+    <member refid="class_dummiesman_1_1_o_b_j_object_builder_1_1_obj_loop_hash_1a1cb0d513b155b45f4e9fc52b659143de" kind="variable"><name>normalIndex</name></member>
+    <member refid="class_dummiesman_1_1_o_b_j_object_builder_1_1_obj_loop_hash_1a64ce27ab1bcb8bb26de45b47e677d2e3" kind="variable"><name>uvIndex</name></member>
+    <member refid="class_dummiesman_1_1_o_b_j_object_builder_1_1_obj_loop_hash_1a7869b899e1fa8e10a5a35a514fde283a" kind="function"><name>Equals</name></member>
+    <member refid="class_dummiesman_1_1_o_b_j_object_builder_1_1_obj_loop_hash_1ad32659da52ec854672c7197f2276a4e2" kind="function"><name>GetHashCode</name></member>
+  </compound>
+  <compound refid="class_dummiesman_1_1_o_b_j_object_builder" kind="class"><name>Dummiesman::OBJObjectBuilder</name>
+    <member refid="class_dummiesman_1_1_o_b_j_object_builder_1a557b34def1fc5edfb2ee44a5443fe82e" kind="property"><name>PushedFaceCount</name></member>
+    <member refid="class_dummiesman_1_1_o_b_j_object_builder_1a5d90513d8fbae61699c4281fd73c0c57" kind="variable"><name>_loader</name></member>
+    <member refid="class_dummiesman_1_1_o_b_j_object_builder_1aadf1dff645dbc0f5ccec7e3495afc8a0" kind="variable"><name>_name</name></member>
+    <member refid="class_dummiesman_1_1_o_b_j_object_builder_1a7829015410e28faa13c6f7788699feb9" kind="variable"><name>_globalIndexRemap</name></member>
+    <member refid="class_dummiesman_1_1_o_b_j_object_builder_1a3241b6bcf1a8d1923d4fb4d90d0d287e" kind="variable"><name>_materialIndices</name></member>
+    <member refid="class_dummiesman_1_1_o_b_j_object_builder_1ac620bed9468b484a422f2bd106a7e763" kind="variable"><name>_currentIndexList</name></member>
+    <member refid="class_dummiesman_1_1_o_b_j_object_builder_1a3ad033d5cf399609835719dd53a150a6" kind="variable"><name>_lastMaterial</name></member>
+    <member refid="class_dummiesman_1_1_o_b_j_object_builder_1a7fe2ae3a774706275ffd353492e57e88" kind="variable"><name>_vertices</name></member>
+    <member refid="class_dummiesman_1_1_o_b_j_object_builder_1a4e43408a009f306275eafb4a046fc525" kind="variable"><name>_normals</name></member>
+    <member refid="class_dummiesman_1_1_o_b_j_object_builder_1ab8fa59037fe0c7cba8c117a2169b586a" kind="variable"><name>_uvs</name></member>
+    <member refid="class_dummiesman_1_1_o_b_j_object_builder_1a56fa3575316477fdeb3fbb5d04f466e3" kind="variable"><name>recalculateNormals</name></member>
+    <member refid="class_dummiesman_1_1_o_b_j_object_builder_1a24d688aa5c78befd415c6b5a16b75336" kind="function"><name>Build</name></member>
+    <member refid="class_dummiesman_1_1_o_b_j_object_builder_1a0f0baa044f667aba7068cf95e708cc17" kind="function"><name>SetMaterial</name></member>
+    <member refid="class_dummiesman_1_1_o_b_j_object_builder_1a44531788d2264a1dc773511a1fd1bf34" kind="function"><name>PushFace</name></member>
+    <member refid="class_dummiesman_1_1_o_b_j_object_builder_1aec8ef6123c111595b95c173f848b7aca" kind="function"><name>OBJObjectBuilder</name></member>
+  </compound>
+  <compound refid="class_ray_test" kind="class"><name>RayTest</name>
+    <member refid="class_ray_test_1a24fd8f41226daad3c625374e8d0ad811" kind="variable"><name>_hits</name></member>
+    <member refid="class_ray_test_1ab85bebdd836409e9134886a84ca79fc4" kind="variable"><name>_roofLayers</name></member>
+    <member refid="class_ray_test_1ae8583388edc91a27703089fc228445f9" kind="variable"><name>_collision</name></member>
+    <member refid="class_ray_test_1a7a23d68907dd2b2bb999eb56ff6671e8" kind="variable"><name>_rays</name></member>
+    <member refid="class_ray_test_1a85a8c99c02da63004bd8037ab2fd5647" kind="variable"><name>_rayPos</name></member>
+    <member refid="class_ray_test_1ad28bd35745c6733d3ddf653a317689b2" kind="variable"><name>_t1</name></member>
+    <member refid="class_ray_test_1a976c1b9bdb2cbe2cee0469222f5372f6" kind="variable"><name>_t2</name></member>
+    <member refid="class_ray_test_1a9804deacbcad84786aad180f9b87a9b7" kind="variable"><name>_t1Finished</name></member>
+    <member refid="class_ray_test_1a464809a15b8df580eb2a3b877f332dc8" kind="variable"><name>_t2Finished</name></member>
+    <member refid="class_ray_test_1a63de1d8d2a840a35f937649ba8cc25a1" kind="variable"><name>_hit</name></member>
+    <member refid="class_ray_test_1a09cf356e93cbe40f8376e3f1dbb1078e" kind="variable"><name>drawHits</name></member>
+    <member refid="class_ray_test_1a5944252aca3d63901e062b5619b6ebbe" kind="variable"><name>drawLayers</name></member>
+    <member refid="class_ray_test_1a841bdac9035bae0d349ea304e03aeecd" kind="variable"><name>drawAngledLayers</name></member>
+    <member refid="class_ray_test_1a91439d12b70c90f2a4c1b2525937c73a" kind="variable"><name>drawCorners</name></member>
+    <member refid="class_ray_test_1a346f77e691066d936989d3c293156dec" kind="variable"><name>startScanBool</name></member>
+    <member refid="class_ray_test_1a71d750d63365afb87d041519908708d8" kind="variable"><name>threading</name></member>
+    <member refid="class_ray_test_1a1536d8e7c2847146d00e2d5885fcc0a5" kind="variable"><name>scanResolution</name></member>
+    <member refid="class_ray_test_1a098b2dc8abbde46e39fe98e49f42e8f3" kind="variable"><name>gridSize</name></member>
+    <member refid="class_ray_test_1a089587bcefc1964813711ac20a40a46d" kind="variable"><name>hitIndicator</name></member>
+    <member refid="class_ray_test_1adff5e7f9540f9883844fa77916f572a3" kind="variable"><name>rayLayer</name></member>
+    <member refid="class_ray_test_1a9419dbcbc914005c6c18c30e0e33d6cd" kind="variable"><name>NWIND</name></member>
+    <member refid="class_ray_test_1aa788b824c1d631e2bd446c0353611aa4" kind="variable"><name>NEIND</name></member>
+    <member refid="class_ray_test_1ad40d1ea780d4bc63283e5d5d587a75d7" kind="variable"><name>SWIND</name></member>
+    <member refid="class_ray_test_1abfec699a1845cfe89f9e781f6037f520" kind="variable"><name>SEIND</name></member>
+    <member refid="class_ray_test_1ad35d07b8b3422832fed5a3df005710be" kind="function"><name>Start</name></member>
+    <member refid="class_ray_test_1abbfe61b2ee04fbb6a4d0c4f98bac705f" kind="function"><name>createLayers</name></member>
+    <member refid="class_ray_test_1a6996f173c7803cc0c35f69b01072a941" kind="function"><name>detectSlopes</name></member>
+    <member refid="class_ray_test_1ab5e9662425ab5c69ec8094318c4681e6" kind="function"><name>OnDrawGizmos</name></member>
+    <member refid="class_ray_test_1a46cceb5483afd437a523424f6cddb2cc" kind="function"><name>Update</name></member>
+    <member refid="class_ray_test_1a346eabd91992d3329255aaf3464952d8" kind="function"><name>startScan</name></member>
+  </compound>
+  <compound refid="class_roof_layer" kind="class"><name>RoofLayer</name>
+    <member refid="class_roof_layer_1a2928528f6e8161abccf386316469a333" kind="variable"><name>_NE</name></member>
+    <member refid="class_roof_layer_1a9f5ba786e4070283168d575ddae56bad" kind="variable"><name>_NW</name></member>
+    <member refid="class_roof_layer_1a964ffa8ec77079bd63c1253cca6eaca8" kind="variable"><name>_SE</name></member>
+    <member refid="class_roof_layer_1a42475325ed2d4f75d4a18a6103b553e4" kind="variable"><name>_SW</name></member>
+    <member refid="class_roof_layer_1a99732aeab63cd92c7bcf7cd42213387c" kind="variable"><name>corners</name></member>
+    <member refid="class_roof_layer_1acf811f50b0c26ddf2c2508bfc30af73a" kind="function"><name>RoofLayer</name></member>
+    <member refid="class_roof_layer_1a8752def0f50c6f31a8096b821c055f06" kind="function"><name>visualiseLayer</name></member>
+  </compound>
+  <compound refid="class_slider_value_to_text" kind="class"><name>SliderValueToText</name>
+    <member refid="class_slider_value_to_text_1a9ae7274884f2df48ffcdb85ffc33317e" kind="variable"><name>sliderUI</name></member>
+    <member refid="class_slider_value_to_text_1a7838a8124830e2e41dcd75bcfaaa7914" kind="variable"><name>resolution</name></member>
+    <member refid="class_slider_value_to_text_1ac5ebca26de4fdedb8e378dca0a176c77" kind="variable"><name>gridSize</name></member>
+    <member refid="class_slider_value_to_text_1ac5d4f57efdcb28e73379ae096f67244b" kind="variable"><name>textSliderValue</name></member>
+    <member refid="class_slider_value_to_text_1a4b92015a482de567ea6ac0ef29ce468c" kind="variable"><name>rayTest</name></member>
+    <member refid="class_slider_value_to_text_1a5a1ccc256f2a2e0d0b3bdccf6e3b6feb" kind="function"><name>Start</name></member>
+    <member refid="class_slider_value_to_text_1a2699cb48e936ca9fb081e7a073ade184" kind="function"><name>Update</name></member>
+  </compound>
+  <compound refid="class_dummiesman_1_1_string_extensions" kind="class"><name>Dummiesman::StringExtensions</name>
+    <member refid="class_dummiesman_1_1_string_extensions_1a6b5c5ef3824dd5e3c1414036a10a28e8" kind="function"><name>Clean</name></member>
+  </compound>
+  <compound refid="class_dummiesman_1_1_t_g_a_loader" kind="class"><name>Dummiesman::TGALoader</name>
+    <member refid="class_dummiesman_1_1_t_g_a_loader_1a98daab5a34f9b1d24a7ca68c9187e675" kind="function"><name>GetBits</name></member>
+    <member refid="class_dummiesman_1_1_t_g_a_loader_1a2cededd52bb8883461e16abffb0fec78" kind="function"><name>LoadRawTGAData</name></member>
+    <member refid="class_dummiesman_1_1_t_g_a_loader_1aec6f381926bd884cd576100465e14052" kind="function"><name>LoadRLETGAData</name></member>
+    <member refid="class_dummiesman_1_1_t_g_a_loader_1ad53c8298b74b451fff17844f27ce9fb1" kind="function"><name>Load</name></member>
+    <member refid="class_dummiesman_1_1_t_g_a_loader_1a764fd253d8bea8b72d50b2c6eed3bdf0" kind="function"><name>Load</name></member>
+    <member refid="class_dummiesman_1_1_t_g_a_loader_1a5714f38510b5e1885841b734dc89c26f" kind="function"><name>Load</name></member>
+  </compound>
+  <compound refid="namespace_b83" kind="namespace"><name>B83</name>
+  </compound>
+  <compound refid="namespace_b83_1_1_image" kind="namespace"><name>B83::Image</name>
+  </compound>
+  <compound refid="namespace_b83_1_1_image_1_1_b_m_p" kind="namespace"><name>B83::Image::BMP</name>
+    <member refid="namespace_b83_1_1_image_1_1_b_m_p_1a04addd92a5ab8a5cdbb2dc0d399bc282" kind="enum"><name>BMPComressionMode</name></member>
+    <member refid="namespace_b83_1_1_image_1_1_b_m_p_1a04addd92a5ab8a5cdbb2dc0d399bc282addfed93c4a32d43ec3c2805577d707c1" kind="enumvalue"><name>BI_RGB</name></member>
+    <member refid="namespace_b83_1_1_image_1_1_b_m_p_1a04addd92a5ab8a5cdbb2dc0d399bc282ab6547b0a2fde4a42aacb982990437a9e" kind="enumvalue"><name>BI_RLE8</name></member>
+    <member refid="namespace_b83_1_1_image_1_1_b_m_p_1a04addd92a5ab8a5cdbb2dc0d399bc282a70a162792ea74fffe16becd3f1f3ebc0" kind="enumvalue"><name>BI_RLE4</name></member>
+    <member refid="namespace_b83_1_1_image_1_1_b_m_p_1a04addd92a5ab8a5cdbb2dc0d399bc282af0d7592840191a2283df3271798f1fd7" kind="enumvalue"><name>BI_BITFIELDS</name></member>
+    <member refid="namespace_b83_1_1_image_1_1_b_m_p_1a04addd92a5ab8a5cdbb2dc0d399bc282ac87a529032f45f571aec1b8334b6258e" kind="enumvalue"><name>BI_JPEG</name></member>
+    <member refid="namespace_b83_1_1_image_1_1_b_m_p_1a04addd92a5ab8a5cdbb2dc0d399bc282a7afed9aa2756ddc5a25359b95b5e575c" kind="enumvalue"><name>BI_PNG</name></member>
+    <member refid="namespace_b83_1_1_image_1_1_b_m_p_1a04addd92a5ab8a5cdbb2dc0d399bc282a72c2b1e8f99a5a3c8757bb146e404bd9" kind="enumvalue"><name>BI_ALPHABITFIELDS</name></member>
+    <member refid="namespace_b83_1_1_image_1_1_b_m_p_1a04addd92a5ab8a5cdbb2dc0d399bc282ac028d5af8a9e4f654d910fb061a6b015" kind="enumvalue"><name>BI_CMYK</name></member>
+    <member refid="namespace_b83_1_1_image_1_1_b_m_p_1a04addd92a5ab8a5cdbb2dc0d399bc282aef8f3b2c557d07f98208137b8d1a375c" kind="enumvalue"><name>BI_CMYKRLE8</name></member>
+    <member refid="namespace_b83_1_1_image_1_1_b_m_p_1a04addd92a5ab8a5cdbb2dc0d399bc282acf40509e543d1e4938e538680f267489" kind="enumvalue"><name>BI_CMYKRLE4</name></member>
+  </compound>
+  <compound refid="namespace_dummiesman" kind="namespace"><name>Dummiesman</name>
+    <member refid="namespace_dummiesman_1a61c2576ddaaa8bc5a94dd4e53c48f917" kind="enum"><name>SplitMode</name></member>
+    <member refid="namespace_dummiesman_1a61c2576ddaaa8bc5a94dd4e53c48f917a6adf97f83acf6453d4a6a4b1070f3754" kind="enumvalue"><name>None</name></member>
+    <member refid="namespace_dummiesman_1a61c2576ddaaa8bc5a94dd4e53c48f917a497031794414a552435f90151ac3b54b" kind="enumvalue"><name>Object</name></member>
+    <member refid="namespace_dummiesman_1a61c2576ddaaa8bc5a94dd4e53c48f917ad92a8333dd3ccb895cc65f7455b71206" kind="enumvalue"><name>Material</name></member>
+  </compound>
+  <compound refid="namespace_dummiesman_1_1_extensions" kind="namespace"><name>Dummiesman::Extensions</name>
+  </compound>
+  <compound refid="namespace_random" kind="namespace"><name>Random</name>
+  </compound>
+  <compound refid="namespace_system" kind="namespace"><name>System</name>
+  </compound>
+  <compound refid="namespace_system_1_1_collections" kind="namespace"><name>System::Collections</name>
+  </compound>
+  <compound refid="namespace_system_1_1_collections_1_1_generic" kind="namespace"><name>System::Collections::Generic</name>
+  </compound>
+  <compound refid="namespace_system_1_1_globalization" kind="namespace"><name>System::Globalization</name>
+  </compound>
+  <compound refid="namespace_system_1_1_i_o" kind="namespace"><name>System::IO</name>
+  </compound>
+  <compound refid="namespace_system_1_1_linq" kind="namespace"><name>System::Linq</name>
+  </compound>
+  <compound refid="namespace_system_1_1_runtime_1_1_interop_services" kind="namespace"><name>System::Runtime::InteropServices</name>
+  </compound>
+  <compound refid="namespace_system_1_1_text" kind="namespace"><name>System::Text</name>
+  </compound>
+  <compound refid="namespace_system_1_1_threading" kind="namespace"><name>System::Threading</name>
+  </compound>
+  <compound refid="namespace_t_m_pro" kind="namespace"><name>TMPro</name>
+  </compound>
+  <compound refid="namespace_unity_1_1_collections" kind="namespace"><name>Unity::Collections</name>
+  </compound>
+  <compound refid="namespace_unity_1_1_jobs" kind="namespace"><name>Unity::Jobs</name>
+  </compound>
+  <compound refid="namespace_unity_editor" kind="namespace"><name>UnityEditor</name>
+  </compound>
+  <compound refid="namespace_unity_engine" kind="namespace"><name>UnityEngine</name>
+  </compound>
+  <compound refid="namespace_unity_engine_1_1_scene_management" kind="namespace"><name>UnityEngine::SceneManagement</name>
+  </compound>
+  <compound refid="namespace_unity_engine_1_1_u_i" kind="namespace"><name>UnityEngine::UI</name>
+  </compound>
+  <compound refid="button_handler_8cs" kind="file"><name>buttonHandler.cs</name>
+  </compound>
+  <compound refid="_char_word_reader_8cs" kind="file"><name>CharWordReader.cs</name>
+  </compound>
+  <compound refid="_m_t_l_loader_8cs" kind="file"><name>MTLLoader.cs</name>
+  </compound>
+  <compound refid="_o_b_j_loader_8cs" kind="file"><name>OBJLoader.cs</name>
+  </compound>
+  <compound refid="_o_b_j_loader_helper_8cs" kind="file"><name>OBJLoaderHelper.cs</name>
+  </compound>
+  <compound refid="_o_b_j_object_builder_8cs" kind="file"><name>OBJObjectBuilder.cs</name>
+  </compound>
+  <compound refid="_obj_from_file_8cs" kind="file"><name>ObjFromFile.cs</name>
+  </compound>
+  <compound refid="_obj_from_stream_8cs" kind="file"><name>ObjFromStream.cs</name>
+  </compound>
+  <compound refid="_string_extensions_8cs" kind="file"><name>StringExtensions.cs</name>
+  </compound>
+  <compound refid="_binary_extensions_8cs" kind="file"><name>BinaryExtensions.cs</name>
+  </compound>
+  <compound refid="_b_m_p_loader_8cs" kind="file"><name>BMPLoader.cs</name>
+  </compound>
+  <compound refid="_color_extensions_8cs" kind="file"><name>ColorExtensions.cs</name>
+  </compound>
+  <compound refid="_d_d_s_loader_8cs" kind="file"><name>DDSLoader.cs</name>
+  </compound>
+  <compound refid="_image_loader_8cs" kind="file"><name>ImageLoader.cs</name>
+  </compound>
+  <compound refid="_image_loader_helper_8cs" kind="file"><name>ImageLoaderHelper.cs</name>
+  </compound>
+  <compound refid="_image_utils_8cs" kind="file"><name>ImageUtils.cs</name>
+  </compound>
+  <compound refid="_t_g_a_loader_8cs" kind="file"><name>TGALoader.cs</name>
+  </compound>
+  <compound refid="_application_menu_8cs" kind="file"><name>ApplicationMenu.cs</name>
+  </compound>
+  <compound refid="_camera_script_8cs" kind="file"><name>CameraScript.cs</name>
+  </compound>
+  <compound refid="_main_menu_8cs" kind="file"><name>MainMenu.cs</name>
+  </compound>
+  <compound refid="_ray_test_8cs" kind="file"><name>RayTest.cs</name>
+    <member refid="_ray_test_8cs_1a24953b19d956caa76c403684c71b4e5b" kind="typedef"><name>Random</name></member>
+  </compound>
+  <compound refid="_roof_layer_8cs" kind="file"><name>RoofLayer.cs</name>
+  </compound>
+  <compound refid="_slider_value_to_text_8cs" kind="file"><name>SliderValueToText.cs</name>
+  </compound>
+  <compound refid="deprecated" kind="page"><name>deprecated</name>
+  </compound>
+  <compound refid="dir_e471cf9031a3cb5a5bea8eb518550e10" kind="dir"><name>H:/Code/Unity/SurfaceDetection/Assets</name>
+  </compound>
+  <compound refid="dir_23fdee2f6995db16c755697cdf620cf4" kind="dir"><name>H:/Code</name>
+  </compound>
+  <compound refid="dir_e478da333691f8fa1f43f16a2d7ee12a" kind="dir"><name>H:/Code/Unity/SurfaceDetection/Assets/OBJImport</name>
+  </compound>
+  <compound refid="dir_3182f2d15e50fbe268b3d76ce922018d" kind="dir"><name>H:/Code/Unity/SurfaceDetection/Assets/OBJImport/Samples</name>
+  </compound>
+  <compound refid="dir_19810f73140a6b31b74d30c6a5ed84f4" kind="dir"><name>H:/Code/Unity/SurfaceDetection/Assets/Scripts</name>
+  </compound>
+  <compound refid="dir_fba5e56fa55e40a5a243d9f78fb1b45a" kind="dir"><name>H:/Code/Unity/SurfaceDetection</name>
+  </compound>
+  <compound refid="dir_a5dd679a6ab0213767df04ad6f6617d8" kind="dir"><name>H:/Code/Unity/SurfaceDetection/Assets/OBJImport/TextureLoader</name>
+  </compound>
+  <compound refid="dir_53a790c50bff4e56cafb9a29523db074" kind="dir"><name>H:/Code/Unity</name>
+  </compound>
+</doxygenindex>

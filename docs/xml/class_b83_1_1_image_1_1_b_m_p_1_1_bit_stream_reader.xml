@@ -1,0 +1,143 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
+  <compounddef id="class_b83_1_1_image_1_1_b_m_p_1_1_bit_stream_reader" kind="class" language="C#" prot="public">
+    <compoundname>B83::Image::BMP::BitStreamReader</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_b83_1_1_image_1_1_b_m_p_1_1_bit_stream_reader_1a7cc3d2bff916a9de35b16e4a5de95cc7" prot="private" static="no" mutable="no">
+        <type>BinaryReader</type>
+        <definition>BinaryReader B83.Image.BMP.BitStreamReader.m_Reader</definition>
+        <argsstring></argsstring>
+        <name>m_Reader</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/TextureLoader/BMPLoader.cs" line="525" column="22" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/TextureLoader/BMPLoader.cs" bodystart="525" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_b83_1_1_image_1_1_b_m_p_1_1_bit_stream_reader_1a68fa058a6be1ee44cfdb2b6aefe319df" prot="private" static="no" mutable="no">
+        <type>byte</type>
+        <definition>byte B83.Image.BMP.BitStreamReader.m_Data</definition>
+        <argsstring></argsstring>
+        <name>m_Data</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/TextureLoader/BMPLoader.cs" line="526" column="14" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/TextureLoader/BMPLoader.cs" bodystart="526" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_b83_1_1_image_1_1_b_m_p_1_1_bit_stream_reader_1abd87a0e0f1bf3d253dcb65c09dec2129" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int B83.Image.BMP.BitStreamReader.m_Bits</definition>
+        <argsstring></argsstring>
+        <name>m_Bits</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/TextureLoader/BMPLoader.cs" line="527" column="13" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/TextureLoader/BMPLoader.cs" bodystart="527" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_b83_1_1_image_1_1_b_m_p_1_1_bit_stream_reader_1a59fadf4c560b34340a429642ad36a09a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>B83.Image.BMP.BitStreamReader.BitStreamReader</definition>
+        <argsstring>(BinaryReader aReader)</argsstring>
+        <name>BitStreamReader</name>
+        <param>
+          <type>BinaryReader</type>
+          <declname>aReader</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/TextureLoader/BMPLoader.cs" line="529" column="16" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/TextureLoader/BMPLoader.cs" bodystart="529" bodyend="532"/>
+      </memberdef>
+      <memberdef kind="function" id="class_b83_1_1_image_1_1_b_m_p_1_1_bit_stream_reader_1a0da14ebda0449604b01f6dc4a48c99c7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>B83.Image.BMP.BitStreamReader.BitStreamReader</definition>
+        <argsstring>(Stream aStream)</argsstring>
+        <name>BitStreamReader</name>
+        <param>
+          <type>Stream</type>
+          <declname>aStream</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/TextureLoader/BMPLoader.cs" line="533" column="16" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/TextureLoader/BMPLoader.cs" bodystart="533" bodyend="533"/>
+      </memberdef>
+      <memberdef kind="function" id="class_b83_1_1_image_1_1_b_m_p_1_1_bit_stream_reader_1ad5ce901116715d0e2f35234f554a316f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>byte</type>
+        <definition>byte B83.Image.BMP.BitStreamReader.ReadBit</definition>
+        <argsstring>()</argsstring>
+        <name>ReadBit</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/TextureLoader/BMPLoader.cs" line="535" column="21" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/TextureLoader/BMPLoader.cs" bodystart="535" bodyend="543"/>
+      </memberdef>
+      <memberdef kind="function" id="class_b83_1_1_image_1_1_b_m_p_1_1_bit_stream_reader_1a0dbb1a076272fc32a2b0e2de5aabd180" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>ulong</type>
+        <definition>ulong B83.Image.BMP.BitStreamReader.ReadBits</definition>
+        <argsstring>(int aCount)</argsstring>
+        <name>ReadBits</name>
+        <param>
+          <type>int</type>
+          <declname>aCount</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/TextureLoader/BMPLoader.cs" line="545" column="22" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/TextureLoader/BMPLoader.cs" bodystart="545" bodyend="553"/>
+      </memberdef>
+      <memberdef kind="function" id="class_b83_1_1_image_1_1_b_m_p_1_1_bit_stream_reader_1a436c996a130b8fa6abe4193ab3b688a2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void B83.Image.BMP.BitStreamReader.Flush</definition>
+        <argsstring>()</argsstring>
+        <name>Flush</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/TextureLoader/BMPLoader.cs" line="554" column="21" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/TextureLoader/BMPLoader.cs" bodystart="554" bodyend="558"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/TextureLoader/BMPLoader.cs" line="523" column="11" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/TextureLoader/BMPLoader.cs" bodystart="524" bodyend="559"/>
+    <listofallmembers>
+      <member refid="class_b83_1_1_image_1_1_b_m_p_1_1_bit_stream_reader_1a59fadf4c560b34340a429642ad36a09a" prot="public" virt="non-virtual"><scope>B83::Image::BMP::BitStreamReader</scope><name>BitStreamReader</name></member>
+      <member refid="class_b83_1_1_image_1_1_b_m_p_1_1_bit_stream_reader_1a0da14ebda0449604b01f6dc4a48c99c7" prot="public" virt="non-virtual"><scope>B83::Image::BMP::BitStreamReader</scope><name>BitStreamReader</name></member>
+      <member refid="class_b83_1_1_image_1_1_b_m_p_1_1_bit_stream_reader_1a436c996a130b8fa6abe4193ab3b688a2" prot="public" virt="non-virtual"><scope>B83::Image::BMP::BitStreamReader</scope><name>Flush</name></member>
+      <member refid="class_b83_1_1_image_1_1_b_m_p_1_1_bit_stream_reader_1abd87a0e0f1bf3d253dcb65c09dec2129" prot="private" virt="non-virtual"><scope>B83::Image::BMP::BitStreamReader</scope><name>m_Bits</name></member>
+      <member refid="class_b83_1_1_image_1_1_b_m_p_1_1_bit_stream_reader_1a68fa058a6be1ee44cfdb2b6aefe319df" prot="private" virt="non-virtual"><scope>B83::Image::BMP::BitStreamReader</scope><name>m_Data</name></member>
+      <member refid="class_b83_1_1_image_1_1_b_m_p_1_1_bit_stream_reader_1a7cc3d2bff916a9de35b16e4a5de95cc7" prot="private" virt="non-virtual"><scope>B83::Image::BMP::BitStreamReader</scope><name>m_Reader</name></member>
+      <member refid="class_b83_1_1_image_1_1_b_m_p_1_1_bit_stream_reader_1ad5ce901116715d0e2f35234f554a316f" prot="public" virt="non-virtual"><scope>B83::Image::BMP::BitStreamReader</scope><name>ReadBit</name></member>
+      <member refid="class_b83_1_1_image_1_1_b_m_p_1_1_bit_stream_reader_1a0dbb1a076272fc32a2b0e2de5aabd180" prot="public" virt="non-virtual"><scope>B83::Image::BMP::BitStreamReader</scope><name>ReadBits</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

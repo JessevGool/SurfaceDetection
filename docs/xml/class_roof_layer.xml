@@ -1,0 +1,134 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
+  <compounddef id="class_roof_layer" kind="class" language="C#" prot="public">
+    <compoundname>RoofLayer</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_roof_layer_1a2928528f6e8161abccf386316469a333" prot="public" static="no" mutable="no">
+        <type>Vector3</type>
+        <definition>Vector3 RoofLayer._NE</definition>
+        <argsstring></argsstring>
+        <name>_NE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RoofLayer.cs" line="10" column="20" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RoofLayer.cs" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_roof_layer_1a9f5ba786e4070283168d575ddae56bad" prot="public" static="no" mutable="no">
+        <type>Vector3</type>
+        <definition>Vector3 RoofLayer._NW</definition>
+        <argsstring></argsstring>
+        <name>_NW</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RoofLayer.cs" line="10" column="24" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RoofLayer.cs" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_roof_layer_1a964ffa8ec77079bd63c1253cca6eaca8" prot="public" static="no" mutable="no">
+        <type>Vector3</type>
+        <definition>Vector3 RoofLayer._SE</definition>
+        <argsstring></argsstring>
+        <name>_SE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RoofLayer.cs" line="10" column="28" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RoofLayer.cs" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_roof_layer_1a42475325ed2d4f75d4a18a6103b553e4" prot="public" static="no" mutable="no">
+        <type>Vector3</type>
+        <definition>Vector3 RoofLayer._SW</definition>
+        <argsstring></argsstring>
+        <name>_SW</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RoofLayer.cs" line="10" column="32" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RoofLayer.cs" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_roof_layer_1a99732aeab63cd92c7bcf7cd42213387c" prot="private" static="no" mutable="no">
+        <type>Vector3[]</type>
+        <definition>Vector3 [] RoofLayer.corners</definition>
+        <argsstring></argsstring>
+        <name>corners</name>
+        <initializer>= new Vector3[4]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RoofLayer.cs" line="11" column="21" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RoofLayer.cs" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_roof_layer_1acf811f50b0c26ddf2c2508bfc30af73a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>RoofLayer.RoofLayer</definition>
+        <argsstring>(Vector3 NE, Vector3 NW, Vector3 SE, Vector3 SW)</argsstring>
+        <name>RoofLayer</name>
+        <param>
+          <type>Vector3</type>
+          <declname>NE</declname>
+        </param>
+        <param>
+          <type>Vector3</type>
+          <declname>NW</declname>
+        </param>
+        <param>
+          <type>Vector3</type>
+          <declname>SE</declname>
+        </param>
+        <param>
+          <type>Vector3</type>
+          <declname>SW</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RoofLayer.cs" line="12" column="12" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RoofLayer.cs" bodystart="12" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="function" id="class_roof_layer_1a8752def0f50c6f31a8096b821c055f06" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void RoofLayer.visualiseLayer</definition>
+        <argsstring>()</argsstring>
+        <name>visualiseLayer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RoofLayer.cs" line="24" column="17" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RoofLayer.cs" bodystart="24" bodyend="34"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RoofLayer.cs" line="5" column="7" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RoofLayer.cs" bodystart="6" bodyend="35"/>
+    <listofallmembers>
+      <member refid="class_roof_layer_1a2928528f6e8161abccf386316469a333" prot="public" virt="non-virtual"><scope>RoofLayer</scope><name>_NE</name></member>
+      <member refid="class_roof_layer_1a9f5ba786e4070283168d575ddae56bad" prot="public" virt="non-virtual"><scope>RoofLayer</scope><name>_NW</name></member>
+      <member refid="class_roof_layer_1a964ffa8ec77079bd63c1253cca6eaca8" prot="public" virt="non-virtual"><scope>RoofLayer</scope><name>_SE</name></member>
+      <member refid="class_roof_layer_1a42475325ed2d4f75d4a18a6103b553e4" prot="public" virt="non-virtual"><scope>RoofLayer</scope><name>_SW</name></member>
+      <member refid="class_roof_layer_1a99732aeab63cd92c7bcf7cd42213387c" prot="private" virt="non-virtual"><scope>RoofLayer</scope><name>corners</name></member>
+      <member refid="class_roof_layer_1acf811f50b0c26ddf2c2508bfc30af73a" prot="public" virt="non-virtual"><scope>RoofLayer</scope><name>RoofLayer</name></member>
+      <member refid="class_roof_layer_1a8752def0f50c6f31a8096b821c055f06" prot="public" virt="non-virtual"><scope>RoofLayer</scope><name>visualiseLayer</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

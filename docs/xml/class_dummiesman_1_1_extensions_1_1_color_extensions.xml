@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
+  <compounddef id="class_dummiesman_1_1_extensions_1_1_color_extensions" kind="class" language="C#" prot="public">
+    <compoundname>Dummiesman::Extensions::ColorExtensions</compoundname>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_dummiesman_1_1_extensions_1_1_color_extensions_1ad5d21f4ac5f98c7b69cbc6f17a4f22aa" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Color</type>
+        <definition>static Color Dummiesman.Extensions.ColorExtensions.FlipRB</definition>
+        <argsstring>(this Color color)</argsstring>
+        <name>FlipRB</name>
+        <param>
+          <type>this Color</type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/TextureLoader/ColorExtensions.cs" line="9" column="29" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/TextureLoader/ColorExtensions.cs" bodystart="9" bodyend="12"/>
+      </memberdef>
+      <memberdef kind="function" id="class_dummiesman_1_1_extensions_1_1_color_extensions_1af63377ae947de00a924d22de17f7b585" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Color32</type>
+        <definition>static Color32 Dummiesman.Extensions.ColorExtensions.FlipRB</definition>
+        <argsstring>(this Color32 color)</argsstring>
+        <name>FlipRB</name>
+        <param>
+          <type>this Color32</type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/TextureLoader/ColorExtensions.cs" line="14" column="31" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/TextureLoader/ColorExtensions.cs" bodystart="14" bodyend="17"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/TextureLoader/ColorExtensions.cs" line="7" column="19" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/TextureLoader/ColorExtensions.cs" bodystart="8" bodyend="18"/>
+    <listofallmembers>
+      <member refid="class_dummiesman_1_1_extensions_1_1_color_extensions_1ad5d21f4ac5f98c7b69cbc6f17a4f22aa" prot="public" virt="non-virtual"><scope>Dummiesman::Extensions::ColorExtensions</scope><name>FlipRB</name></member>
+      <member refid="class_dummiesman_1_1_extensions_1_1_color_extensions_1af63377ae947de00a924d22de17f7b585" prot="public" virt="non-virtual"><scope>Dummiesman::Extensions::ColorExtensions</scope><name>FlipRB</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

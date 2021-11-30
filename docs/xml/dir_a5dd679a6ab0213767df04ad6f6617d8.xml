@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
+  <compounddef id="dir_a5dd679a6ab0213767df04ad6f6617d8" kind="dir">
+    <compoundname>H:/Code/Unity/SurfaceDetection/Assets/OBJImport/TextureLoader</compoundname>
+    <innerfile refid="_binary_extensions_8cs">BinaryExtensions.cs</innerfile>
+    <innerfile refid="_b_m_p_loader_8cs">BMPLoader.cs</innerfile>
+    <innerfile refid="_color_extensions_8cs">ColorExtensions.cs</innerfile>
+    <innerfile refid="_d_d_s_loader_8cs">DDSLoader.cs</innerfile>
+    <innerfile refid="_image_loader_8cs">ImageLoader.cs</innerfile>
+    <innerfile refid="_image_loader_helper_8cs">ImageLoaderHelper.cs</innerfile>
+    <innerfile refid="_image_utils_8cs">ImageUtils.cs</innerfile>
+    <innerfile refid="_t_g_a_loader_8cs">TGALoader.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/TextureLoader/"/>
+  </compounddef>
+</doxygen>

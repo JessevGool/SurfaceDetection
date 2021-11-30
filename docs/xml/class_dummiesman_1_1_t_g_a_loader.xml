@@ -1,0 +1,157 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
+  <compounddef id="class_dummiesman_1_1_t_g_a_loader" kind="class" language="C#" prot="public">
+    <compoundname>Dummiesman::TGALoader</compoundname>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="class_dummiesman_1_1_t_g_a_loader_1a98daab5a34f9b1d24a7ca68c9187e675" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>static int Dummiesman.TGALoader.GetBits</definition>
+        <argsstring>(byte b, int offset, int count)</argsstring>
+        <name>GetBits</name>
+        <param>
+          <type>byte</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>offset</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>count</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/TextureLoader/TGALoader.cs" line="13" column="28" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/TextureLoader/TGALoader.cs" bodystart="13" bodyend="16"/>
+      </memberdef>
+      <memberdef kind="function" id="class_dummiesman_1_1_t_g_a_loader_1a2cededd52bb8883461e16abffb0fec78" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Color32[]</type>
+        <definition>static Color32[] Dummiesman.TGALoader.LoadRawTGAData</definition>
+        <argsstring>(BinaryReader r, int bitDepth, int width, int height)</argsstring>
+        <name>LoadRawTGAData</name>
+        <param>
+          <type>BinaryReader</type>
+          <declname>r</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>bitDepth</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>width</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>height</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/TextureLoader/TGALoader.cs" line="18" column="32" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/TextureLoader/TGALoader.cs" bodystart="18" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="class_dummiesman_1_1_t_g_a_loader_1aec6f381926bd884cd576100465e14052" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Color32[]</type>
+        <definition>static Color32[] Dummiesman.TGALoader.LoadRLETGAData</definition>
+        <argsstring>(BinaryReader r, int bitDepth, int width, int height)</argsstring>
+        <name>LoadRLETGAData</name>
+        <param>
+          <type>BinaryReader</type>
+          <declname>r</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>bitDepth</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>width</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>height</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/TextureLoader/TGALoader.cs" line="28" column="32" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/TextureLoader/TGALoader.cs" bodystart="28" bodyend="65"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_dummiesman_1_1_t_g_a_loader_1ad53c8298b74b451fff17844f27ce9fb1" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Texture2D</type>
+        <definition>static Texture2D Dummiesman.TGALoader.Load</definition>
+        <argsstring>(string fileName)</argsstring>
+        <name>Load</name>
+        <param>
+          <type>string</type>
+          <declname>fileName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/TextureLoader/TGALoader.cs" line="67" column="33" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/TextureLoader/TGALoader.cs" bodystart="67" bodyend="73"/>
+      </memberdef>
+      <memberdef kind="function" id="class_dummiesman_1_1_t_g_a_loader_1a764fd253d8bea8b72d50b2c6eed3bdf0" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Texture2D</type>
+        <definition>static Texture2D Dummiesman.TGALoader.Load</definition>
+        <argsstring>(byte[] bytes)</argsstring>
+        <name>Load</name>
+        <param>
+          <type>byte[]</type>
+          <declname>bytes</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/TextureLoader/TGALoader.cs" line="75" column="33" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/TextureLoader/TGALoader.cs" bodystart="75" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="function" id="class_dummiesman_1_1_t_g_a_loader_1a5714f38510b5e1885841b734dc89c26f" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Texture2D</type>
+        <definition>static Texture2D Dummiesman.TGALoader.Load</definition>
+        <argsstring>(Stream TGAStream)</argsstring>
+        <name>Load</name>
+        <param>
+          <type>Stream</type>
+          <declname>TGAStream</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/TextureLoader/TGALoader.cs" line="83" column="33" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/TextureLoader/TGALoader.cs" bodystart="83" bodyend="125"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/TextureLoader/TGALoader.cs" line="11" column="11" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/TextureLoader/TGALoader.cs" bodystart="12" bodyend="126"/>
+    <listofallmembers>
+      <member refid="class_dummiesman_1_1_t_g_a_loader_1a98daab5a34f9b1d24a7ca68c9187e675" prot="private" virt="non-virtual"><scope>Dummiesman::TGALoader</scope><name>GetBits</name></member>
+      <member refid="class_dummiesman_1_1_t_g_a_loader_1ad53c8298b74b451fff17844f27ce9fb1" prot="public" virt="non-virtual"><scope>Dummiesman::TGALoader</scope><name>Load</name></member>
+      <member refid="class_dummiesman_1_1_t_g_a_loader_1a764fd253d8bea8b72d50b2c6eed3bdf0" prot="public" virt="non-virtual"><scope>Dummiesman::TGALoader</scope><name>Load</name></member>
+      <member refid="class_dummiesman_1_1_t_g_a_loader_1a5714f38510b5e1885841b734dc89c26f" prot="public" virt="non-virtual"><scope>Dummiesman::TGALoader</scope><name>Load</name></member>
+      <member refid="class_dummiesman_1_1_t_g_a_loader_1a2cededd52bb8883461e16abffb0fec78" prot="private" virt="non-virtual"><scope>Dummiesman::TGALoader</scope><name>LoadRawTGAData</name></member>
+      <member refid="class_dummiesman_1_1_t_g_a_loader_1aec6f381926bd884cd576100465e14052" prot="private" virt="non-virtual"><scope>Dummiesman::TGALoader</scope><name>LoadRLETGAData</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

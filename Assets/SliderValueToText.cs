@@ -2,7 +2,10 @@ using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
 using TMPro;
-
+/**
+ * @author Jesse van Gool & Maurice Brouwers
+ * @version 1.0
+ */
 public class SliderValueToText : MonoBehaviour
 {
     public Slider sliderUI;

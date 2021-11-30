@@ -1,0 +1,366 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
+  <compounddef id="class_dummiesman_1_1_char_word_reader" kind="class" language="C#" prot="public">
+    <compoundname>Dummiesman::CharWordReader</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_dummiesman_1_1_char_word_reader_1a8aae8484c2921223e8376a0624b3b999" prot="public" static="no" mutable="no">
+        <type>char[]</type>
+        <definition>char [] Dummiesman.CharWordReader.word</definition>
+        <argsstring></argsstring>
+        <name>word</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/CharWordReader.cs" line="9" column="13" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/CharWordReader.cs" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_dummiesman_1_1_char_word_reader_1a09b060469693e13bb07e705a24110b42" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Dummiesman.CharWordReader.wordSize</definition>
+        <argsstring></argsstring>
+        <name>wordSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/CharWordReader.cs" line="10" column="12" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/CharWordReader.cs" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_dummiesman_1_1_char_word_reader_1ad9fc7a85be2048a78b193cd4e55729fb" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Dummiesman.CharWordReader.endReached</definition>
+        <argsstring></argsstring>
+        <name>endReached</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/CharWordReader.cs" line="11" column="13" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/CharWordReader.cs" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_dummiesman_1_1_char_word_reader_1a6459e68af5224f2ba3707afadff114b2" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char Dummiesman.CharWordReader.currentChar</definition>
+        <argsstring></argsstring>
+        <name>currentChar</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/CharWordReader.cs" line="17" column="13" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/CharWordReader.cs" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_dummiesman_1_1_char_word_reader_1a9898a8a0987b4684feea423a59b3bf5d" prot="private" static="no" mutable="no">
+        <type>StreamReader</type>
+        <definition>StreamReader Dummiesman.CharWordReader.reader</definition>
+        <argsstring></argsstring>
+        <name>reader</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/CharWordReader.cs" line="13" column="22" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/CharWordReader.cs" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_dummiesman_1_1_char_word_reader_1ab81b171bde08dbbc0b4308ce6b0f8c8d" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Dummiesman.CharWordReader.bufferSize</definition>
+        <argsstring></argsstring>
+        <name>bufferSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/CharWordReader.cs" line="14" column="13" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/CharWordReader.cs" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_dummiesman_1_1_char_word_reader_1a15fe831f122d2093226596f4b47e146f" prot="private" static="no" mutable="no">
+        <type>char[]</type>
+        <definition>char [] Dummiesman.CharWordReader.buffer</definition>
+        <argsstring></argsstring>
+        <name>buffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/CharWordReader.cs" line="15" column="14" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/CharWordReader.cs" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_dummiesman_1_1_char_word_reader_1ac5800dcf9660980458a75144c1b5466c" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Dummiesman.CharWordReader.currentPosition</definition>
+        <argsstring></argsstring>
+        <name>currentPosition</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/CharWordReader.cs" line="18" column="13" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/CharWordReader.cs" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_dummiesman_1_1_char_word_reader_1afbbb4935af24aead5e1cf76126c13194" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Dummiesman.CharWordReader.maxPosition</definition>
+        <argsstring></argsstring>
+        <name>maxPosition</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/CharWordReader.cs" line="19" column="13" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/CharWordReader.cs" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_dummiesman_1_1_char_word_reader_1a600849d5ba12e13e6aff0d354432b001" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Dummiesman.CharWordReader.CharWordReader</definition>
+        <argsstring>(StreamReader reader, int bufferSize)</argsstring>
+        <name>CharWordReader</name>
+        <param>
+          <type>StreamReader</type>
+          <declname>reader</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>bufferSize</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/CharWordReader.cs" line="21" column="8" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/CharWordReader.cs" bodystart="21" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="class_dummiesman_1_1_char_word_reader_1a5673e21d2bcedf955ffb447e6f4fc8ff" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Dummiesman.CharWordReader.SkipWhitespaces</definition>
+        <argsstring>()</argsstring>
+        <name>SkipWhitespaces</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/CharWordReader.cs" line="31" column="13" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/CharWordReader.cs" bodystart="31" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="class_dummiesman_1_1_char_word_reader_1a45b9a9ee2310b6fa6f3264eca989ac1e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Dummiesman.CharWordReader.SkipWhitespaces</definition>
+        <argsstring>(out bool newLinePassed)</argsstring>
+        <name>SkipWhitespaces</name>
+        <param>
+          <type>out bool</type>
+          <declname>newLinePassed</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/CharWordReader.cs" line="37" column="13" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/CharWordReader.cs" bodystart="37" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="class_dummiesman_1_1_char_word_reader_1a66ad77953c3122d5741ed150c97b423c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Dummiesman.CharWordReader.SkipUntilNewLine</definition>
+        <argsstring>()</argsstring>
+        <name>SkipUntilNewLine</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/CharWordReader.cs" line="47" column="13" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/CharWordReader.cs" bodystart="47" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="class_dummiesman_1_1_char_word_reader_1a42063df6067425c8f67895e596844e6c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Dummiesman.CharWordReader.ReadUntilWhiteSpace</definition>
+        <argsstring>()</argsstring>
+        <name>ReadUntilWhiteSpace</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/CharWordReader.cs" line="54" column="13" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/CharWordReader.cs" bodystart="54" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="class_dummiesman_1_1_char_word_reader_1ae6b7dfd08493eb8fbbd97282dcfd2aa5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Dummiesman.CharWordReader.ReadUntilNewLine</definition>
+        <argsstring>()</argsstring>
+        <name>ReadUntilNewLine</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/CharWordReader.cs" line="63" column="13" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/CharWordReader.cs" bodystart="63" bodyend="71"/>
+      </memberdef>
+      <memberdef kind="function" id="class_dummiesman_1_1_char_word_reader_1a413fedc5a8fccc76374b2c723b83966c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Dummiesman.CharWordReader.Is</definition>
+        <argsstring>(string other)</argsstring>
+        <name>Is</name>
+        <param>
+          <type>string</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/CharWordReader.cs" line="73" column="13" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/CharWordReader.cs" bodystart="73" bodyend="85"/>
+      </memberdef>
+      <memberdef kind="function" id="class_dummiesman_1_1_char_word_reader_1a8b5b622228256a9620a5d3ddc0de7626" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>string</type>
+        <definition>string Dummiesman.CharWordReader.GetString</definition>
+        <argsstring>(int startIndex=0)</argsstring>
+        <name>GetString</name>
+        <param>
+          <type>int</type>
+          <declname>startIndex</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/CharWordReader.cs" line="86" column="23" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/CharWordReader.cs" bodystart="86" bodyend="91"/>
+      </memberdef>
+      <memberdef kind="function" id="class_dummiesman_1_1_char_word_reader_1a06706e7c0c4a03c020959c587bed7d31" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Vector3</type>
+        <definition>Vector3 Dummiesman.CharWordReader.ReadVector</definition>
+        <argsstring>()</argsstring>
+        <name>ReadVector</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/CharWordReader.cs" line="93" column="16" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/CharWordReader.cs" bodystart="93" bodyend="104"/>
+      </memberdef>
+      <memberdef kind="function" id="class_dummiesman_1_1_char_word_reader_1a95714eb413637ccfee300965d30a46ec" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Dummiesman.CharWordReader.ReadInt</definition>
+        <argsstring>()</argsstring>
+        <name>ReadInt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/CharWordReader.cs" line="106" column="12" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/CharWordReader.cs" bodystart="106" bodyend="120"/>
+      </memberdef>
+      <memberdef kind="function" id="class_dummiesman_1_1_char_word_reader_1a9d2fc16773cfab6acd9468bb422dc7bd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float Dummiesman.CharWordReader.ReadFloat</definition>
+        <argsstring>()</argsstring>
+        <name>ReadFloat</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/CharWordReader.cs" line="122" column="14" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/CharWordReader.cs" bodystart="122" bodyend="144"/>
+      </memberdef>
+      <memberdef kind="function" id="class_dummiesman_1_1_char_word_reader_1ae8c9527d06ca75cba6c872f31d7620b6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Dummiesman.CharWordReader.MoveNext</definition>
+        <argsstring>()</argsstring>
+        <name>MoveNext</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/CharWordReader.cs" line="168" column="13" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/CharWordReader.cs" bodystart="168" bodyend="181"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_dummiesman_1_1_char_word_reader_1aca72bd23b870381b164c77d194474134" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float Dummiesman.CharWordReader.ReadFloatEnd</definition>
+        <argsstring>()</argsstring>
+        <name>ReadFloatEnd</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/CharWordReader.cs" line="146" column="15" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/CharWordReader.cs" bodystart="146" bodyend="160"/>
+      </memberdef>
+      <memberdef kind="function" id="class_dummiesman_1_1_char_word_reader_1a65abe92f69d3f28dd602b8c5aad8a84f" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Dummiesman.CharWordReader.SkipNewLineSymbols</definition>
+        <argsstring>()</argsstring>
+        <name>SkipNewLineSymbols</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/CharWordReader.cs" line="162" column="14" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/CharWordReader.cs" bodystart="162" bodyend="166"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/CharWordReader.cs" line="8" column="7" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/CharWordReader.cs" bodystart="8" bodyend="182"/>
+    <listofallmembers>
+      <member refid="class_dummiesman_1_1_char_word_reader_1a15fe831f122d2093226596f4b47e146f" prot="private" virt="non-virtual"><scope>Dummiesman::CharWordReader</scope><name>buffer</name></member>
+      <member refid="class_dummiesman_1_1_char_word_reader_1ab81b171bde08dbbc0b4308ce6b0f8c8d" prot="private" virt="non-virtual"><scope>Dummiesman::CharWordReader</scope><name>bufferSize</name></member>
+      <member refid="class_dummiesman_1_1_char_word_reader_1a600849d5ba12e13e6aff0d354432b001" prot="public" virt="non-virtual"><scope>Dummiesman::CharWordReader</scope><name>CharWordReader</name></member>
+      <member refid="class_dummiesman_1_1_char_word_reader_1a6459e68af5224f2ba3707afadff114b2" prot="public" virt="non-virtual"><scope>Dummiesman::CharWordReader</scope><name>currentChar</name></member>
+      <member refid="class_dummiesman_1_1_char_word_reader_1ac5800dcf9660980458a75144c1b5466c" prot="private" virt="non-virtual"><scope>Dummiesman::CharWordReader</scope><name>currentPosition</name></member>
+      <member refid="class_dummiesman_1_1_char_word_reader_1ad9fc7a85be2048a78b193cd4e55729fb" prot="public" virt="non-virtual"><scope>Dummiesman::CharWordReader</scope><name>endReached</name></member>
+      <member refid="class_dummiesman_1_1_char_word_reader_1a8b5b622228256a9620a5d3ddc0de7626" prot="public" virt="non-virtual"><scope>Dummiesman::CharWordReader</scope><name>GetString</name></member>
+      <member refid="class_dummiesman_1_1_char_word_reader_1a413fedc5a8fccc76374b2c723b83966c" prot="public" virt="non-virtual"><scope>Dummiesman::CharWordReader</scope><name>Is</name></member>
+      <member refid="class_dummiesman_1_1_char_word_reader_1afbbb4935af24aead5e1cf76126c13194" prot="private" virt="non-virtual"><scope>Dummiesman::CharWordReader</scope><name>maxPosition</name></member>
+      <member refid="class_dummiesman_1_1_char_word_reader_1ae8c9527d06ca75cba6c872f31d7620b6" prot="public" virt="non-virtual"><scope>Dummiesman::CharWordReader</scope><name>MoveNext</name></member>
+      <member refid="class_dummiesman_1_1_char_word_reader_1a9898a8a0987b4684feea423a59b3bf5d" prot="private" virt="non-virtual"><scope>Dummiesman::CharWordReader</scope><name>reader</name></member>
+      <member refid="class_dummiesman_1_1_char_word_reader_1a9d2fc16773cfab6acd9468bb422dc7bd" prot="public" virt="non-virtual"><scope>Dummiesman::CharWordReader</scope><name>ReadFloat</name></member>
+      <member refid="class_dummiesman_1_1_char_word_reader_1aca72bd23b870381b164c77d194474134" prot="private" virt="non-virtual"><scope>Dummiesman::CharWordReader</scope><name>ReadFloatEnd</name></member>
+      <member refid="class_dummiesman_1_1_char_word_reader_1a95714eb413637ccfee300965d30a46ec" prot="public" virt="non-virtual"><scope>Dummiesman::CharWordReader</scope><name>ReadInt</name></member>
+      <member refid="class_dummiesman_1_1_char_word_reader_1ae6b7dfd08493eb8fbbd97282dcfd2aa5" prot="public" virt="non-virtual"><scope>Dummiesman::CharWordReader</scope><name>ReadUntilNewLine</name></member>
+      <member refid="class_dummiesman_1_1_char_word_reader_1a42063df6067425c8f67895e596844e6c" prot="public" virt="non-virtual"><scope>Dummiesman::CharWordReader</scope><name>ReadUntilWhiteSpace</name></member>
+      <member refid="class_dummiesman_1_1_char_word_reader_1a06706e7c0c4a03c020959c587bed7d31" prot="public" virt="non-virtual"><scope>Dummiesman::CharWordReader</scope><name>ReadVector</name></member>
+      <member refid="class_dummiesman_1_1_char_word_reader_1a65abe92f69d3f28dd602b8c5aad8a84f" prot="private" virt="non-virtual"><scope>Dummiesman::CharWordReader</scope><name>SkipNewLineSymbols</name></member>
+      <member refid="class_dummiesman_1_1_char_word_reader_1a66ad77953c3122d5741ed150c97b423c" prot="public" virt="non-virtual"><scope>Dummiesman::CharWordReader</scope><name>SkipUntilNewLine</name></member>
+      <member refid="class_dummiesman_1_1_char_word_reader_1a5673e21d2bcedf955ffb447e6f4fc8ff" prot="public" virt="non-virtual"><scope>Dummiesman::CharWordReader</scope><name>SkipWhitespaces</name></member>
+      <member refid="class_dummiesman_1_1_char_word_reader_1a45b9a9ee2310b6fa6f3264eca989ac1e" prot="public" virt="non-virtual"><scope>Dummiesman::CharWordReader</scope><name>SkipWhitespaces</name></member>
+      <member refid="class_dummiesman_1_1_char_word_reader_1a8aae8484c2921223e8376a0624b3b999" prot="public" virt="non-virtual"><scope>Dummiesman::CharWordReader</scope><name>word</name></member>
+      <member refid="class_dummiesman_1_1_char_word_reader_1a09b060469693e13bb07e705a24110b42" prot="public" virt="non-virtual"><scope>Dummiesman::CharWordReader</scope><name>wordSize</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

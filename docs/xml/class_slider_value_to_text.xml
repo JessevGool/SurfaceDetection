@@ -1,0 +1,147 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
+  <compounddef id="class_slider_value_to_text" kind="class" language="C#" prot="public">
+    <compoundname>SliderValueToText</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_slider_value_to_text_1a9ae7274884f2df48ffcdb85ffc33317e" prot="public" static="no" mutable="no">
+        <type>Slider</type>
+        <definition>Slider SliderValueToText.sliderUI</definition>
+        <argsstring></argsstring>
+        <name>sliderUI</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/SliderValueToText.cs" line="11" column="19" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/SliderValueToText.cs" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_slider_value_to_text_1a7838a8124830e2e41dcd75bcfaaa7914" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float SliderValueToText.resolution</definition>
+        <argsstring></argsstring>
+        <name>resolution</name>
+        <initializer>= 0.05f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/SliderValueToText.cs" line="13" column="18" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/SliderValueToText.cs" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_slider_value_to_text_1ac5ebca26de4fdedb8e378dca0a176c77" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float SliderValueToText.gridSize</definition>
+        <argsstring></argsstring>
+        <name>gridSize</name>
+        <initializer>= 80</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/SliderValueToText.cs" line="14" column="18" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/SliderValueToText.cs" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_slider_value_to_text_1ac5d4f57efdcb28e73379ae096f67244b" prot="private" static="no" mutable="no">
+        <type>TMPro.TextMeshProUGUI</type>
+        <definition>TMPro.TextMeshProUGUI SliderValueToText.textSliderValue</definition>
+        <argsstring></argsstring>
+        <name>textSliderValue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/SliderValueToText.cs" line="12" column="34" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/SliderValueToText.cs" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_slider_value_to_text_1a4b92015a482de567ea6ac0ef29ce468c" prot="private" static="no" mutable="no">
+        <type><ref refid="class_ray_test" kindref="compound">RayTest</ref></type>
+        <definition>RayTest SliderValueToText.rayTest</definition>
+        <argsstring></argsstring>
+        <name>rayTest</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/SliderValueToText.cs" line="15" column="21" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/SliderValueToText.cs" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_slider_value_to_text_1a5a1ccc256f2a2e0d0b3bdccf6e3b6feb" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SliderValueToText.Start</definition>
+        <argsstring>()</argsstring>
+        <name>Start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/SliderValueToText.cs" line="18" column="10" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/SliderValueToText.cs" bodystart="18" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="function" id="class_slider_value_to_text_1a2699cb48e936ca9fb081e7a073ade184" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SliderValueToText.Update</definition>
+        <argsstring>()</argsstring>
+        <name>Update</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/SliderValueToText.cs" line="24" column="18" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/SliderValueToText.cs" bodystart="24" bodyend="42"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>Jesse van Gool &amp; Maurice Brouwers </para>
+</simplesect>
+<simplesect kind="version"><para>1.0 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="1">
+        <label>SliderValueToText</label>
+        <link refid="class_slider_value_to_text"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="1">
+        <label>SliderValueToText</label>
+        <link refid="class_slider_value_to_text"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="H:/Code/Unity/SurfaceDetection/Assets/SliderValueToText.cs" line="9" column="7" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/SliderValueToText.cs" bodystart="10" bodyend="43"/>
+    <listofallmembers>
+      <member refid="class_slider_value_to_text_1ac5ebca26de4fdedb8e378dca0a176c77" prot="public" virt="non-virtual"><scope>SliderValueToText</scope><name>gridSize</name></member>
+      <member refid="class_slider_value_to_text_1a4b92015a482de567ea6ac0ef29ce468c" prot="private" virt="non-virtual"><scope>SliderValueToText</scope><name>rayTest</name></member>
+      <member refid="class_slider_value_to_text_1a7838a8124830e2e41dcd75bcfaaa7914" prot="public" virt="non-virtual"><scope>SliderValueToText</scope><name>resolution</name></member>
+      <member refid="class_slider_value_to_text_1a9ae7274884f2df48ffcdb85ffc33317e" prot="public" virt="non-virtual"><scope>SliderValueToText</scope><name>sliderUI</name></member>
+      <member refid="class_slider_value_to_text_1a5a1ccc256f2a2e0d0b3bdccf6e3b6feb" prot="private" virt="non-virtual"><scope>SliderValueToText</scope><name>Start</name></member>
+      <member refid="class_slider_value_to_text_1ac5d4f57efdcb28e73379ae096f67244b" prot="private" virt="non-virtual"><scope>SliderValueToText</scope><name>textSliderValue</name></member>
+      <member refid="class_slider_value_to_text_1a2699cb48e936ca9fb081e7a073ade184" prot="private" virt="non-virtual"><scope>SliderValueToText</scope><name>Update</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

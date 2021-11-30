@@ -1,0 +1,127 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
+  <compounddef id="class_dummiesman_1_1_o_b_j_loader_helper" kind="class" language="C#" prot="public">
+    <compoundname>Dummiesman::OBJLoaderHelper</compoundname>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_dummiesman_1_1_o_b_j_loader_helper_1ac5a6891a7985c99693ca6f6c7370f5da" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Dummiesman.OBJLoaderHelper.EnableMaterialTransparency</definition>
+        <argsstring>(Material mtl)</argsstring>
+        <name>EnableMaterialTransparency</name>
+        <param>
+          <type>Material</type>
+          <declname>mtl</declname>
+        </param>
+        <briefdescription>
+<para>Enables transparency mode on standard materials </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/OBJLoaderHelper.cs" line="11" column="28" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/OBJLoaderHelper.cs" bodystart="11" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="function" id="class_dummiesman_1_1_o_b_j_loader_helper_1a68d8b4d4fc56961aa75cd98dda86395b" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>static float Dummiesman.OBJLoaderHelper.FastFloatParse</definition>
+        <argsstring>(string input)</argsstring>
+        <name>FastFloatParse</name>
+        <param>
+          <type>string</type>
+          <declname>input</declname>
+        </param>
+        <briefdescription>
+<para>Modified from <ulink url="https://codereview.stackexchange.com/a/76891">https://codereview.stackexchange.com/a/76891</ulink>. Faster than float.Parse </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/OBJLoaderHelper.cs" line="26" column="29" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/OBJLoaderHelper.cs" bodystart="26" bodyend="63"/>
+      </memberdef>
+      <memberdef kind="function" id="class_dummiesman_1_1_o_b_j_loader_helper_1a35201b3fabd37bd046909b1b4b693a53" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>static int Dummiesman.OBJLoaderHelper.FastIntParse</definition>
+        <argsstring>(string input)</argsstring>
+        <name>FastIntParse</name>
+        <param>
+          <type>string</type>
+          <declname>input</declname>
+        </param>
+        <briefdescription>
+<para>Modified from <ulink url="http://cc.davelozinski.com/c-sharp/fastest-way-to-convert-a-string-to-an-int">http://cc.davelozinski.com/c-sharp/fastest-way-to-convert-a-string-to-an-int</ulink>. Faster than int.Parse </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/OBJLoaderHelper.cs" line="68" column="27" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/OBJLoaderHelper.cs" bodystart="68" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="class_dummiesman_1_1_o_b_j_loader_helper_1a1f0d27746e07f35267be06a4e09ca9a8" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Material</type>
+        <definition>static Material Dummiesman.OBJLoaderHelper.CreateNullMaterial</definition>
+        <argsstring>()</argsstring>
+        <name>CreateNullMaterial</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/OBJLoaderHelper.cs" line="78" column="32" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/OBJLoaderHelper.cs" bodystart="78" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="function" id="class_dummiesman_1_1_o_b_j_loader_helper_1a7717e79b2d85efea2a4a7a9ca3b6a892" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Vector3</type>
+        <definition>static Vector3 Dummiesman.OBJLoaderHelper.VectorFromStrArray</definition>
+        <argsstring>(string[] cmps)</argsstring>
+        <name>VectorFromStrArray</name>
+        <param>
+          <type>string[]</type>
+          <declname>cmps</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/OBJLoaderHelper.cs" line="83" column="31" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/OBJLoaderHelper.cs" bodystart="83" bodyend="93"/>
+      </memberdef>
+      <memberdef kind="function" id="class_dummiesman_1_1_o_b_j_loader_helper_1a9ae36db3258e9ce71eb2c856b7f21954" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Color</type>
+        <definition>static Color Dummiesman.OBJLoaderHelper.ColorFromStrArray</definition>
+        <argsstring>(string[] cmps, float scalar=1.0f)</argsstring>
+        <name>ColorFromStrArray</name>
+        <param>
+          <type>string[]</type>
+          <declname>cmps</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>scalar</declname>
+          <defval>1.0f</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/OBJLoaderHelper.cs" line="95" column="29" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/OBJLoaderHelper.cs" bodystart="95" bodyend="101"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/OBJLoaderHelper.cs" line="6" column="19" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/OBJLoaderHelper.cs" bodystart="7" bodyend="102"/>
+    <listofallmembers>
+      <member refid="class_dummiesman_1_1_o_b_j_loader_helper_1a9ae36db3258e9ce71eb2c856b7f21954" prot="public" virt="non-virtual"><scope>Dummiesman::OBJLoaderHelper</scope><name>ColorFromStrArray</name></member>
+      <member refid="class_dummiesman_1_1_o_b_j_loader_helper_1a1f0d27746e07f35267be06a4e09ca9a8" prot="public" virt="non-virtual"><scope>Dummiesman::OBJLoaderHelper</scope><name>CreateNullMaterial</name></member>
+      <member refid="class_dummiesman_1_1_o_b_j_loader_helper_1ac5a6891a7985c99693ca6f6c7370f5da" prot="public" virt="non-virtual"><scope>Dummiesman::OBJLoaderHelper</scope><name>EnableMaterialTransparency</name></member>
+      <member refid="class_dummiesman_1_1_o_b_j_loader_helper_1a68d8b4d4fc56961aa75cd98dda86395b" prot="public" virt="non-virtual"><scope>Dummiesman::OBJLoaderHelper</scope><name>FastFloatParse</name></member>
+      <member refid="class_dummiesman_1_1_o_b_j_loader_helper_1a35201b3fabd37bd046909b1b4b693a53" prot="public" virt="non-virtual"><scope>Dummiesman::OBJLoaderHelper</scope><name>FastIntParse</name></member>
+      <member refid="class_dummiesman_1_1_o_b_j_loader_helper_1a7717e79b2d85efea2a4a7a9ca3b6a892" prot="public" virt="non-virtual"><scope>Dummiesman::OBJLoaderHelper</scope><name>VectorFromStrArray</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

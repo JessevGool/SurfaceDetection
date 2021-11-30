@@ -1,7 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+/**
+ * @author Jesse van Gool & Maurice Brouwers
+ * @version 1.0
+ */
 public class CameraScript : MonoBehaviour
 {
     public float speedH = 2.0f;
@@ -20,8 +23,9 @@ public class CameraScript : MonoBehaviour
     void Start()
     {
     }
-
-    // Update is called once per frame
+    /**
+     * Gets called once per frame, used to update the user camera
+     */
     void Update()
     {
         // Move

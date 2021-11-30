@@ -5,13 +5,25 @@ using System.IO;
 using UnityEngine;
 using UnityEngine.UI;
 
+/**
+ * @author Jesse van Gool & Maurice Brouwers
+ * @version 1.0
+ */
 public class ApplicationMenu : MonoBehaviour
 {
 
     public GameObject objectModel;
+    /**
+    * parent object used for the main menu
+    */
     public GameObject mainMenu;
+    /**
+    * parent object used for the settings menu
+    */
     public GameObject settingsMenu;
-
+    /**
+     * Instance of the RayTest class used to switch a parameter on button click
+     */
     private RayTest rayTest;
 
     Vector3 scaleVector;
@@ -45,7 +57,10 @@ public class ApplicationMenu : MonoBehaviour
     }
 
    
-
+    /**
+     * Method used to initialize a gameObject based on the parameter
+     * @param gameObject
+     */
     public void InitializeGameObject(GameObject gameObject)
     {
         objectModel = gameObject;
@@ -66,7 +81,10 @@ public class ApplicationMenu : MonoBehaviour
     }
 
     #region Main
-
+    /**
+     * Button method responsible for switching the startScanBool in the rayTest class.
+     * @see RayTest
+     */
     public void StartScanButton()//start scan button
     {
         //scale += 0.5f;
@@ -74,6 +92,9 @@ public class ApplicationMenu : MonoBehaviour
         rayTest.startScanBool = true;
 
     }
+    /**
+     * Method responsible for initiating the menu in the default config
+     */
     private void initiateMenuStates()
     {
         for (int i = 0; i < settingsMenu.transform.childCount; i++)

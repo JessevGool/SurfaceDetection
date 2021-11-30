@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
+  <compounddef id="class_dummiesman_1_1_string_extensions" kind="class" language="C#" prot="public">
+    <compoundname>Dummiesman::StringExtensions</compoundname>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_dummiesman_1_1_string_extensions_1a6b5c5ef3824dd5e3c1414036a10a28e8" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>string</type>
+        <definition>static string Dummiesman.StringExtensions.Clean</definition>
+        <argsstring>(this string str)</argsstring>
+        <name>Clean</name>
+        <param>
+          <type>this string</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/StringExtensions.cs" line="5" column="30" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/StringExtensions.cs" bodystart="5" bodyend="11"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/StringExtensions.cs" line="3" column="19" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/StringExtensions.cs" bodystart="4" bodyend="12"/>
+    <listofallmembers>
+      <member refid="class_dummiesman_1_1_string_extensions_1a6b5c5ef3824dd5e3c1414036a10a28e8" prot="public" virt="non-virtual"><scope>Dummiesman::StringExtensions</scope><name>Clean</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

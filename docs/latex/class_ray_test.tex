@@ -1,0 +1,171 @@
+\hypertarget{class_ray_test}{}\doxysection{Ray\+Test Class Reference}
+\label{class_ray_test}\index{RayTest@{RayTest}}
+Inheritance diagram for Ray\+Test\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_ray_test}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_ray_test_a346eabd91992d3329255aaf3464952d8}{start\+Scan}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_ray_test_a09cf356e93cbe40f8376e3f1dbb1078e}{draw\+Hits}} = false
+\item 
+bool \mbox{\hyperlink{class_ray_test_a5944252aca3d63901e062b5619b6ebbe}{draw\+Layers}} = false
+\item 
+bool \mbox{\hyperlink{class_ray_test_a841bdac9035bae0d349ea304e03aeecd}{draw\+Angled\+Layers}} = false
+\item 
+bool \mbox{\hyperlink{class_ray_test_a91439d12b70c90f2a4c1b2525937c73a}{draw\+Corners}} = false
+\item 
+bool \mbox{\hyperlink{class_ray_test_a346f77e691066d936989d3c293156dec}{start\+Scan\+Bool}} = false
+\item 
+bool \mbox{\hyperlink{class_ray_test_a71d750d63365afb87d041519908708d8}{threading}} = false
+\item 
+float \mbox{\hyperlink{class_ray_test_a1536d8e7c2847146d00e2d5885fcc0a5}{scan\+Resolution}} = 0.\+05f
+\item 
+float \mbox{\hyperlink{class_ray_test_a098b2dc8abbde46e39fe98e49f42e8f3}{grid\+Size}} = 80
+\item 
+Game\+Object \mbox{\hyperlink{class_ray_test_a089587bcefc1964813711ac20a40a46d}{hit\+Indicator}}
+\item 
+Layer\+Mask \mbox{\hyperlink{class_ray_test_adff5e7f9540f9883844fa77916f572a3}{ray\+Layer}}
+\item 
+Game\+Object \mbox{\hyperlink{class_ray_test_a9419dbcbc914005c6c18c30e0e33d6cd}{NWIND}}
+\item 
+Game\+Object \mbox{\hyperlink{class_ray_test_aa788b824c1d631e2bd446c0353611aa4}{NEIND}}
+\item 
+Game\+Object \mbox{\hyperlink{class_ray_test_ad40d1ea780d4bc63283e5d5d587a75d7}{SWIND}}
+\item 
+Game\+Object \mbox{\hyperlink{class_ray_test_abfec699a1845cfe89f9e781f6037f520}{SEIND}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Jesse van Gool \& Maurice Brouwers 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_ray_test_a346eabd91992d3329255aaf3464952d8}\label{class_ray_test_a346eabd91992d3329255aaf3464952d8}} 
+\index{RayTest@{RayTest}!startScan@{startScan}}
+\index{startScan@{startScan}!RayTest@{RayTest}}
+\doxysubsubsection{\texorpdfstring{startScan()}{startScan()}}
+{\footnotesize\ttfamily void Ray\+Test.\+start\+Scan (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+This method initializes the scan. The scan size is based on the size of the parent gameobject. The scan is subdivided into a grid based on the grid\+Size variable. The resolution of the scan is based on the scan\+Resolution variable. Both of the variables named above can be set in the settings panel in the GUI. 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_ray_test_a841bdac9035bae0d349ea304e03aeecd}\label{class_ray_test_a841bdac9035bae0d349ea304e03aeecd}} 
+\index{RayTest@{RayTest}!drawAngledLayers@{drawAngledLayers}}
+\index{drawAngledLayers@{drawAngledLayers}!RayTest@{RayTest}}
+\doxysubsubsection{\texorpdfstring{drawAngledLayers}{drawAngledLayers}}
+{\footnotesize\ttfamily bool Ray\+Test.\+draw\+Angled\+Layers = false}
+
+boolean variable which dictates if angled\+Layers should be drawn \mbox{\Hypertarget{class_ray_test_a91439d12b70c90f2a4c1b2525937c73a}\label{class_ray_test_a91439d12b70c90f2a4c1b2525937c73a}} 
+\index{RayTest@{RayTest}!drawCorners@{drawCorners}}
+\index{drawCorners@{drawCorners}!RayTest@{RayTest}}
+\doxysubsubsection{\texorpdfstring{drawCorners}{drawCorners}}
+{\footnotesize\ttfamily bool Ray\+Test.\+draw\+Corners = false}
+
+boolean variable which dictates if only the corners of layers should be drawn Use the gameobjects named with cardinal directions. \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_ray_test_a9419dbcbc914005c6c18c30e0e33d6cd}{NWIND}} 
+
+\mbox{\hyperlink{class_ray_test_aa788b824c1d631e2bd446c0353611aa4}{NEIND}} 
+
+\mbox{\hyperlink{class_ray_test_ad40d1ea780d4bc63283e5d5d587a75d7}{SWIND}} 
+
+\mbox{\hyperlink{class_ray_test_abfec699a1845cfe89f9e781f6037f520}{SEIND}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_ray_test_a09cf356e93cbe40f8376e3f1dbb1078e}\label{class_ray_test_a09cf356e93cbe40f8376e3f1dbb1078e}} 
+\index{RayTest@{RayTest}!drawHits@{drawHits}}
+\index{drawHits@{drawHits}!RayTest@{RayTest}}
+\doxysubsubsection{\texorpdfstring{drawHits}{drawHits}}
+{\footnotesize\ttfamily bool Ray\+Test.\+draw\+Hits = false}
+
+boolean variable which dictates if found hits will be drawn using the hit\+Indicator object \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_ray_test_a089587bcefc1964813711ac20a40a46d}{hit\+Indicator}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_ray_test_a5944252aca3d63901e062b5619b6ebbe}\label{class_ray_test_a5944252aca3d63901e062b5619b6ebbe}} 
+\index{RayTest@{RayTest}!drawLayers@{drawLayers}}
+\index{drawLayers@{drawLayers}!RayTest@{RayTest}}
+\doxysubsubsection{\texorpdfstring{drawLayers}{drawLayers}}
+{\footnotesize\ttfamily bool Ray\+Test.\+draw\+Layers = false}
+
+boolean variable which dictates if layers should be drawn \mbox{\Hypertarget{class_ray_test_a098b2dc8abbde46e39fe98e49f42e8f3}\label{class_ray_test_a098b2dc8abbde46e39fe98e49f42e8f3}} 
+\index{RayTest@{RayTest}!gridSize@{gridSize}}
+\index{gridSize@{gridSize}!RayTest@{RayTest}}
+\doxysubsubsection{\texorpdfstring{gridSize}{gridSize}}
+{\footnotesize\ttfamily float Ray\+Test.\+grid\+Size = 80}
+
+sets the amount of grids on one of the axis min = 1 max = 100 default = 80 \mbox{\Hypertarget{class_ray_test_a089587bcefc1964813711ac20a40a46d}\label{class_ray_test_a089587bcefc1964813711ac20a40a46d}} 
+\index{RayTest@{RayTest}!hitIndicator@{hitIndicator}}
+\index{hitIndicator@{hitIndicator}!RayTest@{RayTest}}
+\doxysubsubsection{\texorpdfstring{hitIndicator}{hitIndicator}}
+{\footnotesize\ttfamily Game\+Object Ray\+Test.\+hit\+Indicator}
+
+hit\+Indicator Game\+Object used to set the object that will be drawn if draw\+Hits is true \mbox{\Hypertarget{class_ray_test_aa788b824c1d631e2bd446c0353611aa4}\label{class_ray_test_aa788b824c1d631e2bd446c0353611aa4}} 
+\index{RayTest@{RayTest}!NEIND@{NEIND}}
+\index{NEIND@{NEIND}!RayTest@{RayTest}}
+\doxysubsubsection{\texorpdfstring{NEIND}{NEIND}}
+{\footnotesize\ttfamily Game\+Object Ray\+Test.\+NEIND}
+
+\mbox{\Hypertarget{class_ray_test_a9419dbcbc914005c6c18c30e0e33d6cd}\label{class_ray_test_a9419dbcbc914005c6c18c30e0e33d6cd}} 
+\index{RayTest@{RayTest}!NWIND@{NWIND}}
+\index{NWIND@{NWIND}!RayTest@{RayTest}}
+\doxysubsubsection{\texorpdfstring{NWIND}{NWIND}}
+{\footnotesize\ttfamily Game\+Object Ray\+Test.\+NWIND}
+
+\mbox{\Hypertarget{class_ray_test_adff5e7f9540f9883844fa77916f572a3}\label{class_ray_test_adff5e7f9540f9883844fa77916f572a3}} 
+\index{RayTest@{RayTest}!rayLayer@{rayLayer}}
+\index{rayLayer@{rayLayer}!RayTest@{RayTest}}
+\doxysubsubsection{\texorpdfstring{rayLayer}{rayLayer}}
+{\footnotesize\ttfamily Layer\+Mask Ray\+Test.\+ray\+Layer}
+
+\mbox{\Hypertarget{class_ray_test_a1536d8e7c2847146d00e2d5885fcc0a5}\label{class_ray_test_a1536d8e7c2847146d00e2d5885fcc0a5}} 
+\index{RayTest@{RayTest}!scanResolution@{scanResolution}}
+\index{scanResolution@{scanResolution}!RayTest@{RayTest}}
+\doxysubsubsection{\texorpdfstring{scanResolution}{scanResolution}}
+{\footnotesize\ttfamily float Ray\+Test.\+scan\+Resolution = 0.\+05f}
+
+variable which sets the distance between the rays min = 0.\+01f max = 1f default = 0.\+05f \mbox{\Hypertarget{class_ray_test_abfec699a1845cfe89f9e781f6037f520}\label{class_ray_test_abfec699a1845cfe89f9e781f6037f520}} 
+\index{RayTest@{RayTest}!SEIND@{SEIND}}
+\index{SEIND@{SEIND}!RayTest@{RayTest}}
+\doxysubsubsection{\texorpdfstring{SEIND}{SEIND}}
+{\footnotesize\ttfamily Game\+Object Ray\+Test.\+SEIND}
+
+\mbox{\Hypertarget{class_ray_test_a346f77e691066d936989d3c293156dec}\label{class_ray_test_a346f77e691066d936989d3c293156dec}} 
+\index{RayTest@{RayTest}!startScanBool@{startScanBool}}
+\index{startScanBool@{startScanBool}!RayTest@{RayTest}}
+\doxysubsubsection{\texorpdfstring{startScanBool}{startScanBool}}
+{\footnotesize\ttfamily bool Ray\+Test.\+start\+Scan\+Bool = false}
+
+boolean variable used by another script to start the scan in the update method \begin{DoxySeeAlso}{See also}
+Ray\+Test\+::\+Update() 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_ray_test_ad40d1ea780d4bc63283e5d5d587a75d7}\label{class_ray_test_ad40d1ea780d4bc63283e5d5d587a75d7}} 
+\index{RayTest@{RayTest}!SWIND@{SWIND}}
+\index{SWIND@{SWIND}!RayTest@{RayTest}}
+\doxysubsubsection{\texorpdfstring{SWIND}{SWIND}}
+{\footnotesize\ttfamily Game\+Object Ray\+Test.\+SWIND}
+
+\mbox{\Hypertarget{class_ray_test_a71d750d63365afb87d041519908708d8}\label{class_ray_test_a71d750d63365afb87d041519908708d8}} 
+\index{RayTest@{RayTest}!threading@{threading}}
+\index{threading@{threading}!RayTest@{RayTest}}
+\doxysubsubsection{\texorpdfstring{threading}{threading}}
+{\footnotesize\ttfamily bool Ray\+Test.\+threading = false}
+
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000005}{Deprecated}}]Used for threading, can\textquotesingle{}t be used because of Unity threaading limitations \end{DoxyRefDesc}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+H\+:/\+Code/\+Unity/\+Surface\+Detection/\+Assets/\+Scripts/\mbox{\hyperlink{_ray_test_8cs}{Ray\+Test.\+cs}}\end{DoxyCompactItemize}

@@ -1,0 +1,108 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
+  <compounddef id="classbutton_handler" kind="class" language="C#" prot="public">
+    <compoundname>buttonHandler</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classbutton_handler_1a414d33f3c69cc98026b4bce65510bdb7" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool buttonHandler.viewSettings</definition>
+        <argsstring></argsstring>
+        <name>viewSettings</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>boolean responsible for switching between the main and the settings menu </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/buttonHandler.cs" line="13" column="17" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/buttonHandler.cs" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classbutton_handler_1a7070b5647a49ed64cbbac0c1cf640e9e" prot="public" static="no" mutable="no">
+        <type>GameObject</type>
+        <definition>GameObject buttonHandler.mainMenu</definition>
+        <argsstring></argsstring>
+        <name>mainMenu</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>parent object used for the main menu </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/buttonHandler.cs" line="17" column="23" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/buttonHandler.cs" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classbutton_handler_1adac7a669ebe908bc93918fc0e8fe63d6" prot="public" static="no" mutable="no">
+        <type>GameObject</type>
+        <definition>GameObject buttonHandler.settingsMenu</definition>
+        <argsstring></argsstring>
+        <name>settingsMenu</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>parent object used for the settings menu </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/buttonHandler.cs" line="21" column="23" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/buttonHandler.cs" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classbutton_handler_1ad600af0dc55da877c5b5a34055b45e0e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void buttonHandler.toggleSettings</definition>
+        <argsstring>()</argsstring>
+        <name>toggleSettings</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This method triggers when a button in the GUI is pressed. The method will hide or show the settings menu based on the viewSettings variable <simplesect kind="see"><para><ref refid="classbutton_handler_1a414d33f3c69cc98026b4bce65510bdb7" kindref="member">viewSettings</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/buttonHandler.cs" line="27" column="17" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/buttonHandler.cs" bodystart="27" bodyend="72"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>Jesse van Gool &amp; Maurice Brouwers </para>
+</simplesect>
+<simplesect kind="version"><para>1.0 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="1">
+        <label>buttonHandler</label>
+        <link refid="classbutton_handler"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="1">
+        <label>buttonHandler</label>
+        <link refid="classbutton_handler"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="H:/Code/Unity/SurfaceDetection/Assets/buttonHandler.cs" line="8" column="7" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/buttonHandler.cs" bodystart="9" bodyend="73"/>
+    <listofallmembers>
+      <member refid="classbutton_handler_1a7070b5647a49ed64cbbac0c1cf640e9e" prot="public" virt="non-virtual"><scope>buttonHandler</scope><name>mainMenu</name></member>
+      <member refid="classbutton_handler_1adac7a669ebe908bc93918fc0e8fe63d6" prot="public" virt="non-virtual"><scope>buttonHandler</scope><name>settingsMenu</name></member>
+      <member refid="classbutton_handler_1ad600af0dc55da877c5b5a34055b45e0e" prot="public" virt="non-virtual"><scope>buttonHandler</scope><name>toggleSettings</name></member>
+      <member refid="classbutton_handler_1a414d33f3c69cc98026b4bce65510bdb7" prot="public" virt="non-virtual"><scope>buttonHandler</scope><name>viewSettings</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
