@@ -5,7 +5,7 @@ using UnityEngine;
  * @author Jesse van Gool & Maurice Brouwers
  * @version 1.0
  */
-public class buttonHandler : MonoBehaviour
+public class ButtonHandler : MonoBehaviour
 {
     /**
      * boolean responsible for switching between the main and the settings menu
@@ -24,7 +24,7 @@ public class buttonHandler : MonoBehaviour
      * The method will hide or show the settings menu based on the viewSettings variable
      * @see viewSettings
      */
-    public void toggleSettings()
+    public void ToggleSettings()
     {
         viewSettings = !viewSettings;
         if (viewSettings)

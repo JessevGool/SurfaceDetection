@@ -29,10 +29,6 @@ public class ApplicationMenu : MonoBehaviour
     Vector3 scaleVector;
     float scale = 1.0f;
 
-
-
-
-
     //addSolarPanels
     private List<Vector2> SolarPanelSizes;
 
@@ -53,7 +49,7 @@ public class ApplicationMenu : MonoBehaviour
         scaleVector = new Vector3(scale, scale, scale);
         rayTest = FindObjectOfType<RayTest>();
         addSolarPanel.SetActive(false);
-        initiateMenuStates();
+        InitiateMenuStates();
     }
 
    
@@ -95,7 +91,7 @@ public class ApplicationMenu : MonoBehaviour
     /**
      * Method responsible for initiating the menu in the default config
      */
-    private void initiateMenuStates()
+    private void InitiateMenuStates()
     {
         for (int i = 0; i < settingsMenu.transform.childCount; i++)
         {

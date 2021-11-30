@@ -120,7 +120,7 @@ public class RayTest : MonoBehaviour
      * The resolution of the scan is based on the scanResolution variable.
      * Both of the variables named above can be set in the settings panel in the GUI.
      */
-    public void startScan()
+    public void StartScan()
     {
         float maxBoundsX = gameObject.GetComponent<Renderer>().bounds.max.x;
         float maxBoundsZ = gameObject.GetComponent<Renderer>().bounds.max.z;
@@ -162,15 +162,15 @@ public class RayTest : MonoBehaviour
 
         if (threading)
         {
-            _t1 = new Thread(createLayers);
-            _t2 = new Thread(detectSlopes);
+            _t1 = new Thread(CreateLayers);
+            _t2 = new Thread(DetectSlopes);
             _t1.Start();
             _t2.Start();
         }
         else
         {
-            createLayers();
-            detectSlopes();
+            CreateLayers();
+            DetectSlopes();
         }
 
     }
@@ -179,7 +179,7 @@ public class RayTest : MonoBehaviour
      * The method only finds flat layers, another method is used for angled layers
      * @see _hits
      */
-    private void createLayers()
+    private void CreateLayers()
     {
         Vector3 NE = Vector3.zero, NW = Vector3.zero, SE = Vector3.zero, SW = Vector3.zero;
         List<float> uniqueHeights = new List<float>();
@@ -293,7 +293,7 @@ public class RayTest : MonoBehaviour
      * This method detects the angled layers using the _hits list
      * @see _hits
      */
-    private void detectSlopes()
+    private void DetectSlopes()
     {
 
         List<float> angles = new List<float>();
@@ -484,17 +484,6 @@ public class RayTest : MonoBehaviour
         _t2Finished = true;
     }
 
-
-
-
-
-
-
-
-
-
-
-
     private void MakeLayerPlane(List<Vector3> layerHits)
     {
         Vector3 NE = Vector3.zero, NW = Vector3.zero, SE = Vector3.zero, SW = Vector3.zero;
@@ -567,7 +556,7 @@ public class RayTest : MonoBehaviour
     {
         if (startScanBool)
         {
-            startScan();
+            StartScan();
             if (_t1Finished && _t2Finished)
             {
                 Debug.Log($"AMOUNT OF RAYS: {_rays} \n" +
