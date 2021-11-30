@@ -120,9 +120,12 @@ public class RayTest : MonoBehaviour
                 
             }
         }
+        
+        
         foreach (float height in uniqueHeights)
         {
             List<RaycastHit> _hitsInLayer = new List<RaycastHit>();
+            List<Vector3> hitsInLayerForPlane = new List<Vector3>();
             foreach (var hit in _hits)
             {
                 if (hit.point.y == height)
@@ -130,21 +133,39 @@ public class RayTest : MonoBehaviour
                     zCoords.Add(hit.point.z);
                     xCoords.Add(hit.point.x);
                     _hitsInLayer.Add(hit);
+                    hitsInLayerForPlane.Add(new Vector3(hit.point.x, hit.point.y, hit.point.z));
                 }
 
             }
 
+                MakeLayerPlane(hitsInLayerForPlane);
+
             
-            foreach (var hit in _hitsInLayer)
-            {
+            //foreach (var hit in _hitsInLayer)
+            //{
                 
 
-                var test = GameObject.CreatePrimitive(PrimitiveType.Sphere);
-                test.transform.position = hit.point;
-                test.transform.localScale = new Vector3(0.1f, 0.1f, 0.1f);
-                test.transform.SetParent(parentObj, false);
-                //go through each line and check if there are no gaps, gaps means there is an obstacle
-            }
+            //    var test = GameObject.CreatePrimitive(PrimitiveType.Sphere);
+            //    test.transform.position = hit.point;
+            //    test.transform.localScale = new Vector3(0.1f, 0.1f, 0.1f);
+            //    test.transform.SetParent(parentObj, false);
+            //    //go through each line and check if there are no gaps, gaps means there is an obstacle
+
+
+
+
+            //}
+
+
+
+
+
+
+
+
+
+
+
 
             parentObj = new GameObject().transform;
 
@@ -153,6 +174,9 @@ public class RayTest : MonoBehaviour
             NW = new Vector3(xCoords.Max(), height, zCoords.Min());
             SE = new Vector3(xCoords.Min(), height, zCoords.Max());
             SW = new Vector3(xCoords.Max(), height, zCoords.Max());
+
+
+
 
             //Clear lists for next layer
             zCoords.Clear();
@@ -293,6 +317,8 @@ public class RayTest : MonoBehaviour
 
             }
 
+            MakeLayerPlane(angledHits);
+
             foreach (var angledHit in angledHits)
             {
                 var test = GameObject.CreatePrimitive(PrimitiveType.Sphere);
@@ -345,6 +371,9 @@ public class RayTest : MonoBehaviour
 
 
             }
+
+            MakeLayerPlane(angledHits);
+
             foreach (var angledHit in angledHits)
             {
                 var test = GameObject.CreatePrimitive(PrimitiveType.Sphere);
@@ -374,6 +403,76 @@ public class RayTest : MonoBehaviour
         }
         _t2Finished = true;
     }
+
+
+
+
+
+
+
+
+
+
+
+
+    private void MakeLayerPlane(List<Vector3> layerHits)
+    {
+        Vector3 NE = Vector3.zero, NW = Vector3.zero, SE = Vector3.zero, SW = Vector3.zero;
+
+        List<float> zCoords = new List<float>();
+        List<float> xCoords = new List<float>();
+
+        foreach (var hit in layerHits)
+        {
+                zCoords.Add(hit.z);
+                xCoords.Add(hit.x);
+        }
+
+        float xCenter = (xCoords.Min() + xCoords.Max()) / 2;
+        float zCenter = (zCoords.Min() + zCoords.Max()) / 2;
+
+        Vector3 centerPoint = new Vector3(xCenter, 10, zCenter);
+        //TODO Get the heigt of the plane from one of the hits
+
+        //TODO get the angle of the hits and rotate the plane like that
+
+
+
+        NE = new Vector3(xCoords.Min(), 0, zCoords.Min());
+        NW = new Vector3(xCoords.Max(), 0, zCoords.Min());
+        SE = new Vector3(xCoords.Min(), 0, zCoords.Max());
+        SW = new Vector3(xCoords.Max(), 0, zCoords.Max());
+
+        float distx = Vector3.Distance(NE, NW);
+        float distz = Vector3.Distance(NE, SE);
+
+
+        if (distx > 0.1 && distz > 0.1)//add to suitable areas 
+        {
+            var test = GameObject.CreatePrimitive(PrimitiveType.Cube);
+            test.transform.position = centerPoint;
+            test.name = "TestPlane-----";
+            test.transform.localScale = new Vector3(distx, 0.1f, distz);
+            
+        }
+
+
+
+        //TODO 
+        //     CREATE A CUT OUT IN OVERLAPPING LAYERS??
+
+
+
+
+        foreach (var hit in layerHits)
+        {
+            int x = 0;
+        }
+
+    }
+
+
+
 
     private void OnDrawGizmos()
     {
