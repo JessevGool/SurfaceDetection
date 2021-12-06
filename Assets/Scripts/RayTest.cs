@@ -224,7 +224,7 @@ public class RayTest : MonoBehaviour
 
             }
 
-                MakeLayerPlane(hitsInLayerForPlane);
+                MakeLayerPlane(hitsInLayerForPlane, 0.0f, 0.0f);
 
             
             //foreach (var hit in _hitsInLayer)
@@ -406,7 +406,7 @@ public class RayTest : MonoBehaviour
 
             }
 
-            MakeLayerPlane(angledHits);
+            MakeLayerPlane(angledHits, angle, 0.0f);
 
             foreach (var angledHit in angledHits)
             {
@@ -450,6 +450,7 @@ public class RayTest : MonoBehaviour
             List<Vector3> angledHits = new List<Vector3>();
             float angleOffsetUp = angleX + 0.005f;
             float angleOffsetDown = angleX - 0.005f;
+            float angle = 0.0f;
             foreach (var hit in _hits)
             {
                 float test = Vector3.Angle(hit.transform.right, hit.normal);
@@ -458,13 +459,16 @@ public class RayTest : MonoBehaviour
                     if (Vector3.Angle(hit.transform.right, hit.normal) <= angleOffsetUp && Vector3.Angle(hit.transform.right, hit.normal) >= angleOffsetDown)
                     {
                         angledHits.Add(hit.point);
+                        angle = test;
                     }
+                    
                 }
 
-
+                //to use the angle of this plane correctly, safe the angle
+                
             }
 
-            MakeLayerPlane(angledHits);
+            MakeLayerPlane(angledHits, 0.0f, angle);
 
             foreach (var angledHit in angledHits)
             {
@@ -500,26 +504,34 @@ public class RayTest : MonoBehaviour
         _t2Finished = true;
     }
 
-    private void MakeLayerPlane(List<Vector3> layerHits)
+    private void MakeLayerPlane(List<Vector3> layerHits, float angleX, float angleZ)
     {
         Vector3 NE = Vector3.zero, NW = Vector3.zero, SE = Vector3.zero, SW = Vector3.zero;
 
         List<float> zCoords = new List<float>();
         List<float> xCoords = new List<float>();
 
+        float height = 0;
+
+
         foreach (var hit in layerHits)
         {
-                zCoords.Add(hit.z);
-                xCoords.Add(hit.x);
-        }
+            zCoords.Add(hit.z);
+            xCoords.Add(hit.x);
+            height += hit.y;
 
+            //float test = Vector3.Angle(hit.right, hit.normal);
+        }
+        
+        //devide all heigths devided by amount to get avarage
+        height /= layerHits.Count();
         float xCenter = (xCoords.Min() + xCoords.Max()) / 2;
         float zCenter = (zCoords.Min() + zCoords.Max()) / 2;
 
-        Vector3 centerPoint = new Vector3(xCenter, 10, zCenter);
-        //TODO Get the heigt of the plane from one of the hits
+        Vector3 centerPoint = new Vector3(xCenter, height, zCenter);
 
-        //TODO get the angle of the hits and rotate the plane like that
+
+        
 
 
 
@@ -531,15 +543,36 @@ public class RayTest : MonoBehaviour
         float distx = Vector3.Distance(NE, NW);
         float distz = Vector3.Distance(NE, SE);
 
-
+        //check if plane has a dimension of atleast 10 cm by 10 cm
+        var test = new GameObject();
         if (distx > 0.1 && distz > 0.1)//add to suitable areas 
         {
-            var test = GameObject.CreatePrimitive(PrimitiveType.Cube);
+            test = GameObject.CreatePrimitive(PrimitiveType.Cube);
             test.transform.position = centerPoint;
             test.name = "TestPlane-----";
             test.transform.localScale = new Vector3(distx, 0.1f, distz);
+
+            if (distx > 2 && distz > 2)
+            {
+                test.GetComponent<Renderer>().material.color = Color.green;
+            }
+            else
+            {
+                test.GetComponent<Renderer>().material.color = Color.red;
+            }
             
+            
+            test.transform.Rotate(-angleX, 0.0f, -angleZ, Space.Self);//new Vector3(angleX, 0.0f, angleZ);
         }
+
+        Debug.Log("anglez: " + angleZ + "     angle x: " + angleX);
+
+
+
+
+
+
+
 
 
 
@@ -549,10 +582,10 @@ public class RayTest : MonoBehaviour
 
 
 
-        foreach (var hit in layerHits)
-        {
-            int x = 0;
-        }
+        //foreach (var hit in layerHits)
+        //{
+        //    int x = 0;
+        //}
 
     }
 
