@@ -5,6 +5,8 @@ var searchData=
   ['setnormalmap_2',['SetNormalMap',['../class_dummiesman_1_1_image_loader.html#aa7f478948280bd688f48e60dae836ab0',1,'Dummiesman::ImageLoader']]],
   ['skipuntilnewline_3',['SkipUntilNewLine',['../class_dummiesman_1_1_char_word_reader.html#a66ad77953c3122d5741ed150c97b423c',1,'Dummiesman::CharWordReader']]],
   ['skipwhitespaces_4',['SkipWhitespaces',['../class_dummiesman_1_1_char_word_reader.html#a5673e21d2bcedf955ffb447e6f4fc8ff',1,'Dummiesman.CharWordReader.SkipWhitespaces()'],['../class_dummiesman_1_1_char_word_reader.html#a45b9a9ee2310b6fa6f3264eca989ac1e',1,'Dummiesman.CharWordReader.SkipWhitespaces(out bool newLinePassed)']]],
-  ['startscan_5',['startScan',['../class_ray_test.html#a346eabd91992d3329255aaf3464952d8',1,'RayTest']]],
-  ['startscanbutton_6',['StartScanButton',['../class_application_menu.html#ae67b5e866d767e1b06914821dd3af1a9',1,'ApplicationMenu']]]
+  ['startscan_5',['StartScan',['../class_ray_test.html#a5e5101321bc7716c0740dea3900ca14d',1,'RayTest']]],
+  ['startscanbutton_6',['StartScanButton',['../class_application_menu.html#ae67b5e866d767e1b06914821dd3af1a9',1,'ApplicationMenu']]],
+  ['switchdrawhits_7',['SwitchDrawHits',['../class_ray_test.html#acbd3e1bf479b9d8acd686e779f5c37f4',1,'RayTest']]],
+  ['switchdrawlayers_8',['SwitchDrawLayers',['../class_ray_test.html#aabae65a124d1f7919ec2c49cd7387693',1,'RayTest']]]
 ];

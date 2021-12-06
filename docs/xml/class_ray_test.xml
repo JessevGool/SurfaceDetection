@@ -380,11 +380,11 @@
         </inbodydescription>
         <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" line="114" column="10" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" bodystart="114" bodyend="116"/>
       </memberdef>
-      <memberdef kind="function" id="class_ray_test_1abbfe61b2ee04fbb6a4d0c4f98bac705f" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+      <memberdef kind="function" id="class_ray_test_1a016d8eafab1fb060804755d3f191830c" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
-        <definition>void RayTest.createLayers</definition>
+        <definition>void RayTest.CreateLayers</definition>
         <argsstring>()</argsstring>
-        <name>createLayers</name>
+        <name>CreateLayers</name>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -394,13 +394,13 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" line="182" column="18" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" bodystart="182" bodyend="267"/>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" line="191" column="18" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" bodystart="191" bodyend="301"/>
       </memberdef>
-      <memberdef kind="function" id="class_ray_test_1a6996f173c7803cc0c35f69b01072a941" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+      <memberdef kind="function" id="class_ray_test_1a2810fe8028706e9f1521651dc94bd241" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
-        <definition>void RayTest.detectSlopes</definition>
+        <definition>void RayTest.DetectSlopes</definition>
         <argsstring>()</argsstring>
-        <name>detectSlopes</name>
+        <name>DetectSlopes</name>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -410,7 +410,24 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" line="272" column="18" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" bodystart="272" bodyend="456"/>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" line="306" column="18" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" bodystart="306" bodyend="502"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ray_test_1a4dafcb543428597f07f1321308dad4d3" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void RayTest.MakeLayerPlane</definition>
+        <argsstring>(List&lt; Vector3 &gt; layerHits)</argsstring>
+        <name>MakeLayerPlane</name>
+        <param>
+          <type>List&lt; Vector3 &gt;</type>
+          <declname>layerHits</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" line="504" column="18" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" bodystart="504" bodyend="558"/>
       </memberdef>
       <memberdef kind="function" id="class_ray_test_1ab5e9662425ab5c69ec8094318c4681e6" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -423,7 +440,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" line="458" column="18" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" bodystart="458" bodyend="462"/>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" line="563" column="18" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" bodystart="563" bodyend="567"/>
       </memberdef>
       <memberdef kind="function" id="class_ray_test_1a46cceb5483afd437a523424f6cddb2cc" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -436,15 +453,15 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" line="467" column="10" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" bodystart="467" bodyend="490"/>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" line="572" column="10" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" bodystart="572" bodyend="595"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
-      <memberdef kind="function" id="class_ray_test_1a346eabd91992d3329255aaf3464952d8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+      <memberdef kind="function" id="class_ray_test_1acbd3e1bf479b9d8acd686e779f5c37f4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
-        <definition>void RayTest.startScan</definition>
+        <definition>void RayTest.SwitchDrawHits</definition>
         <argsstring>()</argsstring>
-        <name>startScan</name>
+        <name>SwitchDrawHits</name>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -452,7 +469,33 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" line="123" column="17" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" bodystart="123" bodyend="176"/>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" line="124" column="17" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" bodystart="124" bodyend="127"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ray_test_1aabae65a124d1f7919ec2c49cd7387693" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void RayTest.SwitchDrawLayers</definition>
+        <argsstring>()</argsstring>
+        <name>SwitchDrawLayers</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" line="128" column="17" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" bodystart="128" bodyend="131"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ray_test_1a5e5101321bc7716c0740dea3900ca14d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void RayTest.StartScan</definition>
+        <argsstring>()</argsstring>
+        <name>StartScan</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" line="132" column="17" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" bodystart="132" bodyend="185"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -486,7 +529,7 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" line="16" column="7" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" bodystart="17" bodyend="491"/>
+    <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" line="16" column="7" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" bodystart="17" bodyend="596"/>
     <listofallmembers>
       <member refid="class_ray_test_1ae8583388edc91a27703089fc228445f9" prot="private" virt="non-virtual"><scope>RayTest</scope><name>_collision</name></member>
       <member refid="class_ray_test_1a63de1d8d2a840a35f937649ba8cc25a1" prot="private" virt="non-virtual"><scope>RayTest</scope><name>_hit</name></member>
@@ -498,14 +541,15 @@
       <member refid="class_ray_test_1a9804deacbcad84786aad180f9b87a9b7" prot="private" virt="non-virtual"><scope>RayTest</scope><name>_t1Finished</name></member>
       <member refid="class_ray_test_1a976c1b9bdb2cbe2cee0469222f5372f6" prot="private" virt="non-virtual"><scope>RayTest</scope><name>_t2</name></member>
       <member refid="class_ray_test_1a464809a15b8df580eb2a3b877f332dc8" prot="private" virt="non-virtual"><scope>RayTest</scope><name>_t2Finished</name></member>
-      <member refid="class_ray_test_1abbfe61b2ee04fbb6a4d0c4f98bac705f" prot="private" virt="non-virtual"><scope>RayTest</scope><name>createLayers</name></member>
-      <member refid="class_ray_test_1a6996f173c7803cc0c35f69b01072a941" prot="private" virt="non-virtual"><scope>RayTest</scope><name>detectSlopes</name></member>
+      <member refid="class_ray_test_1a016d8eafab1fb060804755d3f191830c" prot="private" virt="non-virtual"><scope>RayTest</scope><name>CreateLayers</name></member>
+      <member refid="class_ray_test_1a2810fe8028706e9f1521651dc94bd241" prot="private" virt="non-virtual"><scope>RayTest</scope><name>DetectSlopes</name></member>
       <member refid="class_ray_test_1a841bdac9035bae0d349ea304e03aeecd" prot="public" virt="non-virtual"><scope>RayTest</scope><name>drawAngledLayers</name></member>
       <member refid="class_ray_test_1a91439d12b70c90f2a4c1b2525937c73a" prot="public" virt="non-virtual"><scope>RayTest</scope><name>drawCorners</name></member>
       <member refid="class_ray_test_1a09cf356e93cbe40f8376e3f1dbb1078e" prot="public" virt="non-virtual"><scope>RayTest</scope><name>drawHits</name></member>
       <member refid="class_ray_test_1a5944252aca3d63901e062b5619b6ebbe" prot="public" virt="non-virtual"><scope>RayTest</scope><name>drawLayers</name></member>
       <member refid="class_ray_test_1a098b2dc8abbde46e39fe98e49f42e8f3" prot="public" virt="non-virtual"><scope>RayTest</scope><name>gridSize</name></member>
       <member refid="class_ray_test_1a089587bcefc1964813711ac20a40a46d" prot="public" virt="non-virtual"><scope>RayTest</scope><name>hitIndicator</name></member>
+      <member refid="class_ray_test_1a4dafcb543428597f07f1321308dad4d3" prot="private" virt="non-virtual"><scope>RayTest</scope><name>MakeLayerPlane</name></member>
       <member refid="class_ray_test_1aa788b824c1d631e2bd446c0353611aa4" prot="public" virt="non-virtual"><scope>RayTest</scope><name>NEIND</name></member>
       <member refid="class_ray_test_1a9419dbcbc914005c6c18c30e0e33d6cd" prot="public" virt="non-virtual"><scope>RayTest</scope><name>NWIND</name></member>
       <member refid="class_ray_test_1ab5e9662425ab5c69ec8094318c4681e6" prot="private" virt="non-virtual"><scope>RayTest</scope><name>OnDrawGizmos</name></member>
@@ -513,9 +557,11 @@
       <member refid="class_ray_test_1a1536d8e7c2847146d00e2d5885fcc0a5" prot="public" virt="non-virtual"><scope>RayTest</scope><name>scanResolution</name></member>
       <member refid="class_ray_test_1abfec699a1845cfe89f9e781f6037f520" prot="public" virt="non-virtual"><scope>RayTest</scope><name>SEIND</name></member>
       <member refid="class_ray_test_1ad35d07b8b3422832fed5a3df005710be" prot="private" virt="non-virtual"><scope>RayTest</scope><name>Start</name></member>
-      <member refid="class_ray_test_1a346eabd91992d3329255aaf3464952d8" prot="public" virt="non-virtual"><scope>RayTest</scope><name>startScan</name></member>
+      <member refid="class_ray_test_1a5e5101321bc7716c0740dea3900ca14d" prot="public" virt="non-virtual"><scope>RayTest</scope><name>StartScan</name></member>
       <member refid="class_ray_test_1a346f77e691066d936989d3c293156dec" prot="public" virt="non-virtual"><scope>RayTest</scope><name>startScanBool</name></member>
       <member refid="class_ray_test_1ad40d1ea780d4bc63283e5d5d587a75d7" prot="public" virt="non-virtual"><scope>RayTest</scope><name>SWIND</name></member>
+      <member refid="class_ray_test_1acbd3e1bf479b9d8acd686e779f5c37f4" prot="public" virt="non-virtual"><scope>RayTest</scope><name>SwitchDrawHits</name></member>
+      <member refid="class_ray_test_1aabae65a124d1f7919ec2c49cd7387693" prot="public" virt="non-virtual"><scope>RayTest</scope><name>SwitchDrawLayers</name></member>
       <member refid="class_ray_test_1a71d750d63365afb87d041519908708d8" prot="public" virt="non-virtual"><scope>RayTest</scope><name>threading</name></member>
       <member refid="class_ray_test_1a46cceb5483afd437a523424f6cddb2cc" prot="private" virt="non-virtual"><scope>RayTest</scope><name>Update</name></member>
     </listofallmembers>

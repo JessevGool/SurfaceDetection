@@ -202,8 +202,9 @@ public class RayTest : MonoBehaviour
         {
             if (!uniqueHeights.Contains(hit.point.y))
             {
-                uniqueHeights.Add(hit.point.y);
                 
+                uniqueHeights.Add(hit.point.y);
+
             }
         }
         

@@ -20,7 +20,7 @@ var annotated_dup =
       [ "TGALoader", "class_dummiesman_1_1_t_g_a_loader.html", null ]
     ] ],
     [ "ApplicationMenu", "class_application_menu.html", "class_application_menu" ],
-    [ "buttonHandler", "classbutton_handler.html", "classbutton_handler" ],
+    [ "ButtonHandler", "class_button_handler.html", "class_button_handler" ],
     [ "CameraScript", "class_camera_script.html", "class_camera_script" ],
     [ "MainMenu", "class_main_menu.html", "class_main_menu" ],
     [ "MTLLoader", "class_m_t_l_loader.html", "class_m_t_l_loader" ],

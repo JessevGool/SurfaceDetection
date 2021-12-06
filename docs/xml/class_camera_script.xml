@@ -141,10 +141,11 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
+<para>Gets called once per frame, used to update the user camera </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/CameraScript.cs" line="28" column="10" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/CameraScript.cs" bodystart="28" bodyend="64"/>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/CameraScript.cs" line="29" column="10" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/CameraScript.cs" bodystart="29" bodyend="65"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -178,7 +179,7 @@
         <label>MonoBehaviour</label>
       </node>
     </collaborationgraph>
-    <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/CameraScript.cs" line="8" column="7" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/CameraScript.cs" bodystart="9" bodyend="65"/>
+    <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/CameraScript.cs" line="8" column="7" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/CameraScript.cs" bodystart="9" bodyend="66"/>
     <listofallmembers>
       <member refid="class_camera_script_1a11e43ca1ed13d2e9021709599e0a9e88" prot="private" virt="non-virtual"><scope>CameraScript</scope><name>cameraMoveSpeed</name></member>
       <member refid="class_camera_script_1a3a3120a4a7a1e87cca30071873d0bcb0" prot="private" virt="non-virtual"><scope>CameraScript</scope><name>cameraRotateSpeed</name></member>

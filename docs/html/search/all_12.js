@@ -6,7 +6,7 @@ var searchData=
   ['selectobjmodelfromfile_3',['SelectObjModelFromFile',['../class_main_menu.html#a986a8695801993fe5881c99ec4e98c6a',1,'MainMenu']]],
   ['setmaterial_4',['SetMaterial',['../class_dummiesman_1_1_o_b_j_object_builder.html#a0f0baa044f667aba7068cf95e708cc17',1,'Dummiesman::OBJObjectBuilder']]],
   ['setnormalmap_5',['SetNormalMap',['../class_dummiesman_1_1_image_loader.html#aa7f478948280bd688f48e60dae836ab0',1,'Dummiesman::ImageLoader']]],
-  ['settingsmenu_6',['settingsMenu',['../classbutton_handler.html#adac7a669ebe908bc93918fc0e8fe63d6',1,'buttonHandler.settingsMenu()'],['../class_application_menu.html#a47b67bf9647c207ebec3fb994481a131',1,'ApplicationMenu.settingsMenu()']]],
+  ['settingsmenu_6',['settingsMenu',['../class_button_handler.html#ae9a21a2755e42756c32e6ecf61f4dc9f',1,'ButtonHandler.settingsMenu()'],['../class_application_menu.html#a47b67bf9647c207ebec3fb994481a131',1,'ApplicationMenu.settingsMenu()']]],
   ['size_7',['size',['../struct_b83_1_1_image_1_1_b_m_p_1_1_bitmap_info_header.html#ab70f78d56a6c146e8025315bd4259a6c',1,'B83::Image::BMP::BitmapInfoHeader']]],
   ['skipuntilnewline_8',['SkipUntilNewLine',['../class_dummiesman_1_1_char_word_reader.html#a66ad77953c3122d5741ed150c97b423c',1,'Dummiesman::CharWordReader']]],
   ['skipwhitespaces_9',['SkipWhitespaces',['../class_dummiesman_1_1_char_word_reader.html#a5673e21d2bcedf955ffb447e6f4fc8ff',1,'Dummiesman.CharWordReader.SkipWhitespaces()'],['../class_dummiesman_1_1_char_word_reader.html#a45b9a9ee2310b6fa6f3264eca989ac1e',1,'Dummiesman.CharWordReader.SkipWhitespaces(out bool newLinePassed)']]],
@@ -18,9 +18,11 @@ var searchData=
   ['speedh_15',['speedH',['../class_camera_script.html#a6aa48c331de1865f340065884ffa9ade',1,'CameraScript']]],
   ['speedv_16',['speedV',['../class_camera_script.html#aed24513073fa9bc58de1cacc28422199',1,'CameraScript']]],
   ['splitmode_17',['SplitMode',['../class_dummiesman_1_1_o_b_j_loader.html#ac3359ce8c0dc1a9333336741d098200e',1,'Dummiesman.OBJLoader.SplitMode()'],['../namespace_dummiesman.html#a61c2576ddaaa8bc5a94dd4e53c48f917',1,'Dummiesman.SplitMode()']]],
-  ['startscan_18',['startScan',['../class_ray_test.html#a346eabd91992d3329255aaf3464952d8',1,'RayTest']]],
+  ['startscan_18',['StartScan',['../class_ray_test.html#a5e5101321bc7716c0740dea3900ca14d',1,'RayTest']]],
   ['startscanbool_19',['startScanBool',['../class_ray_test.html#a346f77e691066d936989d3c293156dec',1,'RayTest']]],
   ['startscanbutton_20',['StartScanButton',['../class_application_menu.html#ae67b5e866d767e1b06914821dd3af1a9',1,'ApplicationMenu']]],
   ['stringextensions_2ecs_21',['StringExtensions.cs',['../_string_extensions_8cs.html',1,'']]],
-  ['swind_22',['SWIND',['../class_ray_test.html#ad40d1ea780d4bc63283e5d5d587a75d7',1,'RayTest']]]
+  ['swind_22',['SWIND',['../class_ray_test.html#ad40d1ea780d4bc63283e5d5d587a75d7',1,'RayTest']]],
+  ['switchdrawhits_23',['SwitchDrawHits',['../class_ray_test.html#acbd3e1bf479b9d8acd686e779f5c37f4',1,'RayTest']]],
+  ['switchdrawlayers_24',['SwitchDrawLayers',['../class_ray_test.html#aabae65a124d1f7919ec2c49cd7387693',1,'RayTest']]]
 ];

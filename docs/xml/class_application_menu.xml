@@ -56,7 +56,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" line="40" column="23" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" bodystart="40" bodyend="-1"/>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" line="36" column="23" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" bodystart="36" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_application_menu_1a74156c8015e2f58db16e456b7ba6a808" prot="public" static="no" mutable="no">
         <type>InputField</type>
@@ -69,7 +69,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" line="41" column="23" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" bodystart="41" bodyend="-1"/>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" line="37" column="23" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" bodystart="37" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_application_menu_1a6361d5751c0fdc854d71bdf9a1b7e7f7" prot="public" static="no" mutable="no">
         <type>GameObject</type>
@@ -82,7 +82,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" line="46" column="23" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" bodystart="46" bodyend="-1"/>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" line="42" column="23" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" bodystart="42" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-attrib">
@@ -138,7 +138,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" line="37" column="18" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" bodystart="37" bodyend="-1"/>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" line="33" column="18" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" bodystart="33" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_application_menu_1a7362b4e7813e62cdfe490ef211ca85c3" prot="private" static="no" mutable="no">
         <type>string</type>
@@ -151,7 +151,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" line="43" column="20" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" bodystart="43" bodyend="-1"/>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" line="39" column="20" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" bodystart="39" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_application_menu_1a403c2a278e41eda50758dd9e66e9e333" prot="private" static="no" mutable="no">
         <type>string</type>
@@ -164,7 +164,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" line="44" column="20" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" bodystart="44" bodyend="-1"/>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" line="40" column="20" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" bodystart="40" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_application_menu_1aff45cd83670b34acc3c75c9b9726735e" prot="private" static="no" mutable="no">
         <type>bool</type>
@@ -178,7 +178,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" line="47" column="18" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" bodystart="47" bodyend="-1"/>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" line="43" column="18" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" bodystart="43" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-func">
@@ -193,13 +193,13 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" line="49" column="10" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" bodystart="49" bodyend="57"/>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" line="45" column="10" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" bodystart="45" bodyend="53"/>
       </memberdef>
-      <memberdef kind="function" id="class_application_menu_1a148bff968a10051e040e115a986d7a12" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+      <memberdef kind="function" id="class_application_menu_1a194cd80be35429b21fe027d85f9340e5" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
-        <definition>void ApplicationMenu.initiateMenuStates</definition>
+        <definition>void ApplicationMenu.InitiateMenuStates</definition>
         <argsstring>()</argsstring>
-        <name>initiateMenuStates</name>
+        <name>InitiateMenuStates</name>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -207,7 +207,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" line="98" column="18" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" bodystart="98" bodyend="118"/>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" line="94" column="18" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" bodystart="94" bodyend="114"/>
       </memberdef>
       <memberdef kind="function" id="class_application_menu_1a881f4b9ebfd0a0263fcef16c9403057f" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -220,7 +220,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" line="181" column="18" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" bodystart="181" bodyend="192"/>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" line="177" column="18" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" bodystart="177" bodyend="188"/>
       </memberdef>
       <memberdef kind="function" id="class_application_menu_1a582777910578ad300a35ad7eccfee748" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -233,7 +233,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" line="209" column="10" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" bodystart="209" bodyend="218"/>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" line="205" column="10" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" bodystart="205" bodyend="214"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -262,7 +262,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" line="64" column="17" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" bodystart="64" bodyend="81"/>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" line="60" column="17" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" bodystart="60" bodyend="77"/>
       </memberdef>
       <memberdef kind="function" id="class_application_menu_1ae67b5e866d767e1b06914821dd3af1a9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -278,7 +278,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" line="88" column="17" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" bodystart="88" bodyend="94"/>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" line="84" column="17" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" bodystart="84" bodyend="90"/>
       </memberdef>
       <memberdef kind="function" id="class_application_menu_1a3a72937dfab340348b2731bc069cc6fb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -291,7 +291,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" line="120" column="17" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" bodystart="120" bodyend="127"/>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" line="116" column="17" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" bodystart="116" bodyend="123"/>
       </memberdef>
       <memberdef kind="function" id="class_application_menu_1a2281c723cd099888076b9cbca2cc3baa" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -304,7 +304,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" line="130" column="17" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" bodystart="130" bodyend="144"/>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" line="126" column="17" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" bodystart="126" bodyend="140"/>
       </memberdef>
       <memberdef kind="function" id="class_application_menu_1a8a6bf03741617e77e1d6c85683a7b3eb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -317,7 +317,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" line="153" column="17" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" bodystart="153" bodyend="156"/>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" line="149" column="17" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" bodystart="149" bodyend="152"/>
       </memberdef>
       <memberdef kind="function" id="class_application_menu_1a1bc3c574b9209a3b9d7351b2cc29ade6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -330,7 +330,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" line="159" column="17" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" bodystart="159" bodyend="176"/>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" line="155" column="17" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" bodystart="155" bodyend="172"/>
       </memberdef>
       <memberdef kind="function" id="class_application_menu_1a982eb6e77ae09f789f58e4401fffa541" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -343,7 +343,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" line="196" column="17" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" bodystart="196" bodyend="200"/>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" line="192" column="17" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" bodystart="192" bodyend="196"/>
       </memberdef>
       <memberdef kind="function" id="class_application_menu_1a630458b366405c26353119d8a7965bcb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -356,7 +356,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" line="201" column="17" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" bodystart="201" bodyend="205"/>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" line="197" column="17" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" bodystart="197" bodyend="201"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -390,7 +390,7 @@
         <label>MonoBehaviour</label>
       </node>
     </collaborationgraph>
-    <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" line="12" column="7" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" bodystart="13" bodyend="219"/>
+    <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" line="12" column="7" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" bodystart="13" bodyend="215"/>
     <listofallmembers>
       <member refid="class_application_menu_1a1bc3c574b9209a3b9d7351b2cc29ade6" prot="public" virt="non-virtual"><scope>ApplicationMenu</scope><name>AcceptAddSolarPanelButton</name></member>
       <member refid="class_application_menu_1a6361d5751c0fdc854d71bdf9a1b7e7f7" prot="public" virt="non-virtual"><scope>ApplicationMenu</scope><name>addSolarPanel</name></member>
@@ -400,7 +400,7 @@
       <member refid="class_application_menu_1a630458b366405c26353119d8a7965bcb" prot="public" virt="non-virtual"><scope>ApplicationMenu</scope><name>EditWidthInput</name></member>
       <member refid="class_application_menu_1a881f4b9ebfd0a0263fcef16c9403057f" prot="private" virt="non-virtual"><scope>ApplicationMenu</scope><name>EndOfSolarPanelUI</name></member>
       <member refid="class_application_menu_1ab576671a8ee66c8de5ae45cc778f56cc" prot="public" virt="non-virtual"><scope>ApplicationMenu</scope><name>InitializeGameObject</name></member>
-      <member refid="class_application_menu_1a148bff968a10051e040e115a986d7a12" prot="private" virt="non-virtual"><scope>ApplicationMenu</scope><name>initiateMenuStates</name></member>
+      <member refid="class_application_menu_1a194cd80be35429b21fe027d85f9340e5" prot="private" virt="non-virtual"><scope>ApplicationMenu</scope><name>InitiateMenuStates</name></member>
       <member refid="class_application_menu_1a2281c723cd099888076b9cbca2cc3baa" prot="public" virt="non-virtual"><scope>ApplicationMenu</scope><name>LoadSolarPanelPlacement</name></member>
       <member refid="class_application_menu_1af466236025af2dc875c6c4f6d90e376d" prot="public" virt="non-virtual"><scope>ApplicationMenu</scope><name>mainMenu</name></member>
       <member refid="class_application_menu_1a7362b4e7813e62cdfe490ef211ca85c3" prot="private" virt="non-virtual"><scope>ApplicationMenu</scope><name>newSolarLength</name></member>

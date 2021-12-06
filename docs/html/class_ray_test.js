@@ -1,6 +1,8 @@
 var class_ray_test =
 [
-    [ "startScan", "class_ray_test.html#a346eabd91992d3329255aaf3464952d8", null ],
+    [ "StartScan", "class_ray_test.html#a5e5101321bc7716c0740dea3900ca14d", null ],
+    [ "SwitchDrawHits", "class_ray_test.html#acbd3e1bf479b9d8acd686e779f5c37f4", null ],
+    [ "SwitchDrawLayers", "class_ray_test.html#aabae65a124d1f7919ec2c49cd7387693", null ],
     [ "drawAngledLayers", "class_ray_test.html#a841bdac9035bae0d349ea304e03aeecd", null ],
     [ "drawCorners", "class_ray_test.html#a91439d12b70c90f2a4c1b2525937c73a", null ],
     [ "drawHits", "class_ray_test.html#a09cf356e93cbe40f8376e3f1dbb1078e", null ],
