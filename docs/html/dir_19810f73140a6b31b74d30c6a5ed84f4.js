@@ -9,7 +9,9 @@ var dir_19810f73140a6b31b74d30c6a5ed84f4 =
     [ "MainMenu.cs", "_main_menu_8cs.html", [
       [ "MainMenu", "class_main_menu.html", "class_main_menu" ]
     ] ],
-    [ "RayTest.cs", "_ray_test_8cs.html", "_ray_test_8cs" ],
+    [ "RayTest.cs", "_ray_test_8cs.html", [
+      [ "RayTest", "class_ray_test.html", "class_ray_test" ]
+    ] ],
     [ "RoofLayer.cs", "_roof_layer_8cs.html", [
       [ "RoofLayer", "class_roof_layer.html", "class_roof_layer" ]
     ] ]

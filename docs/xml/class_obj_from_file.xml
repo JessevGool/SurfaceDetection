@@ -110,6 +110,9 @@
         <link refid="class_application_menu"/>
         <childnode refid="2" relation="public-inheritance">
         </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>rayTest</edgelabel>
+        </childnode>
       </node>
       <node id="2">
         <label>MonoBehaviour</label>
@@ -121,6 +124,12 @@
         </childnode>
         <childnode refid="3" relation="usage">
           <edgelabel>applicationMenu</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>RayTest</label>
+        <link refid="class_ray_test"/>
+        <childnode refid="2" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

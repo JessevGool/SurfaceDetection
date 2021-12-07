@@ -7,6 +7,18 @@
     </briefdescription>
     <detaileddescription>
 <para><variablelist>
+<varlistentry><term>Member <ref refid="class_ray_test_1ad28bd35745c6733d3ddf653a317689b2" kindref="member">RayTest._t1</ref>  </term></varlistentry>
+<listitem><para><anchor id="deprecated_1_deprecated000001"/>Used for threading, can&apos;t be used because of Unity threading limitations  </para>
+</listitem>
+<varlistentry><term>Member <ref refid="class_ray_test_1a9804deacbcad84786aad180f9b87a9b7" kindref="member">RayTest._t1Finished</ref>  </term></varlistentry>
+<listitem><para><anchor id="deprecated_1_deprecated000003"/>Used for threading, can&apos;t be used because of Unity threading limitations Is still used to switch a bool after finding layers  </para>
+</listitem>
+<varlistentry><term>Member <ref refid="class_ray_test_1a976c1b9bdb2cbe2cee0469222f5372f6" kindref="member">RayTest._t2</ref>  </term></varlistentry>
+<listitem><para><anchor id="deprecated_1_deprecated000002"/>Used for threading, can&apos;t be used because of Unity threading limitations  </para>
+</listitem>
+<varlistentry><term>Member <ref refid="class_ray_test_1a464809a15b8df580eb2a3b877f332dc8" kindref="member">RayTest._t2Finished</ref>  </term></varlistentry>
+<listitem><para><anchor id="deprecated_1_deprecated000004"/>Used for threading, can&apos;t be used because of Unity threading limitations Is still used to switch a bool after finding layers  </para>
+</listitem>
 <varlistentry><term>Member <ref refid="class_ray_test_1a71d750d63365afb87d041519908708d8" kindref="member">RayTest.threading</ref>  </term></varlistentry>
 <listitem><para><anchor id="deprecated_1_deprecated000005"/>Used for threading, can&apos;t be used because of Unity threaading limitations </para>
 </listitem>

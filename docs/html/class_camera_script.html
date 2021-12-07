@@ -84,6 +84,8 @@ $(document).ready(function(){initNavTree('class_camera_script.html',''); initRes
 <div class="header">
   <div class="summary">
 <a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_camera_script-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">CameraScript Class Reference</div></div>
 </div><!--header-->
@@ -101,11 +103,195 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a6aa48c331de1865f340065884ffa9ade"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aed24513073fa9bc58de1cacc28422199"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera_script.html#aed24513073fa9bc58de1cacc28422199">speedV</a> = 2.0f</td></tr>
 <tr class="separator:aed24513073fa9bc58de1cacc28422199"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a73f305dadb9b5b88d6efcc80a9073710"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera_script.html#a73f305dadb9b5b88d6efcc80a9073710">Start</a> ()</td></tr>
+<tr class="separator:a73f305dadb9b5b88d6efcc80a9073710"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a292a7b3c52fd201f42e5b0f25c7b4d2d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera_script.html#a292a7b3c52fd201f42e5b0f25c7b4d2d">Update</a> ()</td></tr>
+<tr class="separator:a292a7b3c52fd201f42e5b0f25c7b4d2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a3a3120a4a7a1e87cca30071873d0bcb0"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera_script.html#a3a3120a4a7a1e87cca30071873d0bcb0">cameraRotateSpeed</a> = 2.0f</td></tr>
+<tr class="separator:a3a3120a4a7a1e87cca30071873d0bcb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11e43ca1ed13d2e9021709599e0a9e88"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera_script.html#a11e43ca1ed13d2e9021709599e0a9e88">cameraMoveSpeed</a> = 0.5f</td></tr>
+<tr class="separator:a11e43ca1ed13d2e9021709599e0a9e88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc4843808c4451e0bb4208088d93cf0f"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera_script.html#adc4843808c4451e0bb4208088d93cf0f">scrollSpeed</a> = 10.0f</td></tr>
+<tr class="separator:adc4843808c4451e0bb4208088d93cf0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a309b1bcbdda1b067a9dad18fce8ed8e4"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera_script.html#a309b1bcbdda1b067a9dad18fce8ed8e4">yaw</a> = 0.0f</td></tr>
+<tr class="separator:a309b1bcbdda1b067a9dad18fce8ed8e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89560eabd35ee6f809ae1aad62c5e7dd"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera_script.html#a89560eabd35ee6f809ae1aad62c5e7dd">pitch</a> = -200.0f</td></tr>
+<tr class="separator:a89560eabd35ee6f809ae1aad62c5e7dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0b54d8036b93b9ac9f43c7f7d2bb920"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera_script.html#ac0b54d8036b93b9ac9f43c7f7d2bb920">mouseButtonDown</a> = false</td></tr>
+<tr class="separator:ac0b54d8036b93b9ac9f43c7f7d2bb920"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><dl class="section author"><dt>Author</dt><dd>Jesse van Gool &amp; Maurice Brouwers </dd></dl>
 <dl class="section version"><dt>Version</dt><dd>1.0 </dd></dl>
-</div><h2 class="groupheader">Member Data Documentation</h2>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a73f305dadb9b5b88d6efcc80a9073710" name="a73f305dadb9b5b88d6efcc80a9073710"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a73f305dadb9b5b88d6efcc80a9073710">&#9670;&nbsp;</a></span>Start()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CameraScript.Start </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a292a7b3c52fd201f42e5b0f25c7b4d2d" name="a292a7b3c52fd201f42e5b0f25c7b4d2d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a292a7b3c52fd201f42e5b0f25c7b4d2d">&#9670;&nbsp;</a></span>Update()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CameraScript.Update </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >Gets called once per frame, used to update the user camera </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a11e43ca1ed13d2e9021709599e0a9e88" name="a11e43ca1ed13d2e9021709599e0a9e88"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a11e43ca1ed13d2e9021709599e0a9e88">&#9670;&nbsp;</a></span>cameraMoveSpeed</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float CameraScript.cameraMoveSpeed = 0.5f</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3a3120a4a7a1e87cca30071873d0bcb0" name="a3a3120a4a7a1e87cca30071873d0bcb0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a3120a4a7a1e87cca30071873d0bcb0">&#9670;&nbsp;</a></span>cameraRotateSpeed</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float CameraScript.cameraRotateSpeed = 2.0f</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac0b54d8036b93b9ac9f43c7f7d2bb920" name="ac0b54d8036b93b9ac9f43c7f7d2bb920"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac0b54d8036b93b9ac9f43c7f7d2bb920">&#9670;&nbsp;</a></span>mouseButtonDown</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CameraScript.mouseButtonDown = false</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a89560eabd35ee6f809ae1aad62c5e7dd" name="a89560eabd35ee6f809ae1aad62c5e7dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a89560eabd35ee6f809ae1aad62c5e7dd">&#9670;&nbsp;</a></span>pitch</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float CameraScript.pitch = -200.0f</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="adc4843808c4451e0bb4208088d93cf0f" name="adc4843808c4451e0bb4208088d93cf0f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc4843808c4451e0bb4208088d93cf0f">&#9670;&nbsp;</a></span>scrollSpeed</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float CameraScript.scrollSpeed = 10.0f</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a6aa48c331de1865f340065884ffa9ade" name="a6aa48c331de1865f340065884ffa9ade"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6aa48c331de1865f340065884ffa9ade">&#9670;&nbsp;</a></span>speedH</h2>
 
@@ -130,6 +316,28 @@ Public Attributes</h2></td></tr>
           <td class="memname">float CameraScript.speedV = 2.0f</td>
         </tr>
       </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a309b1bcbdda1b067a9dad18fce8ed8e4" name="a309b1bcbdda1b067a9dad18fce8ed8e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a309b1bcbdda1b067a9dad18fce8ed8e4">&#9670;&nbsp;</a></span>yaw</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float CameraScript.yaw = 0.0f</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>

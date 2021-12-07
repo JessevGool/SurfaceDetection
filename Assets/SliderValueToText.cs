@@ -10,7 +10,15 @@ public class SliderValueToText : MonoBehaviour
 {
     public Slider sliderUI;
     private TMPro.TextMeshProUGUI textSliderValue;
+    /**
+     * Standard resolution of the scan
+     * Increment of 0.05
+     */
     public float resolution = 0.05f;
+    /**
+     * Standard gridsize of the scan on one of the axes
+     * Standard is 80
+     */
     public float gridSize = 80;
     private RayTest rayTest;
 
@@ -20,7 +28,12 @@ public class SliderValueToText : MonoBehaviour
         rayTest = FindObjectOfType<RayTest>();
         textSliderValue = GetComponent<TMPro.TextMeshProUGUI>();
     }
-
+    /**
+     * Update method that gets called once per frame. Is used to update settings in the rayTest class and the UI
+     * 
+     * @see RayTest::scanResolution
+     * @see RayTest::gridSize
+     */
     private void Update()
     {
         if(sliderUI.name.Contains("Scan"))

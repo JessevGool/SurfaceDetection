@@ -40,6 +40,34 @@ Input\+Field \mbox{\hyperlink{class_application_menu_a74156c8015e2f58db16e456b7b
 \item 
 Game\+Object \mbox{\hyperlink{class_application_menu_a6361d5751c0fdc854d71bdf9a1b7e7f7}{add\+Solar\+Panel}}
 \end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_application_menu_a7dd10866cb9e80d5f81e92e13a75acac}{Start}} ()
+\item 
+void \mbox{\hyperlink{class_application_menu_a194cd80be35429b21fe027d85f9340e5}{Initiate\+Menu\+States}} ()
+\item 
+void \mbox{\hyperlink{class_application_menu_a881f4b9ebfd0a0263fcef16c9403057f}{End\+Of\+Solar\+Panel\+UI}} ()
+\item 
+void \mbox{\hyperlink{class_application_menu_a582777910578ad300a35ad7eccfee748}{Update}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_ray_test}{Ray\+Test}} \mbox{\hyperlink{class_application_menu_aa0697f4a1cdd263cbba0cad10fb324fa}{ray\+Test}}
+\item 
+Vector3 \mbox{\hyperlink{class_application_menu_a7ead50df41326d13968909481a789fc5}{scale\+Vector}}
+\item 
+float \mbox{\hyperlink{class_application_menu_ae506402020bd07ec1b9dc39d0d5814e0}{scale}} = 1.\+0f
+\item 
+List$<$ Vector2 $>$ \mbox{\hyperlink{class_application_menu_a55c7eb529a1f9f6087f4918ab4426c6f}{Solar\+Panel\+Sizes}}
+\item 
+string \mbox{\hyperlink{class_application_menu_a7362b4e7813e62cdfe490ef211ca85c3}{new\+Solar\+Length}}
+\item 
+string \mbox{\hyperlink{class_application_menu_a403c2a278e41eda50758dd9e66e9e333}{new\+Solar\+Width}}
+\item 
+bool \mbox{\hyperlink{class_application_menu_aff45cd83670b34acc3c75c9b9726735e}{view\+Settings}} = false
+\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
@@ -82,6 +110,12 @@ Jesse van Gool \& Maurice Brouwers
 \doxysubsubsection{\texorpdfstring{EditWidthInput()}{EditWidthInput()}}
 {\footnotesize\ttfamily void Application\+Menu.\+Edit\+Width\+Input (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
+\mbox{\Hypertarget{class_application_menu_a881f4b9ebfd0a0263fcef16c9403057f}\label{class_application_menu_a881f4b9ebfd0a0263fcef16c9403057f}} 
+\index{ApplicationMenu@{ApplicationMenu}!EndOfSolarPanelUI@{EndOfSolarPanelUI}}
+\index{EndOfSolarPanelUI@{EndOfSolarPanelUI}!ApplicationMenu@{ApplicationMenu}}
+\doxysubsubsection{\texorpdfstring{EndOfSolarPanelUI()}{EndOfSolarPanelUI()}}
+{\footnotesize\ttfamily void Application\+Menu.\+End\+Of\+Solar\+Panel\+UI (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
 \mbox{\Hypertarget{class_application_menu_ab576671a8ee66c8de5ae45cc778f56cc}\label{class_application_menu_ab576671a8ee66c8de5ae45cc778f56cc}} 
 \index{ApplicationMenu@{ApplicationMenu}!InitializeGameObject@{InitializeGameObject}}
 \index{InitializeGameObject@{InitializeGameObject}!ApplicationMenu@{ApplicationMenu}}
@@ -93,11 +127,23 @@ Method used to initialize a game\+Object based on the parameter
 {\em game\+Object} & \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{class_application_menu_a2281c723cd099888076b9cbca2cc3baa}\label{class_application_menu_a2281c723cd099888076b9cbca2cc3baa}} 
+\mbox{\Hypertarget{class_application_menu_a194cd80be35429b21fe027d85f9340e5}\label{class_application_menu_a194cd80be35429b21fe027d85f9340e5}} 
+\index{ApplicationMenu@{ApplicationMenu}!InitiateMenuStates@{InitiateMenuStates}}
+\index{InitiateMenuStates@{InitiateMenuStates}!ApplicationMenu@{ApplicationMenu}}
+\doxysubsubsection{\texorpdfstring{InitiateMenuStates()}{InitiateMenuStates()}}
+{\footnotesize\ttfamily void Application\+Menu.\+Initiate\+Menu\+States (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Method responsible for initiating the menu in the default config \mbox{\Hypertarget{class_application_menu_a2281c723cd099888076b9cbca2cc3baa}\label{class_application_menu_a2281c723cd099888076b9cbca2cc3baa}} 
 \index{ApplicationMenu@{ApplicationMenu}!LoadSolarPanelPlacement@{LoadSolarPanelPlacement}}
 \index{LoadSolarPanelPlacement@{LoadSolarPanelPlacement}!ApplicationMenu@{ApplicationMenu}}
 \doxysubsubsection{\texorpdfstring{LoadSolarPanelPlacement()}{LoadSolarPanelPlacement()}}
 {\footnotesize\ttfamily void Application\+Menu.\+Load\+Solar\+Panel\+Placement (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_application_menu_a7dd10866cb9e80d5f81e92e13a75acac}\label{class_application_menu_a7dd10866cb9e80d5f81e92e13a75acac}} 
+\index{ApplicationMenu@{ApplicationMenu}!Start@{Start}}
+\index{Start@{Start}!ApplicationMenu@{ApplicationMenu}}
+\doxysubsubsection{\texorpdfstring{Start()}{Start()}}
+{\footnotesize\ttfamily void Application\+Menu.\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
 
 \mbox{\Hypertarget{class_application_menu_ae67b5e866d767e1b06914821dd3af1a9}\label{class_application_menu_ae67b5e866d767e1b06914821dd3af1a9}} 
 \index{ApplicationMenu@{ApplicationMenu}!StartScanButton@{StartScanButton}}
@@ -108,6 +154,12 @@ Method used to initialize a game\+Object based on the parameter
 Button method responsible for switching the start\+Scan\+Bool in the ray\+Test class. \begin{DoxySeeAlso}{See also}
 \mbox{\hyperlink{class_ray_test}{Ray\+Test}} 
 \end{DoxySeeAlso}
+\mbox{\Hypertarget{class_application_menu_a582777910578ad300a35ad7eccfee748}\label{class_application_menu_a582777910578ad300a35ad7eccfee748}} 
+\index{ApplicationMenu@{ApplicationMenu}!Update@{Update}}
+\index{Update@{Update}!ApplicationMenu@{ApplicationMenu}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Application\+Menu.\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
 
 
 \doxysubsection{Member Data Documentation}
@@ -123,11 +175,41 @@ Button method responsible for switching the start\+Scan\+Bool in the ray\+Test c
 \doxysubsubsection{\texorpdfstring{mainMenu}{mainMenu}}
 {\footnotesize\ttfamily Game\+Object Application\+Menu.\+main\+Menu}
 
-parent object used for the main menu \mbox{\Hypertarget{class_application_menu_a51e5951a3e5ba6aece82fdb992171efd}\label{class_application_menu_a51e5951a3e5ba6aece82fdb992171efd}} 
+parent object used for the main menu \mbox{\Hypertarget{class_application_menu_a7362b4e7813e62cdfe490ef211ca85c3}\label{class_application_menu_a7362b4e7813e62cdfe490ef211ca85c3}} 
+\index{ApplicationMenu@{ApplicationMenu}!newSolarLength@{newSolarLength}}
+\index{newSolarLength@{newSolarLength}!ApplicationMenu@{ApplicationMenu}}
+\doxysubsubsection{\texorpdfstring{newSolarLength}{newSolarLength}}
+{\footnotesize\ttfamily string Application\+Menu.\+new\+Solar\+Length\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_application_menu_a403c2a278e41eda50758dd9e66e9e333}\label{class_application_menu_a403c2a278e41eda50758dd9e66e9e333}} 
+\index{ApplicationMenu@{ApplicationMenu}!newSolarWidth@{newSolarWidth}}
+\index{newSolarWidth@{newSolarWidth}!ApplicationMenu@{ApplicationMenu}}
+\doxysubsubsection{\texorpdfstring{newSolarWidth}{newSolarWidth}}
+{\footnotesize\ttfamily string Application\+Menu.\+new\+Solar\+Width\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_application_menu_a51e5951a3e5ba6aece82fdb992171efd}\label{class_application_menu_a51e5951a3e5ba6aece82fdb992171efd}} 
 \index{ApplicationMenu@{ApplicationMenu}!objectModel@{objectModel}}
 \index{objectModel@{objectModel}!ApplicationMenu@{ApplicationMenu}}
 \doxysubsubsection{\texorpdfstring{objectModel}{objectModel}}
 {\footnotesize\ttfamily Game\+Object Application\+Menu.\+object\+Model}
+
+\mbox{\Hypertarget{class_application_menu_aa0697f4a1cdd263cbba0cad10fb324fa}\label{class_application_menu_aa0697f4a1cdd263cbba0cad10fb324fa}} 
+\index{ApplicationMenu@{ApplicationMenu}!rayTest@{rayTest}}
+\index{rayTest@{rayTest}!ApplicationMenu@{ApplicationMenu}}
+\doxysubsubsection{\texorpdfstring{rayTest}{rayTest}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_ray_test}{Ray\+Test}} Application\+Menu.\+ray\+Test\hspace{0.3cm}{\ttfamily [private]}}
+
+Instance of the \mbox{\hyperlink{class_ray_test}{Ray\+Test}} class used to switch a parameter on button click \mbox{\Hypertarget{class_application_menu_ae506402020bd07ec1b9dc39d0d5814e0}\label{class_application_menu_ae506402020bd07ec1b9dc39d0d5814e0}} 
+\index{ApplicationMenu@{ApplicationMenu}!scale@{scale}}
+\index{scale@{scale}!ApplicationMenu@{ApplicationMenu}}
+\doxysubsubsection{\texorpdfstring{scale}{scale}}
+{\footnotesize\ttfamily float Application\+Menu.\+scale = 1.\+0f\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_application_menu_a7ead50df41326d13968909481a789fc5}\label{class_application_menu_a7ead50df41326d13968909481a789fc5}} 
+\index{ApplicationMenu@{ApplicationMenu}!scaleVector@{scaleVector}}
+\index{scaleVector@{scaleVector}!ApplicationMenu@{ApplicationMenu}}
+\doxysubsubsection{\texorpdfstring{scaleVector}{scaleVector}}
+{\footnotesize\ttfamily Vector3 Application\+Menu.\+scale\+Vector\hspace{0.3cm}{\ttfamily [private]}}
 
 \mbox{\Hypertarget{class_application_menu_a47b67bf9647c207ebec3fb994481a131}\label{class_application_menu_a47b67bf9647c207ebec3fb994481a131}} 
 \index{ApplicationMenu@{ApplicationMenu}!settingsMenu@{settingsMenu}}
@@ -141,11 +223,23 @@ parent object used for the settings menu \mbox{\Hypertarget{class_application_me
 \doxysubsubsection{\texorpdfstring{SolarLengthInputField}{SolarLengthInputField}}
 {\footnotesize\ttfamily Input\+Field Application\+Menu.\+Solar\+Length\+Input\+Field}
 
+\mbox{\Hypertarget{class_application_menu_a55c7eb529a1f9f6087f4918ab4426c6f}\label{class_application_menu_a55c7eb529a1f9f6087f4918ab4426c6f}} 
+\index{ApplicationMenu@{ApplicationMenu}!SolarPanelSizes@{SolarPanelSizes}}
+\index{SolarPanelSizes@{SolarPanelSizes}!ApplicationMenu@{ApplicationMenu}}
+\doxysubsubsection{\texorpdfstring{SolarPanelSizes}{SolarPanelSizes}}
+{\footnotesize\ttfamily List$<$Vector2$>$ Application\+Menu.\+Solar\+Panel\+Sizes\hspace{0.3cm}{\ttfamily [private]}}
+
 \mbox{\Hypertarget{class_application_menu_a74156c8015e2f58db16e456b7ba6a808}\label{class_application_menu_a74156c8015e2f58db16e456b7ba6a808}} 
 \index{ApplicationMenu@{ApplicationMenu}!SolarWidthInputField@{SolarWidthInputField}}
 \index{SolarWidthInputField@{SolarWidthInputField}!ApplicationMenu@{ApplicationMenu}}
 \doxysubsubsection{\texorpdfstring{SolarWidthInputField}{SolarWidthInputField}}
 {\footnotesize\ttfamily Input\+Field Application\+Menu.\+Solar\+Width\+Input\+Field}
+
+\mbox{\Hypertarget{class_application_menu_aff45cd83670b34acc3c75c9b9726735e}\label{class_application_menu_aff45cd83670b34acc3c75c9b9726735e}} 
+\index{ApplicationMenu@{ApplicationMenu}!viewSettings@{viewSettings}}
+\index{viewSettings@{viewSettings}!ApplicationMenu@{ApplicationMenu}}
+\doxysubsubsection{\texorpdfstring{viewSettings}{viewSettings}}
+{\footnotesize\ttfamily bool Application\+Menu.\+view\+Settings = false\hspace{0.3cm}{\ttfamily [private]}}
 
 
 

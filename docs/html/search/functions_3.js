@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['editlengthinput_0',['EditLengthInput',['../class_application_menu.html#a982eb6e77ae09f789f58e4401fffa541',1,'ApplicationMenu']]],
-  ['editwidthinput_1',['EditWidthInput',['../class_application_menu.html#a630458b366405c26353119d8a7965bcb',1,'ApplicationMenu']]]
+  ['detectslopes_0',['DetectSlopes',['../class_ray_test.html#a2810fe8028706e9f1521651dc94bd241',1,'RayTest']]]
 ];

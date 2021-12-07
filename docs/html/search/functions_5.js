@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['getstring_0',['GetString',['../class_dummiesman_1_1_char_word_reader.html#a8b5b622228256a9620a5d3ddc0de7626',1,'Dummiesman::CharWordReader']]]
+  ['fillpixelarray_0',['FillPixelArray',['../class_dummiesman_1_1_image_loader_helper.html#a244f02c13e0ffd34e8f39ffddbc1604e',1,'Dummiesman::ImageLoaderHelper']]],
+  ['flush_1',['Flush',['../class_b83_1_1_image_1_1_b_m_p_1_1_bit_stream_reader.html#a436c996a130b8fa6abe4193ab3b688a2',1,'B83::Image::BMP::BitStreamReader']]]
 ];

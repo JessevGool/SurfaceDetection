@@ -1,5 +1,10 @@
 \hypertarget{class_dummiesman_1_1_o_b_j_object_builder}{}\doxysection{Dummiesman.\+OBJObject\+Builder Class Reference}
 \label{class_dummiesman_1_1_o_b_j_object_builder}\index{Dummiesman.OBJObjectBuilder@{Dummiesman.OBJObjectBuilder}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_dummiesman_1_1_o_b_j_object_builder_1_1_obj_loop_hash}{Obj\+Loop\+Hash}}
+\begin{DoxyCompactList}\small\item\em Loop hasher helper class \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
@@ -14,7 +19,30 @@ void \mbox{\hyperlink{class_dummiesman_1_1_o_b_j_object_builder_a44531788d2264a1
 \doxysubsection*{Properties}
 \begin{DoxyCompactItemize}
 \item 
-int \mbox{\hyperlink{class_dummiesman_1_1_o_b_j_object_builder_a557b34def1fc5edfb2ee44a5443fe82e}{Pushed\+Face\+Count}} = 0\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+int \mbox{\hyperlink{class_dummiesman_1_1_o_b_j_object_builder_a557b34def1fc5edfb2ee44a5443fe82e}{Pushed\+Face\+Count}} = 0\hspace{0.3cm}{\ttfamily  \mbox{[}getprivate set\mbox{]}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_dummiesman_1_1_o_b_j_loader}{OBJLoader}} \mbox{\hyperlink{class_dummiesman_1_1_o_b_j_object_builder_a5d90513d8fbae61699c4281fd73c0c57}{\+\_\+loader}}
+\item 
+string \mbox{\hyperlink{class_dummiesman_1_1_o_b_j_object_builder_aadf1dff645dbc0f5ccec7e3495afc8a0}{\+\_\+name}}
+\item 
+Dictionary$<$ \mbox{\hyperlink{class_dummiesman_1_1_o_b_j_object_builder_1_1_obj_loop_hash}{Obj\+Loop\+Hash}}, int $>$ \mbox{\hyperlink{class_dummiesman_1_1_o_b_j_object_builder_a7829015410e28faa13c6f7788699feb9}{\+\_\+global\+Index\+Remap}} = new Dictionary$<$\mbox{\hyperlink{class_dummiesman_1_1_o_b_j_object_builder_1_1_obj_loop_hash}{Obj\+Loop\+Hash}}, int$>$()
+\item 
+Dictionary$<$ string, List$<$ int $>$ $>$ \mbox{\hyperlink{class_dummiesman_1_1_o_b_j_object_builder_a3241b6bcf1a8d1923d4fb4d90d0d287e}{\+\_\+material\+Indices}} = new Dictionary$<$string, List$<$int$>$$>$()
+\item 
+List$<$ int $>$ \mbox{\hyperlink{class_dummiesman_1_1_o_b_j_object_builder_ac620bed9468b484a422f2bd106a7e763}{\+\_\+current\+Index\+List}}
+\item 
+string \mbox{\hyperlink{class_dummiesman_1_1_o_b_j_object_builder_a3ad033d5cf399609835719dd53a150a6}{\+\_\+last\+Material}} = null
+\item 
+List$<$ Vector3 $>$ \mbox{\hyperlink{class_dummiesman_1_1_o_b_j_object_builder_a7fe2ae3a774706275ffd353492e57e88}{\+\_\+vertices}} = new List$<$Vector3$>$()
+\item 
+List$<$ Vector3 $>$ \mbox{\hyperlink{class_dummiesman_1_1_o_b_j_object_builder_a4e43408a009f306275eafb4a046fc525}{\+\_\+normals}} = new List$<$Vector3$>$()
+\item 
+List$<$ Vector2 $>$ \mbox{\hyperlink{class_dummiesman_1_1_o_b_j_object_builder_ab8fa59037fe0c7cba8c117a2169b586a}{\+\_\+uvs}} = new List$<$Vector2$>$()
+\item 
+bool \mbox{\hyperlink{class_dummiesman_1_1_o_b_j_object_builder_a56fa3575316477fdeb3fbb5d04f466e3}{recalculate\+Normals}} = false
 \end{DoxyCompactItemize}
 
 
@@ -48,12 +76,75 @@ int \mbox{\hyperlink{class_dummiesman_1_1_o_b_j_object_builder_a557b34def1fc5edf
 
 
 
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_dummiesman_1_1_o_b_j_object_builder_ac620bed9468b484a422f2bd106a7e763}\label{class_dummiesman_1_1_o_b_j_object_builder_ac620bed9468b484a422f2bd106a7e763}} 
+\index{Dummiesman.OBJObjectBuilder@{Dummiesman.OBJObjectBuilder}!\_currentIndexList@{\_currentIndexList}}
+\index{\_currentIndexList@{\_currentIndexList}!Dummiesman.OBJObjectBuilder@{Dummiesman.OBJObjectBuilder}}
+\doxysubsubsection{\texorpdfstring{\_currentIndexList}{\_currentIndexList}}
+{\footnotesize\ttfamily List$<$int$>$ Dummiesman.\+OBJObject\+Builder.\+\_\+current\+Index\+List\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_dummiesman_1_1_o_b_j_object_builder_a7829015410e28faa13c6f7788699feb9}\label{class_dummiesman_1_1_o_b_j_object_builder_a7829015410e28faa13c6f7788699feb9}} 
+\index{Dummiesman.OBJObjectBuilder@{Dummiesman.OBJObjectBuilder}!\_globalIndexRemap@{\_globalIndexRemap}}
+\index{\_globalIndexRemap@{\_globalIndexRemap}!Dummiesman.OBJObjectBuilder@{Dummiesman.OBJObjectBuilder}}
+\doxysubsubsection{\texorpdfstring{\_globalIndexRemap}{\_globalIndexRemap}}
+{\footnotesize\ttfamily Dictionary$<$\mbox{\hyperlink{class_dummiesman_1_1_o_b_j_object_builder_1_1_obj_loop_hash}{Obj\+Loop\+Hash}}, int$>$ Dummiesman.\+OBJObject\+Builder.\+\_\+global\+Index\+Remap = new Dictionary$<$\mbox{\hyperlink{class_dummiesman_1_1_o_b_j_object_builder_1_1_obj_loop_hash}{Obj\+Loop\+Hash}}, int$>$()\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_dummiesman_1_1_o_b_j_object_builder_a3ad033d5cf399609835719dd53a150a6}\label{class_dummiesman_1_1_o_b_j_object_builder_a3ad033d5cf399609835719dd53a150a6}} 
+\index{Dummiesman.OBJObjectBuilder@{Dummiesman.OBJObjectBuilder}!\_lastMaterial@{\_lastMaterial}}
+\index{\_lastMaterial@{\_lastMaterial}!Dummiesman.OBJObjectBuilder@{Dummiesman.OBJObjectBuilder}}
+\doxysubsubsection{\texorpdfstring{\_lastMaterial}{\_lastMaterial}}
+{\footnotesize\ttfamily string Dummiesman.\+OBJObject\+Builder.\+\_\+last\+Material = null\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_dummiesman_1_1_o_b_j_object_builder_a5d90513d8fbae61699c4281fd73c0c57}\label{class_dummiesman_1_1_o_b_j_object_builder_a5d90513d8fbae61699c4281fd73c0c57}} 
+\index{Dummiesman.OBJObjectBuilder@{Dummiesman.OBJObjectBuilder}!\_loader@{\_loader}}
+\index{\_loader@{\_loader}!Dummiesman.OBJObjectBuilder@{Dummiesman.OBJObjectBuilder}}
+\doxysubsubsection{\texorpdfstring{\_loader}{\_loader}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_dummiesman_1_1_o_b_j_loader}{OBJLoader}} Dummiesman.\+OBJObject\+Builder.\+\_\+loader\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_dummiesman_1_1_o_b_j_object_builder_a3241b6bcf1a8d1923d4fb4d90d0d287e}\label{class_dummiesman_1_1_o_b_j_object_builder_a3241b6bcf1a8d1923d4fb4d90d0d287e}} 
+\index{Dummiesman.OBJObjectBuilder@{Dummiesman.OBJObjectBuilder}!\_materialIndices@{\_materialIndices}}
+\index{\_materialIndices@{\_materialIndices}!Dummiesman.OBJObjectBuilder@{Dummiesman.OBJObjectBuilder}}
+\doxysubsubsection{\texorpdfstring{\_materialIndices}{\_materialIndices}}
+{\footnotesize\ttfamily Dictionary$<$string, List$<$int$>$ $>$ Dummiesman.\+OBJObject\+Builder.\+\_\+material\+Indices = new Dictionary$<$string, List$<$int$>$$>$()\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_dummiesman_1_1_o_b_j_object_builder_aadf1dff645dbc0f5ccec7e3495afc8a0}\label{class_dummiesman_1_1_o_b_j_object_builder_aadf1dff645dbc0f5ccec7e3495afc8a0}} 
+\index{Dummiesman.OBJObjectBuilder@{Dummiesman.OBJObjectBuilder}!\_name@{\_name}}
+\index{\_name@{\_name}!Dummiesman.OBJObjectBuilder@{Dummiesman.OBJObjectBuilder}}
+\doxysubsubsection{\texorpdfstring{\_name}{\_name}}
+{\footnotesize\ttfamily string Dummiesman.\+OBJObject\+Builder.\+\_\+name\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_dummiesman_1_1_o_b_j_object_builder_a4e43408a009f306275eafb4a046fc525}\label{class_dummiesman_1_1_o_b_j_object_builder_a4e43408a009f306275eafb4a046fc525}} 
+\index{Dummiesman.OBJObjectBuilder@{Dummiesman.OBJObjectBuilder}!\_normals@{\_normals}}
+\index{\_normals@{\_normals}!Dummiesman.OBJObjectBuilder@{Dummiesman.OBJObjectBuilder}}
+\doxysubsubsection{\texorpdfstring{\_normals}{\_normals}}
+{\footnotesize\ttfamily List$<$Vector3$>$ Dummiesman.\+OBJObject\+Builder.\+\_\+normals = new List$<$Vector3$>$()\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_dummiesman_1_1_o_b_j_object_builder_ab8fa59037fe0c7cba8c117a2169b586a}\label{class_dummiesman_1_1_o_b_j_object_builder_ab8fa59037fe0c7cba8c117a2169b586a}} 
+\index{Dummiesman.OBJObjectBuilder@{Dummiesman.OBJObjectBuilder}!\_uvs@{\_uvs}}
+\index{\_uvs@{\_uvs}!Dummiesman.OBJObjectBuilder@{Dummiesman.OBJObjectBuilder}}
+\doxysubsubsection{\texorpdfstring{\_uvs}{\_uvs}}
+{\footnotesize\ttfamily List$<$Vector2$>$ Dummiesman.\+OBJObject\+Builder.\+\_\+uvs = new List$<$Vector2$>$()\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_dummiesman_1_1_o_b_j_object_builder_a7fe2ae3a774706275ffd353492e57e88}\label{class_dummiesman_1_1_o_b_j_object_builder_a7fe2ae3a774706275ffd353492e57e88}} 
+\index{Dummiesman.OBJObjectBuilder@{Dummiesman.OBJObjectBuilder}!\_vertices@{\_vertices}}
+\index{\_vertices@{\_vertices}!Dummiesman.OBJObjectBuilder@{Dummiesman.OBJObjectBuilder}}
+\doxysubsubsection{\texorpdfstring{\_vertices}{\_vertices}}
+{\footnotesize\ttfamily List$<$Vector3$>$ Dummiesman.\+OBJObject\+Builder.\+\_\+vertices = new List$<$Vector3$>$()\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_dummiesman_1_1_o_b_j_object_builder_a56fa3575316477fdeb3fbb5d04f466e3}\label{class_dummiesman_1_1_o_b_j_object_builder_a56fa3575316477fdeb3fbb5d04f466e3}} 
+\index{Dummiesman.OBJObjectBuilder@{Dummiesman.OBJObjectBuilder}!recalculateNormals@{recalculateNormals}}
+\index{recalculateNormals@{recalculateNormals}!Dummiesman.OBJObjectBuilder@{Dummiesman.OBJObjectBuilder}}
+\doxysubsubsection{\texorpdfstring{recalculateNormals}{recalculateNormals}}
+{\footnotesize\ttfamily bool Dummiesman.\+OBJObject\+Builder.\+recalculate\+Normals = false\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
 \doxysubsection{Property Documentation}
 \mbox{\Hypertarget{class_dummiesman_1_1_o_b_j_object_builder_a557b34def1fc5edfb2ee44a5443fe82e}\label{class_dummiesman_1_1_o_b_j_object_builder_a557b34def1fc5edfb2ee44a5443fe82e}} 
 \index{Dummiesman.OBJObjectBuilder@{Dummiesman.OBJObjectBuilder}!PushedFaceCount@{PushedFaceCount}}
 \index{PushedFaceCount@{PushedFaceCount}!Dummiesman.OBJObjectBuilder@{Dummiesman.OBJObjectBuilder}}
 \doxysubsubsection{\texorpdfstring{PushedFaceCount}{PushedFaceCount}}
-{\footnotesize\ttfamily int Dummiesman.\+OBJObject\+Builder.\+Pushed\+Face\+Count = 0\hspace{0.3cm}{\ttfamily [get]}}
+{\footnotesize\ttfamily int Dummiesman.\+OBJObject\+Builder.\+Pushed\+Face\+Count = 0\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private set]}}
 
 
 

@@ -1,13 +1,8 @@
-using System;
-using System.Collections;
+
 using System.Collections.Generic;
 using System.Linq;
-using Unity.Collections;
-using Unity.Jobs;
 using System.Threading;
 using UnityEngine;
-using Random = System.Random;
-using UnityEngine.UI;
 
 /**
  * @author Jesse van Gool & Maurice Brouwers
@@ -35,18 +30,18 @@ public class RayTest : MonoBehaviour
      */
     private Thread _t1;
     /**
-  * @deprecated Used for threading, can't be used because of Unity threading limitations
-  */
+    * @deprecated Used for threading, can't be used because of Unity threading limitations
+    */
     private Thread _t2;
     /**
-  * @deprecated Used for threading, can't be used because of Unity threading limitations
-  * Is still used to switch a bool after finding layers
-  */
+    * @deprecated Used for threading, can't be used because of Unity threading limitations
+     * Is still used to switch a bool after finding layers
+    */
     private bool _t1Finished = false;
     /**
-  * @deprecated Used for threading, can't be used because of Unity threading limitations
-  * Is still used to switch a bool after finding layers
-  */
+     * @deprecated Used for threading, can't be used because of Unity threading limitations
+     * Is still used to switch a bool after finding layers
+     */
     private bool _t2Finished = false;
 
     /**
@@ -202,13 +197,13 @@ public class RayTest : MonoBehaviour
         {
             if (!uniqueHeights.Contains(hit.point.y))
             {
-                
+
                 uniqueHeights.Add(hit.point.y);
 
             }
         }
-        
-        
+
+
         foreach (float height in uniqueHeights)
         {
             List<RaycastHit> _hitsInLayer = new List<RaycastHit>();
@@ -225,12 +220,12 @@ public class RayTest : MonoBehaviour
 
             }
 
-                MakeLayerPlane(hitsInLayerForPlane, 0.0f, 0.0f);
+            MakeLayerPlane(hitsInLayerForPlane, 0.0f, 0.0f);
 
-            
+
             //foreach (var hit in _hitsInLayer)
             //{
-                
+
 
             //    var test = GameObject.CreatePrimitive(PrimitiveType.Sphere);
             //    test.transform.position = hit.point;
@@ -415,7 +410,7 @@ public class RayTest : MonoBehaviour
                 test.name = angle.ToString() + " z";
                 test.transform.position = angledHit;
                 test.transform.localScale = new Vector3(0.1f, 0.1f, 0.1f);
-                if(drawAngledLayers)
+                if (drawAngledLayers)
                 {
                     if (count == 0)
                     {
@@ -434,7 +429,7 @@ public class RayTest : MonoBehaviour
                         test.GetComponent<Renderer>().material.color = Color.yellow;
                     }
                 }
-              
+
 
 
             }
@@ -462,11 +457,11 @@ public class RayTest : MonoBehaviour
                         angledHits.Add(hit.point);
                         angle = test;
                     }
-                    
+
                 }
 
                 //to use the angle of this plane correctly, safe the angle
-                
+
             }
 
             MakeLayerPlane(angledHits, 0.0f, angle);
@@ -496,7 +491,7 @@ public class RayTest : MonoBehaviour
                         test.GetComponent<Renderer>().material.color = Color.yellow;
                     }
                 }
-               
+
 
 
             }
@@ -508,10 +503,12 @@ public class RayTest : MonoBehaviour
 
 
     /**
-    * This method takes in as parameters a list of coordinates of al the hits in a certain layer, the angle that these hits all have in comon on the X and Z angle. 
-    * With these parameters the methode creates a plane on the area that these hits all share in common and are mesured by the most outer coordinates.
-    * The center point is determined by the location of the most outer coordinates devided by 2.
+    * the method creates a plane on the area that these hits all share in common and are measured by the most outer coordinates.
+    * The center point is determined by the location of the most outer coordinates divided by 2.
     * 
+    * @param layerHits a list of hits in a layer
+    * @param angleX the x angle used to set the objects rotation
+    * @param angleZ the z angle used to set the objects rotation
     */
 
     private void MakeLayerPlane(List<Vector3> layerHits, float angleX, float angleZ)
@@ -532,8 +529,8 @@ public class RayTest : MonoBehaviour
 
             //float test = Vector3.Angle(hit.right, hit.normal);
         }
-        
-        //devide all heigths devided by amount to get avarage
+
+        //divide all heigths divided by amount to get average
         height /= layerHits.Count();
         float xCenter = (xCoords.Min() + xCoords.Max()) / 2;
         float zCenter = (zCoords.Min() + zCoords.Max()) / 2;
@@ -541,7 +538,7 @@ public class RayTest : MonoBehaviour
         Vector3 centerPoint = new Vector3(xCenter, height, zCenter);
 
 
-        
+
 
 
 
@@ -570,8 +567,8 @@ public class RayTest : MonoBehaviour
             {
                 test.GetComponent<Renderer>().material.color = Color.red;
             }
-            
-            
+
+
             test.transform.Rotate(-angleX, 0.0f, -angleZ, Space.Self);//new Vector3(angleX, 0.0f, angleZ);
         }
 

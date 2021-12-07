@@ -11,7 +11,8 @@ var dir_e478da333691f8fa1f43f16a2d7ee12a =
     [ "OBJLoader.cs", "_o_b_j_loader_8cs.html", "_o_b_j_loader_8cs" ],
     [ "OBJLoaderHelper.cs", "_o_b_j_loader_helper_8cs.html", null ],
     [ "OBJObjectBuilder.cs", "_o_b_j_object_builder_8cs.html", [
-      [ "Dummiesman.OBJObjectBuilder", "class_dummiesman_1_1_o_b_j_object_builder.html", "class_dummiesman_1_1_o_b_j_object_builder" ]
+      [ "Dummiesman.OBJObjectBuilder", "class_dummiesman_1_1_o_b_j_object_builder.html", "class_dummiesman_1_1_o_b_j_object_builder" ],
+      [ "Dummiesman.OBJObjectBuilder.ObjLoopHash", "class_dummiesman_1_1_o_b_j_object_builder_1_1_obj_loop_hash.html", "class_dummiesman_1_1_o_b_j_object_builder_1_1_obj_loop_hash" ]
     ] ],
     [ "StringExtensions.cs", "_string_extensions_8cs.html", null ]
 ];

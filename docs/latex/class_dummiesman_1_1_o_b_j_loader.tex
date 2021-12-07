@@ -16,6 +16,16 @@ Game\+Object \mbox{\hyperlink{class_dummiesman_1_1_o_b_j_loader_ad5e07fb04a72f87
 \item 
 \mbox{\hyperlink{namespace_dummiesman_a61c2576ddaaa8bc5a94dd4e53c48f917}{Split\+Mode}} \mbox{\hyperlink{class_dummiesman_1_1_o_b_j_loader_ac3359ce8c0dc1a9333336741d098200e}{Split\+Mode}} = \mbox{\hyperlink{namespace_dummiesman_a61c2576ddaaa8bc5a94dd4e53c48f917a497031794414a552435f90151ac3b54b}{Split\+Mode.\+Object}}
 \begin{DoxyCompactList}\small\item\em Determines how objects will be created \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_dummiesman_1_1_o_b_j_loader_a6ac00c0bdebcab2c01096df9e503c6fb}{Load\+Material\+Library}} (string mtl\+Lib\+Path)
+\begin{DoxyCompactList}\small\item\em Helper function to load mtllib statements \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+File\+Info \mbox{\hyperlink{class_dummiesman_1_1_o_b_j_loader_a5050cb2c5507b7e3d6103e5e4dbed78c}{\+\_\+obj\+Info}}
+\end{DoxyCompactItemize}
 
 
 \doxysubsection{Member Function Documentation}
@@ -101,9 +111,30 @@ Load an OBJ and MTL file from a file path.
 \begin{DoxyReturn}{Returns}
 Returns a Game\+Object represeting the OBJ file, with each imported object as a child.
 \end{DoxyReturn}
+\mbox{\Hypertarget{class_dummiesman_1_1_o_b_j_loader_a6ac00c0bdebcab2c01096df9e503c6fb}\label{class_dummiesman_1_1_o_b_j_loader_a6ac00c0bdebcab2c01096df9e503c6fb}} 
+\index{Dummiesman.OBJLoader@{Dummiesman.OBJLoader}!LoadMaterialLibrary@{LoadMaterialLibrary}}
+\index{LoadMaterialLibrary@{LoadMaterialLibrary}!Dummiesman.OBJLoader@{Dummiesman.OBJLoader}}
+\doxysubsubsection{\texorpdfstring{LoadMaterialLibrary()}{LoadMaterialLibrary()}}
+{\footnotesize\ttfamily void Dummiesman.\+OBJLoader.\+Load\+Material\+Library (\begin{DoxyParamCaption}\item[{string}]{mtl\+Lib\+Path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Helper function to load mtllib statements 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mtl\+Lib\+Path} & \\
+\hline
+\end{DoxyParams}
 
 
 \doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_dummiesman_1_1_o_b_j_loader_a5050cb2c5507b7e3d6103e5e4dbed78c}\label{class_dummiesman_1_1_o_b_j_loader_a5050cb2c5507b7e3d6103e5e4dbed78c}} 
+\index{Dummiesman.OBJLoader@{Dummiesman.OBJLoader}!\_objInfo@{\_objInfo}}
+\index{\_objInfo@{\_objInfo}!Dummiesman.OBJLoader@{Dummiesman.OBJLoader}}
+\doxysubsubsection{\texorpdfstring{\_objInfo}{\_objInfo}}
+{\footnotesize\ttfamily File\+Info Dummiesman.\+OBJLoader.\+\_\+obj\+Info\hspace{0.3cm}{\ttfamily [private]}}
+
 \mbox{\Hypertarget{class_dummiesman_1_1_o_b_j_loader_ac3359ce8c0dc1a9333336741d098200e}\label{class_dummiesman_1_1_o_b_j_loader_ac3359ce8c0dc1a9333336741d098200e}} 
 \index{Dummiesman.OBJLoader@{Dummiesman.OBJLoader}!SplitMode@{SplitMode}}
 \index{SplitMode@{SplitMode}!Dummiesman.OBJLoader@{Dummiesman.OBJLoader}}

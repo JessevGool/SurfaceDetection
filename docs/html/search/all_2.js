@@ -21,8 +21,10 @@ var searchData=
   ['bmpimage_18',['BMPImage',['../class_b83_1_1_image_1_1_b_m_p_1_1_b_m_p_image.html',1,'B83::Image::BMP']]],
   ['bmploader_19',['BMPLoader',['../class_b83_1_1_image_1_1_b_m_p_1_1_b_m_p_loader.html',1,'B83::Image::BMP']]],
   ['bmploader_2ecs_20',['BMPLoader.cs',['../_b_m_p_loader_8cs.html',1,'']]],
-  ['build_21',['Build',['../class_dummiesman_1_1_o_b_j_object_builder.html#a24d688aa5c78befd415c6b5a16b75336',1,'Dummiesman::OBJObjectBuilder']]],
-  ['buttonhandler_22',['ButtonHandler',['../class_button_handler.html',1,'']]],
-  ['buttonhandler_2ecs_23',['ButtonHandler.cs',['../_button_handler_8cs.html',1,'']]],
-  ['image_24',['Image',['../namespace_b83_1_1_image.html',1,'B83']]]
+  ['buffer_21',['buffer',['../class_dummiesman_1_1_char_word_reader.html#a15fe831f122d2093226596f4b47e146f',1,'Dummiesman::CharWordReader']]],
+  ['buffersize_22',['bufferSize',['../class_dummiesman_1_1_char_word_reader.html#ab81b171bde08dbbc0b4308ce6b0f8c8d',1,'Dummiesman::CharWordReader']]],
+  ['build_23',['Build',['../class_dummiesman_1_1_o_b_j_object_builder.html#a24d688aa5c78befd415c6b5a16b75336',1,'Dummiesman::OBJObjectBuilder']]],
+  ['buttonhandler_24',['ButtonHandler',['../class_button_handler.html',1,'']]],
+  ['buttonhandler_2ecs_25',['ButtonHandler.cs',['../_button_handler_8cs.html',1,'']]],
+  ['image_26',['Image',['../namespace_b83_1_1_image.html',1,'B83']]]
 ];

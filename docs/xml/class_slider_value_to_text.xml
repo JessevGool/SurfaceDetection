@@ -26,10 +26,11 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
+<para>Standard resolution of the scan Increment of 0.05 </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="H:/Code/Unity/SurfaceDetection/Assets/SliderValueToText.cs" line="13" column="18" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/SliderValueToText.cs" bodystart="13" bodyend="-1"/>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/SliderValueToText.cs" line="17" column="18" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/SliderValueToText.cs" bodystart="17" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_slider_value_to_text_1ac5ebca26de4fdedb8e378dca0a176c77" prot="public" static="no" mutable="no">
         <type>float</type>
@@ -40,10 +41,11 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
+<para>Standard gridsize of the scan on one of the axes Standard is 80 </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="H:/Code/Unity/SurfaceDetection/Assets/SliderValueToText.cs" line="14" column="18" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/SliderValueToText.cs" bodystart="14" bodyend="-1"/>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/SliderValueToText.cs" line="22" column="18" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/SliderValueToText.cs" bodystart="22" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-attrib">
@@ -71,7 +73,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="H:/Code/Unity/SurfaceDetection/Assets/SliderValueToText.cs" line="15" column="21" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/SliderValueToText.cs" bodystart="15" bodyend="-1"/>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/SliderValueToText.cs" line="23" column="21" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/SliderValueToText.cs" bodystart="23" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-func">
@@ -86,7 +88,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="H:/Code/Unity/SurfaceDetection/Assets/SliderValueToText.cs" line="18" column="10" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/SliderValueToText.cs" bodystart="18" bodyend="22"/>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/SliderValueToText.cs" line="26" column="10" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/SliderValueToText.cs" bodystart="26" bodyend="30"/>
       </memberdef>
       <memberdef kind="function" id="class_slider_value_to_text_1a2699cb48e936ca9fb081e7a073ade184" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -96,10 +98,16 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
+<para>Update method that gets called once per frame. Is used to update settings in the rayTest class and the UI</para>
+<para><simplesect kind="see"><para><ref refid="class_ray_test_1a1536d8e7c2847146d00e2d5885fcc0a5" kindref="member">RayTest::scanResolution</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="class_ray_test_1a098b2dc8abbde46e39fe98e49f42e8f3" kindref="member">RayTest::gridSize</ref> </para>
+</simplesect>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="H:/Code/Unity/SurfaceDetection/Assets/SliderValueToText.cs" line="24" column="18" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/SliderValueToText.cs" bodystart="24" bodyend="42"/>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/SliderValueToText.cs" line="37" column="18" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/SliderValueToText.cs" bodystart="37" bodyend="55"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -126,14 +134,29 @@
       <node id="2">
         <label>MonoBehaviour</label>
       </node>
+      <node id="4">
+        <label>RayTest</label>
+        <link refid="class_ray_test"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
       <node id="1">
         <label>SliderValueToText</label>
         <link refid="class_slider_value_to_text"/>
         <childnode refid="2" relation="public-inheritance">
         </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>textSliderValue</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>rayTest</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>TMPro</label>
       </node>
     </collaborationgraph>
-    <location file="H:/Code/Unity/SurfaceDetection/Assets/SliderValueToText.cs" line="9" column="7" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/SliderValueToText.cs" bodystart="10" bodyend="43"/>
+    <location file="H:/Code/Unity/SurfaceDetection/Assets/SliderValueToText.cs" line="9" column="7" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/SliderValueToText.cs" bodystart="10" bodyend="56"/>
     <listofallmembers>
       <member refid="class_slider_value_to_text_1ac5ebca26de4fdedb8e378dca0a176c77" prot="public" virt="non-virtual"><scope>SliderValueToText</scope><name>gridSize</name></member>
       <member refid="class_slider_value_to_text_1a4b92015a482de567ea6ac0ef29ce468c" prot="private" virt="non-virtual"><scope>SliderValueToText</scope><name>rayTest</name></member>

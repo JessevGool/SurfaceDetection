@@ -15,6 +15,20 @@ float \mbox{\hyperlink{class_slider_value_to_text_a7838a8124830e2e41dcd75bcfaaa7
 \item 
 float \mbox{\hyperlink{class_slider_value_to_text_ac5ebca26de4fdedb8e378dca0a176c77}{grid\+Size}} = 80
 \end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_slider_value_to_text_a5a1ccc256f2a2e0d0b3bdccf6e3b6feb}{Start}} ()
+\item 
+void \mbox{\hyperlink{class_slider_value_to_text_a2699cb48e936ca9fb081e7a073ade184}{Update}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+TMPro.\+Text\+Mesh\+Pro\+UGUI \mbox{\hyperlink{class_slider_value_to_text_ac5d4f57efdcb28e73379ae096f67244b}{text\+Slider\+Value}}
+\item 
+\mbox{\hyperlink{class_ray_test}{Ray\+Test}} \mbox{\hyperlink{class_slider_value_to_text_a4b92015a482de567ea6ac0ef29ce468c}{ray\+Test}}
+\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
@@ -26,6 +40,28 @@ Jesse van Gool \& Maurice Brouwers
 \end{DoxyVersion}
 
 
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_slider_value_to_text_a5a1ccc256f2a2e0d0b3bdccf6e3b6feb}\label{class_slider_value_to_text_a5a1ccc256f2a2e0d0b3bdccf6e3b6feb}} 
+\index{SliderValueToText@{SliderValueToText}!Start@{Start}}
+\index{Start@{Start}!SliderValueToText@{SliderValueToText}}
+\doxysubsubsection{\texorpdfstring{Start()}{Start()}}
+{\footnotesize\ttfamily void Slider\+Value\+To\+Text.\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_slider_value_to_text_a2699cb48e936ca9fb081e7a073ade184}\label{class_slider_value_to_text_a2699cb48e936ca9fb081e7a073ade184}} 
+\index{SliderValueToText@{SliderValueToText}!Update@{Update}}
+\index{Update@{Update}!SliderValueToText@{SliderValueToText}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Slider\+Value\+To\+Text.\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Update method that gets called once per frame. Is used to update settings in the ray\+Test class and the UI
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_ray_test_a1536d8e7c2847146d00e2d5885fcc0a5}{Ray\+Test\+::scan\+Resolution}} 
+
+\mbox{\hyperlink{class_ray_test_a098b2dc8abbde46e39fe98e49f42e8f3}{Ray\+Test\+::grid\+Size}} 
+\end{DoxySeeAlso}
+
+
 \doxysubsection{Member Data Documentation}
 \mbox{\Hypertarget{class_slider_value_to_text_ac5ebca26de4fdedb8e378dca0a176c77}\label{class_slider_value_to_text_ac5ebca26de4fdedb8e378dca0a176c77}} 
 \index{SliderValueToText@{SliderValueToText}!gridSize@{gridSize}}
@@ -33,17 +69,29 @@ Jesse van Gool \& Maurice Brouwers
 \doxysubsubsection{\texorpdfstring{gridSize}{gridSize}}
 {\footnotesize\ttfamily float Slider\+Value\+To\+Text.\+grid\+Size = 80}
 
+Standard gridsize of the scan on one of the axes Standard is 80 \mbox{\Hypertarget{class_slider_value_to_text_a4b92015a482de567ea6ac0ef29ce468c}\label{class_slider_value_to_text_a4b92015a482de567ea6ac0ef29ce468c}} 
+\index{SliderValueToText@{SliderValueToText}!rayTest@{rayTest}}
+\index{rayTest@{rayTest}!SliderValueToText@{SliderValueToText}}
+\doxysubsubsection{\texorpdfstring{rayTest}{rayTest}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_ray_test}{Ray\+Test}} Slider\+Value\+To\+Text.\+ray\+Test\hspace{0.3cm}{\ttfamily [private]}}
+
 \mbox{\Hypertarget{class_slider_value_to_text_a7838a8124830e2e41dcd75bcfaaa7914}\label{class_slider_value_to_text_a7838a8124830e2e41dcd75bcfaaa7914}} 
 \index{SliderValueToText@{SliderValueToText}!resolution@{resolution}}
 \index{resolution@{resolution}!SliderValueToText@{SliderValueToText}}
 \doxysubsubsection{\texorpdfstring{resolution}{resolution}}
 {\footnotesize\ttfamily float Slider\+Value\+To\+Text.\+resolution = 0.\+05f}
 
-\mbox{\Hypertarget{class_slider_value_to_text_a9ae7274884f2df48ffcdb85ffc33317e}\label{class_slider_value_to_text_a9ae7274884f2df48ffcdb85ffc33317e}} 
+Standard resolution of the scan Increment of 0.\+05 \mbox{\Hypertarget{class_slider_value_to_text_a9ae7274884f2df48ffcdb85ffc33317e}\label{class_slider_value_to_text_a9ae7274884f2df48ffcdb85ffc33317e}} 
 \index{SliderValueToText@{SliderValueToText}!sliderUI@{sliderUI}}
 \index{sliderUI@{sliderUI}!SliderValueToText@{SliderValueToText}}
 \doxysubsubsection{\texorpdfstring{sliderUI}{sliderUI}}
 {\footnotesize\ttfamily Slider Slider\+Value\+To\+Text.\+slider\+UI}
+
+\mbox{\Hypertarget{class_slider_value_to_text_ac5d4f57efdcb28e73379ae096f67244b}\label{class_slider_value_to_text_ac5d4f57efdcb28e73379ae096f67244b}} 
+\index{SliderValueToText@{SliderValueToText}!textSliderValue@{textSliderValue}}
+\index{textSliderValue@{textSliderValue}!SliderValueToText@{SliderValueToText}}
+\doxysubsubsection{\texorpdfstring{textSliderValue}{textSliderValue}}
+{\footnotesize\ttfamily TMPro.\+Text\+Mesh\+Pro\+UGUI Slider\+Value\+To\+Text.\+text\+Slider\+Value\hspace{0.3cm}{\ttfamily [private]}}
 
 
 

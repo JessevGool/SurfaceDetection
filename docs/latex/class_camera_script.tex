@@ -13,6 +13,28 @@ float \mbox{\hyperlink{class_camera_script_a6aa48c331de1865f340065884ffa9ade}{sp
 \item 
 float \mbox{\hyperlink{class_camera_script_aed24513073fa9bc58de1cacc28422199}{speedV}} = 2.\+0f
 \end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_camera_script_a73f305dadb9b5b88d6efcc80a9073710}{Start}} ()
+\item 
+void \mbox{\hyperlink{class_camera_script_a292a7b3c52fd201f42e5b0f25c7b4d2d}{Update}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{class_camera_script_a3a3120a4a7a1e87cca30071873d0bcb0}{camera\+Rotate\+Speed}} = 2.\+0f
+\item 
+float \mbox{\hyperlink{class_camera_script_a11e43ca1ed13d2e9021709599e0a9e88}{camera\+Move\+Speed}} = 0.\+5f
+\item 
+float \mbox{\hyperlink{class_camera_script_adc4843808c4451e0bb4208088d93cf0f}{scroll\+Speed}} = 10.\+0f
+\item 
+float \mbox{\hyperlink{class_camera_script_a309b1bcbdda1b067a9dad18fce8ed8e4}{yaw}} = 0.\+0f
+\item 
+float \mbox{\hyperlink{class_camera_script_a89560eabd35ee6f809ae1aad62c5e7dd}{pitch}} = -\/200.\+0f
+\item 
+bool \mbox{\hyperlink{class_camera_script_ac0b54d8036b93b9ac9f43c7f7d2bb920}{mouse\+Button\+Down}} = false
+\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
@@ -24,7 +46,52 @@ Jesse van Gool \& Maurice Brouwers
 \end{DoxyVersion}
 
 
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_camera_script_a73f305dadb9b5b88d6efcc80a9073710}\label{class_camera_script_a73f305dadb9b5b88d6efcc80a9073710}} 
+\index{CameraScript@{CameraScript}!Start@{Start}}
+\index{Start@{Start}!CameraScript@{CameraScript}}
+\doxysubsubsection{\texorpdfstring{Start()}{Start()}}
+{\footnotesize\ttfamily void Camera\+Script.\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_camera_script_a292a7b3c52fd201f42e5b0f25c7b4d2d}\label{class_camera_script_a292a7b3c52fd201f42e5b0f25c7b4d2d}} 
+\index{CameraScript@{CameraScript}!Update@{Update}}
+\index{Update@{Update}!CameraScript@{CameraScript}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Camera\+Script.\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Gets called once per frame, used to update the user camera 
+
 \doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_camera_script_a11e43ca1ed13d2e9021709599e0a9e88}\label{class_camera_script_a11e43ca1ed13d2e9021709599e0a9e88}} 
+\index{CameraScript@{CameraScript}!cameraMoveSpeed@{cameraMoveSpeed}}
+\index{cameraMoveSpeed@{cameraMoveSpeed}!CameraScript@{CameraScript}}
+\doxysubsubsection{\texorpdfstring{cameraMoveSpeed}{cameraMoveSpeed}}
+{\footnotesize\ttfamily float Camera\+Script.\+camera\+Move\+Speed = 0.\+5f\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_camera_script_a3a3120a4a7a1e87cca30071873d0bcb0}\label{class_camera_script_a3a3120a4a7a1e87cca30071873d0bcb0}} 
+\index{CameraScript@{CameraScript}!cameraRotateSpeed@{cameraRotateSpeed}}
+\index{cameraRotateSpeed@{cameraRotateSpeed}!CameraScript@{CameraScript}}
+\doxysubsubsection{\texorpdfstring{cameraRotateSpeed}{cameraRotateSpeed}}
+{\footnotesize\ttfamily float Camera\+Script.\+camera\+Rotate\+Speed = 2.\+0f\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_camera_script_ac0b54d8036b93b9ac9f43c7f7d2bb920}\label{class_camera_script_ac0b54d8036b93b9ac9f43c7f7d2bb920}} 
+\index{CameraScript@{CameraScript}!mouseButtonDown@{mouseButtonDown}}
+\index{mouseButtonDown@{mouseButtonDown}!CameraScript@{CameraScript}}
+\doxysubsubsection{\texorpdfstring{mouseButtonDown}{mouseButtonDown}}
+{\footnotesize\ttfamily bool Camera\+Script.\+mouse\+Button\+Down = false\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_camera_script_a89560eabd35ee6f809ae1aad62c5e7dd}\label{class_camera_script_a89560eabd35ee6f809ae1aad62c5e7dd}} 
+\index{CameraScript@{CameraScript}!pitch@{pitch}}
+\index{pitch@{pitch}!CameraScript@{CameraScript}}
+\doxysubsubsection{\texorpdfstring{pitch}{pitch}}
+{\footnotesize\ttfamily float Camera\+Script.\+pitch = -\/200.\+0f\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_camera_script_adc4843808c4451e0bb4208088d93cf0f}\label{class_camera_script_adc4843808c4451e0bb4208088d93cf0f}} 
+\index{CameraScript@{CameraScript}!scrollSpeed@{scrollSpeed}}
+\index{scrollSpeed@{scrollSpeed}!CameraScript@{CameraScript}}
+\doxysubsubsection{\texorpdfstring{scrollSpeed}{scrollSpeed}}
+{\footnotesize\ttfamily float Camera\+Script.\+scroll\+Speed = 10.\+0f\hspace{0.3cm}{\ttfamily [private]}}
+
 \mbox{\Hypertarget{class_camera_script_a6aa48c331de1865f340065884ffa9ade}\label{class_camera_script_a6aa48c331de1865f340065884ffa9ade}} 
 \index{CameraScript@{CameraScript}!speedH@{speedH}}
 \index{speedH@{speedH}!CameraScript@{CameraScript}}
@@ -36,6 +103,12 @@ Jesse van Gool \& Maurice Brouwers
 \index{speedV@{speedV}!CameraScript@{CameraScript}}
 \doxysubsubsection{\texorpdfstring{speedV}{speedV}}
 {\footnotesize\ttfamily float Camera\+Script.\+speedV = 2.\+0f}
+
+\mbox{\Hypertarget{class_camera_script_a309b1bcbdda1b067a9dad18fce8ed8e4}\label{class_camera_script_a309b1bcbdda1b067a9dad18fce8ed8e4}} 
+\index{CameraScript@{CameraScript}!yaw@{yaw}}
+\index{yaw@{yaw}!CameraScript@{CameraScript}}
+\doxysubsubsection{\texorpdfstring{yaw}{yaw}}
+{\footnotesize\ttfamily float Camera\+Script.\+yaw = 0.\+0f\hspace{0.3cm}{\ttfamily [private]}}
 
 
 

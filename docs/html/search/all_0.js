@@ -1,7 +1,28 @@
 var searchData=
 [
-  ['_5fne_0',['_NE',['../class_roof_layer.html#a2928528f6e8161abccf386316469a333',1,'RoofLayer']]],
-  ['_5fnw_1',['_NW',['../class_roof_layer.html#a9f5ba786e4070283168d575ddae56bad',1,'RoofLayer']]],
-  ['_5fse_2',['_SE',['../class_roof_layer.html#a964ffa8ec77079bd63c1253cca6eaca8',1,'RoofLayer']]],
-  ['_5fsw_3',['_SW',['../class_roof_layer.html#a42475325ed2d4f75d4a18a6103b553e4',1,'RoofLayer']]]
+  ['_5fcollision_0',['_collision',['../class_ray_test.html#ae8583388edc91a27703089fc228445f9',1,'RayTest']]],
+  ['_5fcurrentindexlist_1',['_currentIndexList',['../class_dummiesman_1_1_o_b_j_object_builder.html#ac620bed9468b484a422f2bd106a7e763',1,'Dummiesman::OBJObjectBuilder']]],
+  ['_5fglobalindexremap_2',['_globalIndexRemap',['../class_dummiesman_1_1_o_b_j_object_builder.html#a7829015410e28faa13c6f7788699feb9',1,'Dummiesman::OBJObjectBuilder']]],
+  ['_5fhit_3',['_hit',['../class_ray_test.html#a63de1d8d2a840a35f937649ba8cc25a1',1,'RayTest']]],
+  ['_5fhits_4',['_hits',['../class_ray_test.html#a24fd8f41226daad3c625374e8d0ad811',1,'RayTest']]],
+  ['_5flastmaterial_5',['_lastMaterial',['../class_dummiesman_1_1_o_b_j_object_builder.html#a3ad033d5cf399609835719dd53a150a6',1,'Dummiesman::OBJObjectBuilder']]],
+  ['_5floader_6',['_loader',['../class_dummiesman_1_1_o_b_j_object_builder.html#a5d90513d8fbae61699c4281fd73c0c57',1,'Dummiesman::OBJObjectBuilder']]],
+  ['_5fmaterialindices_7',['_materialIndices',['../class_dummiesman_1_1_o_b_j_object_builder.html#a3241b6bcf1a8d1923d4fb4d90d0d287e',1,'Dummiesman::OBJObjectBuilder']]],
+  ['_5fname_8',['_name',['../class_dummiesman_1_1_o_b_j_object_builder.html#aadf1dff645dbc0f5ccec7e3495afc8a0',1,'Dummiesman::OBJObjectBuilder']]],
+  ['_5fne_9',['_NE',['../class_roof_layer.html#a2928528f6e8161abccf386316469a333',1,'RoofLayer']]],
+  ['_5fnormals_10',['_normals',['../class_dummiesman_1_1_o_b_j_object_builder.html#a4e43408a009f306275eafb4a046fc525',1,'Dummiesman::OBJObjectBuilder']]],
+  ['_5fnw_11',['_NW',['../class_roof_layer.html#a9f5ba786e4070283168d575ddae56bad',1,'RoofLayer']]],
+  ['_5fobjfileinfo_12',['_objFileInfo',['../class_m_t_l_loader.html#a5235b044c44ffbd9ac80e9b6587f9141',1,'MTLLoader']]],
+  ['_5fobjinfo_13',['_objInfo',['../class_dummiesman_1_1_o_b_j_loader.html#a5050cb2c5507b7e3d6103e5e4dbed78c',1,'Dummiesman::OBJLoader']]],
+  ['_5fraypos_14',['_rayPos',['../class_ray_test.html#a85a8c99c02da63004bd8037ab2fd5647',1,'RayTest']]],
+  ['_5frays_15',['_rays',['../class_ray_test.html#a7a23d68907dd2b2bb999eb56ff6671e8',1,'RayTest']]],
+  ['_5frooflayers_16',['_roofLayers',['../class_ray_test.html#ab85bebdd836409e9134886a84ca79fc4',1,'RayTest']]],
+  ['_5fse_17',['_SE',['../class_roof_layer.html#a964ffa8ec77079bd63c1253cca6eaca8',1,'RoofLayer']]],
+  ['_5fsw_18',['_SW',['../class_roof_layer.html#a42475325ed2d4f75d4a18a6103b553e4',1,'RoofLayer']]],
+  ['_5ft1_19',['_t1',['../class_ray_test.html#ad28bd35745c6733d3ddf653a317689b2',1,'RayTest']]],
+  ['_5ft1finished_20',['_t1Finished',['../class_ray_test.html#a9804deacbcad84786aad180f9b87a9b7',1,'RayTest']]],
+  ['_5ft2_21',['_t2',['../class_ray_test.html#a976c1b9bdb2cbe2cee0469222f5372f6',1,'RayTest']]],
+  ['_5ft2finished_22',['_t2Finished',['../class_ray_test.html#a464809a15b8df580eb2a3b877f332dc8',1,'RayTest']]],
+  ['_5fuvs_23',['_uvs',['../class_dummiesman_1_1_o_b_j_object_builder.html#ab8fa59037fe0c7cba8c117a2169b586a',1,'Dummiesman::OBJObjectBuilder']]],
+  ['_5fvertices_24',['_vertices',['../class_dummiesman_1_1_o_b_j_object_builder.html#a7fe2ae3a774706275ffd353492e57e88',1,'Dummiesman::OBJObjectBuilder']]]
 ];

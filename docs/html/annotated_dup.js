@@ -25,7 +25,7 @@ var annotated_dup =
     [ "MainMenu", "class_main_menu.html", "class_main_menu" ],
     [ "MTLLoader", "class_m_t_l_loader.html", "class_m_t_l_loader" ],
     [ "ObjFromFile", "class_obj_from_file.html", "class_obj_from_file" ],
-    [ "ObjFromStream", "class_obj_from_stream.html", null ],
+    [ "ObjFromStream", "class_obj_from_stream.html", "class_obj_from_stream" ],
     [ "RayTest", "class_ray_test.html", "class_ray_test" ],
     [ "RoofLayer", "class_roof_layer.html", "class_roof_layer" ],
     [ "SliderValueToText", "class_slider_value_to_text.html", "class_slider_value_to_text" ]

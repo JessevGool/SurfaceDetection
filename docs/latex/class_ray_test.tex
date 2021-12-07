@@ -46,6 +46,44 @@ Game\+Object \mbox{\hyperlink{class_ray_test_ad40d1ea780d4bc63283e5d5d587a75d7}{
 \item 
 Game\+Object \mbox{\hyperlink{class_ray_test_abfec699a1845cfe89f9e781f6037f520}{SEIND}}
 \end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_ray_test_ad35d07b8b3422832fed5a3df005710be}{Start}} ()
+\item 
+void \mbox{\hyperlink{class_ray_test_a016d8eafab1fb060804755d3f191830c}{Create\+Layers}} ()
+\item 
+void \mbox{\hyperlink{class_ray_test_a2810fe8028706e9f1521651dc94bd241}{Detect\+Slopes}} ()
+\item 
+void \mbox{\hyperlink{class_ray_test_a5b388640a86c18a45727cf5828309397}{Make\+Layer\+Plane}} (List$<$ Vector3 $>$ layer\+Hits, float angleX, float angleZ)
+\item 
+void \mbox{\hyperlink{class_ray_test_ab5e9662425ab5c69ec8094318c4681e6}{On\+Draw\+Gizmos}} ()
+\item 
+void \mbox{\hyperlink{class_ray_test_a46cceb5483afd437a523424f6cddb2cc}{Update}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+List$<$ Raycast\+Hit $>$ \mbox{\hyperlink{class_ray_test_a24fd8f41226daad3c625374e8d0ad811}{\+\_\+hits}} = new List$<$Raycast\+Hit$>$()
+\item 
+List$<$ \mbox{\hyperlink{class_roof_layer}{Roof\+Layer}} $>$ \mbox{\hyperlink{class_ray_test_ab85bebdd836409e9134886a84ca79fc4}{\+\_\+roof\+Layers}} = new List$<$\mbox{\hyperlink{class_roof_layer}{Roof\+Layer}}$>$()
+\item 
+Vector3 \mbox{\hyperlink{class_ray_test_ae8583388edc91a27703089fc228445f9}{\+\_\+collision}} = Vector3.\+zero
+\item 
+int \mbox{\hyperlink{class_ray_test_a7a23d68907dd2b2bb999eb56ff6671e8}{\+\_\+rays}} = 0
+\item 
+Vector3 \mbox{\hyperlink{class_ray_test_a85a8c99c02da63004bd8037ab2fd5647}{\+\_\+ray\+Pos}}
+\item 
+Thread \mbox{\hyperlink{class_ray_test_ad28bd35745c6733d3ddf653a317689b2}{\+\_\+t1}}
+\item 
+Thread \mbox{\hyperlink{class_ray_test_a976c1b9bdb2cbe2cee0469222f5372f6}{\+\_\+t2}}
+\item 
+bool \mbox{\hyperlink{class_ray_test_a9804deacbcad84786aad180f9b87a9b7}{\+\_\+t1\+Finished}} = false
+\item 
+bool \mbox{\hyperlink{class_ray_test_a464809a15b8df580eb2a3b877f332dc8}{\+\_\+t2\+Finished}} = false
+\item 
+Raycast\+Hit \mbox{\hyperlink{class_ray_test_a63de1d8d2a840a35f937649ba8cc25a1}{\+\_\+hit}}
+\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
@@ -58,6 +96,53 @@ Jesse van Gool \& Maurice Brouwers
 
 
 \doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_ray_test_a016d8eafab1fb060804755d3f191830c}\label{class_ray_test_a016d8eafab1fb060804755d3f191830c}} 
+\index{RayTest@{RayTest}!CreateLayers@{CreateLayers}}
+\index{CreateLayers@{CreateLayers}!RayTest@{RayTest}}
+\doxysubsubsection{\texorpdfstring{CreateLayers()}{CreateLayers()}}
+{\footnotesize\ttfamily void Ray\+Test.\+Create\+Layers (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+This method creates the layers based on the hits inside of the \+\_\+hits list The method only finds flat layers, another method is used for angled layers \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_ray_test_a24fd8f41226daad3c625374e8d0ad811}{\+\_\+hits}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_ray_test_a2810fe8028706e9f1521651dc94bd241}\label{class_ray_test_a2810fe8028706e9f1521651dc94bd241}} 
+\index{RayTest@{RayTest}!DetectSlopes@{DetectSlopes}}
+\index{DetectSlopes@{DetectSlopes}!RayTest@{RayTest}}
+\doxysubsubsection{\texorpdfstring{DetectSlopes()}{DetectSlopes()}}
+{\footnotesize\ttfamily void Ray\+Test.\+Detect\+Slopes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+This method detects the angled layers using the \+\_\+hits list \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_ray_test_a24fd8f41226daad3c625374e8d0ad811}{\+\_\+hits}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_ray_test_a5b388640a86c18a45727cf5828309397}\label{class_ray_test_a5b388640a86c18a45727cf5828309397}} 
+\index{RayTest@{RayTest}!MakeLayerPlane@{MakeLayerPlane}}
+\index{MakeLayerPlane@{MakeLayerPlane}!RayTest@{RayTest}}
+\doxysubsubsection{\texorpdfstring{MakeLayerPlane()}{MakeLayerPlane()}}
+{\footnotesize\ttfamily void Ray\+Test.\+Make\+Layer\+Plane (\begin{DoxyParamCaption}\item[{List$<$ Vector3 $>$}]{layer\+Hits,  }\item[{float}]{angleX,  }\item[{float}]{angleZ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+the method creates a plane on the area that these hits all share in common and are measured by the most outer coordinates. The center point is determined by the location of the most outer coordinates divided by 2.
+
+
+\begin{DoxyParams}{Parameters}
+{\em layer\+Hits} & a list of hits in a layer \\
+\hline
+{\em angleX} & the x angle used to set the objects rotation \\
+\hline
+{\em angleZ} & the z angle used to set the objects rotation \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_ray_test_ab5e9662425ab5c69ec8094318c4681e6}\label{class_ray_test_ab5e9662425ab5c69ec8094318c4681e6}} 
+\index{RayTest@{RayTest}!OnDrawGizmos@{OnDrawGizmos}}
+\index{OnDrawGizmos@{OnDrawGizmos}!RayTest@{RayTest}}
+\doxysubsubsection{\texorpdfstring{OnDrawGizmos()}{OnDrawGizmos()}}
+{\footnotesize\ttfamily void Ray\+Test.\+On\+Draw\+Gizmos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_ray_test_ad35d07b8b3422832fed5a3df005710be}\label{class_ray_test_ad35d07b8b3422832fed5a3df005710be}} 
+\index{RayTest@{RayTest}!Start@{Start}}
+\index{Start@{Start}!RayTest@{RayTest}}
+\doxysubsubsection{\texorpdfstring{Start()}{Start()}}
+{\footnotesize\ttfamily void Ray\+Test.\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
 \mbox{\Hypertarget{class_ray_test_a5e5101321bc7716c0740dea3900ca14d}\label{class_ray_test_a5e5101321bc7716c0740dea3900ca14d}} 
 \index{RayTest@{RayTest}!StartScan@{StartScan}}
 \index{StartScan@{StartScan}!RayTest@{RayTest}}
@@ -76,9 +161,83 @@ This method initializes the scan. The scan size is based on the size of the pare
 \doxysubsubsection{\texorpdfstring{SwitchDrawLayers()}{SwitchDrawLayers()}}
 {\footnotesize\ttfamily void Ray\+Test.\+Switch\+Draw\+Layers (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
+\mbox{\Hypertarget{class_ray_test_a46cceb5483afd437a523424f6cddb2cc}\label{class_ray_test_a46cceb5483afd437a523424f6cddb2cc}} 
+\index{RayTest@{RayTest}!Update@{Update}}
+\index{Update@{Update}!RayTest@{RayTest}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Ray\+Test.\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
 
 
 \doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_ray_test_ae8583388edc91a27703089fc228445f9}\label{class_ray_test_ae8583388edc91a27703089fc228445f9}} 
+\index{RayTest@{RayTest}!\_collision@{\_collision}}
+\index{\_collision@{\_collision}!RayTest@{RayTest}}
+\doxysubsubsection{\texorpdfstring{\_collision}{\_collision}}
+{\footnotesize\ttfamily Vector3 Ray\+Test.\+\_\+collision = Vector3.\+zero\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_ray_test_a63de1d8d2a840a35f937649ba8cc25a1}\label{class_ray_test_a63de1d8d2a840a35f937649ba8cc25a1}} 
+\index{RayTest@{RayTest}!\_hit@{\_hit}}
+\index{\_hit@{\_hit}!RayTest@{RayTest}}
+\doxysubsubsection{\texorpdfstring{\_hit}{\_hit}}
+{\footnotesize\ttfamily Raycast\+Hit Ray\+Test.\+\_\+hit\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_ray_test_a24fd8f41226daad3c625374e8d0ad811}\label{class_ray_test_a24fd8f41226daad3c625374e8d0ad811}} 
+\index{RayTest@{RayTest}!\_hits@{\_hits}}
+\index{\_hits@{\_hits}!RayTest@{RayTest}}
+\doxysubsubsection{\texorpdfstring{\_hits}{\_hits}}
+{\footnotesize\ttfamily List$<$Raycast\+Hit$>$ Ray\+Test.\+\_\+hits = new List$<$Raycast\+Hit$>$()\hspace{0.3cm}{\ttfamily [private]}}
+
+List which stores all the hits detected by the raycast \mbox{\Hypertarget{class_ray_test_a85a8c99c02da63004bd8037ab2fd5647}\label{class_ray_test_a85a8c99c02da63004bd8037ab2fd5647}} 
+\index{RayTest@{RayTest}!\_rayPos@{\_rayPos}}
+\index{\_rayPos@{\_rayPos}!RayTest@{RayTest}}
+\doxysubsubsection{\texorpdfstring{\_rayPos}{\_rayPos}}
+{\footnotesize\ttfamily Vector3 Ray\+Test.\+\_\+ray\+Pos\hspace{0.3cm}{\ttfamily [private]}}
+
+Variable containing the position of the next ray origin position \mbox{\Hypertarget{class_ray_test_a7a23d68907dd2b2bb999eb56ff6671e8}\label{class_ray_test_a7a23d68907dd2b2bb999eb56ff6671e8}} 
+\index{RayTest@{RayTest}!\_rays@{\_rays}}
+\index{\_rays@{\_rays}!RayTest@{RayTest}}
+\doxysubsubsection{\texorpdfstring{\_rays}{\_rays}}
+{\footnotesize\ttfamily int Ray\+Test.\+\_\+rays = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_ray_test_ab85bebdd836409e9134886a84ca79fc4}\label{class_ray_test_ab85bebdd836409e9134886a84ca79fc4}} 
+\index{RayTest@{RayTest}!\_roofLayers@{\_roofLayers}}
+\index{\_roofLayers@{\_roofLayers}!RayTest@{RayTest}}
+\doxysubsubsection{\texorpdfstring{\_roofLayers}{\_roofLayers}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{class_roof_layer}{Roof\+Layer}}$>$ Ray\+Test.\+\_\+roof\+Layers = new List$<$\mbox{\hyperlink{class_roof_layer}{Roof\+Layer}}$>$()\hspace{0.3cm}{\ttfamily [private]}}
+
+List which stores the found layers \mbox{\Hypertarget{class_ray_test_ad28bd35745c6733d3ddf653a317689b2}\label{class_ray_test_ad28bd35745c6733d3ddf653a317689b2}} 
+\index{RayTest@{RayTest}!\_t1@{\_t1}}
+\index{\_t1@{\_t1}!RayTest@{RayTest}}
+\doxysubsubsection{\texorpdfstring{\_t1}{\_t1}}
+{\footnotesize\ttfamily Thread Ray\+Test.\+\_\+t1\hspace{0.3cm}{\ttfamily [private]}}
+
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000001}{Deprecated}}]Used for threading, can\textquotesingle{}t be used because of Unity threading limitations \end{DoxyRefDesc}
+\mbox{\Hypertarget{class_ray_test_a9804deacbcad84786aad180f9b87a9b7}\label{class_ray_test_a9804deacbcad84786aad180f9b87a9b7}} 
+\index{RayTest@{RayTest}!\_t1Finished@{\_t1Finished}}
+\index{\_t1Finished@{\_t1Finished}!RayTest@{RayTest}}
+\doxysubsubsection{\texorpdfstring{\_t1Finished}{\_t1Finished}}
+{\footnotesize\ttfamily bool Ray\+Test.\+\_\+t1\+Finished = false\hspace{0.3cm}{\ttfamily [private]}}
+
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000003}{Deprecated}}]Used for threading, can\textquotesingle{}t be used because of Unity threading limitations Is still used to switch a bool after finding layers \end{DoxyRefDesc}
+\mbox{\Hypertarget{class_ray_test_a976c1b9bdb2cbe2cee0469222f5372f6}\label{class_ray_test_a976c1b9bdb2cbe2cee0469222f5372f6}} 
+\index{RayTest@{RayTest}!\_t2@{\_t2}}
+\index{\_t2@{\_t2}!RayTest@{RayTest}}
+\doxysubsubsection{\texorpdfstring{\_t2}{\_t2}}
+{\footnotesize\ttfamily Thread Ray\+Test.\+\_\+t2\hspace{0.3cm}{\ttfamily [private]}}
+
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000002}{Deprecated}}]Used for threading, can\textquotesingle{}t be used because of Unity threading limitations \end{DoxyRefDesc}
+\mbox{\Hypertarget{class_ray_test_a464809a15b8df580eb2a3b877f332dc8}\label{class_ray_test_a464809a15b8df580eb2a3b877f332dc8}} 
+\index{RayTest@{RayTest}!\_t2Finished@{\_t2Finished}}
+\index{\_t2Finished@{\_t2Finished}!RayTest@{RayTest}}
+\doxysubsubsection{\texorpdfstring{\_t2Finished}{\_t2Finished}}
+{\footnotesize\ttfamily bool Ray\+Test.\+\_\+t2\+Finished = false\hspace{0.3cm}{\ttfamily [private]}}
+
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000004}{Deprecated}}]Used for threading, can\textquotesingle{}t be used because of Unity threading limitations Is still used to switch a bool after finding layers \end{DoxyRefDesc}
 \mbox{\Hypertarget{class_ray_test_a841bdac9035bae0d349ea304e03aeecd}\label{class_ray_test_a841bdac9035bae0d349ea304e03aeecd}} 
 \index{RayTest@{RayTest}!drawAngledLayers@{drawAngledLayers}}
 \index{drawAngledLayers@{drawAngledLayers}!RayTest@{RayTest}}
@@ -164,7 +323,7 @@ variable which sets the distance between the rays min = 0.\+01f max = 1f default
 {\footnotesize\ttfamily bool Ray\+Test.\+start\+Scan\+Bool = false}
 
 boolean variable used by another script to start the scan in the update method \begin{DoxySeeAlso}{See also}
-Ray\+Test\+::\+Update() 
+\mbox{\hyperlink{class_ray_test_a46cceb5483afd437a523424f6cddb2cc}{Ray\+Test\+::\+Update()}} 
 \end{DoxySeeAlso}
 \mbox{\Hypertarget{class_ray_test_ad40d1ea780d4bc63283e5d5d587a75d7}\label{class_ray_test_ad40d1ea780d4bc63283e5d5d587a75d7}} 
 \index{RayTest@{RayTest}!SWIND@{SWIND}}

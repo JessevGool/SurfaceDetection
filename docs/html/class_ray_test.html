@@ -85,6 +85,8 @@ $(document).ready(function(){initNavTree('class_ray_test.html',''); initResizabl
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_ray_test-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">RayTest Class Reference</div></div>
 </div><!--header-->
@@ -135,11 +137,202 @@ Public Attributes</h2></td></tr>
 <tr class="separator:ad40d1ea780d4bc63283e5d5d587a75d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abfec699a1845cfe89f9e781f6037f520"><td class="memItemLeft" align="right" valign="top">GameObject&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ray_test.html#abfec699a1845cfe89f9e781f6037f520">SEIND</a></td></tr>
 <tr class="separator:abfec699a1845cfe89f9e781f6037f520"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:ad35d07b8b3422832fed5a3df005710be"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ray_test.html#ad35d07b8b3422832fed5a3df005710be">Start</a> ()</td></tr>
+<tr class="separator:ad35d07b8b3422832fed5a3df005710be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a016d8eafab1fb060804755d3f191830c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ray_test.html#a016d8eafab1fb060804755d3f191830c">CreateLayers</a> ()</td></tr>
+<tr class="separator:a016d8eafab1fb060804755d3f191830c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2810fe8028706e9f1521651dc94bd241"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ray_test.html#a2810fe8028706e9f1521651dc94bd241">DetectSlopes</a> ()</td></tr>
+<tr class="separator:a2810fe8028706e9f1521651dc94bd241"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b388640a86c18a45727cf5828309397"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ray_test.html#a5b388640a86c18a45727cf5828309397">MakeLayerPlane</a> (List&lt; Vector3 &gt; layerHits, float angleX, float angleZ)</td></tr>
+<tr class="separator:a5b388640a86c18a45727cf5828309397"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5e9662425ab5c69ec8094318c4681e6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ray_test.html#ab5e9662425ab5c69ec8094318c4681e6">OnDrawGizmos</a> ()</td></tr>
+<tr class="separator:ab5e9662425ab5c69ec8094318c4681e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46cceb5483afd437a523424f6cddb2cc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ray_test.html#a46cceb5483afd437a523424f6cddb2cc">Update</a> ()</td></tr>
+<tr class="separator:a46cceb5483afd437a523424f6cddb2cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a24fd8f41226daad3c625374e8d0ad811"><td class="memItemLeft" align="right" valign="top">List&lt; RaycastHit &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ray_test.html#a24fd8f41226daad3c625374e8d0ad811">_hits</a> = new List&lt;RaycastHit&gt;()</td></tr>
+<tr class="separator:a24fd8f41226daad3c625374e8d0ad811"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab85bebdd836409e9134886a84ca79fc4"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="class_roof_layer.html">RoofLayer</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ray_test.html#ab85bebdd836409e9134886a84ca79fc4">_roofLayers</a> = new List&lt;<a class="el" href="class_roof_layer.html">RoofLayer</a>&gt;()</td></tr>
+<tr class="separator:ab85bebdd836409e9134886a84ca79fc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8583388edc91a27703089fc228445f9"><td class="memItemLeft" align="right" valign="top">Vector3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ray_test.html#ae8583388edc91a27703089fc228445f9">_collision</a> = Vector3.zero</td></tr>
+<tr class="separator:ae8583388edc91a27703089fc228445f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a23d68907dd2b2bb999eb56ff6671e8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ray_test.html#a7a23d68907dd2b2bb999eb56ff6671e8">_rays</a> = 0</td></tr>
+<tr class="separator:a7a23d68907dd2b2bb999eb56ff6671e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85a8c99c02da63004bd8037ab2fd5647"><td class="memItemLeft" align="right" valign="top">Vector3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ray_test.html#a85a8c99c02da63004bd8037ab2fd5647">_rayPos</a></td></tr>
+<tr class="separator:a85a8c99c02da63004bd8037ab2fd5647"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad28bd35745c6733d3ddf653a317689b2"><td class="memItemLeft" align="right" valign="top">Thread&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ray_test.html#ad28bd35745c6733d3ddf653a317689b2">_t1</a></td></tr>
+<tr class="separator:ad28bd35745c6733d3ddf653a317689b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a976c1b9bdb2cbe2cee0469222f5372f6"><td class="memItemLeft" align="right" valign="top">Thread&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ray_test.html#a976c1b9bdb2cbe2cee0469222f5372f6">_t2</a></td></tr>
+<tr class="separator:a976c1b9bdb2cbe2cee0469222f5372f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9804deacbcad84786aad180f9b87a9b7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ray_test.html#a9804deacbcad84786aad180f9b87a9b7">_t1Finished</a> = false</td></tr>
+<tr class="separator:a9804deacbcad84786aad180f9b87a9b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a464809a15b8df580eb2a3b877f332dc8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ray_test.html#a464809a15b8df580eb2a3b877f332dc8">_t2Finished</a> = false</td></tr>
+<tr class="separator:a464809a15b8df580eb2a3b877f332dc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63de1d8d2a840a35f937649ba8cc25a1"><td class="memItemLeft" align="right" valign="top">RaycastHit&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ray_test.html#a63de1d8d2a840a35f937649ba8cc25a1">_hit</a></td></tr>
+<tr class="separator:a63de1d8d2a840a35f937649ba8cc25a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><dl class="section author"><dt>Author</dt><dd>Jesse van Gool &amp; Maurice Brouwers </dd></dl>
 <dl class="section version"><dt>Version</dt><dd>1.0 </dd></dl>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a016d8eafab1fb060804755d3f191830c" name="a016d8eafab1fb060804755d3f191830c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a016d8eafab1fb060804755d3f191830c">&#9670;&nbsp;</a></span>CreateLayers()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RayTest.CreateLayers </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >This method creates the layers based on the hits inside of the _hits list The method only finds flat layers, another method is used for angled layers </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="class_ray_test.html#a24fd8f41226daad3c625374e8d0ad811">_hits</a> </dd></dl>
+
+</div>
+</div>
+<a id="a2810fe8028706e9f1521651dc94bd241" name="a2810fe8028706e9f1521651dc94bd241"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2810fe8028706e9f1521651dc94bd241">&#9670;&nbsp;</a></span>DetectSlopes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RayTest.DetectSlopes </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >This method detects the angled layers using the _hits list </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="class_ray_test.html#a24fd8f41226daad3c625374e8d0ad811">_hits</a> </dd></dl>
+
+</div>
+</div>
+<a id="a5b388640a86c18a45727cf5828309397" name="a5b388640a86c18a45727cf5828309397"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b388640a86c18a45727cf5828309397">&#9670;&nbsp;</a></span>MakeLayerPlane()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RayTest.MakeLayerPlane </td>
+          <td>(</td>
+          <td class="paramtype">List&lt; Vector3 &gt;&#160;</td>
+          <td class="paramname"><em>layerHits</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>angleX</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>angleZ</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >the method creates a plane on the area that these hits all share in common and are measured by the most outer coordinates. The center point is determined by the location of the most outer coordinates divided by 2.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">layerHits</td><td>a list of hits in a layer </td></tr>
+    <tr><td class="paramname">angleX</td><td>the x angle used to set the objects rotation </td></tr>
+    <tr><td class="paramname">angleZ</td><td>the z angle used to set the objects rotation </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ab5e9662425ab5c69ec8094318c4681e6" name="ab5e9662425ab5c69ec8094318c4681e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5e9662425ab5c69ec8094318c4681e6">&#9670;&nbsp;</a></span>OnDrawGizmos()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RayTest.OnDrawGizmos </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad35d07b8b3422832fed5a3df005710be" name="ad35d07b8b3422832fed5a3df005710be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad35d07b8b3422832fed5a3df005710be">&#9670;&nbsp;</a></span>Start()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RayTest.Start </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a5e5101321bc7716c0740dea3900ca14d" name="a5e5101321bc7716c0740dea3900ca14d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5e5101321bc7716c0740dea3900ca14d">&#9670;&nbsp;</a></span>StartScan()</h2>
 
@@ -192,7 +385,259 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a46cceb5483afd437a523424f6cddb2cc" name="a46cceb5483afd437a523424f6cddb2cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a46cceb5483afd437a523424f6cddb2cc">&#9670;&nbsp;</a></span>Update()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RayTest.Update </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a id="ae8583388edc91a27703089fc228445f9" name="ae8583388edc91a27703089fc228445f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae8583388edc91a27703089fc228445f9">&#9670;&nbsp;</a></span>_collision</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Vector3 RayTest._collision = Vector3.zero</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a63de1d8d2a840a35f937649ba8cc25a1" name="a63de1d8d2a840a35f937649ba8cc25a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a63de1d8d2a840a35f937649ba8cc25a1">&#9670;&nbsp;</a></span>_hit</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">RaycastHit RayTest._hit</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a24fd8f41226daad3c625374e8d0ad811" name="a24fd8f41226daad3c625374e8d0ad811"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24fd8f41226daad3c625374e8d0ad811">&#9670;&nbsp;</a></span>_hits</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt;RaycastHit&gt; RayTest._hits = new List&lt;RaycastHit&gt;()</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >List which stores all the hits detected by the raycast </p>
+
+</div>
+</div>
+<a id="a85a8c99c02da63004bd8037ab2fd5647" name="a85a8c99c02da63004bd8037ab2fd5647"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a85a8c99c02da63004bd8037ab2fd5647">&#9670;&nbsp;</a></span>_rayPos</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Vector3 RayTest._rayPos</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >Variable containing the position of the next ray origin position </p>
+
+</div>
+</div>
+<a id="a7a23d68907dd2b2bb999eb56ff6671e8" name="a7a23d68907dd2b2bb999eb56ff6671e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a23d68907dd2b2bb999eb56ff6671e8">&#9670;&nbsp;</a></span>_rays</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int RayTest._rays = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab85bebdd836409e9134886a84ca79fc4" name="ab85bebdd836409e9134886a84ca79fc4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab85bebdd836409e9134886a84ca79fc4">&#9670;&nbsp;</a></span>_roofLayers</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt;<a class="el" href="class_roof_layer.html">RoofLayer</a>&gt; RayTest._roofLayers = new List&lt;<a class="el" href="class_roof_layer.html">RoofLayer</a>&gt;()</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >List which stores the found layers </p>
+
+</div>
+</div>
+<a id="ad28bd35745c6733d3ddf653a317689b2" name="ad28bd35745c6733d3ddf653a317689b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad28bd35745c6733d3ddf653a317689b2">&#9670;&nbsp;</a></span>_t1</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Thread RayTest._t1</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000001">Deprecated:</a></b></dt><dd>Used for threading, can't be used because of Unity threading limitations </dd></dl>
+
+</div>
+</div>
+<a id="a9804deacbcad84786aad180f9b87a9b7" name="a9804deacbcad84786aad180f9b87a9b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9804deacbcad84786aad180f9b87a9b7">&#9670;&nbsp;</a></span>_t1Finished</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool RayTest._t1Finished = false</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000003">Deprecated:</a></b></dt><dd>Used for threading, can't be used because of Unity threading limitations Is still used to switch a bool after finding layers </dd></dl>
+
+</div>
+</div>
+<a id="a976c1b9bdb2cbe2cee0469222f5372f6" name="a976c1b9bdb2cbe2cee0469222f5372f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a976c1b9bdb2cbe2cee0469222f5372f6">&#9670;&nbsp;</a></span>_t2</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Thread RayTest._t2</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000002">Deprecated:</a></b></dt><dd>Used for threading, can't be used because of Unity threading limitations </dd></dl>
+
+</div>
+</div>
+<a id="a464809a15b8df580eb2a3b877f332dc8" name="a464809a15b8df580eb2a3b877f332dc8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a464809a15b8df580eb2a3b877f332dc8">&#9670;&nbsp;</a></span>_t2Finished</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool RayTest._t2Finished = false</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000004">Deprecated:</a></b></dt><dd>Used for threading, can't be used because of Unity threading limitations Is still used to switch a bool after finding layers </dd></dl>
+
+</div>
+</div>
 <a id="a841bdac9035bae0d349ea304e03aeecd" name="a841bdac9035bae0d349ea304e03aeecd"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a841bdac9035bae0d349ea304e03aeecd">&#9670;&nbsp;</a></span>drawAngledLayers</h2>
 
@@ -371,7 +816,7 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p >boolean variable used by another script to start the scan in the update method </p><dl class="section see"><dt>See also</dt><dd>RayTest::Update() </dd></dl>
+<p >boolean variable used by another script to start the scan in the update method </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="class_ray_test.html#a46cceb5483afd437a523424f6cddb2cc">RayTest::Update()</a> </dd></dl>
 
 </div>
 </div>

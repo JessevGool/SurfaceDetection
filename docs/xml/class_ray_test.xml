@@ -17,7 +17,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" line="21" column="18" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" bodystart="21" bodyend="-1"/>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" line="16" column="18" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" bodystart="16" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_ray_test_1ab85bebdd836409e9134886a84ca79fc4" prot="private" static="no" mutable="no">
         <type>List&lt; <ref refid="class_roof_layer" kindref="compound">RoofLayer</ref> &gt;</type>
@@ -32,7 +32,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" line="26" column="18" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" bodystart="26" bodyend="-1"/>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" line="21" column="18" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" bodystart="21" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_ray_test_1ae8583388edc91a27703089fc228445f9" prot="private" static="no" mutable="no">
         <type>Vector3</type>
@@ -46,7 +46,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" line="27" column="21" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" bodystart="27" bodyend="-1"/>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" line="22" column="21" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" bodystart="22" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_ray_test_1a7a23d68907dd2b2bb999eb56ff6671e8" prot="private" static="no" mutable="no">
         <type>int</type>
@@ -60,7 +60,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" line="28" column="17" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" bodystart="28" bodyend="-1"/>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" line="23" column="17" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" bodystart="23" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_ray_test_1a85a8c99c02da63004bd8037ab2fd5647" prot="private" static="no" mutable="no">
         <type>Vector3</type>
@@ -74,7 +74,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" line="32" column="21" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" bodystart="32" bodyend="-1"/>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" line="27" column="21" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" bodystart="27" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_ray_test_1ad28bd35745c6733d3ddf653a317689b2" prot="private" static="no" mutable="no">
         <type>Thread</type>
@@ -89,7 +89,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" line="36" column="20" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" bodystart="36" bodyend="-1"/>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" line="31" column="20" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" bodystart="31" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_ray_test_1a976c1b9bdb2cbe2cee0469222f5372f6" prot="private" static="no" mutable="no">
         <type>Thread</type>
@@ -104,7 +104,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" line="40" column="20" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" bodystart="40" bodyend="-1"/>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" line="35" column="20" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" bodystart="35" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_ray_test_1a9804deacbcad84786aad180f9b87a9b7" prot="private" static="no" mutable="no">
         <type>bool</type>
@@ -120,7 +120,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" line="45" column="18" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" bodystart="45" bodyend="-1"/>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" line="40" column="18" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" bodystart="40" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_ray_test_1a464809a15b8df580eb2a3b877f332dc8" prot="private" static="no" mutable="no">
         <type>bool</type>
@@ -136,7 +136,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" line="50" column="18" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" bodystart="50" bodyend="-1"/>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" line="45" column="18" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" bodystart="45" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_ray_test_1a63de1d8d2a840a35f937649ba8cc25a1" prot="private" static="no" mutable="no">
         <type>RaycastHit</type>
@@ -149,7 +149,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" line="111" column="24" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" bodystart="111" bodyend="-1"/>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" line="106" column="24" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" bodystart="106" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-attrib">
@@ -168,7 +168,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" line="56" column="17" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" bodystart="56" bodyend="-1"/>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" line="51" column="17" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" bodystart="51" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_ray_test_1a5944252aca3d63901e062b5619b6ebbe" prot="public" static="no" mutable="no">
         <type>bool</type>
@@ -183,7 +183,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" line="60" column="17" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" bodystart="60" bodyend="-1"/>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" line="55" column="17" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" bodystart="55" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_ray_test_1a841bdac9035bae0d349ea304e03aeecd" prot="public" static="no" mutable="no">
         <type>bool</type>
@@ -198,7 +198,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" line="64" column="17" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" bodystart="64" bodyend="-1"/>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" line="59" column="17" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" bodystart="59" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_ray_test_1a91439d12b70c90f2a4c1b2525937c73a" prot="public" static="no" mutable="no">
         <type>bool</type>
@@ -221,7 +221,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" line="73" column="17" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" bodystart="73" bodyend="-1"/>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" line="68" column="17" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" bodystart="68" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_ray_test_1a346f77e691066d936989d3c293156dec" prot="public" static="no" mutable="no">
         <type>bool</type>
@@ -232,13 +232,13 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>boolean variable used by another script to start the scan in the update method <simplesect kind="see"><para>RayTest::Update() </para>
+<para>boolean variable used by another script to start the scan in the update method <simplesect kind="see"><para><ref refid="class_ray_test_1a46cceb5483afd437a523424f6cddb2cc" kindref="member">RayTest::Update()</ref> </para>
 </simplesect>
 </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" line="78" column="17" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" bodystart="78" bodyend="-1"/>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" line="73" column="17" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" bodystart="73" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_ray_test_1a71d750d63365afb87d041519908708d8" prot="public" static="no" mutable="no">
         <type>bool</type>
@@ -254,7 +254,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" line="82" column="17" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" bodystart="82" bodyend="-1"/>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" line="77" column="17" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" bodystart="77" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_ray_test_1a1536d8e7c2847146d00e2d5885fcc0a5" prot="public" static="no" mutable="no">
         <type>float</type>
@@ -269,7 +269,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" line="92" column="18" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" bodystart="92" bodyend="-1"/>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" line="87" column="18" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" bodystart="87" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_ray_test_1a098b2dc8abbde46e39fe98e49f42e8f3" prot="public" static="no" mutable="no">
         <type>float</type>
@@ -284,7 +284,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" line="100" column="18" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" bodystart="100" bodyend="-1"/>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" line="95" column="18" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" bodystart="95" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_ray_test_1a089587bcefc1964813711ac20a40a46d" prot="public" static="no" mutable="no">
         <type>GameObject</type>
@@ -298,7 +298,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" line="104" column="23" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" bodystart="104" bodyend="-1"/>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" line="99" column="23" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" bodystart="99" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_ray_test_1adff5e7f9540f9883844fa77916f572a3" prot="public" static="no" mutable="no">
         <type>LayerMask</type>
@@ -311,7 +311,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" line="105" column="22" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" bodystart="105" bodyend="-1"/>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" line="100" column="22" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" bodystart="100" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_ray_test_1a9419dbcbc914005c6c18c30e0e33d6cd" prot="public" static="no" mutable="no">
         <type>GameObject</type>
@@ -324,7 +324,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" line="106" column="23" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" bodystart="106" bodyend="-1"/>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" line="101" column="23" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" bodystart="101" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_ray_test_1aa788b824c1d631e2bd446c0353611aa4" prot="public" static="no" mutable="no">
         <type>GameObject</type>
@@ -337,7 +337,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" line="107" column="23" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" bodystart="107" bodyend="-1"/>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" line="102" column="23" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" bodystart="102" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_ray_test_1ad40d1ea780d4bc63283e5d5d587a75d7" prot="public" static="no" mutable="no">
         <type>GameObject</type>
@@ -350,7 +350,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" line="108" column="23" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" bodystart="108" bodyend="-1"/>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" line="103" column="23" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" bodystart="103" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_ray_test_1abfec699a1845cfe89f9e781f6037f520" prot="public" static="no" mutable="no">
         <type>GameObject</type>
@@ -363,7 +363,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" line="109" column="23" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" bodystart="109" bodyend="-1"/>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" line="104" column="23" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" bodystart="104" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-func">
@@ -378,7 +378,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" line="114" column="10" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" bodystart="114" bodyend="116"/>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" line="109" column="10" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" bodystart="109" bodyend="111"/>
       </memberdef>
       <memberdef kind="function" id="class_ray_test_1a016d8eafab1fb060804755d3f191830c" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -388,13 +388,13 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>This method creates the layers based on the hits inside of the _hits list The method only finds flat layers, another method is used for angled layers <simplesect kind="see"><para>_hits </para>
+<para>This method creates the layers based on the hits inside of the _hits list The method only finds flat layers, another method is used for angled layers <simplesect kind="see"><para><ref refid="class_ray_test_1a24fd8f41226daad3c625374e8d0ad811" kindref="member">_hits</ref> </para>
 </simplesect>
 </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" line="191" column="18" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" bodystart="191" bodyend="301"/>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" line="186" column="18" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" bodystart="186" bodyend="296"/>
       </memberdef>
       <memberdef kind="function" id="class_ray_test_1a2810fe8028706e9f1521651dc94bd241" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -404,30 +404,65 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>This method detects the angled layers using the _hits list <simplesect kind="see"><para>_hits </para>
+<para>This method detects the angled layers using the _hits list <simplesect kind="see"><para><ref refid="class_ray_test_1a24fd8f41226daad3c625374e8d0ad811" kindref="member">_hits</ref> </para>
 </simplesect>
 </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" line="306" column="18" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" bodystart="306" bodyend="502"/>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" line="301" column="18" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" bodystart="301" bodyend="501"/>
       </memberdef>
-      <memberdef kind="function" id="class_ray_test_1a4dafcb543428597f07f1321308dad4d3" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+      <memberdef kind="function" id="class_ray_test_1a5b388640a86c18a45727cf5828309397" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
         <definition>void RayTest.MakeLayerPlane</definition>
-        <argsstring>(List&lt; Vector3 &gt; layerHits)</argsstring>
+        <argsstring>(List&lt; Vector3 &gt; layerHits, float angleX, float angleZ)</argsstring>
         <name>MakeLayerPlane</name>
         <param>
           <type>List&lt; Vector3 &gt;</type>
           <declname>layerHits</declname>
         </param>
+        <param>
+          <type>float</type>
+          <declname>angleX</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>angleZ</declname>
+        </param>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
+<para>the method creates a plane on the area that these hits all share in common and are measured by the most outer coordinates. The center point is determined by the location of the most outer coordinates divided by 2.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>layerHits</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a list of hits in a layer </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>angleX</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the x angle used to set the objects rotation </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>angleZ</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the z angle used to set the objects rotation </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" line="504" column="18" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" bodystart="504" bodyend="558"/>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" line="514" column="18" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" bodystart="514" bodyend="575"/>
       </memberdef>
       <memberdef kind="function" id="class_ray_test_1ab5e9662425ab5c69ec8094318c4681e6" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -440,7 +475,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" line="563" column="18" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" bodystart="563" bodyend="567"/>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" line="580" column="18" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" bodystart="580" bodyend="584"/>
       </memberdef>
       <memberdef kind="function" id="class_ray_test_1a46cceb5483afd437a523424f6cddb2cc" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -453,7 +488,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" line="572" column="10" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" bodystart="572" bodyend="595"/>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" line="589" column="10" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" bodystart="589" bodyend="612"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -469,7 +504,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" line="124" column="17" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" bodystart="124" bodyend="127"/>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" line="119" column="17" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" bodystart="119" bodyend="122"/>
       </memberdef>
       <memberdef kind="function" id="class_ray_test_1aabae65a124d1f7919ec2c49cd7387693" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -482,7 +517,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" line="128" column="17" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" bodystart="128" bodyend="131"/>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" line="123" column="17" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" bodystart="123" bodyend="126"/>
       </memberdef>
       <memberdef kind="function" id="class_ray_test_1a5e5101321bc7716c0740dea3900ca14d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -495,7 +530,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" line="132" column="17" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" bodystart="132" bodyend="185"/>
+        <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" line="127" column="17" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" bodystart="127" bodyend="180"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -529,7 +564,7 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" line="16" column="7" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" bodystart="17" bodyend="596"/>
+    <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" line="11" column="7" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/RayTest.cs" bodystart="12" bodyend="613"/>
     <listofallmembers>
       <member refid="class_ray_test_1ae8583388edc91a27703089fc228445f9" prot="private" virt="non-virtual"><scope>RayTest</scope><name>_collision</name></member>
       <member refid="class_ray_test_1a63de1d8d2a840a35f937649ba8cc25a1" prot="private" virt="non-virtual"><scope>RayTest</scope><name>_hit</name></member>
@@ -549,7 +584,7 @@
       <member refid="class_ray_test_1a5944252aca3d63901e062b5619b6ebbe" prot="public" virt="non-virtual"><scope>RayTest</scope><name>drawLayers</name></member>
       <member refid="class_ray_test_1a098b2dc8abbde46e39fe98e49f42e8f3" prot="public" virt="non-virtual"><scope>RayTest</scope><name>gridSize</name></member>
       <member refid="class_ray_test_1a089587bcefc1964813711ac20a40a46d" prot="public" virt="non-virtual"><scope>RayTest</scope><name>hitIndicator</name></member>
-      <member refid="class_ray_test_1a4dafcb543428597f07f1321308dad4d3" prot="private" virt="non-virtual"><scope>RayTest</scope><name>MakeLayerPlane</name></member>
+      <member refid="class_ray_test_1a5b388640a86c18a45727cf5828309397" prot="private" virt="non-virtual"><scope>RayTest</scope><name>MakeLayerPlane</name></member>
       <member refid="class_ray_test_1aa788b824c1d631e2bd446c0353611aa4" prot="public" virt="non-virtual"><scope>RayTest</scope><name>NEIND</name></member>
       <member refid="class_ray_test_1a9419dbcbc914005c6c18c30e0e33d6cd" prot="public" virt="non-virtual"><scope>RayTest</scope><name>NWIND</name></member>
       <member refid="class_ray_test_1ab5e9662425ab5c69ec8094318c4681e6" prot="private" virt="non-virtual"><scope>RayTest</scope><name>OnDrawGizmos</name></member>

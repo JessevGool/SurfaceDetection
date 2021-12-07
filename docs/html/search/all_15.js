@@ -1,6 +1,7 @@
 var searchData=
 [
-  ['width_0',['width',['../struct_b83_1_1_image_1_1_b_m_p_1_1_bitmap_info_header.html#ae97b2bbaaafa6f9cd3dfac76ab93db34',1,'B83::Image::BMP::BitmapInfoHeader']]],
-  ['word_1',['word',['../class_dummiesman_1_1_char_word_reader.html#a8aae8484c2921223e8376a0624b3b999',1,'Dummiesman::CharWordReader']]],
-  ['wordsize_2',['wordSize',['../class_dummiesman_1_1_char_word_reader.html#a09b060469693e13bb07e705a24110b42',1,'Dummiesman::CharWordReader']]]
+  ['verifyformat_0',['VerifyFormat',['../class_dummiesman_1_1_image_loader_helper.html#ac29c360f7d35590a0bd80f4a857ff49a',1,'Dummiesman::ImageLoaderHelper']]],
+  ['vertexindex_1',['vertexIndex',['../class_dummiesman_1_1_o_b_j_object_builder_1_1_obj_loop_hash.html#ac90b8821d22e82589c23e476617bb956',1,'Dummiesman::OBJObjectBuilder::ObjLoopHash']]],
+  ['viewsettings_2',['viewSettings',['../class_button_handler.html#a50a8055d52ab7eb3d22d6c41388e7153',1,'ButtonHandler.viewSettings()'],['../class_application_menu.html#aff45cd83670b34acc3c75c9b9726735e',1,'ApplicationMenu.viewSettings()']]],
+  ['visualiselayer_3',['visualiseLayer',['../class_roof_layer.html#a8752def0f50c6f31a8096b821c055f06',1,'RoofLayer']]]
 ];

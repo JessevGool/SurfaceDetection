@@ -20,6 +20,7 @@ var hierarchy =
     ] ],
     [ "MTLLoader", "class_m_t_l_loader.html", null ],
     [ "Dummiesman.OBJLoader", "class_dummiesman_1_1_o_b_j_loader.html", null ],
+    [ "Dummiesman.OBJObjectBuilder.ObjLoopHash", "class_dummiesman_1_1_o_b_j_object_builder_1_1_obj_loop_hash.html", null ],
     [ "Dummiesman.OBJObjectBuilder", "class_dummiesman_1_1_o_b_j_object_builder.html", null ],
     [ "RoofLayer", "class_roof_layer.html", null ],
     [ "Dummiesman.TGALoader", "class_dummiesman_1_1_t_g_a_loader.html", null ]

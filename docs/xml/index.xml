@@ -268,7 +268,7 @@
     <member refid="class_ray_test_1ad35d07b8b3422832fed5a3df005710be" kind="function"><name>Start</name></member>
     <member refid="class_ray_test_1a016d8eafab1fb060804755d3f191830c" kind="function"><name>CreateLayers</name></member>
     <member refid="class_ray_test_1a2810fe8028706e9f1521651dc94bd241" kind="function"><name>DetectSlopes</name></member>
-    <member refid="class_ray_test_1a4dafcb543428597f07f1321308dad4d3" kind="function"><name>MakeLayerPlane</name></member>
+    <member refid="class_ray_test_1a5b388640a86c18a45727cf5828309397" kind="function"><name>MakeLayerPlane</name></member>
     <member refid="class_ray_test_1ab5e9662425ab5c69ec8094318c4681e6" kind="function"><name>OnDrawGizmos</name></member>
     <member refid="class_ray_test_1a46cceb5483afd437a523424f6cddb2cc" kind="function"><name>Update</name></member>
     <member refid="class_ray_test_1acbd3e1bf479b9d8acd686e779f5c37f4" kind="function"><name>SwitchDrawHits</name></member>
@@ -329,8 +329,6 @@
   </compound>
   <compound refid="namespace_dummiesman_1_1_extensions" kind="namespace"><name>Dummiesman::Extensions</name>
   </compound>
-  <compound refid="namespace_random" kind="namespace"><name>Random</name>
-  </compound>
   <compound refid="namespace_system" kind="namespace"><name>System</name>
   </compound>
   <compound refid="namespace_system_1_1_collections" kind="namespace"><name>System::Collections</name>
@@ -350,10 +348,6 @@
   <compound refid="namespace_system_1_1_threading" kind="namespace"><name>System::Threading</name>
   </compound>
   <compound refid="namespace_t_m_pro" kind="namespace"><name>TMPro</name>
-  </compound>
-  <compound refid="namespace_unity_1_1_collections" kind="namespace"><name>Unity::Collections</name>
-  </compound>
-  <compound refid="namespace_unity_1_1_jobs" kind="namespace"><name>Unity::Jobs</name>
   </compound>
   <compound refid="namespace_unity_editor" kind="namespace"><name>UnityEditor</name>
   </compound>
@@ -404,7 +398,6 @@
   <compound refid="_main_menu_8cs" kind="file"><name>MainMenu.cs</name>
   </compound>
   <compound refid="_ray_test_8cs" kind="file"><name>RayTest.cs</name>
-    <member refid="_ray_test_8cs_1a24953b19d956caa76c403684c71b4e5b" kind="typedef"><name>Random</name></member>
   </compound>
   <compound refid="_roof_layer_8cs" kind="file"><name>RoofLayer.cs</name>
   </compound>

@@ -14,9 +14,51 @@ Dictionary$<$ string, Material $>$ \mbox{\hyperlink{class_m_t_l_loader_a23f6c5d3
 \item 
 List$<$ string $>$ \mbox{\hyperlink{class_m_t_l_loader_acaf4e3c184c87c81dbd3de4d4c82abd0}{Search\+Paths}} = new List$<$string$>$() \{ \char`\"{}\%File\+Name\%\+\_\+\+Textures\char`\"{}, string.\+Empty\}
 \end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Texture2D \mbox{\hyperlink{class_m_t_l_loader_a8ad51630714478d3c8f4a9f98acdca34}{Try\+Load\+Texture}} (string texture\+Path, bool normal\+Map=false)
+\item 
+int \mbox{\hyperlink{class_m_t_l_loader_ad42253bb0bc05f2d65550184aa2e355e}{Get\+Arg\+Value\+Count}} (string arg)
+\item 
+int \mbox{\hyperlink{class_m_t_l_loader_a193f2d43aa311391bdfbd0a4eab4cd6c}{Get\+Tex\+Name\+Index}} (string\mbox{[}$\,$\mbox{]} components)
+\item 
+float \mbox{\hyperlink{class_m_t_l_loader_a9fcc3fccdfb96d9c77967c886842d932}{Get\+Arg\+Value}} (string\mbox{[}$\,$\mbox{]} components, string arg, float fallback=1f)
+\item 
+string \mbox{\hyperlink{class_m_t_l_loader_ad5a567951c2aad561750e36fdb9852bc}{Get\+Tex\+Path\+From\+Map\+Statement}} (string processed\+Line, string\mbox{[}$\,$\mbox{]} split\+Line)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+File\+Info \mbox{\hyperlink{class_m_t_l_loader_a5235b044c44ffbd9ac80e9b6587f9141}{\+\_\+obj\+File\+Info}} = null
+\end{DoxyCompactItemize}
 
 
 \doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_m_t_l_loader_a9fcc3fccdfb96d9c77967c886842d932}\label{class_m_t_l_loader_a9fcc3fccdfb96d9c77967c886842d932}} 
+\index{MTLLoader@{MTLLoader}!GetArgValue@{GetArgValue}}
+\index{GetArgValue@{GetArgValue}!MTLLoader@{MTLLoader}}
+\doxysubsubsection{\texorpdfstring{GetArgValue()}{GetArgValue()}}
+{\footnotesize\ttfamily float MTLLoader.\+Get\+Arg\+Value (\begin{DoxyParamCaption}\item[{string\mbox{[}$\,$\mbox{]}}]{components,  }\item[{string}]{arg,  }\item[{float}]{fallback = {\ttfamily 1f} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_m_t_l_loader_ad42253bb0bc05f2d65550184aa2e355e}\label{class_m_t_l_loader_ad42253bb0bc05f2d65550184aa2e355e}} 
+\index{MTLLoader@{MTLLoader}!GetArgValueCount@{GetArgValueCount}}
+\index{GetArgValueCount@{GetArgValueCount}!MTLLoader@{MTLLoader}}
+\doxysubsubsection{\texorpdfstring{GetArgValueCount()}{GetArgValueCount()}}
+{\footnotesize\ttfamily int MTLLoader.\+Get\+Arg\+Value\+Count (\begin{DoxyParamCaption}\item[{string}]{arg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_m_t_l_loader_a193f2d43aa311391bdfbd0a4eab4cd6c}\label{class_m_t_l_loader_a193f2d43aa311391bdfbd0a4eab4cd6c}} 
+\index{MTLLoader@{MTLLoader}!GetTexNameIndex@{GetTexNameIndex}}
+\index{GetTexNameIndex@{GetTexNameIndex}!MTLLoader@{MTLLoader}}
+\doxysubsubsection{\texorpdfstring{GetTexNameIndex()}{GetTexNameIndex()}}
+{\footnotesize\ttfamily int MTLLoader.\+Get\+Tex\+Name\+Index (\begin{DoxyParamCaption}\item[{string\mbox{[}$\,$\mbox{]}}]{components }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_m_t_l_loader_ad5a567951c2aad561750e36fdb9852bc}\label{class_m_t_l_loader_ad5a567951c2aad561750e36fdb9852bc}} 
+\index{MTLLoader@{MTLLoader}!GetTexPathFromMapStatement@{GetTexPathFromMapStatement}}
+\index{GetTexPathFromMapStatement@{GetTexPathFromMapStatement}!MTLLoader@{MTLLoader}}
+\doxysubsubsection{\texorpdfstring{GetTexPathFromMapStatement()}{GetTexPathFromMapStatement()}}
+{\footnotesize\ttfamily string MTLLoader.\+Get\+Tex\+Path\+From\+Map\+Statement (\begin{DoxyParamCaption}\item[{string}]{processed\+Line,  }\item[{string\mbox{[}$\,$\mbox{]}}]{split\+Line }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
 \mbox{\Hypertarget{class_m_t_l_loader_a259b805cda6d5a31fb9855126824b250}\label{class_m_t_l_loader_a259b805cda6d5a31fb9855126824b250}} 
 \index{MTLLoader@{MTLLoader}!Load@{Load}}
 \index{Load@{Load}!MTLLoader@{MTLLoader}}
@@ -73,9 +115,21 @@ The texture loading function. Overridable for stream loading purposes.
 \begin{DoxyReturn}{Returns}
 Texture2D if found, or NULL if missing
 \end{DoxyReturn}
+\mbox{\Hypertarget{class_m_t_l_loader_a8ad51630714478d3c8f4a9f98acdca34}\label{class_m_t_l_loader_a8ad51630714478d3c8f4a9f98acdca34}} 
+\index{MTLLoader@{MTLLoader}!TryLoadTexture@{TryLoadTexture}}
+\index{TryLoadTexture@{TryLoadTexture}!MTLLoader@{MTLLoader}}
+\doxysubsubsection{\texorpdfstring{TryLoadTexture()}{TryLoadTexture()}}
+{\footnotesize\ttfamily Texture2D MTLLoader.\+Try\+Load\+Texture (\begin{DoxyParamCaption}\item[{string}]{texture\+Path,  }\item[{bool}]{normal\+Map = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
 
 
 \doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_m_t_l_loader_a5235b044c44ffbd9ac80e9b6587f9141}\label{class_m_t_l_loader_a5235b044c44ffbd9ac80e9b6587f9141}} 
+\index{MTLLoader@{MTLLoader}!\_objFileInfo@{\_objFileInfo}}
+\index{\_objFileInfo@{\_objFileInfo}!MTLLoader@{MTLLoader}}
+\doxysubsubsection{\texorpdfstring{\_objFileInfo}{\_objFileInfo}}
+{\footnotesize\ttfamily File\+Info MTLLoader.\+\_\+obj\+File\+Info = null\hspace{0.3cm}{\ttfamily [private]}}
+
 \mbox{\Hypertarget{class_m_t_l_loader_acaf4e3c184c87c81dbd3de4d4c82abd0}\label{class_m_t_l_loader_acaf4e3c184c87c81dbd3de4d4c82abd0}} 
 \index{MTLLoader@{MTLLoader}!SearchPaths@{SearchPaths}}
 \index{SearchPaths@{SearchPaths}!MTLLoader@{MTLLoader}}

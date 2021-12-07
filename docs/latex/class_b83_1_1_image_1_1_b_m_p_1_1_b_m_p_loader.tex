@@ -23,9 +23,49 @@ bool \mbox{\hyperlink{class_b83_1_1_image_1_1_b_m_p_1_1_b_m_p_loader_a71eb4da27f
 \item 
 bool \mbox{\hyperlink{class_b83_1_1_image_1_1_b_m_p_1_1_b_m_p_loader_a6fd243aa09833bc40157514892efedf8}{Force\+Alpha\+Read\+When\+Possible}} = false
 \end{DoxyCompactItemize}
+\doxysubsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_b83_1_1_image_1_1_b_m_p_1_1_b_m_p_loader_a0e4d4b4f7a3988f713d73cb0950156d9}{Read32\+Bit\+Image}} (Binary\+Reader a\+Reader, \mbox{\hyperlink{class_b83_1_1_image_1_1_b_m_p_1_1_b_m_p_image}{BMPImage}} bmp)
+\item 
+static void \mbox{\hyperlink{class_b83_1_1_image_1_1_b_m_p_1_1_b_m_p_loader_af4ea73c482e425eebc39ead9bb2ae184}{Read24\+Bit\+Image}} (Binary\+Reader a\+Reader, \mbox{\hyperlink{class_b83_1_1_image_1_1_b_m_p_1_1_b_m_p_image}{BMPImage}} bmp)
+\item 
+static void \mbox{\hyperlink{class_b83_1_1_image_1_1_b_m_p_1_1_b_m_p_loader_a7ad73545e895f86703566cc22325a6ac}{Read16\+Bit\+Image}} (Binary\+Reader a\+Reader, \mbox{\hyperlink{class_b83_1_1_image_1_1_b_m_p_1_1_b_m_p_image}{BMPImage}} bmp)
+\item 
+static void \mbox{\hyperlink{class_b83_1_1_image_1_1_b_m_p_1_1_b_m_p_loader_ab25753fc11272c9ffccc7c516952f34b}{Read\+Indexed\+Image}} (Binary\+Reader a\+Reader, \mbox{\hyperlink{class_b83_1_1_image_1_1_b_m_p_1_1_b_m_p_image}{BMPImage}} bmp)
+\item 
+static void \mbox{\hyperlink{class_b83_1_1_image_1_1_b_m_p_1_1_b_m_p_loader_a81e2e9b3fef0a6c95f05d973550f5efd}{Read\+Indexed\+Image\+RLE4}} (Binary\+Reader a\+Reader, \mbox{\hyperlink{class_b83_1_1_image_1_1_b_m_p_1_1_b_m_p_image}{BMPImage}} bmp)
+\item 
+static void \mbox{\hyperlink{class_b83_1_1_image_1_1_b_m_p_1_1_b_m_p_loader_a044755ddd4c5ba1511ed48245081e716}{Read\+Indexed\+Image\+RLE8}} (Binary\+Reader a\+Reader, \mbox{\hyperlink{class_b83_1_1_image_1_1_b_m_p_1_1_b_m_p_image}{BMPImage}} bmp)
+\item 
+static int \mbox{\hyperlink{class_b83_1_1_image_1_1_b_m_p_1_1_b_m_p_loader_a5028c752c70a15e5f275a8cc23df8e11}{Get\+Shift\+Count}} (uint mask)
+\item 
+static uint \mbox{\hyperlink{class_b83_1_1_image_1_1_b_m_p_1_1_b_m_p_loader_a01451e3f421a8386e0e24fce33af5084}{Get\+Mask}} (int bit\+Count)
+\item 
+static bool \mbox{\hyperlink{class_b83_1_1_image_1_1_b_m_p_1_1_b_m_p_loader_ab85df73b1c4e5c0d536e5786b939ef18}{Read\+File\+Header}} (Binary\+Reader a\+Reader, ref \mbox{\hyperlink{struct_b83_1_1_image_1_1_b_m_p_1_1_b_m_p_file_header}{BMPFile\+Header}} a\+File\+Header)
+\item 
+static bool \mbox{\hyperlink{class_b83_1_1_image_1_1_b_m_p_1_1_b_m_p_loader_a25789c0b2ba7a0ff2680fc5ca59abffc}{Read\+Info\+Header}} (Binary\+Reader a\+Reader, ref \mbox{\hyperlink{struct_b83_1_1_image_1_1_b_m_p_1_1_bitmap_info_header}{Bitmap\+Info\+Header}} a\+Header)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const ushort \mbox{\hyperlink{class_b83_1_1_image_1_1_b_m_p_1_1_b_m_p_loader_ac3439fba7642d2673fec763cb2d5fc29}{MAGIC}} = 0x4\+D42
+\end{DoxyCompactItemize}
 
 
 \doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_b83_1_1_image_1_1_b_m_p_1_1_b_m_p_loader_a01451e3f421a8386e0e24fce33af5084}\label{class_b83_1_1_image_1_1_b_m_p_1_1_b_m_p_loader_a01451e3f421a8386e0e24fce33af5084}} 
+\index{B83.Image.BMP.BMPLoader@{B83.Image.BMP.BMPLoader}!GetMask@{GetMask}}
+\index{GetMask@{GetMask}!B83.Image.BMP.BMPLoader@{B83.Image.BMP.BMPLoader}}
+\doxysubsubsection{\texorpdfstring{GetMask()}{GetMask()}}
+{\footnotesize\ttfamily static uint B83.\+Image.\+BMP.\+BMPLoader.\+Get\+Mask (\begin{DoxyParamCaption}\item[{int}]{bit\+Count }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_b83_1_1_image_1_1_b_m_p_1_1_b_m_p_loader_a5028c752c70a15e5f275a8cc23df8e11}\label{class_b83_1_1_image_1_1_b_m_p_1_1_b_m_p_loader_a5028c752c70a15e5f275a8cc23df8e11}} 
+\index{B83.Image.BMP.BMPLoader@{B83.Image.BMP.BMPLoader}!GetShiftCount@{GetShiftCount}}
+\index{GetShiftCount@{GetShiftCount}!B83.Image.BMP.BMPLoader@{B83.Image.BMP.BMPLoader}}
+\doxysubsubsection{\texorpdfstring{GetShiftCount()}{GetShiftCount()}}
+{\footnotesize\ttfamily static int B83.\+Image.\+BMP.\+BMPLoader.\+Get\+Shift\+Count (\begin{DoxyParamCaption}\item[{uint}]{mask }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
 \mbox{\Hypertarget{class_b83_1_1_image_1_1_b_m_p_1_1_b_m_p_loader_aa1267c25997c3f6e6db8c8bb14763763}\label{class_b83_1_1_image_1_1_b_m_p_1_1_b_m_p_loader_aa1267c25997c3f6e6db8c8bb14763763}} 
 \index{B83.Image.BMP.BMPLoader@{B83.Image.BMP.BMPLoader}!LoadBMP@{LoadBMP}}
 \index{LoadBMP@{LoadBMP}!B83.Image.BMP.BMPLoader@{B83.Image.BMP.BMPLoader}}
@@ -50,6 +90,54 @@ bool \mbox{\hyperlink{class_b83_1_1_image_1_1_b_m_p_1_1_b_m_p_loader_a6fd243aa09
 \doxysubsubsection{\texorpdfstring{LoadBMP()}{LoadBMP()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
 {\footnotesize\ttfamily \mbox{\hyperlink{class_b83_1_1_image_1_1_b_m_p_1_1_b_m_p_image}{BMPImage}} B83.\+Image.\+BMP.\+BMPLoader.\+Load\+BMP (\begin{DoxyParamCaption}\item[{string}]{a\+File\+Name }\end{DoxyParamCaption})}
 
+\mbox{\Hypertarget{class_b83_1_1_image_1_1_b_m_p_1_1_b_m_p_loader_a7ad73545e895f86703566cc22325a6ac}\label{class_b83_1_1_image_1_1_b_m_p_1_1_b_m_p_loader_a7ad73545e895f86703566cc22325a6ac}} 
+\index{B83.Image.BMP.BMPLoader@{B83.Image.BMP.BMPLoader}!Read16BitImage@{Read16BitImage}}
+\index{Read16BitImage@{Read16BitImage}!B83.Image.BMP.BMPLoader@{B83.Image.BMP.BMPLoader}}
+\doxysubsubsection{\texorpdfstring{Read16BitImage()}{Read16BitImage()}}
+{\footnotesize\ttfamily static void B83.\+Image.\+BMP.\+BMPLoader.\+Read16\+Bit\+Image (\begin{DoxyParamCaption}\item[{Binary\+Reader}]{a\+Reader,  }\item[{\mbox{\hyperlink{class_b83_1_1_image_1_1_b_m_p_1_1_b_m_p_image}{BMPImage}}}]{bmp }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_b83_1_1_image_1_1_b_m_p_1_1_b_m_p_loader_af4ea73c482e425eebc39ead9bb2ae184}\label{class_b83_1_1_image_1_1_b_m_p_1_1_b_m_p_loader_af4ea73c482e425eebc39ead9bb2ae184}} 
+\index{B83.Image.BMP.BMPLoader@{B83.Image.BMP.BMPLoader}!Read24BitImage@{Read24BitImage}}
+\index{Read24BitImage@{Read24BitImage}!B83.Image.BMP.BMPLoader@{B83.Image.BMP.BMPLoader}}
+\doxysubsubsection{\texorpdfstring{Read24BitImage()}{Read24BitImage()}}
+{\footnotesize\ttfamily static void B83.\+Image.\+BMP.\+BMPLoader.\+Read24\+Bit\+Image (\begin{DoxyParamCaption}\item[{Binary\+Reader}]{a\+Reader,  }\item[{\mbox{\hyperlink{class_b83_1_1_image_1_1_b_m_p_1_1_b_m_p_image}{BMPImage}}}]{bmp }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_b83_1_1_image_1_1_b_m_p_1_1_b_m_p_loader_a0e4d4b4f7a3988f713d73cb0950156d9}\label{class_b83_1_1_image_1_1_b_m_p_1_1_b_m_p_loader_a0e4d4b4f7a3988f713d73cb0950156d9}} 
+\index{B83.Image.BMP.BMPLoader@{B83.Image.BMP.BMPLoader}!Read32BitImage@{Read32BitImage}}
+\index{Read32BitImage@{Read32BitImage}!B83.Image.BMP.BMPLoader@{B83.Image.BMP.BMPLoader}}
+\doxysubsubsection{\texorpdfstring{Read32BitImage()}{Read32BitImage()}}
+{\footnotesize\ttfamily static void B83.\+Image.\+BMP.\+BMPLoader.\+Read32\+Bit\+Image (\begin{DoxyParamCaption}\item[{Binary\+Reader}]{a\+Reader,  }\item[{\mbox{\hyperlink{class_b83_1_1_image_1_1_b_m_p_1_1_b_m_p_image}{BMPImage}}}]{bmp }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_b83_1_1_image_1_1_b_m_p_1_1_b_m_p_loader_ab85df73b1c4e5c0d536e5786b939ef18}\label{class_b83_1_1_image_1_1_b_m_p_1_1_b_m_p_loader_ab85df73b1c4e5c0d536e5786b939ef18}} 
+\index{B83.Image.BMP.BMPLoader@{B83.Image.BMP.BMPLoader}!ReadFileHeader@{ReadFileHeader}}
+\index{ReadFileHeader@{ReadFileHeader}!B83.Image.BMP.BMPLoader@{B83.Image.BMP.BMPLoader}}
+\doxysubsubsection{\texorpdfstring{ReadFileHeader()}{ReadFileHeader()}}
+{\footnotesize\ttfamily static bool B83.\+Image.\+BMP.\+BMPLoader.\+Read\+File\+Header (\begin{DoxyParamCaption}\item[{Binary\+Reader}]{a\+Reader,  }\item[{ref \mbox{\hyperlink{struct_b83_1_1_image_1_1_b_m_p_1_1_b_m_p_file_header}{BMPFile\+Header}}}]{a\+File\+Header }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_b83_1_1_image_1_1_b_m_p_1_1_b_m_p_loader_ab25753fc11272c9ffccc7c516952f34b}\label{class_b83_1_1_image_1_1_b_m_p_1_1_b_m_p_loader_ab25753fc11272c9ffccc7c516952f34b}} 
+\index{B83.Image.BMP.BMPLoader@{B83.Image.BMP.BMPLoader}!ReadIndexedImage@{ReadIndexedImage}}
+\index{ReadIndexedImage@{ReadIndexedImage}!B83.Image.BMP.BMPLoader@{B83.Image.BMP.BMPLoader}}
+\doxysubsubsection{\texorpdfstring{ReadIndexedImage()}{ReadIndexedImage()}}
+{\footnotesize\ttfamily static void B83.\+Image.\+BMP.\+BMPLoader.\+Read\+Indexed\+Image (\begin{DoxyParamCaption}\item[{Binary\+Reader}]{a\+Reader,  }\item[{\mbox{\hyperlink{class_b83_1_1_image_1_1_b_m_p_1_1_b_m_p_image}{BMPImage}}}]{bmp }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_b83_1_1_image_1_1_b_m_p_1_1_b_m_p_loader_a81e2e9b3fef0a6c95f05d973550f5efd}\label{class_b83_1_1_image_1_1_b_m_p_1_1_b_m_p_loader_a81e2e9b3fef0a6c95f05d973550f5efd}} 
+\index{B83.Image.BMP.BMPLoader@{B83.Image.BMP.BMPLoader}!ReadIndexedImageRLE4@{ReadIndexedImageRLE4}}
+\index{ReadIndexedImageRLE4@{ReadIndexedImageRLE4}!B83.Image.BMP.BMPLoader@{B83.Image.BMP.BMPLoader}}
+\doxysubsubsection{\texorpdfstring{ReadIndexedImageRLE4()}{ReadIndexedImageRLE4()}}
+{\footnotesize\ttfamily static void B83.\+Image.\+BMP.\+BMPLoader.\+Read\+Indexed\+Image\+RLE4 (\begin{DoxyParamCaption}\item[{Binary\+Reader}]{a\+Reader,  }\item[{\mbox{\hyperlink{class_b83_1_1_image_1_1_b_m_p_1_1_b_m_p_image}{BMPImage}}}]{bmp }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_b83_1_1_image_1_1_b_m_p_1_1_b_m_p_loader_a044755ddd4c5ba1511ed48245081e716}\label{class_b83_1_1_image_1_1_b_m_p_1_1_b_m_p_loader_a044755ddd4c5ba1511ed48245081e716}} 
+\index{B83.Image.BMP.BMPLoader@{B83.Image.BMP.BMPLoader}!ReadIndexedImageRLE8@{ReadIndexedImageRLE8}}
+\index{ReadIndexedImageRLE8@{ReadIndexedImageRLE8}!B83.Image.BMP.BMPLoader@{B83.Image.BMP.BMPLoader}}
+\doxysubsubsection{\texorpdfstring{ReadIndexedImageRLE8()}{ReadIndexedImageRLE8()}}
+{\footnotesize\ttfamily static void B83.\+Image.\+BMP.\+BMPLoader.\+Read\+Indexed\+Image\+RLE8 (\begin{DoxyParamCaption}\item[{Binary\+Reader}]{a\+Reader,  }\item[{\mbox{\hyperlink{class_b83_1_1_image_1_1_b_m_p_1_1_b_m_p_image}{BMPImage}}}]{bmp }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_b83_1_1_image_1_1_b_m_p_1_1_b_m_p_loader_a25789c0b2ba7a0ff2680fc5ca59abffc}\label{class_b83_1_1_image_1_1_b_m_p_1_1_b_m_p_loader_a25789c0b2ba7a0ff2680fc5ca59abffc}} 
+\index{B83.Image.BMP.BMPLoader@{B83.Image.BMP.BMPLoader}!ReadInfoHeader@{ReadInfoHeader}}
+\index{ReadInfoHeader@{ReadInfoHeader}!B83.Image.BMP.BMPLoader@{B83.Image.BMP.BMPLoader}}
+\doxysubsubsection{\texorpdfstring{ReadInfoHeader()}{ReadInfoHeader()}}
+{\footnotesize\ttfamily static bool B83.\+Image.\+BMP.\+BMPLoader.\+Read\+Info\+Header (\begin{DoxyParamCaption}\item[{Binary\+Reader}]{a\+Reader,  }\item[{ref \mbox{\hyperlink{struct_b83_1_1_image_1_1_b_m_p_1_1_bitmap_info_header}{Bitmap\+Info\+Header}}}]{a\+Header }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
 \mbox{\Hypertarget{class_b83_1_1_image_1_1_b_m_p_1_1_b_m_p_loader_a688eaa25f6d5a1e03a357a7f5a32a8e9}\label{class_b83_1_1_image_1_1_b_m_p_1_1_b_m_p_loader_a688eaa25f6d5a1e03a357a7f5a32a8e9}} 
 \index{B83.Image.BMP.BMPLoader@{B83.Image.BMP.BMPLoader}!ReadPalette@{ReadPalette}}
 \index{ReadPalette@{ReadPalette}!B83.Image.BMP.BMPLoader@{B83.Image.BMP.BMPLoader}}
@@ -64,6 +152,12 @@ bool \mbox{\hyperlink{class_b83_1_1_image_1_1_b_m_p_1_1_b_m_p_loader_a6fd243aa09
 \index{ForceAlphaReadWhenPossible@{ForceAlphaReadWhenPossible}!B83.Image.BMP.BMPLoader@{B83.Image.BMP.BMPLoader}}
 \doxysubsubsection{\texorpdfstring{ForceAlphaReadWhenPossible}{ForceAlphaReadWhenPossible}}
 {\footnotesize\ttfamily bool B83.\+Image.\+BMP.\+BMPLoader.\+Force\+Alpha\+Read\+When\+Possible = false}
+
+\mbox{\Hypertarget{class_b83_1_1_image_1_1_b_m_p_1_1_b_m_p_loader_ac3439fba7642d2673fec763cb2d5fc29}\label{class_b83_1_1_image_1_1_b_m_p_1_1_b_m_p_loader_ac3439fba7642d2673fec763cb2d5fc29}} 
+\index{B83.Image.BMP.BMPLoader@{B83.Image.BMP.BMPLoader}!MAGIC@{MAGIC}}
+\index{MAGIC@{MAGIC}!B83.Image.BMP.BMPLoader@{B83.Image.BMP.BMPLoader}}
+\doxysubsubsection{\texorpdfstring{MAGIC}{MAGIC}}
+{\footnotesize\ttfamily const ushort B83.\+Image.\+BMP.\+BMPLoader.\+MAGIC = 0x4\+D42\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
 
 \mbox{\Hypertarget{class_b83_1_1_image_1_1_b_m_p_1_1_b_m_p_loader_a71eb4da27fd78ba05acc1904839718a7}\label{class_b83_1_1_image_1_1_b_m_p_1_1_b_m_p_loader_a71eb4da27fd78ba05acc1904839718a7}} 
 \index{B83.Image.BMP.BMPLoader@{B83.Image.BMP.BMPLoader}!ReadPaletteAlpha@{ReadPaletteAlpha}}

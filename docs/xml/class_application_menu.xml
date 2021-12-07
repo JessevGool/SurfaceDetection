@@ -385,9 +385,18 @@
         <link refid="class_application_menu"/>
         <childnode refid="2" relation="public-inheritance">
         </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>rayTest</edgelabel>
+        </childnode>
       </node>
       <node id="2">
         <label>MonoBehaviour</label>
+      </node>
+      <node id="3">
+        <label>RayTest</label>
+        <link refid="class_ray_test"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
       </node>
     </collaborationgraph>
     <location file="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" line="12" column="7" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/Scripts/ApplicationMenu.cs" bodystart="13" bodyend="215"/>

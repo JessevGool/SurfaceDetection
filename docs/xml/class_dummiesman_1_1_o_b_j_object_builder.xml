@@ -47,11 +47,11 @@
         <location file="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/OBJObjectBuilder.cs" line="26" column="16" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/OBJObjectBuilder.cs" bodystart="26" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_dummiesman_1_1_o_b_j_object_builder_1a7829015410e28faa13c6f7788699feb9" prot="private" static="no" mutable="no">
-        <type>Dictionary&lt; ObjLoopHash, int &gt;</type>
+        <type>Dictionary&lt; <ref refid="class_dummiesman_1_1_o_b_j_object_builder_1_1_obj_loop_hash" kindref="compound">ObjLoopHash</ref>, int &gt;</type>
         <definition>Dictionary&lt;ObjLoopHash, int&gt; Dummiesman.OBJObjectBuilder._globalIndexRemap</definition>
         <argsstring></argsstring>
         <name>_globalIndexRemap</name>
-        <initializer>= new Dictionary&lt;ObjLoopHash, int&gt;()</initializer>
+        <initializer>= new Dictionary&lt;<ref refid="class_dummiesman_1_1_o_b_j_object_builder_1_1_obj_loop_hash" kindref="compound">ObjLoopHash</ref>, int&gt;()</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -244,6 +244,19 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>Dummiesman.OBJObjectBuilder</label>
+        <link refid="class_dummiesman_1_1_o_b_j_object_builder"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>_loader</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Dummiesman.OBJLoader</label>
+        <link refid="class_dummiesman_1_1_o_b_j_loader"/>
+      </node>
+    </collaborationgraph>
     <location file="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/OBJObjectBuilder.cs" line="20" column="7" bodyfile="H:/Code/Unity/SurfaceDetection/Assets/OBJImport/OBJObjectBuilder.cs" bodystart="20" bodyend="199"/>
     <listofallmembers>
       <member refid="class_dummiesman_1_1_o_b_j_object_builder_1ac620bed9468b484a422f2bd106a7e763" prot="private" virt="non-virtual"><scope>Dummiesman::OBJObjectBuilder</scope><name>_currentIndexList</name></member>

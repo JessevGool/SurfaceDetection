@@ -1,12 +1,21 @@
 var searchData=
 [
-  ['selectobjmodelfromfile_0',['SelectObjModelFromFile',['../class_main_menu.html#a986a8695801993fe5881c99ec4e98c6a',1,'MainMenu']]],
-  ['setmaterial_1',['SetMaterial',['../class_dummiesman_1_1_o_b_j_object_builder.html#a0f0baa044f667aba7068cf95e708cc17',1,'Dummiesman::OBJObjectBuilder']]],
-  ['setnormalmap_2',['SetNormalMap',['../class_dummiesman_1_1_image_loader.html#aa7f478948280bd688f48e60dae836ab0',1,'Dummiesman::ImageLoader']]],
-  ['skipuntilnewline_3',['SkipUntilNewLine',['../class_dummiesman_1_1_char_word_reader.html#a66ad77953c3122d5741ed150c97b423c',1,'Dummiesman::CharWordReader']]],
-  ['skipwhitespaces_4',['SkipWhitespaces',['../class_dummiesman_1_1_char_word_reader.html#a5673e21d2bcedf955ffb447e6f4fc8ff',1,'Dummiesman.CharWordReader.SkipWhitespaces()'],['../class_dummiesman_1_1_char_word_reader.html#a45b9a9ee2310b6fa6f3264eca989ac1e',1,'Dummiesman.CharWordReader.SkipWhitespaces(out bool newLinePassed)']]],
-  ['startscan_5',['StartScan',['../class_ray_test.html#a5e5101321bc7716c0740dea3900ca14d',1,'RayTest']]],
-  ['startscanbutton_6',['StartScanButton',['../class_application_menu.html#ae67b5e866d767e1b06914821dd3af1a9',1,'ApplicationMenu']]],
-  ['switchdrawhits_7',['SwitchDrawHits',['../class_ray_test.html#acbd3e1bf479b9d8acd686e779f5c37f4',1,'RayTest']]],
-  ['switchdrawlayers_8',['SwitchDrawLayers',['../class_ray_test.html#aabae65a124d1f7919ec2c49cd7387693',1,'RayTest']]]
+  ['read16bitimage_0',['Read16BitImage',['../class_b83_1_1_image_1_1_b_m_p_1_1_b_m_p_loader.html#a7ad73545e895f86703566cc22325a6ac',1,'B83::Image::BMP::BMPLoader']]],
+  ['read24bitimage_1',['Read24BitImage',['../class_b83_1_1_image_1_1_b_m_p_1_1_b_m_p_loader.html#af4ea73c482e425eebc39ead9bb2ae184',1,'B83::Image::BMP::BMPLoader']]],
+  ['read32bitimage_2',['Read32BitImage',['../class_b83_1_1_image_1_1_b_m_p_1_1_b_m_p_loader.html#a0e4d4b4f7a3988f713d73cb0950156d9',1,'B83::Image::BMP::BMPLoader']]],
+  ['readbit_3',['ReadBit',['../class_b83_1_1_image_1_1_b_m_p_1_1_bit_stream_reader.html#ad5ce901116715d0e2f35234f554a316f',1,'B83::Image::BMP::BitStreamReader']]],
+  ['readbits_4',['ReadBits',['../class_b83_1_1_image_1_1_b_m_p_1_1_bit_stream_reader.html#a0dbb1a076272fc32a2b0e2de5aabd180',1,'B83::Image::BMP::BitStreamReader']]],
+  ['readfileheader_5',['ReadFileHeader',['../class_b83_1_1_image_1_1_b_m_p_1_1_b_m_p_loader.html#ab85df73b1c4e5c0d536e5786b939ef18',1,'B83::Image::BMP::BMPLoader']]],
+  ['readfloat_6',['ReadFloat',['../class_dummiesman_1_1_char_word_reader.html#a9d2fc16773cfab6acd9468bb422dc7bd',1,'Dummiesman::CharWordReader']]],
+  ['readfloatend_7',['ReadFloatEnd',['../class_dummiesman_1_1_char_word_reader.html#aca72bd23b870381b164c77d194474134',1,'Dummiesman::CharWordReader']]],
+  ['readindexedimage_8',['ReadIndexedImage',['../class_b83_1_1_image_1_1_b_m_p_1_1_b_m_p_loader.html#ab25753fc11272c9ffccc7c516952f34b',1,'B83::Image::BMP::BMPLoader']]],
+  ['readindexedimagerle4_9',['ReadIndexedImageRLE4',['../class_b83_1_1_image_1_1_b_m_p_1_1_b_m_p_loader.html#a81e2e9b3fef0a6c95f05d973550f5efd',1,'B83::Image::BMP::BMPLoader']]],
+  ['readindexedimagerle8_10',['ReadIndexedImageRLE8',['../class_b83_1_1_image_1_1_b_m_p_1_1_b_m_p_loader.html#a044755ddd4c5ba1511ed48245081e716',1,'B83::Image::BMP::BMPLoader']]],
+  ['readinfoheader_11',['ReadInfoHeader',['../class_b83_1_1_image_1_1_b_m_p_1_1_b_m_p_loader.html#a25789c0b2ba7a0ff2680fc5ca59abffc',1,'B83::Image::BMP::BMPLoader']]],
+  ['readint_12',['ReadInt',['../class_dummiesman_1_1_char_word_reader.html#a95714eb413637ccfee300965d30a46ec',1,'Dummiesman::CharWordReader']]],
+  ['readpalette_13',['ReadPalette',['../class_b83_1_1_image_1_1_b_m_p_1_1_b_m_p_loader.html#a688eaa25f6d5a1e03a357a7f5a32a8e9',1,'B83::Image::BMP::BMPLoader']]],
+  ['readuntilnewline_14',['ReadUntilNewLine',['../class_dummiesman_1_1_char_word_reader.html#ae6b7dfd08493eb8fbbd97282dcfd2aa5',1,'Dummiesman::CharWordReader']]],
+  ['readuntilwhitespace_15',['ReadUntilWhiteSpace',['../class_dummiesman_1_1_char_word_reader.html#a42063df6067425c8f67895e596844e6c',1,'Dummiesman::CharWordReader']]],
+  ['readvector_16',['ReadVector',['../class_dummiesman_1_1_char_word_reader.html#a06706e7c0c4a03c020959c587bed7d31',1,'Dummiesman::CharWordReader']]],
+  ['rooflayer_17',['RoofLayer',['../class_roof_layer.html#acf811f50b0c26ddf2c2508bfc30af73a',1,'RoofLayer']]]
 ];
