@@ -505,6 +505,15 @@ public class RayTest : MonoBehaviour
         _t2Finished = true;
     }
 
+
+
+    /**
+    * This method takes in as parameters a list of coordinates of al the hits in a certain layer, the angle that these hits all have in comon on the X and Z angle. 
+    * With these parameters the methode creates a plane on the area that these hits all share in common and are mesured by the most outer coordinates.
+    * The center point is determined by the location of the most outer coordinates devided by 2.
+    * 
+    */
+
     private void MakeLayerPlane(List<Vector3> layerHits, float angleX, float angleZ)
     {
         Vector3 NE = Vector3.zero, NW = Vector3.zero, SE = Vector3.zero, SW = Vector3.zero;
@@ -565,28 +574,6 @@ public class RayTest : MonoBehaviour
             
             test.transform.Rotate(-angleX, 0.0f, -angleZ, Space.Self);//new Vector3(angleX, 0.0f, angleZ);
         }
-
-        Debug.Log("anglez: " + angleZ + "     angle x: " + angleX);
-
-
-
-
-
-
-
-
-
-
-        //TODO 
-        //     CREATE A CUT OUT IN OVERLAPPING LAYERS??
-
-
-
-
-        //foreach (var hit in layerHits)
-        //{
-        //    int x = 0;
-        //}
 
     }
 
