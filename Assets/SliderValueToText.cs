@@ -39,7 +39,7 @@ public class SliderValueToText : MonoBehaviour
         if(sliderUI.name.Contains("Scan"))
         {
             float resolution = sliderUI.value;
-            resolution = (resolution - resolution % 0.05f);
+            resolution = (resolution - resolution % 0.01f);
             string sliderMessage = "Resolution = " + resolution;
             textSliderValue.text = sliderMessage;
             rayTest.scanResolution = resolution;
